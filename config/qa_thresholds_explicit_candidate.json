@@ -1,0 +1,15 @@
+{
+  "clip_preservation_min": 0.231874,
+  "dino_structure_min": -0.057269,
+  "temporal_consistency_max": 0.582238,
+  "motion_magnitude_low": 2.416559,
+  "motion_magnitude_high": 9.600125,
+  "fail_closed": true,
+  "blocking_enabled": false,
+  "gate_mode": "advisory",
+  "calibrated_against": "16 labeled clips, 8 pass / 8 fail; calibration_dir=/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
+  "agreement": "14/16 (87.5%); disagreements: [{\"slug\": \"tardigrade_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.678151, \"dino_min\": 0.682486, \"temporal\": 0.402018, \"motion\": 5.482888}}, {\"slug\": \"mantis_v25\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.324308, \"dino_min\": 0.004182, \"temporal\": 0.574874, \"motion\": 3.55985}}]",
+  "source_policy": "explicit source images from labels.json",
+  "human_review_authoritative": true,
+  "decision": "Hold advisory: agreement below bar or --enable-blocking not set."
+}

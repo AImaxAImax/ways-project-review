@@ -1,0 +1,16 @@
+{
+  "clip_preservation_min": 0.341905,
+  "dino_structure_min": -0.061221,
+  "temporal_consistency_max": 0.582238,
+  "motion_magnitude_low": 1.775843,
+  "motion_magnitude_high": 9.600125,
+  "fail_closed": true,
+  "blocking_enabled": false,
+  "gate_mode": "advisory",
+  "calibrated_against": "16 labeled clips, 8 pass / 8 fail; calibration_dir=/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
+  "agreement": "15/16 (93.8%); disagreements: [{\"slug\": \"tardigrade_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.695473, \"dino_min\": 0.684404, \"temporal\": 0.402018, \"motion\": 5.482888}}]",
+  "source_policy": "first-frame source proxy; calibrated result is advisory until rerun with approved source plates per shot",
+  "human_review_authoritative": true,
+  "decision": "Hold advisory: rerun with approved explicit source plates before enabling blocking.",
+  "archived_previous_thresholds": "calib/ways_scoring_harness_20260608/archives/qa_thresholds_before_calibration_20260608_153313.json"
+}

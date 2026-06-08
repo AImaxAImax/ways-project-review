@@ -1,0 +1,149 @@
+{
+  "note": "Candidate explicit source labels. Sources are primary/first-shot plates or canonical source stills, not yet human-approved per-shot calibration labels; do not enable blocking from this file without review.",
+  "clips": [
+    {
+      "slug": "shark_v27",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/sharks_older_than_trees/outputs/wan22_harness_v27/sharks_older_than_trees_wan22_silent_1080.mp4",
+      "note": "published/strong shark lane",
+      "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "frog_v17",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_clean_1080.mp4",
+      "note": "published/strong frog lane",
+      "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "frog_v16",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v16_final_vo/wood_frog_freeze_survival_v16_final_vo_clean_1080.mp4",
+      "note": "near-final frog candidate",
+      "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "frog_v15",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_silent_1080.mp4",
+      "note": "polished frog candidate",
+      "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "mantis_v30",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v30_feed_hook_reset/mantis_say_dog_v30_feed_hook_reset_silent_1080.mp4",
+      "note": "posted/reset mantis shrimp candidate",
+      "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "owl_v03",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_neck_safe_clean_v03.mp4",
+      "note": "neck-safe owl draft",
+      "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "owl_v04",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_all_moving_clean_v04.mp4",
+      "note": "all-moving owl draft",
+      "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "octopus_v01",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_silent_1080.mp4",
+      "note": "strong-prior animal lane candidate",
+      "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot01_octopus_three_hearts_sdxl_plate.png",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "wombat_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/wombat_cube_poop/outputs/wan22_template_v01/wombat_cube_poop_wan22_silent_1080.mp4",
+      "note": "published weak retention/process-heavy",
+      "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "tardigrade_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_silent_1080.mp4",
+      "note": "rework_status: do_not_upload, artifacts/fake anatomy",
+      "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "saturn_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v01/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot01_saturn_hexagon_storm_plate.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "saturn_v02",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot01_saturn_hexagon_storm_plain_plate.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "mantis_v04",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v04_proof_hybrid/mantis_say_dog_v04_silent_1080.mp4",
+      "note": "early mantis say-dog fail",
+      "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "mantis_v11",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v11_clean_mechanics/mantis_say_dog_v11_silent_1080.mp4",
+      "note": "pre-reset mantis fail",
+      "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "mantis_v17",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v17_premium_abstract_mechanism/mantis_say_dog_v17_silent_1080.mp4",
+      "note": "premium abstract mechanism fail",
+      "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    },
+    {
+      "slug": "mantis_v25",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v25_mechanism_closeup/mantis_say_dog_v25_silent_1080.mp4",
+      "note": "late mechanism closeup fail",
+      "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+      "source_note": "candidate explicit source: primary/first-shot source plate or canonical source still; full-video calibration remains advisory until per-shot labels are reviewed"
+    }
+  ]
+}

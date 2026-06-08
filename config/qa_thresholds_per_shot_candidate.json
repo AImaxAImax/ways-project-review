@@ -1,0 +1,15 @@
+{
+  "clip_preservation_min": 0.0,
+  "dino_structure_min": 0.0,
+  "temporal_consistency_max": 0.582238,
+  "motion_magnitude_low": 2.416559,
+  "motion_magnitude_high": 9.600125,
+  "fail_closed": true,
+  "blocking_enabled": false,
+  "gate_mode": "advisory",
+  "calibrated_against": "16 labeled clips, 8 pass / 8 fail; calibration_dir=/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
+  "agreement": "14/16 (87.5%); disagreements: [{\"slug\": \"wombat_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.916607, \"dino_min\": 0.940571, \"temporal\": 0.547925, \"motion\": 9.412724}}, {\"slug\": \"tardigrade_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.909701, \"dino_min\": 0.97023, \"temporal\": 0.402018, \"motion\": 5.482888}}]",
+  "source_policy": "candidate per-shot explicit source images from labels_per_shot_candidate.json; temporal/motion from full-video QA; human review required before blocking",
+  "human_review_authoritative": true,
+  "decision": "Hold advisory: per-shot labels are candidate-grade and require human review before --enable-blocking."
+}

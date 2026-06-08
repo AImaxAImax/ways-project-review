@@ -13,7 +13,8 @@ Canonical source on conflict: `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md`.
 | Secret/sanitization scan | `docs/SECRET_SCAN_REPORT.md`, `docs/SECRET_SCAN_HITS.json`, `docs/SCAN_REPORT.md` | Keep current with `scripts/pre_push_hygiene_check.py`. |
 | Runnable benchmark protocol | `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md` Part II and `benchmark/README.md` | Older benchmark docs are historical pointers. |
 | Model testing execution order | `docs/WAYS_MODEL_TESTING_RUNDOWN.md` | Ordered do-this-now campaign sequence; calibration before Step 1. |
-| Harness calibration | `docs/WAYS_HARNESS_CALIBRATION_RUNBOOK.md` | Required before flipping benchmark cells out of provisional status. |
+| Harness calibration runbook | `docs/WAYS_HARNESS_CALIBRATION_RUNBOOK.md` | Required before flipping benchmark cells out of provisional status. |
+| Latest calibration run notes | `docs/WAYS_CALIBRATION_RUN_20260608.md` | Documents first-frame, explicit-source, and per-shot candidate runs copied from the live artifact tree. |
 | Benchmark results | `benchmark/results/` | Pre-calibration cells are provisional until `config/qa_thresholds.json` records human-label agreement. |
 | Human artifact review | `docs/WAYS_ARTIFACT_REVIEW_LOG.md` | Human review overrides proxy metrics. |
 

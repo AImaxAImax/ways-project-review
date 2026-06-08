@@ -1,0 +1,611 @@
+{
+  "note": "Candidate per-shot explicit source labels. Built from render manifests when available; frog v16/v17 reuse v15 visual source sequence; owl/mantis mappings require human review before blocking.",
+  "clips": [
+    {
+      "slug": "shark_v27",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/sharks_older_than_trees/outputs/wan22_harness_v27/sharks_older_than_trees_wan22_silent_1080.mp4",
+      "note": "published/strong shark lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+          "duration": 3.57
+        },
+        {
+          "id": "02",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+          "duration": 2.303
+        },
+        {
+          "id": "03",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+          "duration": 3.685
+        },
+        {
+          "id": "04",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+          "duration": 3.57
+        },
+        {
+          "id": "05",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+          "duration": 3.225
+        },
+        {
+          "id": "06",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+          "duration": 3.685
+        },
+        {
+          "id": "07",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+          "duration": 3.916
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "frog_v17",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_clean_1080.mp4",
+      "note": "published/strong frog lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "frog_v16",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v16_final_vo/wood_frog_freeze_survival_v16_final_vo_clean_1080.mp4",
+      "note": "near-final frog candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "frog_v15",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_silent_1080.mp4",
+      "note": "polished frog candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "mantis_v30",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v30_feed_hook_reset/mantis_say_dog_v30_feed_hook_reset_silent_1080.mp4",
+      "note": "posted/reset mantis shrimp candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "owl_v03",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_neck_safe_clean_v03.mp4",
+      "note": "neck-safe owl draft",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/seedream_clear_270_01.png"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "owl_v04",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_all_moving_clean_v04.mp4",
+      "note": "all-moving owl draft",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "octopus_v01",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_silent_1080.mp4",
+      "note": "strong-prior animal lane candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot01_octopus_three_hearts_sdxl_plate.png",
+          "duration": 2.762
+        },
+        {
+          "id": "02",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot02_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.223
+        },
+        {
+          "id": "03",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot03_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.53
+        },
+        {
+          "id": "04",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot04_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.376
+        },
+        {
+          "id": "05",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot05_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.069
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "wombat_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/wombat_cube_poop/outputs/wan22_template_v01/wombat_cube_poop_wan22_silent_1080.mp4",
+      "note": "published weak retention/process-heavy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.261
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot02_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.804
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot03_wombat_cube_poop_sdxl_plate.png",
+          "duration": 4.167
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot04_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.985
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot05_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.623
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "tardigrade_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_silent_1080.mp4",
+      "note": "rework_status: do_not_upload, artifacts/fake anatomy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.29
+        },
+        {
+          "id": "02",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.838
+        },
+        {
+          "id": "03",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.204
+        },
+        {
+          "id": "04",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.021
+        },
+        {
+          "id": "05",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.655
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "saturn_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v01/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot01_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.082
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot02_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.596
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot03_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.938
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot04_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.767
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot05_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.425
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "saturn_v02",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot01_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.082
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot02_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.596
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot03_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.938
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot04_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.767
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot05_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.425
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "mantis_v04",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v04_proof_hybrid/mantis_say_dog_v04_silent_1080.mp4",
+      "note": "early mantis say-dog fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "mantis_v11",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v11_clean_mechanics/mantis_say_dog_v11_silent_1080.mp4",
+      "note": "pre-reset mantis fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "mantis_v17",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v17_premium_abstract_mechanism/mantis_say_dog_v17_silent_1080.mp4",
+      "note": "premium abstract mechanism fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    },
+    {
+      "slug": "mantis_v25",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v25_mechanism_closeup/mantis_say_dog_v25_silent_1080.mp4",
+      "note": "late mechanism closeup fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review"
+    }
+  ]
+}

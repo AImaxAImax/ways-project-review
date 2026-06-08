@@ -1,0 +1,2395 @@
+{
+  "calibration_dir": "/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
+  "source_policy": "candidate per-shot explicit source images from labels_per_shot_candidate.json; temporal/motion from full-video QA; human review required before blocking",
+  "n": 16,
+  "pass": 8,
+  "fail": 8,
+  "thresholds": {
+    "clip_preservation_min": 0.0,
+    "dino_structure_min": 0.0,
+    "temporal_consistency_max": 0.582238,
+    "motion_magnitude_low": 2.416559,
+    "motion_magnitude_high": 9.600125
+  },
+  "threshold_config": {
+    "clip_preservation_min": 0.0,
+    "dino_structure_min": 0.0,
+    "temporal_consistency_max": 0.582238,
+    "motion_magnitude_low": 2.416559,
+    "motion_magnitude_high": 9.600125,
+    "fail_closed": true,
+    "blocking_enabled": false,
+    "gate_mode": "advisory",
+    "calibrated_against": "16 labeled clips, 8 pass / 8 fail; calibration_dir=/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
+    "agreement": "14/16 (87.5%); disagreements: [{\"slug\": \"wombat_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.916607, \"dino_min\": 0.940571, \"temporal\": 0.547925, \"motion\": 9.412724}}, {\"slug\": \"tardigrade_v01\", \"human\": \"fail\", \"predicted\": \"pass\", \"metrics\": {\"clip_min\": 0.909701, \"dino_min\": 0.97023, \"temporal\": 0.402018, \"motion\": 5.482888}}]",
+    "source_policy": "candidate per-shot explicit source images from labels_per_shot_candidate.json; temporal/motion from full-video QA; human review required before blocking",
+    "human_review_authoritative": true,
+    "decision": "Hold advisory: per-shot labels are candidate-grade and require human review before --enable-blocking."
+  },
+  "thresholds_out": "/mnt/c/dev/curious-shorts/config/qa_thresholds_per_shot_candidate.json",
+  "agreement_fraction": "14/16",
+  "agreement_rate": 0.875,
+  "disagreements": [
+    {
+      "slug": "wombat_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/wombat_cube_poop/outputs/wan22_template_v01/wombat_cube_poop_wan22_silent_1080.mp4",
+      "note": "published weak retention/process-heavy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.261
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot02_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.804
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot03_wombat_cube_poop_sdxl_plate.png",
+          "duration": 4.167
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot04_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.985
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot05_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.623
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.916607,
+      "clip_mean": 0.937431,
+      "dino_min": 0.940571,
+      "dino_mean": 0.961456,
+      "temporal": 0.547925,
+      "motion": 9.412724,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_01.mp4",
+          "duration": 3.261,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.941435,
+          "clip_mean": 0.941435,
+          "dino_min": 0.940571,
+          "dino_mean": 0.940571,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot02_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_02.mp4",
+          "duration": 3.804,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.942909,
+          "clip_mean": 0.942909,
+          "dino_min": 0.965053,
+          "dino_mean": 0.965053,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot03_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_03.mp4",
+          "duration": 4.167,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.94871,
+          "clip_mean": 0.94871,
+          "dino_min": 0.977374,
+          "dino_mean": 0.977374,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot04_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_04.mp4",
+          "duration": 3.985,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.916607,
+          "clip_mean": 0.916607,
+          "dino_min": 0.972617,
+          "dino_mean": 0.972617,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot05_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_05.mp4",
+          "duration": 3.616,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.937496,
+          "clip_mean": 0.937496,
+          "dino_min": 0.951665,
+          "dino_mean": 0.951665,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": false
+    },
+    {
+      "slug": "tardigrade_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_silent_1080.mp4",
+      "note": "rework_status: do_not_upload, artifacts/fake anatomy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.29
+        },
+        {
+          "id": "02",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.838
+        },
+        {
+          "id": "03",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.204
+        },
+        {
+          "id": "04",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.021
+        },
+        {
+          "id": "05",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.655
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.909701,
+      "clip_mean": 0.923899,
+      "dino_min": 0.97023,
+      "dino_mean": 0.97864,
+      "temporal": 0.402018,
+      "motion": 5.482888,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_01.mp4",
+          "duration": 3.29,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.909701,
+          "clip_mean": 0.909701,
+          "dino_min": 0.982839,
+          "dino_mean": 0.982839,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_02.mp4",
+          "duration": 3.838,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.917677,
+          "clip_mean": 0.917677,
+          "dino_min": null,
+          "dino_mean": null,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_03.mp4",
+          "duration": 4.204,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.922679,
+          "clip_mean": 0.922679,
+          "dino_min": 0.978348,
+          "dino_mean": 0.978348,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_04.mp4",
+          "duration": 4.021,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.934173,
+          "clip_mean": 0.934173,
+          "dino_min": 0.97023,
+          "dino_mean": 0.97023,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_05.mp4",
+          "duration": 3.689,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.935265,
+          "clip_mean": 0.935265,
+          "dino_min": 0.983143,
+          "dino_mean": 0.983143,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": false
+    }
+  ],
+  "blocking_enabled": false,
+  "decision": "Hold advisory: per-shot labels are candidate-grade and require human review before --enable-blocking.",
+  "rows": [
+    {
+      "slug": "shark_v27",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/sharks_older_than_trees/outputs/wan22_harness_v27/sharks_older_than_trees_wan22_silent_1080.mp4",
+      "note": "published/strong shark lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+          "duration": 3.57
+        },
+        {
+          "id": "02",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+          "duration": 2.303
+        },
+        {
+          "id": "03",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+          "duration": 3.685
+        },
+        {
+          "id": "04",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+          "duration": 3.57
+        },
+        {
+          "id": "05",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+          "duration": 3.225
+        },
+        {
+          "id": "06",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+          "duration": 3.685
+        },
+        {
+          "id": "07",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+          "duration": 3.916
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.888449,
+      "clip_mean": 0.913836,
+      "dino_min": 0.857369,
+      "dino_mean": 0.916258,
+      "temporal": 0.504805,
+      "motion": 6.828149,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/per_shot_summary.json",
+      "shot_count": 7,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_01.mp4",
+          "duration": 3.57,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_01_qa/qa_report.json",
+          "clip_min": 0.904736,
+          "clip_mean": 0.904736,
+          "dino_min": 0.936115,
+          "dino_mean": 0.936115,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_02.mp4",
+          "duration": 2.303,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_02_qa/qa_report.json",
+          "clip_min": 0.888713,
+          "clip_mean": 0.888713,
+          "dino_min": 0.916126,
+          "dino_mean": 0.916126,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_03.mp4",
+          "duration": 3.685,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_03_qa/qa_report.json",
+          "clip_min": 0.888449,
+          "clip_mean": 0.888449,
+          "dino_min": 0.857369,
+          "dino_mean": 0.857369,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_04.mp4",
+          "duration": 3.57,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_04_qa/qa_report.json",
+          "clip_min": 0.939061,
+          "clip_mean": 0.939061,
+          "dino_min": 0.950277,
+          "dino_mean": 0.950277,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_05.mp4",
+          "duration": 3.225,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_05_qa/qa_report.json",
+          "clip_min": 0.911945,
+          "clip_mean": 0.911945,
+          "dino_min": 0.927816,
+          "dino_mean": 0.927816,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_06.mp4",
+          "duration": 3.685,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_06_qa/qa_report.json",
+          "clip_min": 0.93983,
+          "clip_mean": 0.93983,
+          "dino_min": 0.888789,
+          "dino_mean": 0.888789,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_segments/shot_07.mp4",
+          "duration": 3.879,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/shark_v27/shot_07_qa/qa_report.json",
+          "clip_min": 0.924119,
+          "clip_mean": 0.924119,
+          "dino_min": 0.937312,
+          "dino_mean": 0.937312,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "frog_v17",
+      "human": "pass",
+      "human_score": 9,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_clean_1080.mp4",
+      "note": "published/strong frog lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.658824,
+      "clip_mean": 0.813868,
+      "dino_min": 0.597337,
+      "dino_mean": 0.814996,
+      "temporal": 0.521761,
+      "motion": 5.555588,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/per_shot_summary.json",
+      "shot_count": 6,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_01.mp4",
+          "duration": 2.35,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_01_qa/qa_report.json",
+          "clip_min": 0.764327,
+          "clip_mean": 0.764327,
+          "dino_min": 0.785235,
+          "dino_mean": 0.785235,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_02.mp4",
+          "duration": 3.4,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_02_qa/qa_report.json",
+          "clip_min": 0.821869,
+          "clip_mean": 0.821869,
+          "dino_min": 0.893388,
+          "dino_mean": 0.893388,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_03.mp4",
+          "duration": 3.1,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_03_qa/qa_report.json",
+          "clip_min": 0.658824,
+          "clip_mean": 0.658824,
+          "dino_min": 0.597337,
+          "dino_mean": 0.597337,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_04.mp4",
+          "duration": 3.6,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_04_qa/qa_report.json",
+          "clip_min": 0.904584,
+          "clip_mean": 0.904584,
+          "dino_min": 0.914192,
+          "dino_mean": 0.914192,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_05.mp4",
+          "duration": 4.45,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_05_qa/qa_report.json",
+          "clip_min": 0.869918,
+          "clip_mean": 0.869918,
+          "dino_min": 0.85468,
+          "dino_mean": 0.85468,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_segments/shot_06.mp4",
+          "duration": 3.683,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v17/shot_06_qa/qa_report.json",
+          "clip_min": 0.863684,
+          "clip_mean": 0.863684,
+          "dino_min": 0.845145,
+          "dino_mean": 0.845145,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "frog_v16",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v16_final_vo/wood_frog_freeze_survival_v16_final_vo_clean_1080.mp4",
+      "note": "near-final frog candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.658824,
+      "clip_mean": 0.813868,
+      "dino_min": 0.597337,
+      "dino_mean": 0.814996,
+      "temporal": 0.521761,
+      "motion": 5.555588,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/per_shot_summary.json",
+      "shot_count": 6,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_01.mp4",
+          "duration": 2.35,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_01_qa/qa_report.json",
+          "clip_min": 0.764327,
+          "clip_mean": 0.764327,
+          "dino_min": 0.785235,
+          "dino_mean": 0.785235,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_02.mp4",
+          "duration": 3.4,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_02_qa/qa_report.json",
+          "clip_min": 0.821869,
+          "clip_mean": 0.821869,
+          "dino_min": 0.893388,
+          "dino_mean": 0.893388,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_03.mp4",
+          "duration": 3.1,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_03_qa/qa_report.json",
+          "clip_min": 0.658824,
+          "clip_mean": 0.658824,
+          "dino_min": 0.597337,
+          "dino_mean": 0.597337,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_04.mp4",
+          "duration": 3.6,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_04_qa/qa_report.json",
+          "clip_min": 0.904584,
+          "clip_mean": 0.904584,
+          "dino_min": 0.914192,
+          "dino_mean": 0.914192,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_05.mp4",
+          "duration": 4.45,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_05_qa/qa_report.json",
+          "clip_min": 0.869918,
+          "clip_mean": 0.869918,
+          "dino_min": 0.85468,
+          "dino_mean": 0.85468,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_segments/shot_06.mp4",
+          "duration": 3.683,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v16/shot_06_qa/qa_report.json",
+          "clip_min": 0.863684,
+          "clip_mean": 0.863684,
+          "dino_min": 0.845145,
+          "dino_mean": 0.845145,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "frog_v15",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_silent_1080.mp4",
+      "note": "polished frog candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "duration": 2.35
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "duration": 3.4
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "duration": 3.1
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "duration": 3.6
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "duration": 4.45
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "duration": 3.7
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.658824,
+      "clip_mean": 0.815273,
+      "dino_min": 0.597337,
+      "dino_mean": 0.814603,
+      "temporal": 0.521761,
+      "motion": 5.555588,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/per_shot_summary.json",
+      "shot_count": 6,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_01.mp4",
+          "duration": 2.35,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_01_qa/qa_report.json",
+          "clip_min": 0.764327,
+          "clip_mean": 0.764327,
+          "dino_min": 0.785235,
+          "dino_mean": 0.785235,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_10_organic_frozen_through_body.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_02.mp4",
+          "duration": 3.4,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_02_qa/qa_report.json",
+          "clip_min": 0.827393,
+          "clip_mean": 0.827393,
+          "dino_min": 0.882897,
+          "dino_mean": 0.882897,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_03.mp4",
+          "duration": 3.1,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_03_qa/qa_report.json",
+          "clip_min": 0.658824,
+          "clip_mean": 0.658824,
+          "dino_min": 0.597337,
+          "dino_mean": 0.597337,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_04.mp4",
+          "duration": 3.6,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_04_qa/qa_report.json",
+          "clip_min": 0.907495,
+          "clip_mean": 0.907495,
+          "dino_min": 0.922324,
+          "dino_mean": 0.922324,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_05.mp4",
+          "duration": 4.45,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_05_qa/qa_report.json",
+          "clip_min": 0.869918,
+          "clip_mean": 0.869918,
+          "dino_min": 0.85468,
+          "dino_mean": 0.85468,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_segments/shot_06.mp4",
+          "duration": 3.683,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/frog_v15/shot_06_qa/qa_report.json",
+          "clip_min": 0.863684,
+          "clip_mean": 0.863684,
+          "dino_min": 0.845145,
+          "dino_mean": 0.845145,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "mantis_v30",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v30_feed_hook_reset/mantis_say_dog_v30_feed_hook_reset_silent_1080.mp4",
+      "note": "posted/reset mantis shrimp candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.403516,
+      "clip_mean": 0.622698,
+      "dino_min": 0.013949,
+      "dino_mean": 0.286659,
+      "temporal": 0.566823,
+      "motion": 3.625355,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/per_shot_summary.json",
+      "shot_count": 8,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_01.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_01_qa/qa_report.json",
+          "clip_min": 0.458707,
+          "clip_mean": 0.458707,
+          "dino_min": 0.02962,
+          "dino_mean": 0.02962,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_02.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_02_qa/qa_report.json",
+          "clip_min": 0.863631,
+          "clip_mean": 0.863631,
+          "dino_min": 0.824708,
+          "dino_mean": 0.824708,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_03.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_03_qa/qa_report.json",
+          "clip_min": 0.52139,
+          "clip_mean": 0.52139,
+          "dino_min": 0.053332,
+          "dino_mean": 0.053332,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_04.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_04_qa/qa_report.json",
+          "clip_min": 0.538732,
+          "clip_mean": 0.538732,
+          "dino_min": 0.013949,
+          "dino_mean": 0.013949,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_05.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_05_qa/qa_report.json",
+          "clip_min": 0.403516,
+          "clip_mean": 0.403516,
+          "dino_min": 0.01588,
+          "dino_mean": 0.01588,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_06.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_06_qa/qa_report.json",
+          "clip_min": 0.831898,
+          "clip_mean": 0.831898,
+          "dino_min": 0.69931,
+          "dino_mean": 0.69931,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_07.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_07_qa/qa_report.json",
+          "clip_min": 0.668709,
+          "clip_mean": 0.668709,
+          "dino_min": 0.220198,
+          "dino_mean": 0.220198,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_segments/shot_08.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v30/shot_08_qa/qa_report.json",
+          "clip_min": 0.695002,
+          "clip_mean": 0.695002,
+          "dino_min": 0.436274,
+          "dino_mean": 0.436274,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "owl_v03",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_neck_safe_clean_v03.mp4",
+      "note": "neck-safe owl draft",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/seedream_clear_270_01.png"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.944787,
+      "clip_mean": 0.957549,
+      "dino_min": 0.988426,
+      "dino_mean": 0.990474,
+      "temporal": 0.353906,
+      "motion": 3.154538,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_segments/shot_01.mp4",
+          "duration": 3.925,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_01_qa/qa_report.json",
+          "clip_min": 0.960034,
+          "clip_mean": 0.960034,
+          "dino_min": 0.993079,
+          "dino_mean": 0.993079,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_segments/shot_02.mp4",
+          "duration": 3.925,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_02_qa/qa_report.json",
+          "clip_min": 0.976301,
+          "clip_mean": 0.976301,
+          "dino_min": 0.991581,
+          "dino_mean": 0.991581,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_segments/shot_03.mp4",
+          "duration": 3.925,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_03_qa/qa_report.json",
+          "clip_min": 0.944787,
+          "clip_mean": 0.944787,
+          "dino_min": 0.988426,
+          "dino_mean": 0.988426,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_segments/shot_04.mp4",
+          "duration": 3.925,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_04_qa/qa_report.json",
+          "clip_min": 0.952364,
+          "clip_mean": 0.952364,
+          "dino_min": 0.988543,
+          "dino_mean": 0.988543,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/seedream_clear_270_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_segments/shot_05.mp4",
+          "duration": 3.925,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v03/shot_05_qa/qa_report.json",
+          "clip_min": 0.954261,
+          "clip_mean": 0.954261,
+          "dino_min": 0.990739,
+          "dino_mean": 0.990739,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "owl_v04",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_all_moving_clean_v04.mp4",
+      "note": "all-moving owl draft",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.834465,
+      "clip_mean": 0.894351,
+      "dino_min": 0.872876,
+      "dino_mean": 0.905444,
+      "temporal": 0.305652,
+      "motion": 3.003716,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v04/per_shot_summary.json",
+      "shot_count": 4,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_segments/shot_01.mp4",
+          "duration": 4.906,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_01_qa/qa_report.json",
+          "clip_min": 0.882066,
+          "clip_mean": 0.882066,
+          "dino_min": 0.872876,
+          "dino_mean": 0.872876,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_segments/shot_02.mp4",
+          "duration": 4.906,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_02_qa/qa_report.json",
+          "clip_min": 0.923595,
+          "clip_mean": 0.923595,
+          "dino_min": 0.922333,
+          "dino_mean": 0.922333,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_segments/shot_03.mp4",
+          "duration": 4.906,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_03_qa/qa_report.json",
+          "clip_min": 0.834465,
+          "clip_mean": 0.834465,
+          "dino_min": 0.934821,
+          "dino_mean": 0.934821,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_segments/shot_04.mp4",
+          "duration": 4.906,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/owl_v04/shot_04_qa/qa_report.json",
+          "clip_min": 0.937277,
+          "clip_mean": 0.937277,
+          "dino_min": 0.891748,
+          "dino_mean": 0.891748,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "octopus_v01",
+      "human": "pass",
+      "human_score": 8,
+      "input": "test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_silent_1080.mp4",
+      "note": "strong-prior animal lane candidate",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot01_octopus_three_hearts_sdxl_plate.png",
+          "duration": 2.762
+        },
+        {
+          "id": "02",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot02_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.223
+        },
+        {
+          "id": "03",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot03_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.53
+        },
+        {
+          "id": "04",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot04_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.376
+        },
+        {
+          "id": "05",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot05_octopus_three_hearts_sdxl_plate.png",
+          "duration": 3.069
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.948443,
+      "clip_mean": 0.967566,
+      "dino_min": 0.950256,
+      "dino_mean": 0.964771,
+      "temporal": 0.582238,
+      "motion": 9.600125,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot01_octopus_three_hearts_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_segments/shot_01.mp4",
+          "duration": 2.762,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.960074,
+          "clip_mean": 0.960074,
+          "dino_min": 0.951853,
+          "dino_mean": 0.951853,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot02_octopus_three_hearts_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_segments/shot_02.mp4",
+          "duration": 3.223,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.969937,
+          "clip_mean": 0.969937,
+          "dino_min": 0.950256,
+          "dino_mean": 0.950256,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot03_octopus_three_hearts_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_segments/shot_03.mp4",
+          "duration": 3.53,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.948443,
+          "clip_mean": 0.948443,
+          "dino_min": 0.979545,
+          "dino_mean": 0.979545,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot04_octopus_three_hearts_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_segments/shot_04.mp4",
+          "duration": 3.376,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.981497,
+          "clip_mean": 0.981497,
+          "dino_min": 0.972222,
+          "dino_mean": 0.972222,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/octopus_three_hearts/assets/sdxl_wan_template_v01_plates/shot05_octopus_three_hearts_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_segments/shot_05.mp4",
+          "duration": 3.067,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/octopus_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.977877,
+          "clip_mean": 0.977877,
+          "dino_min": 0.969977,
+          "dino_mean": 0.969977,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": true
+    },
+    {
+      "slug": "wombat_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/wombat_cube_poop/outputs/wan22_template_v01/wombat_cube_poop_wan22_silent_1080.mp4",
+      "note": "published weak retention/process-heavy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.261
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot02_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.804
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot03_wombat_cube_poop_sdxl_plate.png",
+          "duration": 4.167
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot04_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.985
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot05_wombat_cube_poop_sdxl_plate.png",
+          "duration": 3.623
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.916607,
+      "clip_mean": 0.937431,
+      "dino_min": 0.940571,
+      "dino_mean": 0.961456,
+      "temporal": 0.547925,
+      "motion": 9.412724,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot01_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_01.mp4",
+          "duration": 3.261,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.941435,
+          "clip_mean": 0.941435,
+          "dino_min": 0.940571,
+          "dino_mean": 0.940571,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot02_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_02.mp4",
+          "duration": 3.804,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.942909,
+          "clip_mean": 0.942909,
+          "dino_min": 0.965053,
+          "dino_mean": 0.965053,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot03_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_03.mp4",
+          "duration": 4.167,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.94871,
+          "clip_mean": 0.94871,
+          "dino_min": 0.977374,
+          "dino_mean": 0.977374,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot04_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_04.mp4",
+          "duration": 3.985,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.916607,
+          "clip_mean": 0.916607,
+          "dino_min": 0.972617,
+          "dino_mean": 0.972617,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/wombat_cube_poop/assets/sdxl_wan_template_v01_plates/shot05_wombat_cube_poop_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_segments/shot_05.mp4",
+          "duration": 3.616,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/wombat_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.937496,
+          "clip_mean": 0.937496,
+          "dino_min": 0.951665,
+          "dino_mean": 0.951665,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": false
+    },
+    {
+      "slug": "tardigrade_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_silent_1080.mp4",
+      "note": "rework_status: do_not_upload, artifacts/fake anatomy",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.29
+        },
+        {
+          "id": "02",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.838
+        },
+        {
+          "id": "03",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.204
+        },
+        {
+          "id": "04",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 4.021
+        },
+        {
+          "id": "05",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+          "duration": 3.655
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.909701,
+      "clip_mean": 0.923899,
+      "dino_min": 0.97023,
+      "dino_mean": 0.97864,
+      "temporal": 0.402018,
+      "motion": 5.482888,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_01.mp4",
+          "duration": 3.29,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.909701,
+          "clip_mean": 0.909701,
+          "dino_min": 0.982839,
+          "dino_mean": 0.982839,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_02.mp4",
+          "duration": 3.838,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.917677,
+          "clip_mean": 0.917677,
+          "dino_min": null,
+          "dino_mean": null,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_03.mp4",
+          "duration": 4.204,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.922679,
+          "clip_mean": 0.922679,
+          "dino_min": 0.978348,
+          "dino_mean": 0.978348,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_04.mp4",
+          "duration": 4.021,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.934173,
+          "clip_mean": 0.934173,
+          "dino_min": 0.97023,
+          "dino_mean": 0.97023,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/tardigrade_survival_mode/assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_segments/shot_05.mp4",
+          "duration": 3.689,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/tardigrade_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.935265,
+          "clip_mean": 0.935265,
+          "dino_min": 0.983143,
+          "dino_mean": 0.983143,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "pass",
+      "block_reasons": [],
+      "match": false
+    },
+    {
+      "slug": "saturn_v01",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v01/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot01_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.082
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot02_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.596
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot03_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.938
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot04_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.767
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot05_saturn_hexagon_storm_plate.jpg",
+          "duration": 3.425
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.22818,
+      "clip_mean": 0.444143,
+      "dino_min": 0.720229,
+      "dino_mean": 0.824886,
+      "temporal": 0.386161,
+      "motion": 1.829402,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot01_saturn_hexagon_storm_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_segments/shot_01.mp4",
+          "duration": 3.082,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_01_qa/qa_report.json",
+          "clip_min": 0.22818,
+          "clip_mean": 0.22818,
+          "dino_min": 0.753359,
+          "dino_mean": 0.753359,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot02_saturn_hexagon_storm_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_segments/shot_02.mp4",
+          "duration": 3.596,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_02_qa/qa_report.json",
+          "clip_min": 0.298647,
+          "clip_mean": 0.298647,
+          "dino_min": 0.822958,
+          "dino_mean": 0.822958,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot03_saturn_hexagon_storm_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_segments/shot_03.mp4",
+          "duration": 3.938,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_03_qa/qa_report.json",
+          "clip_min": 0.464262,
+          "clip_mean": 0.464262,
+          "dino_min": 0.868199,
+          "dino_mean": 0.868199,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot04_saturn_hexagon_storm_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_segments/shot_04.mp4",
+          "duration": 3.767,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_04_qa/qa_report.json",
+          "clip_min": 0.94066,
+          "clip_mean": 0.94066,
+          "dino_min": 0.959685,
+          "dino_mean": 0.959685,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_v01_plates/shot05_saturn_hexagon_storm_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_segments/shot_05.mp4",
+          "duration": 3.409,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v01/shot_05_qa/qa_report.json",
+          "clip_min": 0.288964,
+          "clip_mean": 0.288964,
+          "dino_min": 0.720229,
+          "dino_mean": 0.720229,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "motion_low"
+      ],
+      "match": true
+    },
+    {
+      "slug": "saturn_v02",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_silent_1080.mp4",
+      "note": "scale/process-heavy weak lane",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot01_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.082
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot02_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.596
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot03_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.938
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot04_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.767
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot05_saturn_hexagon_storm_plain_plate.jpg",
+          "duration": 3.425
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.761618,
+      "clip_mean": 0.905793,
+      "dino_min": 0.507654,
+      "dino_mean": 0.812853,
+      "temporal": 0.434932,
+      "motion": 1.722284,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/per_shot_summary.json",
+      "shot_count": 5,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot01_saturn_hexagon_storm_plain_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_segments/shot_01.mp4",
+          "duration": 3.082,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_01_qa/qa_report.json",
+          "clip_min": 0.761618,
+          "clip_mean": 0.761618,
+          "dino_min": 0.507654,
+          "dino_mean": 0.507654,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot02_saturn_hexagon_storm_plain_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_segments/shot_02.mp4",
+          "duration": 3.596,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_02_qa/qa_report.json",
+          "clip_min": 0.946681,
+          "clip_mean": 0.946681,
+          "dino_min": 0.945299,
+          "dino_mean": 0.945299,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot03_saturn_hexagon_storm_plain_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_segments/shot_03.mp4",
+          "duration": 3.938,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_03_qa/qa_report.json",
+          "clip_min": 0.932924,
+          "clip_mean": 0.932924,
+          "dino_min": 0.961116,
+          "dino_mean": 0.961116,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot04_saturn_hexagon_storm_plain_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_segments/shot_04.mp4",
+          "duration": 3.767,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_04_qa/qa_report.json",
+          "clip_min": 0.950124,
+          "clip_mean": 0.950124,
+          "dino_min": 0.72939,
+          "dino_mean": 0.72939,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/saturn_hexagon_storm/assets/wan_template_plain_v02_plates/shot05_saturn_hexagon_storm_plain_plate.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_segments/shot_05.mp4",
+          "duration": 3.409,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/saturn_v02/shot_05_qa/qa_report.json",
+          "clip_min": 0.937619,
+          "clip_mean": 0.937619,
+          "dino_min": 0.920806,
+          "dino_mean": 0.920806,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "motion_low"
+      ],
+      "match": true
+    },
+    {
+      "slug": "mantis_v04",
+      "human": "fail",
+      "human_score": 4,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v04_proof_hybrid/mantis_say_dog_v04_silent_1080.mp4",
+      "note": "early mantis say-dog fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.285965,
+      "clip_mean": 0.444305,
+      "dino_min": 0.002301,
+      "dino_mean": 0.184243,
+      "temporal": 0.265632,
+      "motion": 0.860504,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/per_shot_summary.json",
+      "shot_count": 8,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_01.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_01_qa/qa_report.json",
+          "clip_min": 0.707917,
+          "clip_mean": 0.707917,
+          "dino_min": 0.594452,
+          "dino_mean": 0.594452,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_02.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_02_qa/qa_report.json",
+          "clip_min": 0.285965,
+          "clip_mean": 0.285965,
+          "dino_min": 0.005229,
+          "dino_mean": 0.005229,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_03.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_03_qa/qa_report.json",
+          "clip_min": 0.420064,
+          "clip_mean": 0.420064,
+          "dino_min": 0.041796,
+          "dino_mean": 0.041796,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_04.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_04_qa/qa_report.json",
+          "clip_min": 0.347769,
+          "clip_mean": 0.347769,
+          "dino_min": 0.002301,
+          "dino_mean": 0.002301,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_05.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_05_qa/qa_report.json",
+          "clip_min": 0.371045,
+          "clip_mean": 0.371045,
+          "dino_min": 0.108053,
+          "dino_mean": 0.108053,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_06.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_06_qa/qa_report.json",
+          "clip_min": 0.316662,
+          "clip_mean": 0.316662,
+          "dino_min": 0.07655,
+          "dino_mean": 0.07655,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_07.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_07_qa/qa_report.json",
+          "clip_min": 0.758546,
+          "clip_mean": 0.758546,
+          "dino_min": 0.574156,
+          "dino_mean": 0.574156,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_segments/shot_08.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v04/shot_08_qa/qa_report.json",
+          "clip_min": 0.346475,
+          "clip_mean": 0.346475,
+          "dino_min": 0.071408,
+          "dino_mean": 0.071408,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "motion_low"
+      ],
+      "match": true
+    },
+    {
+      "slug": "mantis_v11",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v11_clean_mechanics/mantis_say_dog_v11_silent_1080.mp4",
+      "note": "pre-reset mantis fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.441828,
+      "clip_mean": 0.720963,
+      "dino_min": 0.215168,
+      "dino_mean": 0.671387,
+      "temporal": 0.638517,
+      "motion": 6.041937,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/per_shot_summary.json",
+      "shot_count": 8,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_01.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_01_qa/qa_report.json",
+          "clip_min": 0.441828,
+          "clip_mean": 0.441828,
+          "dino_min": 0.483535,
+          "dino_mean": 0.483535,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_02.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_02_qa/qa_report.json",
+          "clip_min": 0.74272,
+          "clip_mean": 0.74272,
+          "dino_min": 0.791058,
+          "dino_mean": 0.791058,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_03.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_03_qa/qa_report.json",
+          "clip_min": 0.948046,
+          "clip_mean": 0.948046,
+          "dino_min": 0.945879,
+          "dino_mean": 0.945879,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_04.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_04_qa/qa_report.json",
+          "clip_min": 0.787969,
+          "clip_mean": 0.787969,
+          "dino_min": 0.864813,
+          "dino_mean": 0.864813,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_05.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_05_qa/qa_report.json",
+          "clip_min": 0.926395,
+          "clip_mean": 0.926395,
+          "dino_min": 0.953768,
+          "dino_mean": 0.953768,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_06.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_06_qa/qa_report.json",
+          "clip_min": 0.560844,
+          "clip_mean": 0.560844,
+          "dino_min": 0.661029,
+          "dino_mean": 0.661029,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_07.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_07_qa/qa_report.json",
+          "clip_min": 0.670494,
+          "clip_mean": 0.670494,
+          "dino_min": 0.215168,
+          "dino_mean": 0.215168,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_segments/shot_08.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v11/shot_08_qa/qa_report.json",
+          "clip_min": 0.68941,
+          "clip_mean": 0.68941,
+          "dino_min": 0.455846,
+          "dino_mean": 0.455846,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "temporal"
+      ],
+      "match": true
+    },
+    {
+      "slug": "mantis_v17",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v17_premium_abstract_mechanism/mantis_say_dog_v17_silent_1080.mp4",
+      "note": "premium abstract mechanism fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.436315,
+      "clip_mean": 0.62355,
+      "dino_min": 0.024847,
+      "dino_mean": 0.359098,
+      "temporal": 0.62377,
+      "motion": 5.919415,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/per_shot_summary.json",
+      "shot_count": 8,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_01.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_01_qa/qa_report.json",
+          "clip_min": 0.436315,
+          "clip_mean": 0.436315,
+          "dino_min": 0.476922,
+          "dino_mean": 0.476922,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_02.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_02_qa/qa_report.json",
+          "clip_min": 0.862134,
+          "clip_mean": 0.862134,
+          "dino_min": 0.825646,
+          "dino_mean": 0.825646,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_03.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_03_qa/qa_report.json",
+          "clip_min": 0.53134,
+          "clip_mean": 0.53134,
+          "dino_min": 0.14029,
+          "dino_mean": 0.14029,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_04.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_04_qa/qa_report.json",
+          "clip_min": 0.447012,
+          "clip_mean": 0.447012,
+          "dino_min": 0.024847,
+          "dino_mean": 0.024847,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_05.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_05_qa/qa_report.json",
+          "clip_min": 0.543849,
+          "clip_mean": 0.543849,
+          "dino_min": 0.044823,
+          "dino_mean": 0.044823,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_06.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_06_qa/qa_report.json",
+          "clip_min": 0.818379,
+          "clip_mean": 0.818379,
+          "dino_min": 0.698297,
+          "dino_mean": 0.698297,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_07.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_07_qa/qa_report.json",
+          "clip_min": 0.672752,
+          "clip_mean": 0.672752,
+          "dino_min": 0.220064,
+          "dino_mean": 0.220064,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_segments/shot_08.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v17/shot_08_qa/qa_report.json",
+          "clip_min": 0.676618,
+          "clip_mean": 0.676618,
+          "dino_min": 0.441895,
+          "dino_mean": 0.441895,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "temporal"
+      ],
+      "match": true
+    },
+    {
+      "slug": "mantis_v25",
+      "human": "fail",
+      "human_score": 5,
+      "input": "test_cases/mantis_shrimp_cavitation_punch/outputs/say_dog_v25_mechanism_closeup/mantis_say_dog_v25_silent_1080.mp4",
+      "note": "late mechanism closeup fail",
+      "sources": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg"
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg"
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png"
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png"
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png"
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg"
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg"
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg"
+        }
+      ],
+      "source_note": "candidate per-shot explicit sources from render manifests/source manifests where available; owl/mantis use candidate equal-time or canonical beat mapping pending human plate review",
+      "source_policy": "explicit_sources_per_shot_candidate",
+      "clip_min": 0.410092,
+      "clip_mean": 0.598649,
+      "dino_min": -0.009794,
+      "dino_mean": 0.333889,
+      "temporal": 0.574874,
+      "motion": 3.55985,
+      "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/per_shot_summary.json",
+      "shot_count": 8,
+      "shot_metrics": [
+        {
+          "id": "01",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_01.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_01.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_01_qa/qa_report.json",
+          "clip_min": 0.430927,
+          "clip_mean": 0.430927,
+          "dino_min": 0.47328,
+          "dino_mean": 0.47328,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "02",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_05.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_02.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_02_qa/qa_report.json",
+          "clip_min": 0.860213,
+          "clip_mean": 0.860213,
+          "dino_min": 0.82852,
+          "dino_mean": 0.82852,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "03",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/cav_source02.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_03.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_03_qa/qa_report.json",
+          "clip_min": 0.480232,
+          "clip_mean": 0.480232,
+          "dino_min": 0.012876,
+          "dino_mean": 0.012876,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "04",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/hook_source04.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_04.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_04_qa/qa_report.json",
+          "clip_min": 0.410092,
+          "clip_mean": 0.410092,
+          "dino_min": -0.009794,
+          "dino_mean": -0.009794,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "05",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/controls/collapse_source03.png",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_05.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_05_qa/qa_report.json",
+          "clip_min": 0.412121,
+          "clip_mean": 0.412121,
+          "dino_min": 0.010445,
+          "dino_mean": 0.010445,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "06",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_04.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_06.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_06_qa/qa_report.json",
+          "clip_min": 0.831898,
+          "clip_mean": 0.831898,
+          "dino_min": 0.69931,
+          "dino_mean": 0.69931,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "07",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_02.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_07.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_07_qa/qa_report.json",
+          "clip_min": 0.668709,
+          "clip_mean": 0.668709,
+          "dino_min": 0.220198,
+          "dino_mean": 0.220198,
+          "temporal": null,
+          "motion": null
+        },
+        {
+          "id": "08",
+          "source": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_03.jpg",
+          "segment": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_segments/shot_08.mp4",
+          "duration": 3.917,
+          "qa_report": "calib/ways_scoring_harness_20260608/runs/mantis_v25/shot_08_qa/qa_report.json",
+          "clip_min": 0.695002,
+          "clip_mean": 0.695002,
+          "dino_min": 0.436274,
+          "dino_mean": 0.436274,
+          "temporal": null,
+          "motion": null
+        }
+      ],
+      "predicted": "fail",
+      "block_reasons": [
+        "dino"
+      ],
+      "match": true
+    }
+  ]
+}
