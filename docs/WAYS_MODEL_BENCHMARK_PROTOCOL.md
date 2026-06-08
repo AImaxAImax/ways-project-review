@@ -1,5 +1,7 @@
 # WAYS Local Video Model Benchmark Protocol
 
+> Historical pointer: the canonical operating and benchmark guidance now lives in `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md`. For runnable commands, use `benchmark/README.md`. If this file conflicts with either source, the master spec wins.
+
 **Goal:** Determine the best local model **per use case**, not in the abstract. Quality is the primary axis; render time and VRAM are tiebreakers only.
 **Hardware:** RTX 5090, ComfyUI on `127.0.0.1:8188`.
 **Output:** a model x use-case recommendation matrix that feeds directly into the kanban’s Gate 2 lane routing.

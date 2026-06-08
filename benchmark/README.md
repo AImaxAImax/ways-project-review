@@ -1,8 +1,8 @@
 # WAYS Local Video Model Benchmark Implementation
 
-Protocol source: `docs/WAYS_MODEL_BENCHMARK_PROTOCOL.md`.
+Protocol source: `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md` is canonical. `docs/WAYS_MODEL_BENCHMARK_PROTOCOL.md` is retained as a historical pointer.
 
-This directory implements the protocol as an agent-runnable benchmark scaffold. The current implementation is intentionally conservative: it will run the proven `wan22_i2v` lane and refuses unverified model lanes until Phase 0 confirms the right workflow/conditioning path. This avoids invalid scores from bypassed I2V conditioning.
+This directory implements the protocol as an agent-runnable benchmark scaffold. Existing pre-calibration result cells are provisional until `config/qa_thresholds.json` records human-label agreement. The current implementation is intentionally conservative: it will run the proven `wan22_i2v` lane and refuses unverified model lanes until Phase 0 confirms the right workflow/conditioning path. This avoids invalid scores from bypassed I2V conditioning.
 
 ## Files
 

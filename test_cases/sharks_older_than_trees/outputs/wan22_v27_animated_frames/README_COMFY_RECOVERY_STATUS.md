@@ -5,7 +5,7 @@ Updated: 2026-06-05
 ## What is fixed
 
 - ComfyUI is reachable at `http://127.0.0.1:8188` from WSL.
-- Active server is Windows `C:\dev\ComfyUI` using `C:\Users\joshn\miniconda3\envs\env_uma\python.exe`.
+- Active server is Windows `C:\dev\ComfyUI` using `C:\Users\<user>\miniconda3\envs\env_uma\python.exe`.
 - Required nodes are present:
   - `UnetLoaderGGUF`
   - `WanImageToVideo`

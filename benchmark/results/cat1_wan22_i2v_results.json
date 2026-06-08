@@ -16,7 +16,9 @@
       "motion": 2.910626,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627101/clips/shot01_wan22_432x768_25f_seed627101.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627101/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_octopus_b",
@@ -33,7 +35,9 @@
       "motion": 3.77381,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627102/clips/shot01_wan22_432x768_25f_seed627102.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627102/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_shark_a",
@@ -50,7 +54,9 @@
       "motion": 1.798529,
       "video_local_path": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/clips/shot01_wan22_432x768_25f_seed627101.mp4",
       "qa_report_local_path": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_shark_a",
@@ -67,7 +73,9 @@
       "motion": 2.450412,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627102/clips/shot01_wan22_432x768_25f_seed627102.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627102/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_shark_a",
@@ -84,7 +92,9 @@
       "motion": 2.183384,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627103/clips/shot01_wan22_432x768_25f_seed627103.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627103/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_shark_a",
@@ -101,7 +111,9 @@
       "motion": 2.152907,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627104/clips/shot01_wan22_432x768_25f_seed627104.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627104/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     },
     {
       "plate": "cat1_shark_a",
@@ -118,7 +130,9 @@
       "motion": 2.641627,
       "video_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627105/clips/shot01_wan22_432x768_25f_seed627105.mp4",
       "qa_report_local_path": "<live-media-tree>/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627105/qa/qa_report.json",
-      "status": "provisional_uncalibrated"
+      "status": "provisional_uncalibrated",
+      "provisional": true,
+      "reason": "scored before metric calibration"
     }
   ],
   "status": "provisional_uncalibrated",

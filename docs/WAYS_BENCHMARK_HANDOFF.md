@@ -1,5 +1,7 @@
 # WAYS Local Model Benchmark Handoff
 
+> Historical pointer: the canonical operating and benchmark guidance now lives in `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md`. For runnable commands, use `benchmark/README.md`. If this file conflicts with either source, the master spec wins.
+
 Last updated: 2026-06-08
 
 ## Purpose

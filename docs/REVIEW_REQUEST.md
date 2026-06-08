@@ -34,22 +34,22 @@ Heavy generated assets, model weights, OAuth tokens, local secrets, and private 
 
 ## Start here
 
-1. `README.md`  
+1. `README.md`
    Top-level orientation and repo map.
 
-2. `docs/WAYS_PROJECT_HANDOFF_FULL_RUNDOWN.md`  
+2. `docs/WAYS_PROJECT_HANDOFF_FULL_RUNDOWN.md`
    Main human/context layer. Read this before judging the architecture.
 
-3. `docs/AGENT_REVIEW_BRIEF.md`  
+3. `docs/AGENT_REVIEW_BRIEF.md`
    Reviewer-focused brief and expectations.
 
-4. `docs/WORKFLOWS_AND_PHILOSOPHY.md`  
+4. `docs/WORKFLOWS_AND_PHILOSOPHY.md`
    The content/process philosophy behind WAYS.
 
-5. `docs/CRONS_AND_AUTOMATION.md`  
+5. `docs/CRONS_AND_AUTOMATION.md`
    Automation and scheduled workflow context.
 
-6. `docs/SCAN_REPORT.md` and `docs/SECRET_SCAN_REPORT.md`  
+6. `docs/SCAN_REPORT.md`, `docs/SECRET_SCAN_REPORT.md`, and `docs/SECRET_SCAN_HITS.json`
    Sanitization and safety context for the review bundle.
 
 ## What we should review
@@ -165,34 +165,34 @@ Questions to answer:
 
 Please produce a Markdown review with these sections:
 
-1. **Executive summary**  
+1. **Executive summary**
    5 to 10 bullets on the biggest findings.
 
-2. **Top risks**  
+2. **Top risks**
    Ordered by severity. Include why each risk matters and how to fix it.
 
-3. **Highest-leverage improvements**  
+3. **Highest-leverage improvements**
    Specific improvements that make the system faster, safer, or higher quality.
 
-4. **What to delete or simplify**  
+4. **What to delete or simplify**
    Anything that adds complexity without near-term value.
 
-5. **Agent handoff gaps**  
+5. **Agent handoff gaps**
    Missing docs, manifests, commands, or safety rails that would block another agent.
 
-6. **Content-quality critique**  
+6. **Content-quality critique**
    Feedback on whether the pipeline is likely to produce 8/10 or better short videos.
 
-7. **Technical/code critique**  
+7. **Technical/code critique**
    Architecture, tests, repo structure, scripts, maintainability.
 
-8. **Recommended next 7 days**  
+8. **Recommended next 7 days**
    A practical sequence of tasks, ordered by impact.
 
-9. **Recommended next 30 days**  
+9. **Recommended next 30 days**
    What to build only after the 7-day fixes are working.
 
-10. **Open questions for Josh**  
+10. **Open questions for Josh**
    Only questions that materially change implementation choices.
 
 ## Review stance
