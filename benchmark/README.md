@@ -4,6 +4,17 @@ Protocol source: `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md` is canonical. `
 
 This directory implements the protocol as an agent-runnable benchmark scaffold. Existing pre-calibration result cells are provisional until `config/qa_thresholds.json` records human-label agreement. The current implementation is intentionally conservative: it will run the proven `wan22_i2v` lane and refuses unverified model lanes until Phase 0 confirms the right workflow/conditioning path. This avoids invalid scores from bypassed I2V conditioning.
 
+## Execution order
+
+Do not start scored model comparison until calibration exists. Use `docs/WAYS_MODEL_TESTING_RUNDOWN.md` as the ordered campaign playbook:
+
+1. Run the slow real-model QA test green, not skipped.
+2. Complete `docs/WAYS_HARNESS_CALIBRATION_RUNBOOK.md` and write live `config/qa_thresholds.json` with human-label agreement.
+3. Run quant ablation first: higher-precision Wan2.2 vs current Q5_K_M on Categories 1 and 3.
+4. Then run realism-hold, large-motion/cinematic, long-clip, and process-beat probes in that order.
+
+Until Step 2 is complete, all populated result cells stay `provisional: true` and cannot drive routing decisions.
+
 ## Files
 
 - `benchmark/config/benchmark_manifest.json` — locked model/plate/seed manifest.
