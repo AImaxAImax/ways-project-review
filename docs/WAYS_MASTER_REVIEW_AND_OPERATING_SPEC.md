@@ -25,7 +25,7 @@ Review stance: direct, practical, evidence-based. The bar is “reliable agent-o
 1. **Untested publish boundary.** `ways_public_publish.py` is the only path to public and has no test. A refactor or dependency bump could silently weaken the authorization or preflight check and nothing would catch it. Fix: add tests asserting it (a) raises without a matching Gate 6 authorization, (b) raises on each preflight failure, (c) does not flip privacy in dry-run, (d) only updates status with `--execute` plus authorization.
 1. **One-off script sprawl.** ~50+ disposable `build_*_vNN.py` / `generate_vNN_*.py` scripts encode per-video work as code. A new agent cannot tell which script is current, and each is a copy-paste mutation of the last. Fix: collapse to one config-driven assembler driven by `beat_map.json` (the render-harness pattern already proves this works); archive the version scripts.
 1. **Gate enforceability gap.** Numeric gates (ffprobe, dimensions, audio) are real. Taste gates (retention, pacing, novelty) and source preservation are not. `local_video_qa` preservation is RGB similarity by its own admission. An agent can advance a card by writing the right JSON fields without real evidence. Fix: bind QC fields to artifact-derived facts (parsed ffprobe, VLM JSON output) rather than hand-set values, and upgrade preservation to CLIP/DINO.
-1. **Sanitization hygiene check.** Local user paths have been scrubbed to placeholders, `SECRET_SCAN_REPORT.md` exists, and `scripts/pre_push_hygiene_check.py` should run before public pushes to fail on username/token/secret patterns.
+1. **Sanitization hygiene check.** Local user paths have been scrubbed to placeholders, and `scripts/pre_push_hygiene_check.py` should run before public pushes to fail on username/token/secret patterns and refresh `docs/SECRET_SCAN_REPORT.md` / `docs/SECRET_SCAN_HITS.json`.
 1. **Auto-queue drift and weak-lane seeding.** `ways_auto_queue.py` hardcodes `SEED_CARDS` (six topics including wombat and saturn) inside the tool, duplicating `topic_queue_batch2.json`, and pushes process/scale-heavy topics into the always-on five-video floor. Drift risk plus it actively feeds the lane the data says underperforms. Fix: read seeds from the topic-queue JSON; tag process-heavy topics so the floor does not auto-advance them.
 
 ## 3. Highest-leverage improvements
@@ -47,7 +47,7 @@ Review stance: direct, practical, evidence-based. The bar is “reliable agent-o
 
 - **No single runbook of commands.** There is no `Makefile` or `RUNBOOK.md` that says, in order, “to take a card from Script Locked to Ready to Publish, run these commands.” Commands are scattered across READMEs and docstrings. A fresh agent has to reconstruct the sequence.
 - **No publish-boundary test** (see Risk 1), so an agent cannot trust a refactor.
-- **Secret scan report present** at `docs/SECRET_SCAN_REPORT.md`; keep it current with the hygiene scan before public pushes.
+- **Secret scan artifacts** are generated at `docs/SECRET_SCAN_REPORT.md` and `docs/SECRET_SCAN_HITS.json`; refresh them with the hygiene scan before public pushes.
 - **No documented rollback** for a public publish that should not have gone out. There is an append-only event log but no revert-to-private command.
 - **The scoring harness does not exist yet**, which blocks Gate 3 source preservation, the benchmark, and any loop. It is the missing keystone.
 
