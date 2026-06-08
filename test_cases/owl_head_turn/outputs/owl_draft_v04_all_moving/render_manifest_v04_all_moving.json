@@ -7,7 +7,7 @@
     "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot03_owl_all_moving_wan22_432x768_49f_seed944103.mp4",
     "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot04_owl_all_moving_wan22_432x768_49f_seed944104.mp4"
   ],
-  "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3",
+  "audio": "/home/<user>/.hermes/audio_cache/tts_20260608_083428.mp3",
   "outputs": {
     "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_all_moving_clean_v04.mp4",
     "captioned": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_captioned_draft_v04_all_moving.mp4",

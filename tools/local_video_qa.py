@@ -153,6 +153,9 @@ def load_thresholds(path: Path | None) -> tuple[dict[str, Any] | None, dict[str,
                 float(data[key])
             except Exception as exc:
                 raise QAError(f"malformed thresholds file: {path}: {key} must be numeric") from exc
+    if "fail_closed" in data and not isinstance(data["fail_closed"], bool):
+        raise QAError(f"malformed thresholds file: {path}: fail_closed must be boolean")
+    data.setdefault("fail_closed", True)
     return data, {"mode": "blocking", "path": str(path), "loaded": True, **data}, False
 
 
@@ -379,33 +382,55 @@ def metric_number(metric: dict[str, Any], field: str = "mean") -> float | None:
     return float(value) if value is not None else None
 
 
+def metric_unavailable_reason(metric: dict[str, Any]) -> str:
+    if not isinstance(metric, dict):
+        return "metric block missing"
+    return str(metric.get("error") or metric.get("reason") or "metric unavailable")
+
+
+def required_metric_value(
+    metrics: dict[str, Any],
+    metric_name: str,
+    field: str,
+    blockers: list[str],
+    *,
+    fail_closed: bool,
+) -> float | None:
+    metric = metrics.get(metric_name, {})
+    val = metric_number(metric, field)
+    if val is None and fail_closed:
+        blockers.append(f"{metric_name} {field} unavailable while blocking thresholds require it: {metric_unavailable_reason(metric)}")
+    return val
+
+
 def apply_metric_thresholds(metrics: dict[str, Any], thresholds: dict[str, Any] | None, *, report_only: bool) -> list[str]:
     if report_only or not thresholds:
         return []
     blockers: list[str] = []
+    fail_closed = bool(thresholds.get("fail_closed", True))
     clip_min = threshold_value(thresholds, "clip_preservation_min")
     if clip_min is not None:
-        val = metric_number(metrics.get("clip_preservation", {}), "min")
+        val = required_metric_value(metrics, "clip_preservation", "min", blockers, fail_closed=fail_closed)
         if val is not None and val < clip_min:
             blockers.append(f"clip_preservation min {val:.4f} below threshold {clip_min:.4f}")
     dino_min = threshold_value(thresholds, "dino_structure_min")
     if dino_min is not None:
-        val = metric_number(metrics.get("dino_structure", {}), "min")
+        val = required_metric_value(metrics, "dino_structure", "min", blockers, fail_closed=fail_closed)
         if val is not None and val < dino_min:
             blockers.append(f"dino_structure min {val:.4f} below threshold {dino_min:.4f}")
     temporal_max = threshold_value(thresholds, "temporal_consistency_max")
     if temporal_max is not None:
-        val = metric_number(metrics.get("temporal_consistency", {}), "mean")
+        val = required_metric_value(metrics, "temporal_consistency", "mean", blockers, fail_closed=fail_closed)
         if val is not None and val > temporal_max:
             blockers.append(f"temporal_consistency mean {val:.4f} above threshold {temporal_max:.4f}")
     motion_low = threshold_value(thresholds, "motion_magnitude_low")
     if motion_low is not None:
-        val = metric_number(metrics.get("motion_magnitude", {}), "mean")
+        val = required_metric_value(metrics, "motion_magnitude", "mean", blockers, fail_closed=fail_closed)
         if val is not None and val < motion_low:
             blockers.append(f"motion_magnitude mean {val:.4f} below threshold {motion_low:.4f}")
     motion_high = threshold_value(thresholds, "motion_magnitude_high")
     if motion_high is not None:
-        val = metric_number(metrics.get("motion_magnitude", {}), "mean")
+        val = required_metric_value(metrics, "motion_magnitude", "mean", blockers, fail_closed=fail_closed)
         if val is not None and val > motion_high:
             blockers.append(f"motion_magnitude mean {val:.4f} above threshold {motion_high:.4f}")
     return blockers

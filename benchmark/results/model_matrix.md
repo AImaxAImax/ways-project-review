@@ -1,6 +1,6 @@
 # WAYS Local Video Model Benchmark Matrix
 
-Human blind scores are not filled by automation. Automated cells show available Tier-1 metrics from `benchmark_result.json`.
+Status: **provisional/uncalibrated**. Human blind scores are not filled by automation. Automated cells show available Tier-1 metrics from `benchmark_result.json` for harness smoke validation only until `qa_thresholds.json` records human-label agreement.
 
 |Category|wan22_i2v|ltx23_fp8|ltx23_distilled|wan22_t2v|hunyuan15|Winner|Notes|
 |---|---|---|---|---|---|---|---|

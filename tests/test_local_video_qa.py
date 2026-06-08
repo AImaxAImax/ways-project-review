@@ -1,6 +1,10 @@
+import importlib.util
 import json
+import math
 import subprocess
 from pathlib import Path
+
+import pytest
 
 from tools import local_video_qa
 
@@ -122,6 +126,63 @@ def test_thresholds_file_blocks_low_clip_preservation(tmp_path, monkeypatch):
     assert rc == 1
     report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
     assert any("clip_preservation" in b for b in report["blockers"])
+    assert report["thresholds_used"]["fail_closed"] is True
+
+
+def test_thresholds_fail_closed_when_required_metric_unavailable(tmp_path, monkeypatch):
+    video = tmp_path / "candidate.mp4"
+    outdir = tmp_path / "qa"
+    thresholds = tmp_path / "thresholds.json"
+    _make_short(video)
+    thresholds.write_text(json.dumps({
+        "clip_preservation_min": 0.8,
+        "dino_structure_min": 0.0,
+        "temporal_consistency_max": 1.0,
+        "motion_magnitude_low": 0.0,
+        "motion_magnitude_high": 10.0,
+        "calibrated_against": "test fixture",
+        "agreement": "test fixture",
+    }), encoding="utf-8")
+    metrics = _metrics()
+    metrics["clip_preservation"] = {"available": False, "error": "open_clip unavailable in test"}
+    monkeypatch.setattr(local_video_qa, "compute_metric_bundle", lambda *args, **kwargs: (metrics, {"frames": []}, []))
+
+    rc = local_video_qa.main([
+        "--input", str(video),
+        "--outdir", str(outdir),
+        "--thresholds", str(thresholds),
+    ])
+
+    assert rc == 1
+    report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
+    assert any("clip_preservation min unavailable" in b for b in report["blockers"])
+
+
+def test_thresholds_can_explicitly_fail_open_for_report_compatibility(tmp_path, monkeypatch):
+    video = tmp_path / "candidate.mp4"
+    outdir = tmp_path / "qa"
+    thresholds = tmp_path / "thresholds.json"
+    _make_short(video)
+    thresholds.write_text(json.dumps({
+        "clip_preservation_min": 0.8,
+        "fail_closed": False,
+        "calibrated_against": "legacy report-only compatibility fixture",
+        "agreement": "test fixture",
+    }), encoding="utf-8")
+    metrics = _metrics()
+    metrics["clip_preservation"] = {"available": False, "error": "open_clip unavailable in test"}
+    monkeypatch.setattr(local_video_qa, "compute_metric_bundle", lambda *args, **kwargs: (metrics, {"frames": []}, []))
+
+    rc = local_video_qa.main([
+        "--input", str(video),
+        "--outdir", str(outdir),
+        "--thresholds", str(thresholds),
+    ])
+
+    assert rc == 0
+    report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
+    assert report["thresholds_used"]["fail_closed"] is False
+    assert not any("clip_preservation" in b for b in report["blockers"])
 
 
 def test_zero_motion_flags_dead_render_warning(tmp_path, monkeypatch):
@@ -185,3 +246,36 @@ def test_malformed_thresholds_returns_tooling_error(tmp_path):
     assert rc == 2
     report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
     assert any("malformed thresholds file" in b for b in report["blockers"])
+
+
+@pytest.mark.slow
+def test_real_model_metric_bundle_populates_finite_numbers(tmp_path):
+    missing = [name for name in ("open_clip", "PIL", "torch", "torchvision", "cv2", "numpy") if importlib.util.find_spec(name) is None]
+    if missing:
+        pytest.skip(f"real model dependencies unavailable: {', '.join(missing)}")
+    if importlib.util.find_spec("lpips") is None:
+        pytest.skip("lpips unavailable; install it before trusting neural temporal-consistency coverage")
+
+    video = tmp_path / "candidate.mp4"
+    source = tmp_path / "source.jpg"
+    _make_short(video, seconds=1.0)
+    subprocess.run([
+        "ffmpeg", "-y", "-v", "error",
+        "-f", "lavfi", "-i", "testsrc2=size=720x1280:rate=1:duration=1",
+        "-frames:v", "1", str(source),
+    ], check=True)
+
+    metrics, debug, warnings = local_video_qa.compute_metric_bundle(video, source, frame_sample_fps=2.0)
+    assert warnings == []
+    assert debug["frames"]
+    for metric_name, field in (
+        ("clip_preservation", "min"),
+        ("dino_structure", "min"),
+        ("temporal_consistency", "mean"),
+        ("motion_magnitude", "mean"),
+    ):
+        metric = metrics[metric_name]
+        assert metric.get("available") is True, metric
+        value = metric.get(field)
+        assert isinstance(value, (int, float)), metric
+        assert math.isfinite(float(value)), metric

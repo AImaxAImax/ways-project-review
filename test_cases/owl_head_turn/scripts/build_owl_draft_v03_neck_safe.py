@@ -5,7 +5,7 @@ import subprocess, json, textwrap, time
 CASE=Path('/mnt/c/dev/curious-shorts/test_cases/owl_head_turn')
 OUT=CASE/'outputs/owl_draft_v03_neck_safe'
 OUT.mkdir(parents=True, exist_ok=True)
-AUDIO=Path('/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3')
+AUDIO=Path('/home/<user>/.hermes/audio_cache/tts_20260608_083428.mp3')
 DUR=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(AUDIO)],text=True).strip())
 
 # v03 deliberately avoids generated neck twisting. Use clean still/source plates with camera movement.

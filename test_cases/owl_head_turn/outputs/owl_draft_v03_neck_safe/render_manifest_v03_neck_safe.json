@@ -8,7 +8,7 @@
     "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
     "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/seedream_clear_270_01.png"
   ],
-  "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3",
+  "audio": "/home/<user>/.hermes/audio_cache/tts_20260608_083428.mp3",
   "outputs": {
     "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_neck_safe_clean_v03.mp4",
     "captioned": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_captioned_draft_v03_neck_safe.mp4",

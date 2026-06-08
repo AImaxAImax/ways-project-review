@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-06-07T21:38:43Z",
   "source_i2v": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot02_owl_head_turn_wan22_432x768_25f_seed812702.mp4",
-  "audio": "/home/joshn/.hermes/audio_cache/tts_20260607_143729.mp3",
+  "audio": "/home/<user>/.hermes/audio_cache/tts_20260607_143729.mp3",
   "duration": 15.281633,
   "outputs": {
     "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v01/owl_head_turn_clean_loop_1080x1920.mp4",

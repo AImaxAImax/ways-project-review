@@ -16,7 +16,7 @@ Review stance: direct, practical, evidence-based. The bar is “reliable agent-o
 - The most safety-critical file, `ways_public_publish.py`, has zero test coverage. The one script that can make a video public is the one script with no test.
 - The publish boundary itself is well-designed: it refuses without a matching `authorize-public-publish` decision, defaults to dry-run, requires `--execute`, and runs a real preflight (category 28, made-for-kids false, caption present, processed). The design is right; it just is not tested.
 - Quality gates are enforceable where they are numeric (ffprobe/spec) and not enforceable where they are taste-based (retention, novelty, pacing). The source-preservation check is self-described as lightweight RGB similarity and needs to become CLIP/DINO.
-- Sanitization is strong on secrets (no keys, no tokens, solid `.gitignore`) but leaks the local username via `/home/joshn/...` paths, and `docs/SECRET_SCAN_REPORT.md` is referenced by the review request but absent from the repo.
+- Sanitization is strong on secrets (no keys, no tokens, solid `.gitignore`). Local username paths are scrubbed to `/home/<user>/...`, and `docs/SECRET_SCAN_REPORT.md` is present for the reviewer entrypoint.
 - The auto-queue hardcodes its seed topics inside the tool and still feeds known-weak process lanes (wombat, saturn) into the five-video floor, which is at odds with the documented “do not let the wombat define the format” lesson.
 - The mantis 30-version saga is the most important single piece of evidence in the repo: it is the dollar cost of discovering the process-shot failure mode after render instead of gating it before render.
 
@@ -25,7 +25,7 @@ Review stance: direct, practical, evidence-based. The bar is “reliable agent-o
 1. **Untested publish boundary.** `ways_public_publish.py` is the only path to public and has no test. A refactor or dependency bump could silently weaken the authorization or preflight check and nothing would catch it. Fix: add tests asserting it (a) raises without a matching Gate 6 authorization, (b) raises on each preflight failure, (c) does not flip privacy in dry-run, (d) only updates status with `--execute` plus authorization.
 1. **One-off script sprawl.** ~50+ disposable `build_*_vNN.py` / `generate_vNN_*.py` scripts encode per-video work as code. A new agent cannot tell which script is current, and each is a copy-paste mutation of the last. Fix: collapse to one config-driven assembler driven by `beat_map.json` (the render-harness pattern already proves this works); archive the version scripts.
 1. **Gate enforceability gap.** Numeric gates (ffprobe, dimensions, audio) are real. Taste gates (retention, pacing, novelty) and source preservation are not. `local_video_qa` preservation is RGB similarity by its own admission. An agent can advance a card by writing the right JSON fields without real evidence. Fix: bind QC fields to artifact-derived facts (parsed ffprobe, VLM JSON output) rather than hand-set values, and upgrade preservation to CLIP/DINO.
-1. **Sanitization leakage.** `/home/joshn/...` appears in `docs/CRONS_AND_AUTOMATION.md`, the handoff doc, and `topic_queue_batch2.json` (a cache path with the username). `SECRET_SCAN_REPORT.md` is referenced but missing. No secrets leaked, but for a public bundle this is avoidable. Fix: path-scrub to a placeholder, add the missing report or remove the reference, add a mandatory pre-push hygiene check.
+1. **Sanitization hygiene check.** Local user paths have been scrubbed to placeholders, `SECRET_SCAN_REPORT.md` exists, and `scripts/pre_push_hygiene_check.py` should run before public pushes to fail on username/token/secret patterns.
 1. **Auto-queue drift and weak-lane seeding.** `ways_auto_queue.py` hardcodes `SEED_CARDS` (six topics including wombat and saturn) inside the tool, duplicating `topic_queue_batch2.json`, and pushes process/scale-heavy topics into the always-on five-video floor. Drift risk plus it actively feeds the lane the data says underperforms. Fix: read seeds from the topic-queue JSON; tag process-heavy topics so the floor does not auto-advance them.
 
 ## 3. Highest-leverage improvements
@@ -47,7 +47,7 @@ Review stance: direct, practical, evidence-based. The bar is “reliable agent-o
 
 - **No single runbook of commands.** There is no `Makefile` or `RUNBOOK.md` that says, in order, “to take a card from Script Locked to Ready to Publish, run these commands.” Commands are scattered across READMEs and docstrings. A fresh agent has to reconstruct the sequence.
 - **No publish-boundary test** (see Risk 1), so an agent cannot trust a refactor.
-- **`SECRET_SCAN_REPORT.md` referenced but absent**, so an agent following the docs hits a dead link.
+- **Secret scan report present** at `docs/SECRET_SCAN_REPORT.md`; keep it current with the hygiene scan before public pushes.
 - **No documented rollback** for a public publish that should not have gone out. There is an append-only event log but no revert-to-private command.
 - **The scoring harness does not exist yet**, which blocks Gate 3 source preservation, the benchmark, and any loop. It is the missing keystone.
 
@@ -70,7 +70,7 @@ The biggest content risk at scale is not any single video: it is that you are ab
 
 1. **Test the publish boundary.** Highest safety return, lowest effort. Cover authorization-refusal, each preflight failure, dry-run, and execute-with-auth.
 1. **Build and calibrate the CLIP/DINO/VLM scoring harness.** Replace the RGB proxy in `local_video_qa`. Hand-label ~15-20 clips and confirm the metric tracks your eye. This unblocks everything downstream.
-1. **Sanitization pass.** Scrub `/home/joshn/` to a placeholder, add or remove the `SECRET_SCAN_REPORT.md` reference, and add a pre-push check that fails on token/secret/username patterns.
+1. **Keep the hygiene gate mandatory.** Run `scripts/pre_push_hygiene_check.py` before public pushes so username/token/secret patterns do not regress.
 1. **Repoint `ways_auto_queue` at the topic-queue JSON** and stop seeding process-heavy topics into the five-video floor.
 1. **Ship the next 2-3 strong-prior animal videos** (owl head-turn, octopus, cuttlefish) on the validated pattern, keeping cadence. Owl is the cleanest first test because the motion is the whole video.
 

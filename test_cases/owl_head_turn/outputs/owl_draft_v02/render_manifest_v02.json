@@ -4,7 +4,7 @@
     "shot01": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot01_owl_head_turn_wan22_432x768_25f_seed812701.mp4",
     "shot02": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot02_owl_head_turn_wan22_432x768_25f_seed812702.mp4",
     "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
-    "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3"
+    "audio": "/home/<user>/.hermes/audio_cache/tts_20260608_083428.mp3"
   },
   "duration": 19.591837,
   "outputs": {

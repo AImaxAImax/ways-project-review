@@ -66,7 +66,7 @@ Snapshot was taken from `cronjob(action="list")` on 2026-06-08.
 - State: paused/disabled.
 - Schedule: every 20 minutes.
 - Repeat usage at snapshot: 7/30.
-- Workdir: `/home/joshn/.hermes/shorts-autoresearch`.
+- Workdir: `/home/<user>/.hermes/shorts-autoresearch`.
 - Skill: `short-form-video-production`.
 - Toolsets: terminal, file, browser, vision.
 - Purpose: continue an older WAYS image-first still-frame pipeline until queued stills are produced and strict-gated.

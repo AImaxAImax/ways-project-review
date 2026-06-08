@@ -18,7 +18,7 @@ Snapshot taken: 2026-06-08 from `cronjob(action="list")`.
 ### `adcfddd15e55` — WAYS iterative still-frame builder until complete
 - State: paused/disabled
 - Schedule: every 20 minutes, repeat 7/30 used
-- Workdir: `/home/joshn/.hermes/shorts-autoresearch`
+- Workdir: `/home/<user>/.hermes/shorts-autoresearch`
 - Skill: `short-form-video-production`
 - Toolsets: terminal, file, browser, vision
 - Purpose: continue WAYS image-first still-frame pipeline until queued stills are produced and strict-gated.

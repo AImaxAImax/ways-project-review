@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, subprocess, pathlib, time, sys, urllib.request
 BASE=pathlib.Path('/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/outputs/higgsfield_frames_v01')
-CLI='/home/joshn/.hermes/node/bin/higgsfield'
+CLI='/home/<user>/.hermes/node/bin/higgsfield'
 pack=json.loads((BASE/'higgsfield_prompt_pack_v01.json').read_text())
 (BASE/'raw').mkdir(parents=True, exist_ok=True)
 (BASE/'meta').mkdir(parents=True, exist_ok=True)

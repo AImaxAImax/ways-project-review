@@ -3,7 +3,7 @@ import json, subprocess, pathlib, time, urllib.request, shutil, math
 from PIL import Image, ImageDraw, ImageFont
 CASE=pathlib.Path('/mnt/c/dev/curious-shorts/test_cases/owl_head_turn')
 BASE=CASE/'outputs/higgsfield_frames_v02'
-CLI='/home/joshn/.hermes/node/bin/higgsfield'
+CLI='/home/<user>/.hermes/node/bin/higgsfield'
 pack=json.loads((BASE/'higgsfield_prompt_pack_v02.json').read_text())
 raw=BASE/'raw'; meta=BASE/'meta'; review=CASE/'assets/pending_human_plate_review/higgsfield_v02'
 raw.mkdir(parents=True, exist_ok=True); meta.mkdir(parents=True, exist_ok=True); review.mkdir(parents=True, exist_ok=True)

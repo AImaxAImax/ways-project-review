@@ -6,7 +6,7 @@ CASE=Path('/mnt/c/dev/curious-shorts/test_cases/owl_head_turn')
 SRC_DIR=CASE/'outputs/wan22_owl_head_turn_v04_all_moving'
 OUT=CASE/'outputs/owl_draft_v04_all_moving'
 OUT.mkdir(parents=True, exist_ok=True)
-AUDIO=Path('/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3')
+AUDIO=Path('/home/<user>/.hermes/audio_cache/tts_20260608_083428.mp3')
 DUR=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(AUDIO)],text=True).strip())
 CLIPS=[
     SRC_DIR/'shot01_owl_all_moving_wan22_432x768_49f_seed944101.mp4',
