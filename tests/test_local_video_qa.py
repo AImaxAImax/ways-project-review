@@ -185,6 +185,57 @@ def test_thresholds_can_explicitly_fail_open_for_report_compatibility(tmp_path, 
     assert not any("clip_preservation" in b for b in report["blockers"])
 
 
+def test_thresholds_with_blocking_disabled_are_advisory(tmp_path, monkeypatch):
+    video = tmp_path / "candidate.mp4"
+    outdir = tmp_path / "qa"
+    thresholds = tmp_path / "thresholds.json"
+    _make_short(video)
+    thresholds.write_text(json.dumps({
+        "clip_preservation_min": 0.8,
+        "blocking_enabled": False,
+        "fail_closed": True,
+        "calibrated_against": "first-frame proxy calibration fixture",
+        "agreement": "test fixture",
+    }), encoding="utf-8")
+    metrics = _metrics(clip_min=0.1)
+    monkeypatch.setattr(local_video_qa, "compute_metric_bundle", lambda *args, **kwargs: (metrics, {"frames": []}, []))
+
+    rc = local_video_qa.main([
+        "--input", str(video),
+        "--outdir", str(outdir),
+        "--thresholds", str(thresholds),
+    ])
+
+    assert rc == 0
+    report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
+    assert report["thresholds_used"]["mode"] == "advisory"
+    assert report["thresholds_used"]["blocking_enabled"] is False
+    assert not any("clip_preservation" in b for b in report["blockers"])
+
+
+def test_thresholds_reject_malformed_blocking_enabled(tmp_path):
+    video = tmp_path / "candidate.mp4"
+    outdir = tmp_path / "qa"
+    thresholds = tmp_path / "thresholds.json"
+    _make_short(video)
+    thresholds.write_text(json.dumps({
+        "clip_preservation_min": 0.8,
+        "blocking_enabled": "false",
+        "calibrated_against": "bad fixture",
+        "agreement": "test fixture",
+    }), encoding="utf-8")
+
+    rc = local_video_qa.main([
+        "--input", str(video),
+        "--outdir", str(outdir),
+        "--thresholds", str(thresholds),
+    ])
+
+    assert rc == 2
+    report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
+    assert any("blocking_enabled must be boolean" in b for b in report["blockers"])
+
+
 def test_zero_motion_flags_dead_render_warning(tmp_path, monkeypatch):
     video = tmp_path / "candidate.mp4"
     outdir = tmp_path / "qa"

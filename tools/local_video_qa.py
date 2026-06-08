@@ -155,8 +155,17 @@ def load_thresholds(path: Path | None) -> tuple[dict[str, Any] | None, dict[str,
                 raise QAError(f"malformed thresholds file: {path}: {key} must be numeric") from exc
     if "fail_closed" in data and not isinstance(data["fail_closed"], bool):
         raise QAError(f"malformed thresholds file: {path}: fail_closed must be boolean")
+    if "blocking_enabled" in data and not isinstance(data["blocking_enabled"], bool):
+        raise QAError(f"malformed thresholds file: {path}: blocking_enabled must be boolean")
     data.setdefault("fail_closed", True)
-    return data, {"mode": "blocking", "path": str(path), "loaded": True, **data}, False
+    data.setdefault("blocking_enabled", True)
+    metric_report_only = not bool(data["blocking_enabled"])
+    mode = "blocking" if not metric_report_only else "advisory"
+    reason = None if not metric_report_only else "threshold config has blocking_enabled=false"
+    echo = {"mode": mode, "path": str(path), "loaded": True, **data}
+    if reason:
+        echo["reason"] = reason
+    return data, echo, metric_report_only
 
 
 def extract_sample_frames(video: Path, outdir: Path, sample_fps: float) -> list[Path]:
