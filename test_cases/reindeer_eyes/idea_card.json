@@ -1,0 +1,39 @@
+{
+  "slug": "reindeer_eyes",
+  "hook": "Reindeer eyes change color in winter.",
+  "core_fact": "Reindeer eyes shift from gold in summer to blue in winter, improving low-light vision in the dark arctic season.",
+  "status_column": "Script Locked - Batch2 screened; needs source citation lock",
+  "cohort_tag": "wan-strong-prior",
+  "test_variable": "wan_strong_prior_topic_only",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane": "WAN",
+  "lane_map": {},
+  "visual": "Gold-eye summer beat, blue-eye winter beat. Color shift is the payoff.",
+  "risk": "Low.",
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/reindeer_eyes/",
+  "blocking_gate": "Gate 1 - source citation lock",
+  "created_at": "2026-06-07T20:19:09Z",
+  "source_policy": "Use Higgsfield free/Ultra models for source frames; generate multiple candidates; no metered paid video without explicit approval.",
+  "gate_1_feedback_source": "WAYS_TOPIC_QUEUE_BATCH2.md screened against live analytics 2026-06-07",
+  "source_quality_requirements": {
+    "must": [
+      "one counterintuitive recognizable subject/fact",
+      "cold-open claim in first 2 seconds",
+      "literal say-dog-see-dog visual",
+      "no internal-anatomy/process beat as core visual"
+    ],
+    "avoid": [
+      "wombat failure mode",
+      "diagram-first explanation",
+      "weak source plates",
+      "text/logos/watermarks"
+    ]
+  },
+  "batch2_priority_rank": 12
+}

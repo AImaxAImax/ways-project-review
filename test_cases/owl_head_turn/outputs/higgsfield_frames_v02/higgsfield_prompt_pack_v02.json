@@ -1,0 +1,39 @@
+{
+  "project": "owl_head_turn",
+  "goal": "Reference-guided reroll for clearer over-shoulder owl head-turn. v01 had good owl style but most candidates read as front/side portraits, not the full impossible head rotation.",
+  "negative_requirements": ["no text", "no logo", "no watermark", "no UI", "no captions", "no labels", "no arrows", "no anatomy cutaway", "no extra owls", "no duplicate heads", "no broken neck", "no melted face", "no horror"],
+  "candidates": [
+    {
+      "id": "ref_nano04_turn_01",
+      "model": "nano_banana_flash",
+      "ref": "outputs/higgsfield_frames_v01/raw/nano_owl_04_loop_hook.png",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Use the reference as natural-history lighting and owl style only. Make the action much clearer: one realistic great horned owl perched upright, chest and feet facing the camera, but the head is rotated far over its right shoulder so the face looks backward past its own back, an impossible-looking owl head swivel, at least 180 degrees from the body direction, clean gap/read between forward-facing body and turned head, eyes visible in profile/three-quarter view, believable neck feathers, one owl only, vertical 9:16, caption-safe dark forest background, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no x-ray, no duplicate head, no extra owls, no broken neck, no horror."
+    },
+    {
+      "id": "ref_seedream01_turn_01",
+      "model": "nano_banana_flash",
+      "ref": "outputs/higgsfield_frames_v01/raw/seedream_owl_01_front_hero.png",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Use the reference owl realism and composition, but make the head-turn fact obvious. Single owl perched on branch, body remains forward facing the viewer, wings and chest aligned straight ahead, head rotated dramatically backward over the left shoulder, face looking behind the owl, visible eye and beak profile, clear separation from body, reads at phone size as a 270-degree owl neck turn, premium wildlife documentary still, no text/logos/watermarks/UI, no labels/arrows/diagrams, no anatomy cutaway, no extra owls, no second head, no distorted or injured neck."
+    },
+    {
+      "id": "nano_clear_270_01",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 premium wildlife source plate for a science short: one owl perched upright on a simple branch, owl body and talons point straight toward camera, but the head is twisted around to look behind its own back over the shoulder, almost a 270-degree owl head turn, viewer can see the owl's face turned backward and the forward-facing chest at the same time, natural healthy owl neck feathers, dramatic impossible-looking but not scary, soft dark forest, big caption-safe negative space, no text, no logo, no watermark, no UI, no labels, no arrows, no x-ray, no anatomy cutaway, no extra owl, no duplicate head, no broken neck."
+    },
+    {
+      "id": "seedream_clear_270_01",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 realistic documentary image, single owl only, perched upright, body/front/chest facing viewer, head rotated far backward over one shoulder so it is looking behind itself, the pose clearly demonstrates an owl's nearly 270 degree head turn, not a normal side glance, clean silhouette, natural feathers, simple blurred forest background, no text, no watermark, no UI, no labels, no arrows, no diagram, no anatomy cutaway, no duplicate head, no extra animals, no horror."
+    },
+    {
+      "id": "seedream_body_front_face_back_01",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 clean mobile source frame: one barred owl on a stump, body faces camera squarely, but its head is rotated almost backward, face visible over the right shoulder as if staring behind the body, impossible-looking owl swivel pose, clear caption space above, no text, no logo, no watermark, no labels, no x-ray, no extra owl, no duplicate face, no mangled anatomy."
+    }
+  ]
+}

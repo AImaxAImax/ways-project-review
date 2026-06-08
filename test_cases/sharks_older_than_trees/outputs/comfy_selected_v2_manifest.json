@@ -1,0 +1,56 @@
+{
+  "shots": [
+    {
+      "id": "01_before_trees_hook",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_shot_set_v1/01_before_trees_hook_v01_00001_.png",
+      "duration": 3.0,
+      "caption": "SHARKS WERE HERE\nBEFORE TREES.",
+      "small": "Seriously.",
+      "anchor": "bottom"
+    },
+    {
+      "id": "02_empty_land_before_forests",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/02_empty_land_before_forests_soft_v05_00001_.png",
+      "duration": 4.1,
+      "caption": "BEFORE FORESTS.\nBEFORE APPLES.",
+      "small": "Before squirrels had anywhere to hide nuts.",
+      "anchor": "bottom"
+    },
+    {
+      "id": "03_shark_older_than_trees",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/03_shark_older_than_trees_soft_v05_00001_.png",
+      "duration": 3.8,
+      "caption": "400+ MILLION\nYEARS AGO",
+      "small": "The first sharks showed up first.",
+      "anchor": "bottom"
+    },
+    {
+      "id": "04_trees_arrive_later",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_shot_set_v1/04_trees_arrive_later_v03_00001_.png",
+      "duration": 3.8,
+      "caption": "TREES TOOK\nTHEIR TIME.",
+      "small": "They arrived tens of millions of years later.",
+      "anchor": "bottom"
+    },
+    {
+      "id": "05_survival_through_ages",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/05_survival_through_ages_soft_v04_00001_.png",
+      "duration": 4.0,
+      "caption": "NOT JUST\nAN ANIMAL.",
+      "small": "A survivor through deep time.",
+      "anchor": "bottom"
+    },
+    {
+      "id": "06_world_before_forests",
+      "image": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/06_world_before_forests_soft_v01_00001_.png",
+      "duration": 5.254286,
+      "caption": "A WORLD\nBEFORE FORESTS",
+      "small": "",
+      "anchor": "bottom"
+    }
+  ],
+  "frame_count": 719,
+  "fps": 30,
+  "audio": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/01_warm_older_brother_uncle.mp3",
+  "output": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/sharks_older_than_trees_roger_comfy_v2.mp4"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "tardigrade_survival_mode",
+  "version": 2,
+  "confirmed_by_human_gate_2": false,
+  "automation_internal_auto_advance": true,
+  "lanes": {
+    "shot01": {
+      "lane": "source_photo_static_or_wan_i2v",
+      "allowed_values": [
+        "source_photo_static",
+        "wan_i2v",
+        "motion_graphic"
+      ],
+      "reason": "Automated internal lane; promote only after QA."
+    },
+    "shot02": {
+      "lane": "source_photo_static_or_wan_i2v",
+      "allowed_values": [
+        "source_photo_static",
+        "wan_i2v",
+        "motion_graphic"
+      ],
+      "reason": "Automated internal lane; promote only after QA."
+    },
+    "shot03": {
+      "lane": "source_photo_static_or_wan_i2v",
+      "allowed_values": [
+        "source_photo_static",
+        "wan_i2v",
+        "motion_graphic"
+      ],
+      "reason": "Automated internal lane; promote only after QA."
+    },
+    "shot04": {
+      "lane": "source_photo_static_or_wan_i2v",
+      "allowed_values": [
+        "source_photo_static",
+        "wan_i2v",
+        "motion_graphic"
+      ],
+      "reason": "Automated internal lane; promote only after QA."
+    },
+    "shot05": {
+      "lane": "source_photo_static_or_wan_i2v",
+      "allowed_values": [
+        "source_photo_static",
+        "wan_i2v",
+        "motion_graphic"
+      ],
+      "reason": "Automated internal lane; promote only after QA."
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "mantis_shrimp_cavitation_punch",
+  "version": 1,
+  "target_format": "1080x1920 vertical Short",
+  "caption_style": "WAYS creator captions; zero non-caption text",
+  "shots": [
+    {
+      "id": "shot01",
+      "voiceover": "A mantis shrimp punch can make the water flash.",
+      "caption": "A mantis shrimp punch can make the water flash",
+      "visual": "photoreal macro shrimp impact with cavitation bubbles and shock ripple",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot02",
+      "voiceover": "The animal is tiny, but its club moves so fast that the water briefly tears open into bubbles.",
+      "caption": "the animal is tiny / but its club moves insanely fast",
+      "visual": "tiny mantis shrimp portrait followed by club/impact macro",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot03",
+      "voiceover": "That is called cavitation.",
+      "caption": "that is cavitation",
+      "visual": "bubble cloud forming beside impact, no diagram labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot04",
+      "voiceover": "The punch hits first.",
+      "caption": "the punch hits first",
+      "visual": "club reaching shell/prey proxy, clear first impact",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot05",
+      "voiceover": "Then the bubble collapses and hits again.",
+      "caption": "then the bubble collapses / and hits again",
+      "visual": "collapsing bubble cloud/shock ripple near target",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot06",
+      "voiceover": "Scientists filmed this shock in high speed, because the second hit happens too fast for our eyes.",
+      "caption": "scientists filmed it / in high speed",
+      "visual": "high-speed macro sequence/contact-sheet-like visual without UI/readouts",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot07",
+      "voiceover": "So the mantis shrimp does not just punch prey.",
+      "caption": "it does not just / punch prey",
+      "visual": "shrimp poised after strike, educational wonder not scary",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot08",
+      "voiceover": "It punches the water so hard the water punches too.",
+      "caption": "the water / punches too",
+      "visual": "final bubble-collapse ripple around shrimp/impact",
+      "duration_seconds": null,
+      "gate_notes": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "04",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+  "duration": 3.57,
+  "caption": "OVER 400 MILLION\nYEARS AGO",
+  "seed": 627104,
+  "prompt": "cinematic deep-time geology image-to-video. Preserve the exact layered rock/ocean composition. Slow vertical reveal feel, atmospheric haze, tiny suspended particles, water shimmer, distant volcanic glow pulses subtly. No readable text, no numbers, no labels, no extra symbols, no scene cut, no warping strata.",
+  "source_image": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+  "prompt_id": "26ad2fb9-7521-48c3-83d2-c721046ae581",
+  "uploaded_image": "shot04_deep_time_rock_layers_sharks_v01.jpeg",
+  "comfy_output": {
+    "filename": "04_627104_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot04_wan22_432x768_25f_seed627104.mp4"
+}

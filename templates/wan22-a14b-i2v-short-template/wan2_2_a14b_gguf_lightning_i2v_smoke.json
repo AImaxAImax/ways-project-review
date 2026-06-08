@@ -1,0 +1,144 @@
+{
+  "39": {
+    "class_type": "VAELoader",
+    "_meta": {"title": "Wan2.1 VAE from QuantStack A14B repo"},
+    "inputs": {"vae_name": "Wan2.1_VAE.safetensors"}
+  },
+  "90": {
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {"title": "Wan2.2 A14B HighNoise GGUF"},
+    "inputs": {"unet_name": "HighNoise\\Wan2.2-I2V-A14B-HighNoise-Q5_K_M.gguf"}
+  },
+  "91": {
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {"title": "Wan2.2 A14B LowNoise GGUF"},
+    "inputs": {"unet_name": "LowNoise\\Wan2.2-I2V-A14B-LowNoise-Q5_K_M.gguf"}
+  },
+  "80": {
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {"title": "HighNoise 4-step Lightning LoRA"},
+    "inputs": {
+      "model": ["90", 0],
+      "lora_name": "Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "82": {
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {"title": "LowNoise 4-step Lightning LoRA"},
+    "inputs": {
+      "model": ["91", 0],
+      "lora_name": "Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "54": {
+    "class_type": "ModelSamplingSD3",
+    "_meta": {"title": "HighNoise Wan shift"},
+    "inputs": {"model": ["80", 0], "shift": 8.0}
+  },
+  "55": {
+    "class_type": "ModelSamplingSD3",
+    "_meta": {"title": "LowNoise Wan shift"},
+    "inputs": {"model": ["82", 0], "shift": 8.0}
+  },
+  "38": {
+    "class_type": "CLIPLoader",
+    "_meta": {"title": "Wan text encoder"},
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    }
+  },
+  "62": {
+    "class_type": "LoadImage",
+    "_meta": {"title": "hero_plate"},
+    "inputs": {"image": "vj_hero_plates/1039_midnight_chrome_605088167_mid.jpg"}
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {"title": "positive_prompt"},
+    "inputs": {"text": "__VJ_PROMPT__", "clip": ["38", 0]}
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {"title": "negative_prompt"},
+    "inputs": {
+      "text": "text, subtitles, readable letters, watermark, logo, people, faces, hard cut, scene transition, camera whip, melted geometry, warped buildings, low quality, blurry, compression artifacts, flicker, garbled typography",
+      "clip": ["38", 0]
+    }
+  },
+  "63": {
+    "class_type": "WanImageToVideo",
+    "_meta": {"title": "Wan A14B I2V latent"},
+    "inputs": {
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "vae": ["39", 0],
+      "width": 768,
+      "height": 432,
+      "length": 49,
+      "batch_size": 1,
+      "start_image": ["62", 0]
+    }
+  },
+  "57": {
+    "class_type": "KSamplerAdvanced",
+    "_meta": {"title": "seed_node"},
+    "inputs": {
+      "model": ["54", 0],
+      "add_noise": "enable",
+      "noise_seed": "__VJ_SEED__",
+      "steps": 4,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": ["63", 0],
+      "negative": ["63", 1],
+      "latent_image": ["63", 2],
+      "start_at_step": 0,
+      "end_at_step": 2,
+      "return_with_leftover_noise": "enable"
+    }
+  },
+  "58": {
+    "class_type": "KSamplerAdvanced",
+    "_meta": {"title": "LowNoise refine"},
+    "inputs": {
+      "model": ["55", 0],
+      "add_noise": "disable",
+      "noise_seed": 0,
+      "steps": 4,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": ["63", 0],
+      "negative": ["63", 1],
+      "latent_image": ["57", 0],
+      "start_at_step": 2,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": "disable"
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": {"title": "decode"},
+    "inputs": {"samples": ["58", 0], "vae": ["39", 0]}
+  },
+  "60": {
+    "class_type": "CreateVideo",
+    "_meta": {"title": "create_video"},
+    "inputs": {"images": ["8", 0], "fps": 24}
+  },
+  "61": {
+    "class_type": "SaveVideo",
+    "_meta": {"title": "save_video"},
+    "inputs": {
+      "video": ["60", 0],
+      "filename_prefix": "vj_hero_gguf/wan22_a14b_lightning_i2v",
+      "format": "mp4",
+      "codec": "h264"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "template_name": "wan22-a14b-i2v-short-template",
+  "approved_by_user": "YES! This is it! This is the model save this as our template",
+  "source_project_windows": "C:\\dev\\curious-shorts\\test_cases\\sharks_older_than_trees",
+  "source_project_wsl": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees",
+  "winning_output": {
+    "master": "outputs/wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_audio.mp4",
+    "discord_preview": "outputs/wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_discord.mp4",
+    "contact_sheet": "outputs/wan22_v27_animated_frames/contact_sheet_v27_wan22.jpg",
+    "manifest": "outputs/wan22_v27_animated_frames/manifest.json"
+  },
+  "comfy": {
+    "url": "http://127.0.0.1:8188",
+    "workflow_windows": "C:\\dev\\vj-engine\\comfyui\\workflows\\wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+    "workflow_wsl": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+    "critical_node_overrides": {
+      "39.inputs.vae_name": "wan_2.1_vae.safetensors",
+      "63.inputs.width": 432,
+      "63.inputs.height": 768,
+      "63.inputs.length": 25
+    },
+    "known_bad_or_unproven": [
+      "wan2.2_vae.safetensors in this current workflow/install due latent/channel mismatch",
+      "ad-hoc Wan22ImageToVideoLatent patches unless retested"
+    ]
+  },
+  "render_settings": {
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "fps": 24,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_video_codec": "libx264",
+    "master_crf": 18,
+    "audio_codec": "aac",
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "negative_prompt": "text, subtitles, readable letters, watermark, logo, UI, hard cut, scene transition, horror, blood, attack, morphing animal anatomy, duplicated fins, distorted face, melted geometry, jitter, flicker, low quality, blurry, compression artifacts",
+  "qa_gate": [
+    "actual image-to-video motion, not still zoom",
+    "no gross morphing or anatomy melt",
+    "no generated captions/text/logos inside source clips",
+    "ffprobe confirms audio on final master/preview",
+    "caption pass still required before publish-ready gate"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "tardigrade_survival_mode",
+  "status": "rejected_rework_required",
+  "human_rejection_score": "5/10",
+  "do_not_publish": true,
+  "do_not_upload": true,
+  "do_not_render_until_plate_gates_pass": true,
+  "rejection_reasons": [
+    "not say-dog-see-dog",
+    "bad source images",
+    "AI artifacts / fake anatomy",
+    "wrong voice/template feel"
+  ],
+  "required_voice": "elevenlabs_george",
+  "required_template": "approved_WAYS_template",
+  "paid_or_credit_lanes_allowed": false,
+  "plate_gates_required_before_render": [
+    "source provenance for every selected plate/clip",
+    "five exact say-dog-see-dog beats covered",
+    "credible microscope/macro tardigrade source plates",
+    "tun-state/desiccation visual evidence",
+    "water-return/reactivation visual evidence",
+    "zero non-caption text in plates",
+    "no fake AI anatomy/artifacts",
+    "human plate-contact-sheet approval"
+  ],
+  "packet": "STRICT_WAYS_REWORK_PACKET.md"
+}

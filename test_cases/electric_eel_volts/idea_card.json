@@ -1,0 +1,39 @@
+{
+  "slug": "electric_eel_volts",
+  "hook": "An electric eel can stun a horse.",
+  "core_fact": "Electric eels can discharge up to ~600 volts, enough to incapacitate large animals.",
+  "status_column": "Idea Pool - Batch2 screened; hold for MG-lane test",
+  "cohort_tag": "mg-lane-test",
+  "test_variable": "mg_lane_validation",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane": "MIXED",
+  "lane_map": {},
+  "visual": "Eel (WAN) plus a discharge flash/spark effect beat (light MG/compositing). The shrimp water flash lane is a good reference.",
+  "risk": "Medium. The spark effect is the risk surface; reuse whatever worked on the shrimp flash beat.",
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/electric_eel_volts/",
+  "blocking_gate": "Cohort scheduling - MG lane test",
+  "created_at": "2026-06-07T20:19:09Z",
+  "source_policy": "Use Higgsfield free/Ultra models for source frames; generate multiple candidates; no metered paid video without explicit approval.",
+  "gate_1_feedback_source": "WAYS_TOPIC_QUEUE_BATCH2.md screened against live analytics 2026-06-07",
+  "source_quality_requirements": {
+    "must": [
+      "one counterintuitive recognizable subject/fact",
+      "cold-open claim in first 2 seconds",
+      "literal say-dog-see-dog visual",
+      "no internal-anatomy/process beat as core visual"
+    ],
+    "avoid": [
+      "wombat failure mode",
+      "diagram-first explanation",
+      "weak source plates",
+      "text/logos/watermarks"
+    ]
+  },
+  "batch2_priority_rank": 18
+}

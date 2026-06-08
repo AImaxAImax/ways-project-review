@@ -1,0 +1,128 @@
+{
+  "project": "curious-shorts",
+  "test_case": "001_sharks_older_than_trees",
+  "format": {
+    "platform": "YouTube Shorts",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "target_duration_sec": 40
+  },
+  "script": [
+    "Sharks were here before trees.",
+    "Seriously.",
+    "Before forests. Before apples. Before squirrels had anywhere to hide nuts.",
+    "The first sharks showed up more than four hundred million years ago.",
+    "Trees took their time. They didn\u2019t really arrive until tens of millions of years later.",
+    "So when you look at a shark, you\u2019re not just looking at an animal.",
+    "You\u2019re looking at a survivor from a world before forests."
+  ],
+  "image_prompts": [
+    {
+      "id": "shot_01_hook_before_trees",
+      "narration": "Sharks were here before trees.",
+      "visual_role": "immersive hook / impossible comparison",
+      "setting_type": "prehistoric ocean + barren shoreline, not museum",
+      "status": "KEEP current v15 hold as style reference, but treat as one immersive scene, not proof of all-shot museum direction",
+      "prompt": "Vertical 9:16 premium natural-history miniature cinematic frame: calm ancient shark fully submerged in clean teal prehistoric water, waterline ripples and particles, distant barren volcanic coastline above/behind it with absolutely no trees, no grass, no plants, no forest, warm amber sun rays, macro depth, tactile matte textures, clean negative space for caption, awe not attack, parent-trusted science short",
+      "negative_prompt": "trees, forest, grass, leaves, kelp, coral, plants, modern objects, museum display shelves, glass case, cracked dry lake bed, shark on top of water, toy shark, scary teeth, gore, generated text, logos"
+    },
+    {
+      "id": "shot_02_seriously_fossil_proof",
+      "narration": "Seriously.",
+      "visual_role": "brief evidence/proof beat",
+      "setting_type": "museum/fossil proof; museum allowed here only",
+      "status": "KEEP v16/v17 as possible proof holds; do not extend this setting to the whole video",
+      "prompt": "Vertical 9:16 premium natural-history fossil proof close-up: ancient shark tooth or fossil impression on dark stone slab under a single warm exhibit spotlight, teal shadows, dust motes, elegant macro photography, simple composition with empty caption space, tactile stone/paper-clay miniature feel, no readable text in image",
+      "negative_prompt": "full museum hallway, repeated display cases, readable labels, busy shelves, scary shark mouth, gore, generated text, logos"
+    },
+    {
+      "id": "shot_03_before_forests_apples_squirrels",
+      "narration": "Before forests. Before apples. Before squirrels had anywhere to hide nuts.",
+      "visual_role": "literal list gag / comparison",
+      "setting_type": "controlled tabletop comparison OR barren land with symbolic props; not another generic museum room",
+      "status": "REWORK. v20 is only a fallback/proof-of-control hold; next pass must make one apple + one squirrel + one nut/acorn unmistakable and visually different from fossil shot",
+      "prompt": "Vertical 9:16 premium tactile miniature comparison scene on barren prehistoric rock beside shallow teal water: three clear future-things presented as absent/not-yet icons \u2014 one bright red apple, one small cute squirrel silhouette/miniature, one oversized brown acorn/nut \u2014 hovering or staged as ghosted future props above empty lifeless land, no trees, no grass, no leaves, no forest, warm spotlight accents, playful but high-end natural-history tone, clean caption space",
+      "negative_prompt": "trees, branches, leaves, grass, forest, multiple squirrels, many apples, unclear nut, readable text, museum hallway, display shelves, clutter, gore, scary shark"
+    },
+    {
+      "id": "shot_04_400_million_years_timeline",
+      "narration": "The first sharks showed up more than four hundred million years ago.",
+      "visual_role": "deep time / timeline readability",
+      "setting_type": "graphic geologic time column, not animal portrait",
+      "status": "NOT generated in current v15-v20 lane; make next after shot 03 reassessment if needed",
+      "prompt": "Vertical 9:16 premium geologic time visual: stacked rock strata/time layers rising upward like a beautiful cutaway column, tiny ancient ocean layer with shark silhouette near the deep bottom, later forest layer far above as a small delayed marker, teal-to-amber lighting, tactile paper/stone miniature, clean space for editor-added 400+ million years caption, no generated readable text",
+      "negative_prompt": "shark portrait, museum hallway, readable numbers or letters, cluttered infographic text, modern city, gore, scary teeth"
+    },
+    {
+      "id": "shot_05_trees_arrive_late",
+      "narration": "Trees took their time. They didn\u2019t really arrive until tens of millions of years later.",
+      "visual_role": "late arrival of primitive forests",
+      "setting_type": "immersive primitive shoreline/early forest, land is hero",
+      "status": "NEEDS new generation; do not reuse barren no-plant prompt here because this is the first actual plant arrival beat",
+      "prompt": "Vertical 9:16 cinematic prehistoric shoreline miniature: strange primitive tree-like plants and early forest forms finally emerging on rocky land, land plants are the hero, ancient teal sea below/behind with a tiny subtle shark silhouette already present, warm low sun, tactile natural-history diorama quality, clean mobile-readable composition, wonder not clutter",
+      "negative_prompt": "modern forest, apples, squirrels, modern flowers, tropical jungle, dense clutter, scary shark, gore, generated text, logos"
+    },
+    {
+      "id": "shot_06_not_just_an_animal_viewer",
+      "narration": "So when you look at a shark, you\u2019re not just looking at an animal.",
+      "visual_role": "modern viewer reframe",
+      "setting_type": "aquarium/window POV; not museum proof table",
+      "status": "NEEDS new generation; viewer perspective should make this distinct",
+      "prompt": "Vertical 9:16 premium modern aquarium viewing-window scene: small human/kid silhouette from behind looking through huge blue glass at a calm shark swimming past, faint reflection of ancient ocean/fossil texture layered in the glass, teal water glow, warm rim light on viewer, cinematic family science tone, clean caption space",
+      "negative_prompt": "scary shark attack, open mouth, gore, crowded tourists, unreadable generated text, logos, museum hallway display cases"
+    },
+    {
+      "id": "shot_07_survivor_world_before_forests",
+      "narration": "You\u2019re looking at a survivor from a world before forests.",
+      "visual_role": "final awe payoff",
+      "setting_type": "immersive ancient ocean callback; earned final shark hero",
+      "status": "NEEDS final after style proof; can echo shot 01 but must feel like ending, not duplicate",
+      "prompt": "Vertical 9:16 quiet epic ancient ocean wide shot: lone calm shark gliding through vast luminous teal water, distant barren pre-forest coastline above the waterline, no trees or plants anywhere, soft amber sun rays, drifting particles, premium natural-history cinematic miniature, emotional survivor payoff, spacious composition for final caption",
+      "negative_prompt": "forest, trees, plants, grass, leaves, kelp, coral, many sharks, attack pose, scary teeth, gore, generated text, logos"
+    }
+  ],
+  "motion_prompts": [
+    {
+      "id": "shot_01_motion",
+      "prompt": "Slow underwater push with drifting particles and subtle caustics; shark remains stable and fully in water."
+    },
+    {
+      "id": "shot_02_motion",
+      "prompt": "Almost-still proof reveal: soft spotlight sweep, dust motes, tiny camera push."
+    },
+    {
+      "id": "shot_03_motion",
+      "prompt": "Physical-camera tabletop slide/rack focus across apple, squirrel, and acorn; no AI character wobble."
+    },
+    {
+      "id": "shot_04_motion",
+      "prompt": "Editor-built vertical timeline/strata reveal; layers parallax upward, captions added in edit."
+    },
+    {
+      "id": "shot_05_motion",
+      "prompt": "Slow reveal across primitive shoreline; plants enter as late arrival, shark tiny in background water."
+    },
+    {
+      "id": "shot_06_motion",
+      "prompt": "Gentle aquarium-glass parallax: viewer silhouette holds still, shark glides subtly, ancient reflection shimmer."
+    },
+    {
+      "id": "shot_07_motion",
+      "prompt": "Slow final drift in ancient water, particles and light rays, optional minimal shark glide only if stable."
+    }
+  ],
+  "sfx": [
+    "soft underwater ambience",
+    "subtle whoosh on timeline reveal",
+    "gentle magical chime on 'older than trees' hook",
+    "low warm impact on final memory line"
+  ],
+  "music_direction": "Low-volume curious natural-history bed: underwater warmth, subtle museum/proof accents only on evidence beats, never making every shot feel like the same exhibit room.",
+  "status": "v21_visual_reassessment_museum_limited_say_dog_see_dog_ready",
+  "visual_strategy_v21_reassessment": {
+    "principle": "Consistent quality, palette, lighting, and texture \u2014 not the same museum room every shot.",
+    "overall_style": "premium tactile natural-history miniature / cinematic educational frame; teal-blue water, warm amber highlights, macro depth, matte paper/clay textures where useful, clean mobile composition, parent-trusted science tone",
+    "museum_usage_rule": "Museum/exhibit language is allowed only for proof/evidence/comparison beats, roughly 20-30% of the short. Most beats should be immersive prehistoric scenes or literal comparison scenes.",
+    "say_dog_see_dog_rule": "Every narration beat must have a distinct literal visual payload before captions explain it. If the line says forests, apples, squirrels, nuts, timeline, viewer, or survivor, that visual noun must be visible or clearly absent."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "selection_basis": "First-pass manual/vision curation from outputs/comfy_shot_set_v1_all_contact_sheets.jpg. Prioritized calm shot-4-like ocean look, kid-safe tone, less teeth, readable negative space, and coherent green/teal museum animation style.",
+  "selected": {
+    "01_before_trees_hook": 1,
+    "02_empty_land_before_forests": 5,
+    "03_shark_older_than_trees": 10,
+    "04_trees_arrive_later": 3,
+    "05_survival_through_ages": 8,
+    "06_world_before_forests": 9
+  },
+  "caveats": [
+    "SDXL Turbo still has recurring shark anatomy issues; this is a stronger storyboard/art-direction pass, not final brand art.",
+    "Shot 3 was the weakest batch because most variants were too teeth-forward; variant 10 is selected for calm silhouette/space rather than perfect storytelling.",
+    "Shot 4 style is the strongest direction: layered underwater trees/vegetation with small distant sharks and quiet awe."
+  ]
+}

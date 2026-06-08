@@ -1,0 +1,86 @@
+{
+  "title": "sharks-older-than-trees-v27",
+  "created_at": "2026-06-05T18:46:44",
+  "source_clean_master": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_audio.mp4",
+  "clean_master_copy": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/clean_master_unmodified.mp4",
+  "manifest": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/manifest.json",
+  "caption_mode": "shot-accurate key-word styled ASS from manifest durations; use CapCut/Whisper word timestamps for true active-word karaoke if required",
+  "audio_polish": "highpass 80 Hz, light compression, loudnorm target I=-15 LRA=7 TP=-1, AAC 48kHz",
+  "outputs": {
+    "publish_candidate": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/publish_candidate_captioned.mp4",
+    "discord_preview": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/discord_preview_captioned.mp4",
+    "captions_ass": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/captions.ass",
+    "captions_srt": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/captions.srt",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/final_polish_v27_captioned/contact_sheet_final_polish.jpg"
+  },
+  "segments": [
+    {
+      "index": 1,
+      "shot_id": "01",
+      "start": 0.0,
+      "end": 3.57,
+      "caption": "SHARKS WERE HERE\nBEFORE TREES",
+      "keyword": "SHARKS"
+    },
+    {
+      "index": 2,
+      "shot_id": "02",
+      "start": 3.57,
+      "end": 5.872999999999999,
+      "caption": "SERIOUSLY.",
+      "keyword": "SERIOUSLY"
+    },
+    {
+      "index": 3,
+      "shot_id": "03",
+      "start": 5.872999999999999,
+      "end": 9.558,
+      "caption": "BEFORE APPLES.\nBEFORE SQUIRRELS.",
+      "keyword": "SQUIRRELS"
+    },
+    {
+      "index": 4,
+      "shot_id": "04",
+      "start": 9.558,
+      "end": 13.128,
+      "caption": "OVER 400 MILLION\nYEARS AGO",
+      "keyword": "400"
+    },
+    {
+      "index": 5,
+      "shot_id": "05",
+      "start": 13.128,
+      "end": 16.353,
+      "caption": "THEN FORESTS\nFINALLY ARRIVED",
+      "keyword": "FORESTS"
+    },
+    {
+      "index": 6,
+      "shot_id": "06",
+      "start": 16.353,
+      "end": 20.038,
+      "caption": "AND TODAY...\nTHEY ARE STILL HERE",
+      "keyword": "STILL"
+    },
+    {
+      "index": 7,
+      "shot_id": "07",
+      "start": 20.038,
+      "end": 23.954,
+      "caption": "SURVIVOR\nFROM A WORLD\nBEFORE FORESTS",
+      "keyword": "SURVIVOR"
+    }
+  ],
+  "status_column": "Published / Scheduled",
+  "publish_authorized": true,
+  "published_at": "2026-06-06T03:38:14Z",
+  "youtube_video_id": "KLwp-KbIr9I",
+  "public_url": "https://youtu.be/KLwp-KbIr9I",
+  "next_action": "No more production work on this shark video. Monitor the scheduled 60-hour performance check and map retention lessons back into future WAYS scripts/renders.",
+  "status": "published",
+  "public_publish_verified": true,
+  "privacy": "public",
+  "human_verdict": "published; monitor-only",
+  "qa_blockers": "",
+  "published_note": "2026-06-06: user confirmed shark is posted; moved to monitor-only so it no longer surfaces as active WIP or Gate 6 work."
+}

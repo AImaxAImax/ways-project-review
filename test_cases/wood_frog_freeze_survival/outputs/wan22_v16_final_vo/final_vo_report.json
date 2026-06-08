@@ -1,0 +1,62 @@
+{
+  "provider": "hermes_text_to_speech_provider_edge",
+  "voice_contract_note": "Generated with currently configured Hermes TTS provider. Not verified as elevenlabs_george because no ElevenLabs API credential was discoverable in environment/config search.",
+  "beats": [
+    {
+      "file": "beat01.mp3",
+      "raw_s": 2.544,
+      "target_s": 2.35,
+      "fit_s": 2.35,
+      "tempo_if_used": 1.203
+    },
+    {
+      "file": "beat02.mp3",
+      "raw_s": 3.72,
+      "target_s": 3.4,
+      "fit_s": 3.4,
+      "tempo_if_used": 1.216
+    },
+    {
+      "file": "beat03.mp3",
+      "raw_s": 3.048,
+      "target_s": 3.1,
+      "fit_s": 3.1,
+      "tempo_if_used": 1.092
+    },
+    {
+      "file": "beat04.mp3",
+      "raw_s": 3.696,
+      "target_s": 3.6,
+      "fit_s": 3.6,
+      "tempo_if_used": 1.141
+    },
+    {
+      "file": "beat05.mp3",
+      "raw_s": 4.248,
+      "target_s": 4.45,
+      "fit_s": 4.45,
+      "tempo_if_used": 1.061
+    },
+    {
+      "file": "beat06.mp3",
+      "raw_s": 4.104,
+      "target_s": 3.7,
+      "fit_s": 3.7,
+      "tempo_if_used": 1.232
+    }
+  ],
+  "final_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000"
+      }
+    ],
+    "format": {
+      "duration": "20.600000",
+      "size": "310097"
+    }
+  }
+}

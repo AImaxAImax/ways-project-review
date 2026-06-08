@@ -1,0 +1,304 @@
+{
+  "slug": "saturn_hexagon_storm",
+  "created_at": "2026-06-06T02:10:03-07:00",
+  "lane": "source_acquisition_only_no_render_no_paid_credits",
+  "rights_summary": {
+    "source_policy": "NASA/JPL/Cassini public mission imagery plus NASA Apollo public-domain Earth imagery only; no paid stock, no credit-spend generation, no uploads/publishing.",
+    "nasa_media_note": "NASA imagery is generally not copyrighted in the United States, but NASA names/insignia/logos may not imply endorsement. Plates must avoid NASA logos, labels, mission patches, UI, watermarks, and source-page text.",
+    "credit_note_for_internal_docs": "Credit: NASA/JPL-Caltech/Space Science Institute for Cassini imagery and NASA/Apollo 17 for the Earth proxy where appropriate in descriptions/metadata, not burned into visual plates."
+  },
+  "gate_b_status": "candidate_sources_acquired; still_plate_QC_not_started",
+  "sources": [
+    {
+      "nasa_id": "PIA21052",
+      "title": "Over Saturn's Turbulent North",
+      "agency_mission": "NASA/JPL/Cassini",
+      "source_pages": [
+        "https://science.nasa.gov/resource/over-saturns-turbulent-north/",
+        "https://photojournal.jpl.nasa.gov/catalog/PIA21052"
+      ],
+      "download_urls": {
+        "nasa_images_jpeg": "https://images-assets.nasa.gov/image/PIA21052/PIA21052~orig.jpg",
+        "photojournal_tiff": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia21/pia21052/PIA21052.tif"
+      },
+      "local_files": [
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA21052_orig.jpg",
+          "format": "JPEG",
+          "dimensions_px": [
+            1024,
+            1024
+          ],
+          "mode": "L",
+          "bytes": 91251,
+          "sha256": "826d33dae2961f3ecf67dc33e6aaedce489d82c4f2aa48453238a98df828d96f"
+        },
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA21052_photojournal.tif",
+          "format": "TIFF",
+          "dimensions_px": [
+            1024,
+            1024
+          ],
+          "mode": "L",
+          "bytes": 958348,
+          "sha256": "ec4b3416f81cf8906e65b30a98cf3c2a58f67bcc1625bb11d433138df1dfc31a"
+        }
+      ],
+      "rights_notes": "Free/public NASA/JPL Cassini image candidate; do not show NASA logo/insignia; no burned-in credit/text in plate.",
+      "zero_text_notes": "Raw planetary image file; no visible labels/logos/watermarks expected in the image pixels. Must still receive OCR/manual artifact pass after crop/enhance.",
+      "supports_beats": [
+        {
+          "shot": "01",
+          "role": "primary candidate",
+          "reason": "North-pole hexagon can be cropped for immediate six-sided storm read."
+        },
+        {
+          "shot": "02",
+          "role": "primary candidate",
+          "reason": "NASA/Cassini proof plate for real jet stream around north pole."
+        },
+        {
+          "shot": "03",
+          "role": "primary candidate",
+          "reason": "Packet identifies this source for each-side-about-Earth-width scale proof; use a local non-text Earth proxy and bracket only after plate QC."
+        },
+        {
+          "shot": "04",
+          "role": "secondary/primary candidate",
+          "reason": "Central circular storm/polar area visible; may support inside-spinning beat if crop reads clearly."
+        },
+        {
+          "shot": "05",
+          "role": "primary candidate",
+          "reason": "Final pullback can show hexagon as cloud/weather structure on Saturn."
+        }
+      ],
+      "current_limitations": "1024px source; must be tested at phone-size vertical crop. Scale overlay not yet built."
+    },
+    {
+      "nasa_id": "PIA17122",
+      "title": "Stormy North",
+      "agency_mission": "NASA/JPL/Cassini",
+      "source_pages": [
+        "https://science.nasa.gov/resource/stormy-north/",
+        "https://photojournal.jpl.nasa.gov/catalog/PIA17122"
+      ],
+      "download_urls": {
+        "nasa_images_jpeg": "https://images-assets.nasa.gov/image/PIA17122/PIA17122~orig.jpg",
+        "photojournal_tiff": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia17/pia17122/PIA17122.tif"
+      },
+      "local_files": [
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA17122_orig.jpg",
+          "format": "JPEG",
+          "dimensions_px": [
+            1016,
+            1016
+          ],
+          "mode": "L",
+          "bytes": 82554,
+          "sha256": "3a8ebaaf774354b75d2fcc0e4812eb0f0a976df08f3ebb7c43eba20a3ee3f09c"
+        },
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA17122_photojournal.tif",
+          "format": "TIFF",
+          "dimensions_px": [
+            1016,
+            1016
+          ],
+          "mode": "L",
+          "bytes": 1033490,
+          "sha256": "784d6c4321fc659d29ebfd3811a8084c37ffe0cab59b54b385116621b627c3bc"
+        }
+      ],
+      "rights_notes": "Free/public NASA/JPL Cassini image candidate; no NASA logo/insignia; no burned-in credit/text in plate.",
+      "zero_text_notes": "Raw planetary image file; no visible labels/logos/watermarks expected in the image pixels. Must still receive OCR/manual artifact pass after crop/enhance.",
+      "supports_beats": [
+        {
+          "shot": "02",
+          "role": "secondary candidate",
+          "reason": "Documentary north-pole source within the hexagon."
+        },
+        {
+          "shot": "04",
+          "role": "primary candidate",
+          "reason": "Best inside-hexagon storm/vortex detail source for spinning-weather beat."
+        },
+        {
+          "shot": "05",
+          "role": "secondary candidate",
+          "reason": "Can supply close weather texture for final composite if not overused."
+        }
+      ],
+      "current_limitations": "May not show full hexagon boundary strongly enough for opening/scale without pairing with PIA21052."
+    },
+    {
+      "nasa_id": "PIA14646",
+      "title": "Hexagon and Rings",
+      "agency_mission": "NASA/JPL/Cassini",
+      "source_pages": [
+        "https://photojournal.jpl.nasa.gov/catalog/PIA14646"
+      ],
+      "download_urls": {
+        "nasa_images_jpeg": "https://images-assets.nasa.gov/image/PIA14646/PIA14646~orig.jpg",
+        "photojournal_tiff": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia14/pia14646/PIA14646.tif"
+      },
+      "local_files": [
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA14646_orig.jpg",
+          "format": "JPEG",
+          "dimensions_px": [
+            1016,
+            1016
+          ],
+          "mode": "L",
+          "bytes": 69923,
+          "sha256": "3e3271e68f28495f9d14a82555ad2b7fc7d4b0fbd424c172405d673b25b7e141"
+        },
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA14646_photojournal.tif",
+          "format": "TIFF",
+          "dimensions_px": [
+            1016,
+            1016
+          ],
+          "mode": "L",
+          "bytes": 1033490,
+          "sha256": "9c270a0170d67ad468f10361653acfa2ce3ee04b14331fdac16e7e80548131ed"
+        }
+      ],
+      "rights_notes": "Free/public NASA/JPL Cassini image candidate; no NASA logo/insignia; no burned-in credit/text in plate.",
+      "zero_text_notes": "Raw planetary image file; no visible labels/logos/watermarks expected in the image pixels. Must still receive OCR/manual artifact pass after crop/enhance.",
+      "supports_beats": [
+        {
+          "shot": "01",
+          "role": "secondary candidate",
+          "reason": "Hexagon plus rings can establish Saturn if the hexagon remains readable at phone size."
+        },
+        {
+          "shot": "05",
+          "role": "secondary candidate",
+          "reason": "Possible final pullback connecting familiar rings to polar hexagon/weather."
+        }
+      ],
+      "current_limitations": "Opening hard-fails if the hexagon is too small/soft after vertical crop; likely secondary only."
+    },
+    {
+      "nasa_id": "PIA20507",
+      "title": "Saturn Watercolor Swirls",
+      "agency_mission": "NASA/JPL/Cassini",
+      "source_pages": [
+        "https://science.nasa.gov/resource/saturn-watercolor-swirls/",
+        "https://photojournal.jpl.nasa.gov/catalog/PIA20507"
+      ],
+      "download_urls": {
+        "nasa_images_jpeg": "https://images-assets.nasa.gov/image/PIA20507/PIA20507~orig.jpg",
+        "photojournal_tiff": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia20/pia20507/PIA20507.tif"
+      },
+      "local_files": [
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA20507_orig.jpg",
+          "format": "JPEG",
+          "dimensions_px": [
+            1020,
+            1020
+          ],
+          "mode": "L",
+          "bytes": 32789,
+          "sha256": "60be1b2e88eb9810bdc1b754726890a09e0cd322b8828bbd208d267c1915ed28"
+        },
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/PIA20507_photojournal.tif",
+          "format": "TIFF",
+          "dimensions_px": [
+            1020,
+            1020
+          ],
+          "mode": "L",
+          "bytes": 483588,
+          "sha256": "a021377259c9ce0b466574b32aa870e7cdcda01b4a528087bdf73504032c8022"
+        }
+      ],
+      "rights_notes": "Free/public NASA/JPL Cassini image candidate; no NASA logo/insignia; no burned-in credit/text in plate.",
+      "zero_text_notes": "Raw planetary image file; no visible labels/logos/watermarks expected in the image pixels. Must still receive OCR/manual artifact pass after crop/enhance.",
+      "supports_beats": [
+        {
+          "shot": "04",
+          "role": "secondary texture/reference",
+          "reason": "Atmospheric swirl texture may support weather feel but should not be primary proof."
+        },
+        {
+          "shot": "05",
+          "role": "secondary texture/reference",
+          "reason": "Can support premium weather/cloud look if grounded by stronger hexagon source."
+        }
+      ],
+      "current_limitations": "Not primary proof for hexagon; use only if it passes phone-size weather/hexagon read after crop."
+    },
+    {
+      "nasa_id": "AS17-148-22727",
+      "title": "View of the Earth seen by the Apollo 17 crew traveling toward the moon (Blue Marble)",
+      "agency_mission": "NASA/Apollo 17",
+      "source_pages": [
+        "https://images.nasa.gov/details/as17-148-22727",
+        "https://images-assets.nasa.gov/image/as17-148-22727/collection.json"
+      ],
+      "download_urls": {
+        "nasa_images_jpeg": "https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~orig.jpg"
+      },
+      "local_files": [
+        {
+          "path": "test_cases/saturn_hexagon_storm/assets/source_nasa/AS17-148-22727_blue_marble_orig.jpg",
+          "format": "JPEG",
+          "dimensions_px": [
+            4579,
+            4579
+          ],
+          "mode": "RGB",
+          "bytes": 1915552,
+          "sha256": "cb4c3d2da98ee72130ebfd2ea472fc84ede6726002c2a8c9cabd86e4deea9f0f"
+        }
+      ],
+      "rights_notes": "Free/right-safe NASA Apollo public-domain image candidate from NASA Images; no paid stock, credit-spend generation, upload, logo, insignia, or endorsement lane used. Credit NASA/Apollo 17 in internal metadata/descriptions only, not burned into plate pixels.",
+      "zero_text_notes": "Full-disk Earth photograph only; no visible captions, labels, UI, logos, watermarks, or source-page text expected in the image pixels. Use as a tiny unlabeled Earth scale proxy for Shot 03; final composite still needs OCR/manual artifact pass after crop/mask/scale.",
+      "supports_beats": [
+        {
+          "shot": "03",
+          "role": "primary Earth scale proxy",
+          "reason": "Clean full-disk Earth source suitable for compositing as a small unlabeled Earth comparison beside/bracketed against one Saturn hexagon side."
+        }
+      ],
+      "current_limitations": "Acquisition only: Earth proxy is downloaded but not masked/rescaled into a finished Shot 03 plate; final side bracket, phone-size readability, and OCR/manual zero-text QC remain downstream."
+    }
+  ],
+  "beat_source_map": {
+    "01_saturn_has_a_hexagon_storm": [
+      "PIA21052",
+      "PIA14646_secondary_if_phone_read_passes"
+    ],
+    "02_not_a_drawing_real_jet_stream": [
+      "PIA21052",
+      "PIA17122_secondary"
+    ],
+    "03_each_side_wider_than_earth": [
+      "PIA21052_with_AS17-148-22727_unlabeled_Earth_proxy_and_bracket_after_QC"
+    ],
+    "04_storms_keep_spinning_inside": [
+      "PIA17122",
+      "PIA21052_secondary",
+      "PIA20507_texture_only"
+    ],
+    "05_strange_shape_made_of_weather": [
+      "PIA21052",
+      "PIA14646_secondary",
+      "PIA20507_texture_only"
+    ]
+  },
+  "not_done_in_this_lane": [
+    "No proof plates generated.",
+    "No contact sheet generated.",
+    "No OCR/text-artifact pass after crop/enhance.",
+    "No motion/video/render/voice/template work performed."
+  ]
+}

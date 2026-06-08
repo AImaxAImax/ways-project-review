@@ -1,0 +1,14 @@
+{
+  "lane": "clean_source_motion_proxy",
+  "v02_rejection_fixed": [
+    "removed overlay/proof artifacts",
+    "removed graphic rings/labels/arrows/HUD",
+    "motion uses in-frame image/water deformation not objects on top"
+  ],
+  "limitation": "This is a fast proxy while Wan shark-style I2V v03 is rendering; it is cleaner but not final post-ready if motion still feels too synthetic.",
+  "outputs": {
+    "master": "outputs/clean_source_motion_v03_proxy/publish_candidate_captioned.mp4",
+    "preview": "outputs/clean_source_motion_v03_proxy/discord_preview_captioned.mp4",
+    "contact_sheet": "outputs/clean_source_motion_v03_proxy/contact_sheet.jpg"
+  }
+}

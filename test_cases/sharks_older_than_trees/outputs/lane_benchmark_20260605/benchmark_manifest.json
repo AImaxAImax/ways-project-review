@@ -1,0 +1,74 @@
+{
+  "benchmark_name": "shark_v27_next_local_video_lanes_20260605",
+  "benchmark_goal": "Compare next local/video lanes against saved shark v27 template; do not replace template unless clearly better.",
+  "suite_rule": "Use the full 7-shot v27 contact sheet as baseline; smoke challengers on representative shots only when dependency/runtime makes full-suite rendering impractical, and mark unrenderable lanes HOLD rather than cherry-picking wins.",
+  "baseline": {
+    "lane_id": "baseline_v27_wan22_a14b_i2v",
+    "decision": "KEEP_TEMPLATE",
+    "artifacts": {
+      "contact_sheet": "baseline_v27/contact_sheet_v27_wan22.jpg",
+      "ffprobe": "baseline_v27/ffprobe_master.json",
+      "master": "../wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_audio.mp4",
+      "discord_preview": "../wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_discord.mp4"
+    },
+    "settings": {
+      "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+      "vae": "wan_2.1_vae.safetensors",
+      "resolution": "432x768 source clips, assembled/upscaled to 1080x1920 master",
+      "frames": 25,
+      "fps": 24
+    }
+  },
+  "lanes": [
+    {
+      "lane_id": "a14b_original_vae21_single_shot_retest",
+      "decision": "HOLD_NO_TEMPLATE_CHANGE",
+      "representative_shots": ["shot07_final_predator"],
+      "artifacts": {
+        "clip": "../wan22_v27_animated_frames/pilot_a14b_original_vae21/shot07_wan22_a14b_original_vae21_432x768_25f_seed627401.mp4",
+        "contact_sheet": "pilot_a14b_retest/contact_sheet_a14b_retest_shot07.jpg",
+        "ffprobe": "pilot_a14b_retest/ffprobe.json"
+      },
+      "settings": {
+        "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+        "vae": "wan_2.1_vae.safetensors",
+        "seed": 627401,
+        "resolution": "432x768",
+        "frames": 25,
+        "fps": 24
+      }
+    },
+    {
+      "lane_id": "a14b_highnoise_only_bypass",
+      "decision": "REJECT_HOLD",
+      "representative_shots": ["shot01_ancient_shark_hook"],
+      "artifacts": {
+        "clip": "../wan22_v27_animated_frames/highonly_smoke/shot01_highonly_25f.mp4",
+        "contact_sheet": "highonly_bypass_smoke/contact_sheet_highonly_shot01.jpg",
+        "ffprobe": "highonly_bypass_smoke/ffprobe.json"
+      },
+      "settings": {
+        "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+        "bypass": "decoded high-noise latent directly by wiring node 8 samples to node 57; low-noise sampler skipped",
+        "vae": "wan_2.1_vae.safetensors",
+        "seed": 777101,
+        "resolution": "432x768",
+        "frames": 25,
+        "fps": 24
+      }
+    },
+    {
+      "lane_id": "wan22_5b_ti2v_i2v",
+      "decision": "HOLD_DEPENDENCY_BLOCKED",
+      "representative_shots": ["shot07_final_predator_requested"],
+      "artifacts": {
+        "run_error": "wan22_5b_ti2v_dependency_check/run_error.txt"
+      },
+      "settings": {
+        "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_ti2v_5b_i2v_smoke.json",
+        "requested_unet": "wan2.2_ti2v_5B_fp16.safetensors",
+        "available_unet_choices_seen": ["flux1-schnell-fp8.safetensors"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "tardigrade_survival_mode",
+  "created_at": "2026-06-05T22:53:56",
+  "source_clean_master": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_master_1080.mp4",
+  "clean_master_copy": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/clean_master_unmodified.mp4",
+  "manifest": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/manifest.json",
+  "caption_mode": "shot-accurate key-word styled ASS from manifest durations; use CapCut/Whisper word timestamps for true active-word karaoke if required",
+  "audio_polish": "highpass 80 Hz, light compression, loudnorm target I=-15 LRA=7 TP=-1, AAC 48kHz",
+  "outputs": {
+    "publish_candidate": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "discord_preview": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+    "captions_ass": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/captions.ass",
+    "captions_srt": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/captions.srt",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg"
+  },
+  "segments": [
+    {
+      "index": 1,
+      "shot_id": "01",
+      "start": 0.0,
+      "end": 3.29,
+      "caption": "TARDIGRADES CAN\nPAUSE THEIR BODIES",
+      "keyword": "TARDIGRADES"
+    },
+    {
+      "index": 2,
+      "shot_id": "02",
+      "start": 3.29,
+      "end": 7.128,
+      "caption": "TOO DRY?\nTINY TUN",
+      "keyword": "TINY"
+    },
+    {
+      "index": 3,
+      "shot_id": "03",
+      "start": 7.128,
+      "end": 11.332,
+      "caption": "METABOLISM DROPS\nLIKE PAUSE",
+      "keyword": "METABOLISM"
+    },
+    {
+      "index": 4,
+      "shot_id": "04",
+      "start": 11.332,
+      "end": 15.353000000000002,
+      "caption": "WATER RETURNS\nTHEY WAKE UP",
+      "keyword": "RETURNS"
+    },
+    {
+      "index": 5,
+      "shot_id": "05",
+      "start": 15.353000000000002,
+      "end": 19.008000000000003,
+      "caption": "NATURE\u2019S STRANGEST\nSURVIVAL TRICK",
+      "keyword": "STRANGEST"
+    }
+  ]
+}

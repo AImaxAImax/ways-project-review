@@ -1,0 +1,20 @@
+[
+  {
+    "id": "b2930a74-86e6-4043-ac63-0235aed81c4e",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_212347_b2930a74-86e6-4043-ac63-0235aed81c4e.png",
+    "created_at": 1780867427.791288,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 premium wildlife source plate for a science short: one owl perched upright on a simple branch, owl body and talons point straight toward camera, but the head is twisted around to look behind its own back over the shoulder, almost a 270-degree owl head turn, viewer can see the owl's face turned backward and the forward-facing chest at the same time, natural healthy owl neck feathers, dramatic impossible-looking but not scary, soft dark forest, big caption-safe negative space, no text, no logo, no watermark, no UI, no labels, no arrows, no x-ray, no anatomy cutaway, no extra owl, no duplicate head, no broken neck.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

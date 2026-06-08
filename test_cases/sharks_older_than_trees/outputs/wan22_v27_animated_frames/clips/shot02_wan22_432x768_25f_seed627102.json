@@ -1,0 +1,19 @@
+{
+  "id": "02",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+  "duration": 2.303,
+  "caption": "SERIOUSLY.",
+  "seed": 627102,
+  "prompt": "documentary macro image-to-video of fossil shark tooth proof. Keep the original fossil and stone slab exactly intact while camera makes a tiny macro push, dust motes drift, shallow depth of field breathes subtly, museum-light shimmer. No new text, no labels, no hands, no morphing, no cracks changing, no scene cut.",
+  "source_image": "assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+  "prompt_id": "edcbe9aa-64a2-402d-a07f-6e9bee9d2606",
+  "uploaded_image": "shot02_seriously_fossil_proof_v01.jpeg",
+  "comfy_output": {
+    "filename": "02_627102_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot02_wan22_432x768_25f_seed627102.mp4"
+}

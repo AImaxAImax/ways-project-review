@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Arial,104,&H00FFFFFF,&H0000D7FF,&H00000000,&H80000000,-1,0,0,0,100,100,-1,0,1,8,3,5,90,90,650,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.08,Caption,,0,0,0,,SATURN HAS A\NHEXAGON STORM
+Dialogue: 0,0:00:03.08,0:00:06.68,Caption,,0,0,0,,IT IS A REAL\NJET {\c&H0000D7FF&}STREAM{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.68,0:00:10.62,Caption,,0,0,0,,EACH SIDE IS {\c&H0000D7FF&}WIDER{\c&H00FFFFFF&}\NTHAN EARTH
+Dialogue: 0,0:00:10.62,0:00:14.38,Caption,,0,0,0,,STORMS KEEP\NSPINNING INSIDE
+Dialogue: 0,0:00:14.38,0:00:17.81,Caption,,0,0,0,,A {\c&H0000D7FF&}STRANGE{\c&H00FFFFFF&} SHAPE\NMADE OF WEATHER

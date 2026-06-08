@@ -1,0 +1,80 @@
+[
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 1,
+    "seed": 71301001,
+    "strength": 0.18,
+    "cfg": 4.9,
+    "steps": 26,
+    "end_percent": 0.5,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v01_00001_.png"
+  },
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 2,
+    "seed": 71301002,
+    "strength": 0.24,
+    "cfg": 4.5,
+    "steps": 24,
+    "end_percent": 0.55,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v02_00001_.png"
+  },
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 3,
+    "seed": 71301003,
+    "strength": 0.3,
+    "cfg": 4.0,
+    "steps": 24,
+    "end_percent": 0.6,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v03_00001_.png"
+  },
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 4,
+    "seed": 71301004,
+    "strength": 0.14,
+    "cfg": 5.3,
+    "steps": 28,
+    "end_percent": 0.48,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v04_00001_.png"
+  },
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 5,
+    "seed": 71301005,
+    "strength": 0.22,
+    "cfg": 5.0,
+    "steps": 26,
+    "end_percent": 0.58,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v05_00001_.png"
+  },
+  {
+    "shot": "01_clean_background_submerged_shark",
+    "variant": 6,
+    "seed": 71301006,
+    "strength": 0.34,
+    "cfg": 3.8,
+    "steps": 24,
+    "end_percent": 0.62,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_guides/shot01_clean_single_coast_submerged_shark_guide.png",
+    "prompt": "premium natural history museum diorama, handcrafted stop-motion miniature, tactile paper and clay geology, macro studio photography, cinematic depth of field, warm museum light, simple clean ancient shallow sea scene, one calm ancient shark swimming underwater in foreground, shark body below the water surface, dorsal fin near surface, soft ripples and refraction around the back, peaceful not scary, above the waterline a single simple barren volcanic coastline: low ochre sandbar, dark basalt cliff, empty lifeless rocky shore, no plants, no trees, no grass, no forest, clean uncluttered background, no cracked dry lake floor, no stacked aquarium shelves, no strange layered bands, no extra islands in foreground, elegant negative space, high production value",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, cracked earth foreground, white crack pattern, dry lake bed, tile pattern, giraffe pattern, stacked water layers, aquarium glass shelves, multiple horizons, weird floating islands, cluttered foreground, foreground rocks blocking shark, shark lying on surface, shark sitting on water, toy shark, cutout shark, beached shark, shark on land, floating on top, dry outline, dead shark, full body above water, many sharks, duplicate sharks, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, open mouth, blood, gore, horror, blurry, low quality, malformed shark, malformed fins",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v13_shot01_clean_background/v13_shot01_clean_background_v06_00001_.png"
+  }
+]

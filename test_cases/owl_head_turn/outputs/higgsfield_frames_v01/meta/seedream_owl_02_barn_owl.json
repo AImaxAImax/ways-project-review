@@ -1,0 +1,21 @@
+[
+  {
+    "id": "28e570de-0103-45f9-9b13-54977bc13dac",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_211905_28e570de-0103-45f9-9b13-54977bc13dac.png",
+    "created_at": 1780867145.278006,
+    "params": {
+      "prompt": "Vertical 9:16 premium nature still, single barn owl with white heart-shaped face, perched upright, body faces forward while head rotates over its shoulder as if looking behind, dramatic impossible-looking but biologically believable owl posture, dark clean background, no diagrams or internal anatomy, no text, no labels, no watermarks, no extra animals, no duplicated face, no horror.",
+      "medias": [],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 575352,
+      "reference_elements": []
+    }
+  }
+]

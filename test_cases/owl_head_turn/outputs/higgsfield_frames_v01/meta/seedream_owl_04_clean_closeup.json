@@ -1,0 +1,21 @@
+[
+  {
+    "id": "a6777028-3e51-46c6-97cf-cfc27b8886b1",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_212043_a6777028-3e51-46c6-97cf-cfc27b8886b1.png",
+    "created_at": 1780867243.129322,
+    "params": {
+      "prompt": "Vertical 9:16 close wildlife portrait of one owl on a branch, body forward, head swiveled far around with eyes looking back toward camera, natural owl anatomy, premium documentary realism, minimal forest background and big clean negative space for captions, no text, no logo, no watermark, no interface, no labels, no arrows, no anatomical cutaway, no extra owls, no duplicated or melted features.",
+      "medias": [],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 690444,
+      "reference_elements": []
+    }
+  }
+]

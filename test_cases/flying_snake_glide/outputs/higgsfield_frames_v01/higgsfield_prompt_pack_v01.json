@@ -1,0 +1,43 @@
+{
+  "project": "flying_snake_glide",
+  "goal": "Generate source-frame candidates that clearly read as one flying/gliding snake in open air, not a snake sitting in branches.",
+  "negative_requirements": ["no text", "no logo", "no watermark", "no UI", "no captions", "no extra snakes", "no wings", "no legs", "no branch touching the snake", "no horror", "no gore"],
+  "candidates": [
+    {
+      "id": "nano_02",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 premium natural history photograph, single paradise flying snake gliding through open rainforest air, entire animal visible from head to tail, body flattened into a wide ribbon-like S curve like a living airfoil, head angled forward, tail trailing, no wings, no legs, not touching branches, two distant tree trunks framing the sides, big clear negative space around the snake, blurred emerald canopy far below, sharp realistic anatomy, documentary wildlife lighting, no text, no logo, no watermark, no UI, no extra snakes."
+    },
+    {
+      "id": "nano_03",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 cinematic educational wildlife still, one Chrysopelea flying snake caught mid-glide across an open jungle gap, snake is suspended in midair with no support, body visibly flattened wider than normal and forming a clean side-to-side wave, belly edge catching sunlight, rainforest background soft and distant, clear open air all around the snake, realistic scales and proportions, no wings, no legs, no branch contact, no extra animals, no text, no logos, no watermark, no UI."
+    },
+    {
+      "id": "nano_04",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 premium macro-to-wide nature frame, a single flying snake launch moment after leaving a high tree branch, branch behind it on the left but the snake fully airborne and separated from the branch, body flattened into a ribbon and beginning an S-shaped glide, open blue-green rainforest air in front of it, no wings, no legs, no extra snakes, accurate snake head and tail, photoreal natural history documentary style, no text, no logo, no watermark, no UI."
+    },
+    {
+      "id": "seedream_02",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 realistic wildlife documentary image of one paradise flying snake gliding through open air between rainforest trees, full body visible, flattened belly making the snake look like a ribbon, smooth S-shaped wave from head to tail, no wings and no legs, not wrapped around anything, no branch contact, clear sky-green negative space around the subject, distant blurred jungle canopy, premium sharp anatomy, no text, no logo, no watermark, no UI, no extra snakes."
+    },
+    {
+      "id": "seedream_03",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 premium science explainer source plate, one flying snake in midair above rainforest canopy, seen from slightly below so the flattened body is obvious, the snake forms a broad S curve while gliding, tree trunks far to both sides, no wings, no legs, no branch touching the snake, no extra snakes, natural realistic scales, cinematic daylight, mobile-readable silhouette with clear negative space, no text, no logo, no watermark, no UI."
+    },
+    {
+      "id": "seedream_04",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 photoreal natural history still, a single Chrysopelea flying snake flying from tree to tree over a rainforest gap, animal fully suspended in open air, flattened ribbon-like body with sidewinding glide posture, no wings, no legs, no support, no extra animals, no text or symbols, background is blurred tropical canopy with two trees at edges, crisp believable snake anatomy, educational documentary frame."
+    }
+  ]
+}

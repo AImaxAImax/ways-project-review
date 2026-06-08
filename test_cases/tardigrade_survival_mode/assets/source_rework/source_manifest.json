@@ -1,0 +1,280 @@
+{
+  "slug": "tardigrade_survival_mode",
+  "lane": "strict_WAYS_source_acquisition",
+  "created_by": "tardigrade source-acquisition subagent",
+  "created_utc": "2026-06-06",
+  "policy": {
+    "right_safe_only": true,
+    "free_or_open_license_only": true,
+    "paid_or_credit_lanes_used": false,
+    "ai_generated_final_sources_allowed": false,
+    "rendering_performed": false,
+    "source_text_logo_rule": "Reject or crop/clean any source with unavoidable non-caption text, logos, watermarks, scale bars, microscope UI, article labels."
+  },
+  "download_status": {
+    "attempted": true,
+    "local_directory": "test_cases/tardigrade_survival_mode/assets/source_rework/",
+    "result": "All 10 previously captured right-safe/open candidates are now present locally. C002 was verified with ffprobe metadata as a CC BY 4.0 PLOS/Commons microscope video explicitly covering stages I active hydrated, II dehydrating/tucking in, III anhydrobiotic tun state, and IV rehydration.",
+    "blocking_error": null,
+    "verified_rehydration_probe": {
+      "source_id": "C002",
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C002_Desiccation_Tolerance_in_the_Tardigrade_Richtersius_coronife.ogv",
+      "duration_seconds": 76.52,
+      "probe_frames": [
+        "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/c002_rehydration_probe/C002_t58.jpg",
+        "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/c002_rehydration_probe/C002_t65.jpg",
+        "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/c002_rehydration_probe/C002_t72.jpg"
+      ]
+    }
+  },
+  "beats": {
+    "beat_01_active_baseline": {
+      "need": "Hydrated/active tardigrade, recognizable barrel body, legs/claws, microscope lighting.",
+      "candidate_ids": [
+        "C001",
+        "C005",
+        "C006",
+        "C007",
+        "C009"
+      ]
+    },
+    "beat_02_desiccation_into_tun": {
+      "need": "Hydrated-to-contracted/tun transition or paired active/tun real plates.",
+      "candidate_ids": [
+        "C002",
+        "C003",
+        "C004",
+        "C008",
+        "C010"
+      ]
+    },
+    "beat_03_dormant_survival_pause": {
+      "need": "Still tun-state tardigrade; no internal/HUD graphics.",
+      "candidate_ids": [
+        "C004",
+        "C002",
+        "C008",
+        "C010"
+      ]
+    },
+    "beat_04_water_reactivation": {
+      "need": "Water returning plus credible rehydrating/resuming movement.",
+      "candidate_ids": [
+        "C002",
+        "C007",
+        "C001",
+        "C005",
+        "C006"
+      ],
+      "coverage_warning": "Updated 2026-06-06: C002 is a right-safe CC BY 4.0 PLOS/Commons microscope video whose embedded metadata explicitly states the sequence includes stage IV rehydration after tun formation, so it is the best acquired rehydration/reactivation source. Precise remaining gap: no separate open/free zero-text source was found that clearly shows the water droplet/meniscus/flow returning in-frame. If Gate B requires visible water-return, use the safe fallback: cut from verified tun state (C002/C004) to verified active/post-water state (C002/C007/C001/C005/C006) only with script/visual wording changed away from showing literal water flow."
+    },
+    "beat_05_final_payoff_hero": {
+      "need": "Best clean, credible hydrated hero tardigrade microscope/macro shot.",
+      "candidate_ids": [
+        "C001",
+        "C005",
+        "C006",
+        "C007"
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "id": "C001",
+      "title": "BeautifulTardigrade.png",
+      "type": "image/png",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:BeautifulTardigrade.png",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/BeautifulTardigrade.png",
+      "license": "CC BY 4.0",
+      "author_or_source": "Wikimedia Commons contributor page shown as User:Dora... in API result; verify exact attribution on file page before final use.",
+      "beat_fit": [
+        "active tardigrade",
+        "hero payoff",
+        "reactivated state fallback"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C001_BeautifulTardigrade_png.png",
+      "qc_notes": "Likely good hero/active microscope candidate. Must inspect for baked-in text, scale bar, watermark, and crop safety after download. Exact author string needs confirmation due rate-limit truncation.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C002",
+      "title": "Desiccation-Tolerance-in-the-Tardigrade-Richtersius-coronifer-Relies-on-Muscle-Mediated-Structural-pone.0085091.s001.ogv",
+      "type": "video/ogg",
+      "source_platform": "Wikimedia Commons / PLOS ONE supplement",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Desiccation-Tolerance-in-the-Tardigrade-Richtersius-coronifer-Relies-on-Muscle-Mediated-Structural-pone.0085091.s001.ogv",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Desiccation-Tolerance-in-the-Tardigrade-Richtersius-coronifer-Relies-on-Muscle-Mediated-Structural-pone.0085091.s001.ogv",
+      "license": "CC BY 4.0",
+      "author_or_source": "Halberg K, Jørgensen A, Møbjerg N; PLOS ONE supplemental movie for desiccation tolerance in Richtersius coronifer.",
+      "beat_fit": [
+        "desiccation into tun",
+        "dormant tun",
+        "verified rehydration/reactivation sequence (metadata stage IV rehydration)"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C002_Desiccation_Tolerance_in_the_Tardigrade_Richtersius_coronife.ogv",
+      "qc_notes": "Best acquired Beat 04 source. Local ffprobe metadata confirms: \"Entrance into and exit out of anhydrobiosis can be divided into four separate stages (I, active hydrated; II, dehydrating, tucking in; III, anhydrobiotic tun state; IV, rehydration).\" Right-safe as CC BY 4.0 PLOS/Commons. Probe frames near 58/65/72s show microscope imagery without obvious baked-in title/text in the sampled frames, but final crop/QC must still verify no scale/UI/text before plate approval. Does not independently satisfy a strict visible water droplet/meniscus/flow requirement unless that is apparent in selected frames.",
+      "download_retry_utc": "downloaded_and_verified_2026-06-06"
+    },
+    {
+      "id": "C003",
+      "title": "SEM image of Milnesium tardigradum in active state - journal.pone.0045682.g001-2.png",
+      "type": "image/png",
+      "source_platform": "Wikimedia Commons / PLOS ONE figure derivative",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png",
+      "license": "CC BY 2.5",
+      "author_or_source": "Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al.; PLOS ONE.",
+      "beat_fit": [
+        "active comparison plate",
+        "desiccation before/after paired with C004"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C003_SEM_image_of_Milnesium_tardigradum_in_active_state___journal.png",
+      "qc_notes": "Credible SEM active-state plate; less ideal for live hydrated baseline because SEM is not water/motion, but strong anatomy reference and before/after pair with C004. Check/crop any figure label/scale bar.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C004",
+      "title": "SEM image of Milnesium tardigradum in tun state - journal.pone.0045682.g001-3.png",
+      "type": "image/png",
+      "source_platform": "Wikimedia Commons / PLOS ONE figure derivative",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:SEM_image_of_Milnesium_tardigradum_in_tun_state_-_journal.pone.0045682.g001-3.png",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/SEM_image_of_Milnesium_tardigradum_in_tun_state_-_journal.pone.0045682.g001-3.png",
+      "license": "CC BY 2.5",
+      "author_or_source": "Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al.; PLOS ONE.",
+      "beat_fit": [
+        "tun state",
+        "dormant survival pause",
+        "desiccation before/after paired with C003"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C004_SEM_image_of_Milnesium_tardigradum_in_tun_state___journal_po.png",
+      "qc_notes": "Strongest known tun-state still candidate. Must crop away labels/scale bars if present. SEM texture is credible but not hydrated microscope style; suitable for Beat 02/03 if WAYS accepts SEM.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C005",
+      "title": "Tardigrade Acutuncus Antarcticus.jpg",
+      "type": "image/jpeg",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Tardigrade_Acutuncus_Antarcticus.jpg",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tardigrade_Acutuncus_Antarcticus.jpg",
+      "license": "CC BY-SA 4.0",
+      "author_or_source": "Roberto Guidetti",
+      "beat_fit": [
+        "active/hydrated tardigrade",
+        "hero payoff"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C005_Tardigrade_Acutuncus_Antarcticus_jpg.jpg",
+      "qc_notes": "Potential credible microscope/macro hero. Must inspect for text/scale/watermark and 9:16 crop safety.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C006",
+      "title": "Tardigrade under microscope.jpg",
+      "type": "image/jpeg",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Tardigrade_under_microscope.jpg",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tardigrade_under_microscope.jpg",
+      "license": "CC BY-SA 4.0",
+      "author_or_source": "Wikimedia Commons contributor page shown as User:DSpa... in API result; verify exact attribution on file page before final use.",
+      "beat_fit": [
+        "active/hydrated tardigrade",
+        "hero payoff"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C006_Tardigrade_under_microscope_jpg.jpg",
+      "qc_notes": "Likely useful active microscope shot. Need exact author verification and text/scale QC after download.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C007",
+      "title": "Tardigrade under a microscope, from a Scottish high school playing field.webm",
+      "type": "video/webm",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Tardigrade_under_a_microscope,_from_a_Scottish_high_school_playing_field.webm",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Tardigrade_under_a_microscope%2C_from_a_Scottish_high_school_playing_field.webm",
+      "license": "CC0",
+      "author_or_source": "Wikimedia Commons contributor page shown as User:WeAr... in API result; CC0 dedication. Verify exact source page before final use.",
+      "beat_fit": [
+        "active movement",
+        "water/reactivated state fallback",
+        "hero motion"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C007_Tardigrade_under_a_microscope__from_a_Scottish_high_school_p.webm",
+      "qc_notes": "Very useful because it is actual microscope video and CC0. Does not by itself prove water returning; use only as active/reactivated movement unless paired with true water-return source.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C008",
+      "title": "FeineFauna different-state-of-tardigrades 01.jpg",
+      "type": "image/jpeg",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:FeineFauna_different-state-of-tardigrades_01.jpg",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/FeineFauna_different-state-of-tardigrades_01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author_or_source": "FeineFauna",
+      "beat_fit": [
+        "active/tun state comparison",
+        "dormant survival support"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C008_FeineFauna_different_state_of_tardigrades_01_jpg.jpg",
+      "qc_notes": "Search result says different states; inspect carefully. If it contains labels or diagram-style text, use only as provenance/reference or crop clean portions. Reject if illustration/cartoon rather than microscope/source-supported.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C009",
+      "title": "FeineFauna different-state-of-tardigrades 02.png",
+      "type": "image/png",
+      "source_platform": "Wikimedia Commons",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:FeineFauna_different-state-of-tardigrades_02.png",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/FeineFauna_different-state-of-tardigrades_02.png",
+      "license": "CC BY-SA 4.0",
+      "author_or_source": "FeineFauna",
+      "beat_fit": [
+        "active/tun state comparison reference"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C009_FeineFauna_different_state_of_tardigrades_02_png.png",
+      "qc_notes": "Inspect before use; likely has state labels/graphics. If not real microscope/macro or has baked-in text, do not approve as final plate.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    },
+    {
+      "id": "C010",
+      "title": "41598 2019 56965 Fig1 HTML.webp",
+      "type": "image/webp",
+      "source_platform": "Wikimedia Commons / Scientific Reports open-access figure",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:41598_2019_56965_Fig1_HTML.webp",
+      "direct_source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/41598_2019_56965_Fig1_HTML.webp",
+      "license": "CC BY 4.0",
+      "author_or_source": "Ricardo Cardoso Neves, Lykke K. B. Hvidepil, Thomas L. Sørensen, et al.; Scientific Reports 2019 article figure.",
+      "beat_fit": [
+        "active/desiccated state reference",
+        "tun/dormant support"
+      ],
+      "right_safe_candidate": true,
+      "local_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C010_41598_2019_56965_Fig1_HTML_webp.webp",
+      "qc_notes": "Likely a multi-panel scientific figure; treat as candidate/source-reference only until cropped. Any panel letters, axes, labels, or scale bars must be removed/cropped for final plates.",
+      "download_retry_utc": "2026-06-06T09:20Z"
+    }
+  ],
+  "gate_assessment": {
+    "gate_A_source_provenance": "PASS: 10 open/free candidates have URLs, licenses, source/author notes, and local files; C002 rehydration provenance verified from embedded PLOS/Commons metadata.",
+    "gate_B_say_dog_see_dog": "PARTIAL_PASS_WITH_PRECISE_GAP: C002 supports real rehydration/reactivation (stage IV rehydration) and can cover Beat 04 if source-supported re-expansion/resuming movement is accepted. Remaining blocker only if strict plate requires visible water returning as droplet/meniscus/flow in-frame; no better open/free zero-text source with that exact water-return moment was found.",
+    "gate_C_anatomy_QC": "PARTIAL: C002 probe frames and existing video frame sheet support microscope tardigrade sequence; full frame/crop QC still needed before final plate approval.",
+    "gate_D_text_QC": "PARTIAL: sampled C002 rehydration-region frames showed no obvious baked-in title/text in analysis thumbnails; full selected-frame/crop text QC still required.",
+    "gate_F_no_paid_lanes": "PASS: no paid/credit lanes used.",
+    "gate_H_render_hold": "PASS: no video render performed."
+  },
+  "next_actions_before_plate_gate": [
+    "For Beat 04, prioritize C002 stage IV rehydration frames/segment because it is the best right-safe source acquired.",
+    "During plate QC, select C002 frames that show re-expansion/resumed movement and verify zero text/logos/UI/scale bars in the actual crop.",
+    "If visible water droplet/meniscus/flow cannot be found in C002, do not overclaim a literal water-return shot; change the visual/script beat to a truthful before/after: tun state, then active post-water/reactivated state.",
+    "Do not use paid/credit lanes or AI-generated final tardigrade plates."
+  ]
+}

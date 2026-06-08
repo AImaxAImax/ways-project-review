@@ -1,0 +1,60 @@
+{
+  "decision": "Museum/stage shots are limited to proof beats; future work must use varied visual worlds with the same premium natural-history quality.",
+  "current_holds": {
+    "shot_01": {
+      "file": "assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "classification": "new GPT Image 2 strong hold / visual ceiling; replaces v15 as preferred Shot 1 unless user wants calmer closed-mouth variant",
+      "previous_local_hold": "assets/selected_frames_v15/shot01_before_trees_clean_bg_submerged_shark_v15_v03_selected.png",
+      "review": "outputs/shot01_gpt_image2_v01_review.json"
+    },
+    "shot_02": {
+      "file": "assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+      "classification": "GPT Image 2 strong hold; replaces local v16/v17 as preferred proof beat",
+      "previous_local_hold": "assets/selected_frames_v16/shot02_seriously_v16_v03_selected.png",
+      "review": "outputs/gpt_image2_manual_v24_shot02_03_review.json"
+    },
+    "shot_03": {
+      "file": "assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+      "classification": "GPT Image 2 hold / likely usable; clear apple-squirrel-nut gag, caption should sell before/not-yet meaning",
+      "previous_local_hold": "assets/selected_frames_v20/shot03_before_forests_apples_squirrels_v20_v05_selected.png",
+      "review": "outputs/gpt_image2_manual_v24_shot02_03_review.json"
+    },
+    "shot_4_deep_time_timeline": {
+      "file": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "classification": "GPT Image 2 STRONG HOLD",
+      "review": "outputs/gpt_image2_manual_v24_rest_review.json",
+      "use_for": "400 million years / deep time / before trees timeline beat"
+    },
+    "shot_5_first_trees_after_sharks": {
+      "file": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "classification": "GPT Image 2 HOLD, but not for before-forests",
+      "review": "outputs/gpt_image2_manual_v24_rest_review.json",
+      "use_for": "first forests appear after sharks / world changes beat"
+    },
+    "shot_6_present_day_wonder": {
+      "file": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "classification": "GPT Image 2 STRONG HOLD",
+      "review": "outputs/gpt_image2_manual_v24_rest_review.json",
+      "use_for": "present-day viewer / this is still with us / aquarium wonder beat"
+    },
+    "shot_7_final_survivor": {
+      "file": "assets/gpt_image_2_manual_v24/shot07_shark_survivor_split_world_v01.jpeg",
+      "classification": "GPT Image 2 STRONG HOLD",
+      "review": "outputs/gpt_image2_manual_v24_rest_review.json",
+      "use_for": "final line: a survivor from a world before forests"
+    }
+  },
+  "next_generation_target": "shot_04_400_million_year_timeline via GPT Image 2 manual",
+  "source_notes": [
+    "visual_reassessment_v21_museum_limited.md",
+    "prompts_and_metadata.json",
+    "external_image_model_escalation_v23.md",
+    "gpt_image_2_manual_prompt_packet_v23.md",
+    "outputs/shot01_gpt_image2_v01_review.json",
+    "outputs/gpt_image2_manual_v24_shot02_03_review.json",
+    "outputs/gpt_image2_manual_v24_rest_review.json",
+    "outputs/gpt_image2_manual_v24_rest_contact_sheet.jpg"
+  ],
+  "overall_visual_state": "GPT Image 2 manual set now covers distinct literal beats; avoid regenerating samey shark-only portraits.",
+  "latest_contact_sheet": "outputs/gpt_image2_manual_v24_rest_contact_sheet.jpg"
+}

@@ -1,0 +1,58 @@
+{
+  "title": "saturn_hexagon_storm",
+  "created_at": "2026-06-05T22:56:44",
+  "source_clean_master": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_master_1080.mp4",
+  "clean_master_copy": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/clean_master_unmodified.mp4",
+  "manifest": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/manifest.json",
+  "caption_mode": "shot-accurate key-word styled ASS from manifest durations; use CapCut/Whisper word timestamps for true active-word karaoke if required",
+  "audio_polish": "highpass 80 Hz, light compression, loudnorm target I=-15 LRA=7 TP=-1, AAC 48kHz",
+  "outputs": {
+    "publish_candidate": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/publish_candidate_captioned.mp4",
+    "discord_preview": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/discord_preview_captioned.mp4",
+    "captions_ass": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/captions.ass",
+    "captions_srt": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/captions.srt",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v02_plain/contact_sheet_final_polish.jpg"
+  },
+  "segments": [
+    {
+      "index": 1,
+      "shot_id": "01",
+      "start": 0.0,
+      "end": 3.082,
+      "caption": "SATURN HAS A\nHEXAGON STORM",
+      "keyword": "HEXAGON"
+    },
+    {
+      "index": 2,
+      "shot_id": "02",
+      "start": 3.082,
+      "end": 6.678,
+      "caption": "IT IS A REAL\nJET STREAM",
+      "keyword": "STREAM"
+    },
+    {
+      "index": 3,
+      "shot_id": "03",
+      "start": 6.678,
+      "end": 10.616,
+      "caption": "EACH SIDE IS WIDER\nTHAN EARTH",
+      "keyword": "WIDER"
+    },
+    {
+      "index": 4,
+      "shot_id": "04",
+      "start": 10.616,
+      "end": 14.383,
+      "caption": "STORMS KEEP\nSPINNING INSIDE",
+      "keyword": "SPINNING"
+    },
+    {
+      "index": 5,
+      "shot_id": "05",
+      "start": 14.383,
+      "end": 17.808,
+      "caption": "A STRANGE SHAPE\nMADE OF WEATHER",
+      "keyword": "STRANGE"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "uploaded": {
+    "reused_existing_upload": false,
+    "id": "4lnxNc3nKz4",
+    "response": {
+      "kind": "youtube#video",
+      "etag": "wEJB85483UzDrRH27kMCU0WLx24",
+      "id": "4lnxNc3nKz4",
+      "snippet": {
+        "publishedAt": "2026-06-07T00:25:55Z",
+        "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+        "title": "This Shrimp Punch Makes Water Flash #Shorts",
+        "description": "A mantis shrimp punches so fast it can make water flash.\n\nThat flash is cavitation: a tiny bubble forms, collapses, and creates a second shock.\n\n#Shorts #science #facts #mantisshrimp\n\nSources:\n- Patek & Caldwell, Deadly strike mechanism of a mantis shrimp, Nature, DOI: 10.1038/428819a\n- Patek et al., Elastic Energy Powers Mantis Shrimp Punch, Journal of Experimental Biology, DOI: 10.1242/jeb.040691\n- A physical model of the extreme mantis shrimp strike, Bioinspiration & Biomimetics, DOI: 10.1088/1748-3182/9/1/016014",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/4lnxNc3nKz4/default.jpg?sqp=CNz0ktEG&rs=AOn4CLAns6plyiUnDeuwNlkRgd6XjaLcWQ",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/4lnxNc3nKz4/mqdefault.jpg?sqp=CNz0ktEG&rs=AOn4CLDoHUE2EwJ_ogTmFjMPgsgzWjsCyA",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/4lnxNc3nKz4/hqdefault.jpg?sqp=CNz0ktEG&rs=AOn4CLCa0pTaQrCTM5HhlIml9yYsRo1hYQ",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Wait Are You Serious?",
+        "tags": [
+          "Shorts",
+          "WAYS",
+          "Wait Are You Serious",
+          "animal facts",
+          "cavitation",
+          "facts",
+          "mantis shrimp",
+          "marine biology",
+          "science",
+          "weird facts"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "This Shrimp Punch Makes Water Flash #Shorts",
+          "description": "A mantis shrimp punches so fast it can make water flash.\n\nThat flash is cavitation: a tiny bubble forms, collapses, and creates a second shock.\n\n#Shorts #science #facts #mantisshrimp\n\nSources:\n- Patek & Caldwell, Deadly strike mechanism of a mantis shrimp, Nature, DOI: 10.1038/428819a\n- Patek et al., Elastic Energy Powers Mantis Shrimp Punch, Journal of Experimental Biology, DOI: 10.1242/jeb.040691\n- A physical model of the extreme mantis shrimp strike, Bioinspiration & Biomimetics, DOI: 10.1088/1748-3182/9/1/016014"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false
+      }
+    }
+  },
+  "captions_attach": {
+    "caption_inserted": true,
+    "response": {
+      "kind": "youtube#caption",
+      "etag": "esO-6lp_n3aF9KG6CK1lYB1YPEw",
+      "id": "AUieDab6yG_OITYXiSdasaZrE-GbeWosiUS-ACMABunRnnmisz6wYd0f",
+      "snippet": {
+        "videoId": "4lnxNc3nKz4",
+        "lastUpdated": "2026-06-07T00:25:58.896157Z",
+        "trackKind": "standard",
+        "language": "en",
+        "name": "English",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  },
+  "processed": {
+    "video_id": "4lnxNc3nKz4",
+    "found": true,
+    "title": "This Shrimp Punch Makes Water Flash #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": null,
+    "privacyStatus": "private",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT32S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/4lnxNc3nKz4",
+    "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+  },
+  "public_publish": {
+    "executed_at": "2026-06-07T00:26:42Z",
+    "authorization_text": "Josh said in Discord thread: Let\u2019s post it on YT!",
+    "before": {
+      "video_id": "4lnxNc3nKz4",
+      "found": true,
+      "title": "This Shrimp Punch Makes Water Flash #Shorts",
+      "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+      "channelTitle": "Wait Are You Serious?",
+      "categoryId": "28",
+      "tags": null,
+      "privacyStatus": "private",
+      "uploadStatus": "processed",
+      "selfDeclaredMadeForKids": false,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "duration": "PT32S",
+      "definition": "hd",
+      "caption": "true",
+      "url": "https://youtu.be/4lnxNc3nKz4",
+      "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+    },
+    "after": {
+      "video_id": "4lnxNc3nKz4",
+      "found": true,
+      "title": "This Shrimp Punch Makes Water Flash #Shorts",
+      "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+      "channelTitle": "Wait Are You Serious?",
+      "categoryId": "28",
+      "tags": [
+        "Shorts",
+        "WAYS",
+        "Wait Are You Serious",
+        "animal facts",
+        "cavitation",
+        "facts",
+        "mantis shrimp",
+        "marine biology",
+        "science",
+        "weird facts"
+      ],
+      "privacyStatus": "public",
+      "uploadStatus": "processed",
+      "selfDeclaredMadeForKids": false,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "duration": "PT32S",
+      "definition": "hd",
+      "caption": "true",
+      "url": "https://youtu.be/4lnxNc3nKz4",
+      "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+    }
+  },
+  "final": {
+    "video_id": "4lnxNc3nKz4",
+    "found": true,
+    "title": "This Shrimp Punch Makes Water Flash #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": [
+      "Shorts",
+      "WAYS",
+      "Wait Are You Serious",
+      "animal facts",
+      "cavitation",
+      "facts",
+      "mantis shrimp",
+      "marine biology",
+      "science",
+      "weird facts"
+    ],
+    "privacyStatus": "public",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT32S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/4lnxNc3nKz4",
+    "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+  }
+}

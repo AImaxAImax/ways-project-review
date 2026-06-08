@@ -1,0 +1,21 @@
+[
+  {
+    "id": "edbad8d0-a534-49b1-a0a3-32db3b9e3733",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_212526_edbad8d0-a534-49b1-a0a3-32db3b9e3733.png",
+    "created_at": 1780867526.50271,
+    "params": {
+      "prompt": "Vertical 9:16 clean mobile source frame: one barred owl on a stump, body faces camera squarely, but its head is rotated almost backward, face visible over the right shoulder as if staring behind the body, impossible-looking owl swivel pose, clear caption space above, no text, no logo, no watermark, no labels, no x-ray, no extra owl, no duplicate face, no mangled anatomy.",
+      "medias": [],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 128306,
+      "reference_elements": []
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "48fe35c9-3e9c-4d50-8d0e-c1d90a07cca1",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_212302_48fe35c9-3e9c-4d50-8d0e-c1d90a07cca1.png",
+    "created_at": 1780867382.575575,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Use the reference as natural-history lighting and owl style only. Make the action much clearer: one realistic great horned owl perched upright, chest and feet facing the camera, but the head is rotated far over its right shoulder so the face looks backward past its own back, an impossible-looking owl head swivel, at least 180 degrees from the body direction, clean gap/read between forward-facing body and turned head, eyes visible in profile/three-quarter view, believable neck feathers, one owl only, vertical 9:16, caption-safe dark forest background, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no x-ray, no duplicate head, no extra owls, no broken neck, no horror.",
+      "medias": [
+        {
+          "data": {
+            "id": "08d270e0-037b-42cf-9845-18dd1f840406",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/08d270e0-037b-42cf-9845-18dd1f840406.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "reference_elements": []
+    }
+  }
+]

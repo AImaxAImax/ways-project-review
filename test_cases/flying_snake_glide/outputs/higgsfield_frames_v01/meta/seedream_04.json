@@ -1,0 +1,21 @@
+[
+  {
+    "id": "b6cd7963-bd41-490b-8e54-2cda5898241c",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044430_b6cd7963-bd41-490b-8e54-2cda5898241c.png",
+    "created_at": 1780807470.046954,
+    "params": {
+      "prompt": "Vertical 9:16 photoreal natural history still, a single Chrysopelea flying snake flying from tree to tree over a rainforest gap, animal fully suspended in open air, flattened ribbon-like body with sidewinding glide posture, no wings, no legs, no support, no extra animals, no text or symbols, background is blurred tropical canopy with two trees at edges, crisp believable snake anatomy, educational documentary frame.",
+      "medias": [],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 992689,
+      "reference_elements": []
+    }
+  }
+]

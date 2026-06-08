@@ -1,0 +1,22 @@
+{
+  "lane": "deterministic_motion_graphic_proof_sequence",
+  "no_paid_or_credit_tools": true,
+  "source_note": "Uses deterministic project-owned motion graphics plus existing approved mantis script/VO/caption scaffold. It is a proof motion-graphic fallback, not claimed as real high-speed footage.",
+  "beats": [
+    "impact flash/bubble cloud",
+    "club motion tears water into bubbles",
+    "cavitation bubble cloud close-up",
+    "first impact",
+    "bubble collapse + second shock",
+    "high-speed sequence visualization",
+    "not just punch prey",
+    "water punches too replay"
+  ],
+  "outputs": {
+    "clean_master": "outputs/motion_graphic_rework_v01/clean_master.mp4",
+    "publish_candidate_captioned": "outputs/motion_graphic_rework_v01/publish_candidate_captioned.mp4",
+    "discord_preview_captioned": "outputs/motion_graphic_rework_v01/discord_preview_captioned.mp4",
+    "contact_sheet": "outputs/motion_graphic_rework_v01/contact_sheet.jpg",
+    "ffprobe": "outputs/motion_graphic_rework_v01/ffprobe_publish.json"
+  }
+}

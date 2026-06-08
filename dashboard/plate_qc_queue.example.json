@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-06T00:00:00Z",
+  "root": "/mnt/c/dev/curious-shorts",
+  "plates": [
+    {
+      "plate_id": "example_slug__shot01__hf_ultra__v01",
+      "slug": "example_slug",
+      "shot_id": "shot01",
+      "beat": "Example spoken beat that this plate must instantly show at phone size.",
+      "image_path": "test_cases/example_slug/assets/plate_generation/shot01_hf_ultra_v01.png",
+      "generator": "higgsfield_unlimited",
+      "created_at": "2026-06-06T00:00:00Z",
+      "candidate_lane": "wan_i2v",
+      "vlm": {
+        "model": "gemma3:12b",
+        "ran_at": "2026-06-06T00:00:00Z",
+        "overall_advisory_score": 8.4,
+        "scores": {
+          "no_text_logo_ui": 10,
+          "caption_safe_negative_space": 8,
+          "phone_size_concept_read": 9,
+          "realism_anatomy_family_tone": 8,
+          "animation_friendliness": 7,
+          "lane_fit_wan_i2v": 8,
+          "lane_fit_motion_graphic": 4
+        },
+        "detected_hard_blockers": [],
+        "caption_safe_zone": {
+          "present": true,
+          "recommended_anchor": "upper_third",
+          "notes": "Keep captions in the upper third; subject fills lower/middle frame."
+        },
+        "animation": {
+          "friendliness_score": 7,
+          "boundary_clarity": 8,
+          "texture_density": 6,
+          "expected_failure_modes": ["minor edge shimmer"],
+          "suggested_lane": "wan_i2v",
+          "rationale": "Strong-prior subject with clear enough silhouette for slow motion."
+        },
+        "advisory_summary": "Advisory pass, but human must confirm lane and phone-size read."
+      }
+    }
+  ]
+}

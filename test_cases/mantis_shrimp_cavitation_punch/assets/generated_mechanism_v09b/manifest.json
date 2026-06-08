@@ -1,0 +1,122 @@
+[
+  {
+    "shot": "impact_shell_flash",
+    "variant": 1,
+    "seed": 1623035063,
+    "prompt": "vertical 9:16 photoreal macro underwater high speed photography of a small clam shell on sandy seabed at the instant of impact, tiny bright white cavitation flash at one edge, microbubbles, shock ripple, blue green water, cinematic documentary lighting, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/impact_shell_flash_v1_seed1623035063.png"
+    ],
+    "prompt_id": "aa5681ed-e92f-4263-9fbb-4eb2ed4232c6"
+  },
+  {
+    "shot": "impact_shell_flash",
+    "variant": 2,
+    "seed": 680163863,
+    "prompt": "vertical 9:16 photoreal macro underwater high speed photography of a small clam shell on sandy seabed at the instant of impact, tiny bright white cavitation flash at one edge, microbubbles, shock ripple, blue green water, cinematic documentary lighting, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/impact_shell_flash_v2_seed680163863.png"
+    ],
+    "prompt_id": "027db50b-06b7-4785-a996-575a7cd82300"
+  },
+  {
+    "shot": "impact_shell_flash",
+    "variant": 3,
+    "seed": 4109205886,
+    "prompt": "vertical 9:16 photoreal macro underwater high speed photography of a small clam shell on sandy seabed at the instant of impact, tiny bright white cavitation flash at one edge, microbubbles, shock ripple, blue green water, cinematic documentary lighting, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/impact_shell_flash_v3_seed4109205886.png"
+    ],
+    "prompt_id": "88bb8425-6f43-4efb-ae5c-e57a5f4bac66"
+  },
+  {
+    "shot": "cavitation_bloom",
+    "variant": 1,
+    "seed": 3123836019,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of cavitation microbubbles blooming beside a small shell on sand, bright tiny vapor bubbles in blue water, realistic physics, premium science documentary photo, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/cavitation_bloom_v1_seed3123836019.png"
+    ],
+    "prompt_id": "06256208-81a0-4625-b01b-efd927d23907"
+  },
+  {
+    "shot": "cavitation_bloom",
+    "variant": 2,
+    "seed": 1894173546,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of cavitation microbubbles blooming beside a small shell on sand, bright tiny vapor bubbles in blue water, realistic physics, premium science documentary photo, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/cavitation_bloom_v2_seed1894173546.png"
+    ],
+    "prompt_id": "fbfeaaa9-eda3-4d4b-b270-d4964fbdcc30"
+  },
+  {
+    "shot": "cavitation_bloom",
+    "variant": 3,
+    "seed": 3476953590,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of cavitation microbubbles blooming beside a small shell on sand, bright tiny vapor bubbles in blue water, realistic physics, premium science documentary photo, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/cavitation_bloom_v3_seed3476953590.png"
+    ],
+    "prompt_id": "2afcd327-c3d5-4080-b58f-b80a71a796c6"
+  },
+  {
+    "shot": "bubble_collapse_ripple",
+    "variant": 1,
+    "seed": 3348528945,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of a cavitation bubble cloud collapsing beside a small shell, subtle shock ripple expanding through water, sand particles suspended, realistic high speed photography, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/bubble_collapse_ripple_v1_seed3348528945.png"
+    ],
+    "prompt_id": "a5ed6f03-8e06-4ad1-93e9-95f3b068322f"
+  },
+  {
+    "shot": "bubble_collapse_ripple",
+    "variant": 2,
+    "seed": 677206218,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of a cavitation bubble cloud collapsing beside a small shell, subtle shock ripple expanding through water, sand particles suspended, realistic high speed photography, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/bubble_collapse_ripple_v2_seed677206218.png"
+    ],
+    "prompt_id": "b7418fa6-6f85-4f99-b240-49efc0995728"
+  },
+  {
+    "shot": "bubble_collapse_ripple",
+    "variant": 3,
+    "seed": 1838081600,
+    "prompt": "vertical 9:16 photoreal macro underwater closeup of a cavitation bubble cloud collapsing beside a small shell, subtle shock ripple expanding through water, sand particles suspended, realistic high speed photography, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/bubble_collapse_ripple_v3_seed1838081600.png"
+    ],
+    "prompt_id": "12242377-655c-49fb-868c-fa189cf741e4"
+  },
+  {
+    "shot": "water_second_shock",
+    "variant": 1,
+    "seed": 2133243636,
+    "prompt": "vertical 9:16 photoreal underwater macro of expanding shock ripples and tiny bubbles around a shell on the seafloor, cinematic blue green water, realistic documentary high speed still, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/water_second_shock_v1_seed2133243636.png"
+    ],
+    "prompt_id": "11cd2a73-5c3d-4051-850e-64115c94b94f"
+  },
+  {
+    "shot": "water_second_shock",
+    "variant": 2,
+    "seed": 585253809,
+    "prompt": "vertical 9:16 photoreal underwater macro of expanding shock ripples and tiny bubbles around a shell on the seafloor, cinematic blue green water, realistic documentary high speed still, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/water_second_shock_v2_seed585253809.png"
+    ],
+    "prompt_id": "69b51698-ba14-4c6a-98f7-63c657374843"
+  },
+  {
+    "shot": "water_second_shock",
+    "variant": 3,
+    "seed": 2219055808,
+    "prompt": "vertical 9:16 photoreal underwater macro of expanding shock ripples and tiny bubbles around a shell on the seafloor, cinematic blue green water, realistic documentary high speed still, no animal visible, no text, no labels, no arrows",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_mechanism_v09b/water_second_shock_v3_seed2219055808.png"
+    ],
+    "prompt_id": "d116e36e-51a1-458c-a45e-a6d4031510d8"
+  }
+]

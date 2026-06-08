@@ -1,0 +1,21 @@
+{
+  "slug": "wood_frog_freeze_survival",
+  "updated_at": "2026-06-06T15:00:00Z",
+  "gate": "Gate 2 source plate QC",
+  "status": "partial_progress_not_ready",
+  "asset_count": 7,
+  "new_assets": [
+    "test_cases/wood_frog_freeze_survival/assets/source_stills/source_06_freeze_through_body_graphic.jpg",
+    "test_cases/wood_frog_freeze_survival/assets/source_stills/source_07_heart_stop_graphic.jpg"
+  ],
+  "contact_sheet": "test_cases/wood_frog_freeze_survival/outputs/gate2_plate_qc/wood_frog_source_contact_sheet_v04.jpg",
+  "manifest": "test_cases/wood_frog_freeze_survival/assets/source_stills/source_manifest.json",
+  "progress": "Added deterministic no-AI proof plates for beats 2-3 using right-safe existing source stills and project-owned overlays; no video render and no paid/credit lane used.",
+  "blockers": [
+    "Approved elevenlabs_george voiceover file is still absent, so do not render with wrong voice.",
+    "Beat 2 and beat 3 plates are stronger but remain local composite proof graphics, not documentary freeze-through-body/heart-stop footage; require human Gate 2 review before any render.",
+    "Public publish remains Gate 6 hold."
+  ],
+  "ready_to_render": false,
+  "ready_to_publish": false
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "8e4a2c84-d451-4724-96ed-5b49cb7a4730",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_212327_8e4a2c84-d451-4724-96ed-5b49cb7a4730.png",
+    "created_at": 1780867407.91419,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Use the reference owl realism and composition, but make the head-turn fact obvious. Single owl perched on branch, body remains forward facing the viewer, wings and chest aligned straight ahead, head rotated dramatically backward over the left shoulder, face looking behind the owl, visible eye and beak profile, clear separation from body, reads at phone size as a 270-degree owl neck turn, premium wildlife documentary still, no text/logos/watermarks/UI, no labels/arrows/diagrams, no anatomy cutaway, no extra owls, no second head, no distorted or injured neck.",
+      "medias": [
+        {
+          "data": {
+            "id": "88397555-59c3-49bb-846c-1606b714e741",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/88397555-59c3-49bb-846c-1606b714e741_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "reference_elements": []
+    }
+  }
+]

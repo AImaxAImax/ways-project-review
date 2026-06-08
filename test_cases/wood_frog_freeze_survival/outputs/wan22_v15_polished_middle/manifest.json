@@ -1,0 +1,94 @@
+{
+  "slug": "wood_frog_freeze_survival_v15",
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival",
+  "output_dir": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle",
+  "voiceover": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/motion_v13_sugar_antifreeze/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 49,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "writable_dirs": [],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/source_stills/source_02.jpg",
+      "duration": 2.35,
+      "caption": "A FROG CAN FREEZE SOLID",
+      "seed": 981401,
+      "prompt": "premium natural history documentary image-to-video from the exact wood frog source photo. Preserve the real wood frog anatomy, leaf litter, wet skin texture, and camera framing. Add true subtle in-frame motion: cold air shimmer, tiny frost sparkle forming along leaves and frog edges, barely perceptible breathing fading toward frozen stillness. No text, no labels, no arrows, no UI, no scene cut, no morphing, no melting, no new animal.",
+      "clip": "outputs/wan22_v14_actual_i2v/clips/shot01_wan22_432x768_49f_seed981401.mp4"
+    },
+    {
+      "id": "02",
+      "image": "assets/source_stills/source_10_organic_frozen_through_body.jpg",
+      "duration": 3.4,
+      "caption": "ICE FORMS THROUGH ITS BODY",
+      "seed": 982502,
+      "prompt": "premium natural history documentary image-to-video from the exact real frozen wood frog source plate. Preserve frog anatomy, icy leaf litter, and macro camera framing. Add subtle true in-frame motion: frost crystals slowly branch along the body surface and seem to creep under the skin, tiny ice dust drifts, cold shimmer. Organic, photographic, no graphics. No text, no labels, no arrows, no circular overlays, no UI, no scene cut, no morphing, no melted frog.",
+      "clip": "outputs/wan22_v15_midreroll/clips/shot02_wan22_432x768_49f_seed982502.mp4"
+    },
+    {
+      "id": "03",
+      "image": "assets/source_stills/source_11_organic_heart_stop_dim_glow.jpg",
+      "duration": 3.1,
+      "caption": "ITS HEART CAN STOP",
+      "seed": 982503,
+      "prompt": "premium natural history science image-to-video from the exact frozen wood frog source plate. Preserve the real frog, leaf litter, and cold photographic look. Add subtle motion: the very soft warm chest glow fades down toward stillness, frost specks drift, cold air shimmer. Keep glow organic and diffused, not an icon. No text, no pause marks, no UI, no medical monitor, no labels, no arrows, no scene cut, no morphing.",
+      "clip": "outputs/wan22_v15_midreroll/clips/shot03_wan22_432x768_49f_seed982503.mp4"
+    },
+    {
+      "id": "04",
+      "image": "assets/source_stills/source_12_microscopic_glucose_cell_protection.jpg",
+      "duration": 3.6,
+      "caption": "SUGAR HELPS PROTECT CELLS",
+      "seed": 982504,
+      "prompt": "premium soft microscopic science image-to-video from the exact no-text cell protection source plate. Preserve teal cells, dark cold fluid, and gold glucose-like particles. Add gentle true motion: gold protective fluid and beads drift around cell membranes, cells barely pulse, faint ice needles stay at edges and recede slightly. Organic microscopy feel, no diagram labels. No text, no labels, no arrows, no UI, no new symbols, no hard cut, no morphing.",
+      "clip": "outputs/wan22_v15_midreroll/clips/shot04_wan22_432x768_49f_seed982504.mp4"
+    },
+    {
+      "id": "05",
+      "image": "assets/source_stills/source_04.jpg",
+      "duration": 4.45,
+      "caption": "SPRING WARMS IT BACK TO LIFE",
+      "seed": 981405,
+      "prompt": "premium spring natural history image-to-video from the exact wood frog source photo. Preserve real frog anatomy and wet leaves. Add true in-frame motion: gentle warming light, droplets glinting, leaf moisture shimmer, the frog making the tiniest believable return-to-life twitch. No text, no labels, no logo, no scene cut, no extra limbs, no deformed frog, no morphing.",
+      "clip": "outputs/wan22_v14_actual_i2v/clips/shot05_wan22_432x768_49f_seed981405.mp4"
+    },
+    {
+      "id": "06",
+      "image": "assets/source_stills/source_01.jpg",
+      "duration": 3.7,
+      "caption": "NOT MAGIC SURVIVAL CHEMISTRY",
+      "seed": 981406,
+      "prompt": "premium natural history documentary image-to-video from the exact wood frog source photo. Preserve real frog anatomy and macro leaf-litter environment. Add true subtle motion: tiny gold protective particles and cold-to-warm shimmer around the frog, delicate frost sparkle fading, slight camera-held natural movement. No text, no labels, no arrows, no UI, no logos, no scene cut, no morphing, no melted frog.",
+      "clip": "outputs/wan22_v14_actual_i2v/clips/shot06_wan22_432x768_49f_seed981406.mp4"
+    }
+  ],
+  "created_at": "2026-06-06T20:34:12",
+  "outputs": {
+    "manifest": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/manifest.json",
+    "manifest_partial": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/manifest_partial.json",
+    "silent": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_silent_1080.mp4",
+    "master": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_master_1080.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/wood_frog_freeze_survival_v15_wan22_preview_720.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/contact_sheet_wood_frog_freeze_survival_v15.jpg",
+    "ffprobe_master": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/ffprobe_master.json",
+    "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v15_polished_middle/README_QA_FINAL.md"
+  }
+}

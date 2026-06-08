@@ -1,0 +1,40 @@
+{
+  "slug": "archerfish_water_jets",
+  "hook": "An archerfish can shoot insects out of the air.",
+  "core_fact": "Archerfish hunt by firing precise jets of water at insects above the surface; jet dynamics and aim help knock prey down.",
+  "status_column": "Gate 2 Source Acquisition Partial Pass",
+  "cohort_tag": "first10_animal_new_clear_002",
+  "test_variable": "obvious_say_dog_see_dog_public_source_water_jet",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane_map": {},
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/archerfish_water_jets/",
+  "blocking_gate": "Gate 2 - Source/Plate QC",
+  "created_at": "2026-06-07T07:25:04Z",
+  "gate_1_status": "auto_approved_internal",
+  "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+  "rework_reason": "Gate 2 source acquisition partial pass: real Wikimedia Commons water-jet footage and five beat-mapped selected assets exist, but B04/insect-fall readability needs phone-size review or one clearer knockdown plate before render. Approved elevenlabs_george VO is also required before any render.",
+  "source_quality_requirements": {
+    "must_fix": [
+      "confirm B04 insect-fall/knockdown readability at phone size or acquire one clearer plate",
+      "water jet must visibly connect fish mouth to insect target",
+      "avoid diagrams, labels, UI, stock-photo text, and ambiguous generic fish shots",
+      "approved elevenlabs_george VO before any render"
+    ],
+    "old_artifacts_status": "new packet; Gate 2 source acquisition partial pass; no render yet"
+  },
+  "rework_artifacts": {
+    "last_agent_update": "2026-06-07T09:34:00Z",
+    "agent_note": "Downloaded public-source archerfish assets and extracted real water-jet frames from Commons OGV. Selected 5 beat-mapped source assets and built a Gate 2 contact sheet. Held render because approved elevenlabs_george VO is absent and B04 needs phone-size clarity check.",
+    "source_manifest": "assets/source_public_v01/source_manifest.json",
+    "selected_source_manifest": "outputs/gate2_source_public_v01/selected_beat_assets_manifest.json",
+    "source_contact_sheet": "outputs/gate2_source_public_v01/archerfish_public_source_gate2_contact_sheet_v01.jpg",
+    "source_qa": "outputs/gate2_source_public_v01/ARCHERFISH_GATE2_SOURCE_QA_v01.md",
+    "selected_assets_dir": "outputs/gate2_source_public_v01/selected_beat_assets"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "wombat_cube_poop",
+  "version": 1,
+  "target_format": "1080x1920 vertical Short",
+  "caption_style": "WAYS creator captions; zero non-caption text",
+  "shots": [
+    {
+      "id": "shot01",
+      "voiceover": "Wombats poop cubes.",
+      "caption": "Wombats poop cubes",
+      "visual": "real wombat in grass, cute not childish, instant hook",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot02",
+      "voiceover": "Not perfect toy blocks, but little cube-shaped pellets.",
+      "caption": "little cube shaped pellets",
+      "visual": "macro-safe tiny cube scat proxy beside natural ground",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot03",
+      "voiceover": "Scientists think the shape comes from uneven stretching inside the intestine.",
+      "caption": "uneven stretching / inside the intestine",
+      "visual": "non-text anatomical motion proxy, no diagram labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot04",
+      "voiceover": "The corners form before the poop ever lands.",
+      "caption": "the corners form first",
+      "visual": "process visual, avoid fake labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot05",
+      "voiceover": "So the weirdest bathroom fact in nature is also physics.",
+      "caption": "bathroom fact / plus physics",
+      "visual": "wombat walking away, family-friendly final beat",
+      "duration_seconds": null,
+      "gate_notes": []
+    }
+  ]
+}

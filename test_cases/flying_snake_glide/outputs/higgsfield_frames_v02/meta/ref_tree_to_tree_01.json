@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2420ba57-edff-4fe1-8f61-bf4331264ca0",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044811_2420ba57-edff-4fe1-8f61-bf4331264ca0.png",
+    "created_at": 1780807691.032896,
+    "params": {
+      "prompt": "Use the reference style but make a clearer tree-to-tree steering frame: one flying snake gliding through a rainforest gap toward a destination tree branch on the right, snake large enough for phone viewing, fully airborne and not touching anything, flattened ribbon-like body in a clean S wave, tree trunks at edges only, open negative space around snake, realistic natural history photograph, no wings, no legs, no extra snakes, no text, no logo, no watermark, no UI.",
+      "medias": [
+        {
+          "data": {
+            "id": "09791da1-f1d3-40d6-aa77-4a3734f1f507",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/09791da1-f1d3-40d6-aa77-4a3734f1f507_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 147212,
+      "reference_elements": []
+    }
+  }
+]

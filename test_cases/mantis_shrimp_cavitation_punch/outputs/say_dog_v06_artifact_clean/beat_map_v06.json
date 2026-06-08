@@ -1,0 +1,74 @@
+[
+  {
+    "beat": 1,
+    "id": "01_hook_flash",
+    "caption": "THIS SHRIMP PUNCH / MAKES WATER FLASH",
+    "kind": "flash",
+    "source_still": "source_04",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 2,
+    "id": "02_club_speed",
+    "caption": "ITS CLUB MOVES / INSANELY FAST",
+    "kind": "speed",
+    "source_still": "source_05",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 3,
+    "id": "03_cavitation",
+    "caption": "THAT FLASH / IS CAVITATION",
+    "kind": "cavitation",
+    "source_still": "source_02",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 4,
+    "id": "04_first_hit",
+    "caption": "THE PUNCH / HITS FIRST",
+    "kind": "impact",
+    "source_still": "source_04",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 5,
+    "id": "05_second_hit",
+    "caption": "THEN THE BUBBLE / COLLAPSES",
+    "kind": "collapse",
+    "source_still": "source_03",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 6,
+    "id": "06_high_speed",
+    "caption": "SCIENTISTS FILMED IT / IN HIGH SPEED",
+    "kind": "highspeed",
+    "source_still": "source_01",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 7,
+    "id": "07_not_just_prey",
+    "caption": "IT DOES NOT JUST / PUNCH PREY",
+    "kind": "prey",
+    "source_still": "source_05",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  },
+  {
+    "beat": 8,
+    "id": "08_water_punches",
+    "caption": "THE WATER / PUNCHES TOO",
+    "kind": "water",
+    "source_still": "source_02",
+    "frames": 94,
+    "artifact_strategy": "real-source-still base, low-opacity no-text overlays only"
+  }
+]

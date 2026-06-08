@@ -1,0 +1,35 @@
+# Generated media and heavy artifacts
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+
+# Secrets and OAuth
+*token*.json
+*secret*
+*credential*
+.env
+.env.*
+
+# Caches
+__pycache__/
+.pytest_cache/
+tmp/
+.venv/
+venv/
+node_modules/

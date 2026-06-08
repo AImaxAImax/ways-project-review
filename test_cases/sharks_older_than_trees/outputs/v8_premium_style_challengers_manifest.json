@@ -1,0 +1,65 @@
+[
+  {
+    "name": "A_tactile_paper_before_trees",
+    "variant": 1,
+    "seed": 26130101,
+    "prompt": "award-winning premium tactile paper diorama, high-end layered paper sculpture photographed in a miniature studio, family science YouTube Short style frame, subject sharks existed before trees: lower third teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land with absolutely no trees and no plants, real handmade paper fibers, precise cut edges, layered cast shadows, macro lens, warm museum spotlight, cinematic depth of field, boutique stop-motion title sequence, clean negative space for captions, mobile-readable composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_A_tactile_paper_before_trees_v01_00001_.png"
+  },
+  {
+    "name": "A_tactile_paper_before_trees",
+    "variant": 2,
+    "seed": 26130102,
+    "prompt": "award-winning premium tactile paper diorama, high-end layered paper sculpture photographed in a miniature studio, family science YouTube Short style frame, subject sharks existed before trees: lower third teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land with absolutely no trees and no plants, real handmade paper fibers, precise cut edges, layered cast shadows, macro lens, warm museum spotlight, cinematic depth of field, boutique stop-motion title sequence, clean negative space for captions, mobile-readable composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_A_tactile_paper_before_trees_v02_00001_.png"
+  },
+  {
+    "name": "A_tactile_paper_before_trees",
+    "variant": 3,
+    "seed": 26130103,
+    "prompt": "award-winning premium tactile paper diorama, high-end layered paper sculpture photographed in a miniature studio, family science YouTube Short style frame, subject sharks existed before trees: lower third teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land with absolutely no trees and no plants, real handmade paper fibers, precise cut edges, layered cast shadows, macro lens, warm museum spotlight, cinematic depth of field, boutique stop-motion title sequence, clean negative space for captions, mobile-readable composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_A_tactile_paper_before_trees_v03_00001_.png"
+  },
+  {
+    "name": "B_storybook_clay_gag",
+    "variant": 1,
+    "seed": 26130201,
+    "prompt": "premium natural-history storybook 3D clay and paper hybrid, charming family science YouTube Short style frame, subject before apples and squirrels had anywhere to hide nuts: whimsical prehistoric barren-land diorama with three clear hero props, one red apple, one cute squirrel, one acorn nut, arranged as playful not-yet-existing ideas, tactile clay characters, paper rocks, warm amber gallery lighting, rich teal and ochre palette, cinematic shallow depth of field, polished mobile-readable silhouettes",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_B_storybook_clay_gag_v01_00001_.png"
+  },
+  {
+    "name": "B_storybook_clay_gag",
+    "variant": 2,
+    "seed": 26130202,
+    "prompt": "premium natural-history storybook 3D clay and paper hybrid, charming family science YouTube Short style frame, subject before apples and squirrels had anywhere to hide nuts: whimsical prehistoric barren-land diorama with three clear hero props, one red apple, one cute squirrel, one acorn nut, arranged as playful not-yet-existing ideas, tactile clay characters, paper rocks, warm amber gallery lighting, rich teal and ochre palette, cinematic shallow depth of field, polished mobile-readable silhouettes",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_B_storybook_clay_gag_v02_00001_.png"
+  },
+  {
+    "name": "B_storybook_clay_gag",
+    "variant": 3,
+    "seed": 26130203,
+    "prompt": "premium natural-history storybook 3D clay and paper hybrid, charming family science YouTube Short style frame, subject before apples and squirrels had anywhere to hide nuts: whimsical prehistoric barren-land diorama with three clear hero props, one red apple, one cute squirrel, one acorn nut, arranged as playful not-yet-existing ideas, tactile clay characters, paper rocks, warm amber gallery lighting, rich teal and ochre palette, cinematic shallow depth of field, polished mobile-readable silhouettes",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_B_storybook_clay_gag_v03_00001_.png"
+  },
+  {
+    "name": "C_museum_timeline",
+    "variant": 1,
+    "seed": 26130301,
+    "prompt": "premium editorial museum infographic diorama, natural history exhibit quality, family science YouTube Short style frame, subject first sharks appeared more than four hundred million years ago: vertical geologic timeline made from stacked tactile display layers, ancient ocean fossil layer with small shark at bottom, rock strata, circular fossil clock shapes, primitive plant layer much higher up, elegant warm gallery lighting, paper sculpture and clay model materials, polished National Geographic Kids composition, cinematic depth",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_C_museum_timeline_v01_00001_.png"
+  },
+  {
+    "name": "C_museum_timeline",
+    "variant": 2,
+    "seed": 26130302,
+    "prompt": "premium editorial museum infographic diorama, natural history exhibit quality, family science YouTube Short style frame, subject first sharks appeared more than four hundred million years ago: vertical geologic timeline made from stacked tactile display layers, ancient ocean fossil layer with small shark at bottom, rock strata, circular fossil clock shapes, primitive plant layer much higher up, elegant warm gallery lighting, paper sculpture and clay model materials, polished National Geographic Kids composition, cinematic depth",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_C_museum_timeline_v02_00001_.png"
+  },
+  {
+    "name": "C_museum_timeline",
+    "variant": 3,
+    "seed": 26130303,
+    "prompt": "premium editorial museum infographic diorama, natural history exhibit quality, family science YouTube Short style frame, subject first sharks appeared more than four hundred million years ago: vertical geologic timeline made from stacked tactile display layers, ancient ocean fossil layer with small shark at bottom, rock strata, circular fossil clock shapes, primitive plant layer much higher up, elegant warm gallery lighting, paper sculpture and clay model materials, polished National Geographic Kids composition, cinematic depth",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v8_premium_style_challengers/v8_style_C_museum_timeline_v03_00001_.png"
+  }
+]

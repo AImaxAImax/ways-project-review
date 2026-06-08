@@ -1,0 +1,20 @@
+{
+  "id": "02",
+  "seed": 944102,
+  "width": 432,
+  "height": 768,
+  "length": 49,
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+  "prompt": "premium natural-history documentary I2V from the exact owl source still. Preserve single owl, branch, forest, eyes, beak, feathers, and realistic anatomy exactly. Body remains locked on the branch. The head is already over the shoulder; add only a very small natural head settle of a few degrees, blink, breathing feathers, slow camera creep, forest particles. Neck stays short and hidden inside feather ruff. No rubber neck, no stretched neck, no duplicate head, no body turn, no text.",
+  "prompt_id": "de913288-b509-457d-b113-ebbede52d1f2",
+  "uploaded_image": "01_ref_nano04_turn_01.png",
+  "comfy_output": {
+    "filename": "shot02_944102_00001_.mp4",
+    "subfolder": "ways_owl_head_turn_v04_all_moving",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot02_owl_all_moving_wan22_432x768_49f_seed944102.mp4",
+  "bytes": 342737
+}

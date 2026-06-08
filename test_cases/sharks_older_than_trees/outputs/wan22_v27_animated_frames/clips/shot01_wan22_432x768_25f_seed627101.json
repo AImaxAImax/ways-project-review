@@ -1,0 +1,19 @@
+{
+  "id": "01",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+  "duration": 3.57,
+  "caption": "SHARKS WERE HERE\nBEFORE TREES",
+  "seed": 627101,
+  "prompt": "premium natural-history documentary image-to-video. Ancient shark glides calmly through blue-green prehistoric ocean, subtle tail swish and fin motion, drifting particles, slow parallax water shimmer, sunlight rays move gently. Preserve exact shark anatomy, framing, colors, and realistic documentary style. No attack, no blood, no text, no logos, no scene cut, no morphing.",
+  "source_image": "assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+  "prompt_id": "86f7483a-0a3e-4687-8c34-8a2bbb763b3c",
+  "uploaded_image": "shot01_gpt_image2_hook_before_trees_v01.jpeg",
+  "comfy_output": {
+    "filename": "01_627101_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot01_wan22_432x768_25f_seed627101.mp4"
+}

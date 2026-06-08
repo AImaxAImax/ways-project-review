@@ -1,0 +1,12 @@
+{
+  "shot": "01_before_trees",
+  "selected_variant": "v11c_v04",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v11/shot01_before_trees_v11c_v04_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11c_shot01_before_trees/v11c_shot01_readable_shark_v04_00001_.png",
+  "why": "Best current balance: barren lifeless land, visible water/ocean, readable calm shark, no trees/plants, more premium than POC.",
+  "backup_candidates": [
+    "v11b_v05",
+    "v11c_v02"
+  ],
+  "next_if_iterating": "Try one more micro-pass only if user wants: keep v11c_v04 composition, make shark 10-15% larger and preserve open ocean feel."
+}

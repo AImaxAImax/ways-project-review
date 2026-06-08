@@ -1,0 +1,52 @@
+{
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival",
+  "slug": "wood_frog_freeze_survival_smoke",
+  "output_dir": "outputs/wan22_smoke_v01_actual_i2v",
+  "voiceover": "outputs/motion_v13_sugar_antifreeze/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "negative_prompt": "text, subtitles, readable letters, words, numbers, watermark, logo, UI, diagram label, arrows, pause symbol, medical monitor, fake chart, melted frog, extra limbs, deformed animal, scene transition, hard cut, jitter, flicker, low quality, blurry, compression artifacts",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "required_vae": "wan_2.1_vae.safetensors",
+  "qa_gate": [
+    "actual Wan2.2 I2V motion, not Ken Burns",
+    "source subject remains coherent",
+    "no generated text/logos/UI/artifact overlays",
+    "motion visible inside frame, not just camera pan"
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/source_stills/source_02.jpg",
+      "duration": 3.0,
+      "caption": "A FROG CAN FREEZE SOLID",
+      "seed": 980101,
+      "prompt": "premium natural history documentary image-to-video from the exact wood frog source photo. Preserve the real wood frog anatomy, leaf litter, wet skin texture, and camera framing. Add true subtle in-frame motion: tiny breathing stillness fading toward frozen stillness, slight frost sparkle forming along leaves and frog edges, cold air shimmer, tiny particles drifting. No text, no labels, no arrows, no UI, no scene cut, no morphing, no melting, no new animal."
+    },
+    {
+      "id": "04",
+      "image": "assets/source_stills/source_05_cell_protection_graphic.jpg",
+      "duration": 3.0,
+      "caption": "SUGAR HELPS PROTECT CELLS",
+      "seed": 980104,
+      "prompt": "premium microscopic science image-to-video from the exact no-text cell protection source plate. Preserve the teal cells and dark cold-fluid background. Add true gentle motion only: gold glucose-like protective halos slowly pulsing around the cells, tiny cold particles drifting outward, ice pressure held at the edges, subtle fluid shimmer. No text, no labels, no arrows, no UI, no new symbols, no hard cut, no morphing, no extra cells."
+    }
+  ]
+}

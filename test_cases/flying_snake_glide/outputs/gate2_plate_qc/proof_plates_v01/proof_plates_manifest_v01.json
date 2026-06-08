@@ -1,0 +1,42 @@
+{
+  "slug": "flying_snake_glide",
+  "version": "v01",
+  "plates": [
+    {
+      "id": "beat01_launch",
+      "caption": "Some snakes can glide through the air",
+      "voiceover": "Some snakes can glide through the air.",
+      "visual": "snake launching from a high branch into open air",
+      "path": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_beat01_launch.jpg"
+    },
+    {
+      "id": "beat02_no_wings",
+      "caption": "no wings",
+      "voiceover": "They do not have wings.",
+      "visual": "airborne snake, no wings, full body readable",
+      "path": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_beat02_no_wings.jpg"
+    },
+    {
+      "id": "beat03_flatten",
+      "caption": "they flatten their body",
+      "voiceover": "They flatten their body like a long moving airfoil.",
+      "visual": "body visibly flattened wider like a ribbon",
+      "path": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_beat03_flatten.jpg"
+    },
+    {
+      "id": "beat04_side_to_side",
+      "caption": "they wave side to side",
+      "voiceover": "Then they wave side to side while falling forward.",
+      "visual": "S-shaped side-to-side glide path",
+      "path": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_beat04_side_to_side.jpg"
+    },
+    {
+      "id": "beat05_tree_to_tree",
+      "caption": "steering tree to tree",
+      "voiceover": "That motion helps them steer from one tree to another.",
+      "visual": "snake gliding toward another tree branch",
+      "path": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_beat05_tree_to_tree.jpg"
+    }
+  ],
+  "contact_sheet": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_proof_plates_v01_contact_sheet.jpg"
+}

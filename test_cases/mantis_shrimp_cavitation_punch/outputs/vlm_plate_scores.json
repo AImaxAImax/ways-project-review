@@ -1,0 +1,5 @@
+{
+  "mode": "not_configured",
+  "status": "advisory_pending",
+  "note": "source-photo static internal candidate; VLM gate not configured in this WSL session"
+}

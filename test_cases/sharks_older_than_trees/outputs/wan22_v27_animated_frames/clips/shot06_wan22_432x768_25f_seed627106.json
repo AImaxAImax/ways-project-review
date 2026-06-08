@@ -1,0 +1,19 @@
+{
+  "id": "06",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+  "duration": 3.685,
+  "caption": "AND TODAY...\nTHEY ARE STILL HERE",
+  "seed": 627106,
+  "prompt": "realistic aquarium documentary image-to-video. Preserve the child, glass plane, shark, and framing. Shark moves subtly behind the glass only, water particles drift, reflections shimmer, child remains stable and believable, tiny camera creep. Do not let shark cross the glass, no horror, no text, no logos, no face morphing, no scene cut.",
+  "source_image": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+  "prompt_id": "2958eaa4-904c-4efa-be6b-a9654cf9819f",
+  "uploaded_image": "shot06_kid_aquarium_deep_time_v01.jpeg",
+  "comfy_output": {
+    "filename": "06_627106_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot06_wan22_432x768_25f_seed627106.mp4"
+}

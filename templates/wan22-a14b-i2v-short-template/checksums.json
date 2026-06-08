@@ -1,0 +1,22 @@
+[
+  {
+    "file": "/mnt/c/dev/curious-shorts/templates/wan22-a14b-i2v-short-template/run_v27_wan22_animated_frames.py",
+    "bytes": 12212,
+    "sha256": "248f98a3f628d0de57e8d1ce0286382de8a60975efb8cf991edf4a80f0aa06c0"
+  },
+  {
+    "file": "/mnt/c/dev/curious-shorts/templates/wan22-a14b-i2v-short-template/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+    "bytes": 4078,
+    "sha256": "0bd3a7c12d8898c833cd8c296c6a962a8d40d0d38128af0942fe6f44b2797dfb"
+  },
+  {
+    "file": "/mnt/c/dev/curious-shorts/templates/wan22-a14b-i2v-short-template/example_manifest_sharks_v27.json",
+    "bytes": 8362,
+    "sha256": "47d7023bd75166094070fc09a0bd0e982ff5c2c461410200362d6093f755e874"
+  },
+  {
+    "file": "/mnt/c/dev/curious-shorts/templates/wan22-a14b-i2v-short-template/example_QA_sharks_v27.md",
+    "bytes": 2497,
+    "sha256": "1503daca2800e6b97f8a038d7c58d3545bbbe0316bec89d8e25f18597c715029"
+  }
+]

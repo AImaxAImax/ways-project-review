@@ -1,0 +1,58 @@
+[
+  {
+    "beat": 1,
+    "id": "01_hook_flash",
+    "caption": "THIS SHRIMP PUNCH / MAKES WATER FLASH",
+    "visual_kind": "real_mantis_flash",
+    "frames": 94
+  },
+  {
+    "beat": 2,
+    "id": "02_club_speed",
+    "caption": "ITS CLUB MOVES / INSANELY FAST",
+    "visual_kind": "club_path",
+    "frames": 94
+  },
+  {
+    "beat": 3,
+    "id": "03_cavitation",
+    "caption": "THAT FLASH / IS CAVITATION",
+    "visual_kind": "bubble_form",
+    "frames": 94
+  },
+  {
+    "beat": 4,
+    "id": "04_first_hit",
+    "caption": "THE PUNCH / HITS FIRST",
+    "visual_kind": "first_impact",
+    "frames": 94
+  },
+  {
+    "beat": 5,
+    "id": "05_second_hit",
+    "caption": "THEN THE BUBBLE / COLLAPSES",
+    "visual_kind": "bubble_collapse",
+    "frames": 94
+  },
+  {
+    "beat": 6,
+    "id": "06_high_speed",
+    "caption": "SCIENTISTS FILMED IT / IN HIGH SPEED",
+    "visual_kind": "high_speed_sequence",
+    "frames": 94
+  },
+  {
+    "beat": 7,
+    "id": "07_not_just_prey",
+    "caption": "IT DOES NOT JUST / PUNCH PREY",
+    "visual_kind": "pullback",
+    "frames": 94
+  },
+  {
+    "beat": 8,
+    "id": "08_water_punches",
+    "caption": "THE WATER / PUNCHES TOO",
+    "visual_kind": "final_replay",
+    "frames": 94
+  }
+]

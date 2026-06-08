@@ -1,0 +1,167 @@
+[
+  {
+    "shot": "hook_flash",
+    "variant": 1,
+    "denoise": 0.22,
+    "seed": 2006107646,
+    "control": "hook_source04.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/hook_flash_v1_den0.22_seed2006107646.png"
+    ],
+    "prompt_id": "8c7dcb42-1931-44d6-a3a2-a564ac5df124"
+  },
+  {
+    "shot": "hook_flash",
+    "variant": 2,
+    "denoise": 0.32,
+    "seed": 3424188944,
+    "control": "hook_source04.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/hook_flash_v2_den0.32_seed3424188944.png"
+    ],
+    "prompt_id": "09ea62e6-8fb1-463a-aba3-df57fd65fab6"
+  },
+  {
+    "shot": "hook_flash",
+    "variant": 3,
+    "denoise": 0.42,
+    "seed": 4038548517,
+    "control": "hook_source04.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/hook_flash_v3_den0.42_seed4038548517.png"
+    ],
+    "prompt_id": "02498d58-288b-4e9f-9d0b-949ae7e94eba"
+  },
+  {
+    "shot": "club_speed",
+    "variant": 1,
+    "denoise": 0.22,
+    "seed": 391863842,
+    "control": "speed_source05.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/club_speed_v1_den0.22_seed391863842.png"
+    ],
+    "prompt_id": "8041244b-8633-4a2a-882b-70533750e672"
+  },
+  {
+    "shot": "club_speed",
+    "variant": 2,
+    "denoise": 0.32,
+    "seed": 2714260709,
+    "control": "speed_source05.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/club_speed_v2_den0.32_seed2714260709.png"
+    ],
+    "prompt_id": "070c8279-a7e7-4f7b-a17f-5acf6f96a28b"
+  },
+  {
+    "shot": "club_speed",
+    "variant": 3,
+    "denoise": 0.42,
+    "seed": 2358756784,
+    "control": "speed_source05.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/club_speed_v3_den0.42_seed2358756784.png"
+    ],
+    "prompt_id": "f002c9fd-6c46-47bb-a78e-6cb15babe215"
+  },
+  {
+    "shot": "cavitation_bubbles",
+    "variant": 1,
+    "denoise": 0.22,
+    "seed": 3993534475,
+    "control": "cav_source02.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/cavitation_bubbles_v1_den0.22_seed3993534475.png"
+    ],
+    "prompt_id": "4216527f-c5f2-473c-8308-e0a31e5f7ea1"
+  },
+  {
+    "shot": "cavitation_bubbles",
+    "variant": 2,
+    "denoise": 0.32,
+    "seed": 585253769,
+    "control": "cav_source02.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/cavitation_bubbles_v2_den0.32_seed585253769.png"
+    ],
+    "prompt_id": "d7d13d13-4860-4528-9584-69815301e9af"
+  },
+  {
+    "shot": "cavitation_bubbles",
+    "variant": 3,
+    "denoise": 0.42,
+    "seed": 19640764,
+    "control": "cav_source02.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/cavitation_bubbles_v3_den0.42_seed19640764.png"
+    ],
+    "prompt_id": "68a4e5d5-26ec-43e0-843a-c77308dd0613"
+  },
+  {
+    "shot": "bubble_collapse",
+    "variant": 1,
+    "denoise": 0.22,
+    "seed": 2314200666,
+    "control": "collapse_source03.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/bubble_collapse_v1_den0.22_seed2314200666.png"
+    ],
+    "prompt_id": "5f07aeec-9011-41f4-afec-a8b71282b713"
+  },
+  {
+    "shot": "bubble_collapse",
+    "variant": 2,
+    "denoise": 0.32,
+    "seed": 2898736836,
+    "control": "collapse_source03.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/bubble_collapse_v2_den0.32_seed2898736836.png"
+    ],
+    "prompt_id": "07283be5-1c70-4061-a58a-632bf85813fc"
+  },
+  {
+    "shot": "bubble_collapse",
+    "variant": 3,
+    "denoise": 0.42,
+    "seed": 579693422,
+    "control": "collapse_source03.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/bubble_collapse_v3_den0.42_seed579693422.png"
+    ],
+    "prompt_id": "5f3f5522-3662-4239-82ea-799f0330b51b"
+  },
+  {
+    "shot": "final_water_punch",
+    "variant": 1,
+    "denoise": 0.22,
+    "seed": 3272143140,
+    "control": "final_source01.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/final_water_punch_v1_den0.22_seed3272143140.png"
+    ],
+    "prompt_id": "fc6a6492-585a-47ce-ac1a-c579af29cd36"
+  },
+  {
+    "shot": "final_water_punch",
+    "variant": 2,
+    "denoise": 0.32,
+    "seed": 2704984185,
+    "control": "final_source01.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/final_water_punch_v2_den0.32_seed2704984185.png"
+    ],
+    "prompt_id": "edacef1e-0597-4c10-876c-2aa503c97876"
+  },
+  {
+    "shot": "final_water_punch",
+    "variant": 3,
+    "denoise": 0.42,
+    "seed": 601332803,
+    "control": "final_source01.png",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09_img2img/outputs/final_water_punch_v3_den0.42_seed601332803.png"
+    ],
+    "prompt_id": "c5c5195b-ae6f-46f3-9864-059d7959bd50"
+  }
+]

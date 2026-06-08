@@ -1,0 +1,211 @@
+{
+  "uploaded": {
+    "reused_existing_upload": false,
+    "id": "GiEF7Tf7Bn8",
+    "response": {
+      "kind": "youtube#video",
+      "etag": "D0CKwkBkgJGFNhaFiWUUhdkXkN8",
+      "id": "GiEF7Tf7Bn8",
+      "snippet": {
+        "publishedAt": "2026-06-07T04:06:07Z",
+        "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+        "title": "This Frog Can Freeze Solid #Shorts",
+        "description": "This frog can freeze solid and wake back up.\n\nWood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect their cells until spring thaw.\n\n#Shorts #science #facts #animals\n\nSources:\n- Costanzo et al., Freeze tolerance in the wood frog, Journal of Experimental Biology.\n- Storey & Storey, Freeze tolerance and glucose cryoprotection in amphibians.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/default.jpg?sqp=COzbk9EG&rs=AOn4CLCsZuw2Yer7vt6JUTuRHCwHYioYnw",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/mqdefault.jpg?sqp=COzbk9EG&rs=AOn4CLA5LfqrrQ2iQ2xJiZqKA6zzppE2SQ",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/hqdefault.jpg?sqp=COzbk9EG&rs=AOn4CLA2VaKoKyp7fOKxyZgpQaOerNj9zw",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Wait Are You Serious?",
+        "tags": [
+          "Shorts",
+          "WAYS",
+          "Wait Are You Serious",
+          "animal facts",
+          "biology",
+          "facts",
+          "frog facts",
+          "science",
+          "survival chemistry",
+          "wood frog"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "This Frog Can Freeze Solid #Shorts",
+          "description": "This frog can freeze solid and wake back up.\n\nWood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect their cells until spring thaw.\n\n#Shorts #science #facts #animals\n\nSources:\n- Costanzo et al., Freeze tolerance in the wood frog, Journal of Experimental Biology.\n- Storey & Storey, Freeze tolerance and glucose cryoprotection in amphibians."
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false
+      }
+    }
+  },
+  "captions_attach": {
+    "caption_inserted": true,
+    "response": {
+      "kind": "youtube#caption",
+      "etag": "UBK2xxugjGGWAAFkIfd3hcLwjN4",
+      "id": "AUieDaYuobTbJab0QLZzNLLYGmHmKVSRyy9bhQLA--Dlnemy5HWs3R37",
+      "snippet": {
+        "videoId": "GiEF7Tf7Bn8",
+        "lastUpdated": "2026-06-07T04:06:09.933643Z",
+        "trackKind": "standard",
+        "language": "en",
+        "name": "English",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  },
+  "processed": {
+    "video_id": "GiEF7Tf7Bn8",
+    "found": true,
+    "title": "This Frog Can Freeze Solid #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": [
+      "Shorts",
+      "WAYS",
+      "Wait Are You Serious",
+      "animal facts",
+      "biology",
+      "facts",
+      "frog facts",
+      "science",
+      "survival chemistry",
+      "wood frog"
+    ],
+    "privacyStatus": "private",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT21S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/GiEF7Tf7Bn8",
+    "shorts_url": "https://youtube.com/shorts/GiEF7Tf7Bn8",
+    "studio_url": "https://studio.youtube.com/video/GiEF7Tf7Bn8/edit"
+  },
+  "public_publish": {
+    "executed_at": "2026-06-07T04:06:34Z",
+    "authorization_text": "Josh said in Discord thread: Let's post it",
+    "before": {
+      "video_id": "GiEF7Tf7Bn8",
+      "found": true,
+      "title": "This Frog Can Freeze Solid #Shorts",
+      "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+      "channelTitle": "Wait Are You Serious?",
+      "categoryId": "28",
+      "tags": [
+        "Shorts",
+        "WAYS",
+        "Wait Are You Serious",
+        "animal facts",
+        "biology",
+        "facts",
+        "frog facts",
+        "science",
+        "survival chemistry",
+        "wood frog"
+      ],
+      "privacyStatus": "private",
+      "uploadStatus": "processed",
+      "selfDeclaredMadeForKids": false,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "duration": "PT21S",
+      "definition": "hd",
+      "caption": "true",
+      "url": "https://youtu.be/GiEF7Tf7Bn8",
+      "shorts_url": "https://youtube.com/shorts/GiEF7Tf7Bn8",
+      "studio_url": "https://studio.youtube.com/video/GiEF7Tf7Bn8/edit"
+    },
+    "after": {
+      "video_id": "GiEF7Tf7Bn8",
+      "found": true,
+      "title": "This Frog Can Freeze Solid #Shorts",
+      "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+      "channelTitle": "Wait Are You Serious?",
+      "categoryId": "28",
+      "tags": [
+        "Shorts",
+        "WAYS",
+        "Wait Are You Serious",
+        "animal facts",
+        "biology",
+        "facts",
+        "frog facts",
+        "science",
+        "survival chemistry",
+        "wood frog"
+      ],
+      "privacyStatus": "public",
+      "uploadStatus": "processed",
+      "selfDeclaredMadeForKids": false,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "duration": "PT21S",
+      "definition": "hd",
+      "caption": "true",
+      "url": "https://youtu.be/GiEF7Tf7Bn8",
+      "shorts_url": "https://youtube.com/shorts/GiEF7Tf7Bn8",
+      "studio_url": "https://studio.youtube.com/video/GiEF7Tf7Bn8/edit"
+    }
+  },
+  "final": {
+    "video_id": "GiEF7Tf7Bn8",
+    "found": true,
+    "title": "This Frog Can Freeze Solid #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": [
+      "Shorts",
+      "WAYS",
+      "Wait Are You Serious",
+      "animal facts",
+      "biology",
+      "facts",
+      "frog facts",
+      "science",
+      "survival chemistry",
+      "wood frog"
+    ],
+    "privacyStatus": "public",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT21S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/GiEF7Tf7Bn8",
+    "shorts_url": "https://youtube.com/shorts/GiEF7Tf7Bn8",
+    "studio_url": "https://studio.youtube.com/video/GiEF7Tf7Bn8/edit"
+  }
+}

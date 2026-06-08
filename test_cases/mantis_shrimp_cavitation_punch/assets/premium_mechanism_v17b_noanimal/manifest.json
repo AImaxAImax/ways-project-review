@@ -1,0 +1,44 @@
+[
+  {
+    "stage": "cavitation",
+    "variant": 0,
+    "seed": 915000,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_cavitation_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only an orange mantis-shrimp-like smasher club appendage entering from lower left toward a shell target, large translucent white blue vapor bubble forming at the club tip, premium 3D render, no creature body"
+  },
+  {
+    "stage": "cavitation",
+    "variant": 1,
+    "seed": 915017,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_cavitation_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only an orange mantis-shrimp-like smasher club appendage entering from lower left toward a shell target, large translucent white blue vapor bubble forming at the club tip, premium 3D render, no creature body"
+  },
+  {
+    "stage": "first_hit",
+    "variant": 0,
+    "seed": 915211,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_first_hit_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only orange smasher club appendage striking a hard shell target, intense soft white blue impact bloom and natural water distortion, premium 3D render, no creature body"
+  },
+  {
+    "stage": "first_hit",
+    "variant": 1,
+    "seed": 915228,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_first_hit_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only orange smasher club appendage striking a hard shell target, intense soft white blue impact bloom and natural water distortion, premium 3D render, no creature body"
+  },
+  {
+    "stage": "collapse",
+    "variant": 0,
+    "seed": 915422,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_collapse_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only a translucent cavitation bubble imploding beside a shell target after impact, second shock burst of soft light and turbulent water, orange club edge barely visible, premium 3D render, no creature body"
+  },
+  {
+    "stage": "collapse",
+    "variant": 1,
+    "seed": 915439,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17b_noanimal/WAYS_mantis_v17b_collapse_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, no text, no labels, no watermark, no arrows, no animal face, no full shrimp body, underwater macro high-speed physics scene, photorealistic water, volumetric blue light, black teal background, caption safe center, polished documentary visual, only a translucent cavitation bubble imploding beside a shell target after impact, second shock burst of soft light and turbulent water, orange club edge barely visible, premium 3D render, no creature body"
+  }
+]

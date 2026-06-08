@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-06-07T04:45:33Z",
+  "results": [
+    {
+      "id": "nano_01",
+      "job_id": "200260be-c7ff-45af-9622-34fe4531157a",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044031_200260be-c7ff-45af-9622-34fe4531157a.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Vertical 9:16 premium natural history photograph, one paradise flying snake gliding through open rainforest air from left tree toward right tree, entire snake visible suspended in midair, body flattened into a broad ribbon-like S curve, belly side slightly visible, no wings, no legs, no branch touching the body, clear negative space around snake, soft distant green canopy background, realistic scale and anatomy, documentary wildlife photo, no text, no logo, no watermark, no UI, no extra snakes.",
+        "medias": [],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "nano_02",
+      "job_id": "21cb74cd-9fc9-490b-9722-3999c7d2ae1d",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044136_21cb74cd-9fc9-490b-9722-3999c7d2ae1d.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Vertical 9:16 premium natural history photograph, single paradise flying snake gliding through open rainforest air, entire animal visible from head to tail, body flattened into a wide ribbon-like S curve like a living airfoil, head angled forward, tail trailing, no wings, no legs, not touching branches, two distant tree trunks framing the sides, big clear negative space around the snake, blurred emerald canopy far below, sharp realistic anatomy, documentary wildlife lighting, no text, no logo, no watermark, no UI, no extra snakes.",
+        "medias": [],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "nano_03",
+      "job_id": "13747cf2-3361-432b-9422-44abff162f47",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044152_13747cf2-3361-432b-9422-44abff162f47.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Vertical 9:16 cinematic educational wildlife still, one Chrysopelea flying snake caught mid-glide across an open jungle gap, snake is suspended in midair with no support, body visibly flattened wider than normal and forming a clean side-to-side wave, belly edge catching sunlight, rainforest background soft and distant, clear open air all around the snake, realistic scales and proportions, no wings, no legs, no branch contact, no extra animals, no text, no logos, no watermark, no UI.",
+        "medias": [],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "nano_04",
+      "job_id": "171ccecc-42a0-4c05-8799-df06150d2688",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044219_171ccecc-42a0-4c05-8799-df06150d2688.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Vertical 9:16 premium macro-to-wide nature frame, a single flying snake launch moment after leaving a high tree branch, branch behind it on the left but the snake fully airborne and separated from the branch, body flattened into a ribbon and beginning an S-shaped glide, open blue-green rainforest air in front of it, no wings, no legs, no extra snakes, accurate snake head and tail, photoreal natural history documentary style, no text, no logo, no watermark, no UI.",
+        "medias": [],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "seedream_02",
+      "job_id": "309cca77-f0f0-4687-a802-b9c3be4f0d8a",
+      "model": "seedream_v5_lite",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044239_309cca77-f0f0-4687-a802-b9c3be4f0d8a.png",
+      "params": {
+        "prompt": "Vertical 9:16 realistic wildlife documentary image of one paradise flying snake gliding through open air between rainforest trees, full body visible, flattened belly making the snake look like a ribbon, smooth S-shaped wave from head to tail, no wings and no legs, not wrapped around anything, no branch contact, clear sky-green negative space around the subject, distant blurred jungle canopy, premium sharp anatomy, no text, no logo, no watermark, no UI, no extra snakes.",
+        "medias": [],
+        "batch_size": 1,
+        "aspect_ratio": "9:16",
+        "width": 1600,
+        "height": 2848,
+        "quality": "basic",
+        "seed": 122240,
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "seedream_03",
+      "job_id": "b9d4fe23-5e75-4f35-ab55-c9b9f8fbf5e0",
+      "model": "seedream_v5_lite",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044335_b9d4fe23-5e75-4f35-ab55-c9b9f8fbf5e0.png",
+      "params": {
+        "prompt": "Vertical 9:16 premium science explainer source plate, one flying snake in midair above rainforest canopy, seen from slightly below so the flattened body is obvious, the snake forms a broad S curve while gliding, tree trunks far to both sides, no wings, no legs, no branch touching the snake, no extra snakes, natural realistic scales, cinematic daylight, mobile-readable silhouette with clear negative space, no text, no logo, no watermark, no UI.",
+        "medias": [],
+        "batch_size": 1,
+        "aspect_ratio": "9:16",
+        "width": 1600,
+        "height": 2848,
+        "quality": "basic",
+        "seed": 794507,
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "seedream_04",
+      "job_id": "b6cd7963-bd41-490b-8e54-2cda5898241c",
+      "model": "seedream_v5_lite",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044430_b6cd7963-bd41-490b-8e54-2cda5898241c.png",
+      "params": {
+        "prompt": "Vertical 9:16 photoreal natural history still, a single Chrysopelea flying snake flying from tree to tree over a rainforest gap, animal fully suspended in open air, flattened ribbon-like body with sidewinding glide posture, no wings, no legs, no support, no extra animals, no text or symbols, background is blurred tropical canopy with two trees at edges, crisp believable snake anatomy, educational documentary frame.",
+        "medias": [],
+        "batch_size": 1,
+        "aspect_ratio": "9:16",
+        "width": 1600,
+        "height": 2848,
+        "quality": "basic",
+        "seed": 992689,
+        "reference_elements": []
+      }
+    }
+  ]
+}

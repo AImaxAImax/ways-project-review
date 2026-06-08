@@ -1,0 +1,213 @@
+{
+  "sample_interval_seconds": 0.5,
+  "mean_delta": 19.72,
+  "min_delta": 5.75,
+  "max_delta": 53.5,
+  "pairs": [
+    {
+      "from_sec": 0.0,
+      "to_sec": 0.5,
+      "mean_abs_pixel_delta_0_255": 13.95
+    },
+    {
+      "from_sec": 0.5,
+      "to_sec": 1.0,
+      "mean_abs_pixel_delta_0_255": 10.44
+    },
+    {
+      "from_sec": 1.0,
+      "to_sec": 1.5,
+      "mean_abs_pixel_delta_0_255": 7.52
+    },
+    {
+      "from_sec": 1.5,
+      "to_sec": 2.0,
+      "mean_abs_pixel_delta_0_255": 10.81
+    },
+    {
+      "from_sec": 2.0,
+      "to_sec": 2.5,
+      "mean_abs_pixel_delta_0_255": 53.5
+    },
+    {
+      "from_sec": 2.5,
+      "to_sec": 3.0,
+      "mean_abs_pixel_delta_0_255": 16.74
+    },
+    {
+      "from_sec": 3.0,
+      "to_sec": 3.5,
+      "mean_abs_pixel_delta_0_255": 14.88
+    },
+    {
+      "from_sec": 3.5,
+      "to_sec": 4.0,
+      "mean_abs_pixel_delta_0_255": 18.18
+    },
+    {
+      "from_sec": 4.0,
+      "to_sec": 4.5,
+      "mean_abs_pixel_delta_0_255": 18.17
+    },
+    {
+      "from_sec": 4.5,
+      "to_sec": 5.0,
+      "mean_abs_pixel_delta_0_255": 19.2
+    },
+    {
+      "from_sec": 5.0,
+      "to_sec": 5.5,
+      "mean_abs_pixel_delta_0_255": 6.54
+    },
+    {
+      "from_sec": 5.5,
+      "to_sec": 6.0,
+      "mean_abs_pixel_delta_0_255": 47.69
+    },
+    {
+      "from_sec": 6.0,
+      "to_sec": 6.5,
+      "mean_abs_pixel_delta_0_255": 17.92
+    },
+    {
+      "from_sec": 6.5,
+      "to_sec": 7.0,
+      "mean_abs_pixel_delta_0_255": 16.05
+    },
+    {
+      "from_sec": 7.0,
+      "to_sec": 7.5,
+      "mean_abs_pixel_delta_0_255": 12.32
+    },
+    {
+      "from_sec": 7.5,
+      "to_sec": 8.0,
+      "mean_abs_pixel_delta_0_255": 14.19
+    },
+    {
+      "from_sec": 8.0,
+      "to_sec": 8.5,
+      "mean_abs_pixel_delta_0_255": 17.91
+    },
+    {
+      "from_sec": 8.5,
+      "to_sec": 9.0,
+      "mean_abs_pixel_delta_0_255": 47.78
+    },
+    {
+      "from_sec": 9.0,
+      "to_sec": 9.5,
+      "mean_abs_pixel_delta_0_255": 15.44
+    },
+    {
+      "from_sec": 9.5,
+      "to_sec": 10.0,
+      "mean_abs_pixel_delta_0_255": 6.65
+    },
+    {
+      "from_sec": 10.0,
+      "to_sec": 10.5,
+      "mean_abs_pixel_delta_0_255": 15.77
+    },
+    {
+      "from_sec": 10.5,
+      "to_sec": 11.0,
+      "mean_abs_pixel_delta_0_255": 25.62
+    },
+    {
+      "from_sec": 11.0,
+      "to_sec": 11.5,
+      "mean_abs_pixel_delta_0_255": 16.81
+    },
+    {
+      "from_sec": 11.5,
+      "to_sec": 12.0,
+      "mean_abs_pixel_delta_0_255": 14.55
+    },
+    {
+      "from_sec": 12.0,
+      "to_sec": 12.5,
+      "mean_abs_pixel_delta_0_255": 53.3
+    },
+    {
+      "from_sec": 12.5,
+      "to_sec": 13.0,
+      "mean_abs_pixel_delta_0_255": 14.9
+    },
+    {
+      "from_sec": 13.0,
+      "to_sec": 13.5,
+      "mean_abs_pixel_delta_0_255": 16.16
+    },
+    {
+      "from_sec": 13.5,
+      "to_sec": 14.0,
+      "mean_abs_pixel_delta_0_255": 17.37
+    },
+    {
+      "from_sec": 14.0,
+      "to_sec": 14.5,
+      "mean_abs_pixel_delta_0_255": 18.16
+    },
+    {
+      "from_sec": 14.5,
+      "to_sec": 15.0,
+      "mean_abs_pixel_delta_0_255": 18.62
+    },
+    {
+      "from_sec": 15.0,
+      "to_sec": 15.5,
+      "mean_abs_pixel_delta_0_255": 16.17
+    },
+    {
+      "from_sec": 15.5,
+      "to_sec": 16.0,
+      "mean_abs_pixel_delta_0_255": 20.12
+    },
+    {
+      "from_sec": 16.0,
+      "to_sec": 16.5,
+      "mean_abs_pixel_delta_0_255": 22.76
+    },
+    {
+      "from_sec": 16.5,
+      "to_sec": 17.0,
+      "mean_abs_pixel_delta_0_255": 38.98
+    },
+    {
+      "from_sec": 17.0,
+      "to_sec": 17.5,
+      "mean_abs_pixel_delta_0_255": 8.04
+    },
+    {
+      "from_sec": 17.5,
+      "to_sec": 18.0,
+      "mean_abs_pixel_delta_0_255": 5.75
+    },
+    {
+      "from_sec": 18.0,
+      "to_sec": 18.5,
+      "mean_abs_pixel_delta_0_255": 7.3
+    },
+    {
+      "from_sec": 18.5,
+      "to_sec": 19.0,
+      "mean_abs_pixel_delta_0_255": 50.59
+    },
+    {
+      "from_sec": 19.0,
+      "to_sec": 19.5,
+      "mean_abs_pixel_delta_0_255": 15.37
+    },
+    {
+      "from_sec": 19.5,
+      "to_sec": 20.0,
+      "mean_abs_pixel_delta_0_255": 11.29
+    },
+    {
+      "from_sec": 20.0,
+      "to_sec": 20.5,
+      "mean_abs_pixel_delta_0_255": 15.05
+    }
+  ]
+}

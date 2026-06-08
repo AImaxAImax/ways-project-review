@@ -1,0 +1,168 @@
+{
+  "1": {
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {
+      "title": "HunyuanVideo 1.5 I2V GGUF"
+    },
+    "inputs": {
+      "unet_name": "720p_distilled\\hunyuanvideo1.5_720p_i2v_cfg_distilled-Q5_K_M.gguf"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "Hunyuan 1.5 regular text encoders"
+    },
+    "inputs": {
+      "clip_name1": "gemma_3_12B_it_fp4_mixed.safetensors",
+      "clip_name2": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "hunyuan_video_15"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Hunyuan VAE"
+    },
+    "inputs": {
+      "vae_name": "hunyuan_video_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "hero_plate"
+    },
+    "inputs": {
+      "image": "vj_hero_plates/0853_americana_nocturne_934794712_mid.jpg"
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "positive_prompt"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "__VJ_PROMPT__"
+    }
+  },
+  "8": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "negative_prompt"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "text, subtitles, watermark, logo, people, faces, low quality, blurry, flicker, compression artifacts, garbled letters, warped geometry"
+    }
+  },
+  "9": {
+    "class_type": "HunyuanVideo15ImageToVideo",
+    "_meta": {
+      "title": "Hunyuan15 I2V latent smoke"
+    },
+    "inputs": {
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "width": 640,
+      "height": 368,
+      "length": 17,
+      "batch_size": 1,
+      "start_image": [
+        "4",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "seed_node"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": "__VJ_SEED__",
+      "steps": 6,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "9",
+        0
+      ],
+      "negative": [
+        "9",
+        1
+      ],
+      "latent_image": [
+        "9",
+        2
+      ],
+      "denoise": 1.0
+    }
+  },
+  "11": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "decode"
+    },
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "CreateVideo",
+    "_meta": {
+      "title": "create_video"
+    },
+    "inputs": {
+      "images": [
+        "11",
+        0
+      ],
+      "fps": 24
+    }
+  },
+  "13": {
+    "class_type": "SaveVideo",
+    "_meta": {
+      "title": "save_video"
+    },
+    "inputs": {
+      "video": [
+        "12",
+        0
+      ],
+      "filename_prefix": "vj_hero_smoke/hunyuan15_i2v_gguf",
+      "format": "mp4",
+      "codec": "h264"
+    }
+  }
+}

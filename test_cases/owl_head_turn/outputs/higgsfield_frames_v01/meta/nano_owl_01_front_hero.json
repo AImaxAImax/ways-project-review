@@ -1,0 +1,20 @@
+[
+  {
+    "id": "7a92fda0-3781-4b51-83f8-bb5a2254c248",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_211704_7a92fda0-3781-4b51-83f8-bb5a2254c248.png",
+    "created_at": 1780867024.040521,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 premium natural-history source plate, one realistic great horned owl perched on a simple mossy branch at dusk, body facing the camera, head turned far over its right shoulder in a believable owl head-turn pose, huge bright eyes still visible, clean silhouette between head and body, dramatic but kid-safe wildlife documentary lighting, shallow forest background with dark green bokeh, clear caption-safe negative space at top and bottom, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no x-ray, no skeleton, no extra owls, no duplicate heads, no broken neck, no horror.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

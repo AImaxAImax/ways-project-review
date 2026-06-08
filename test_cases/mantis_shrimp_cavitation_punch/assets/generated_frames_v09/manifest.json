@@ -1,0 +1,102 @@
+[
+  {
+    "shot": "hook_flash",
+    "variant": 1,
+    "seed": 896650638,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, a mantis shrimp club striking beside a small clam shell on sand, tiny white cavitation flash and microbubble cloud at impact, shock ripple, dramatic high speed moment",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/hook_flash_v1_seed896650638.png"
+    ],
+    "prompt_id": "6e7c5efc-7f15-4915-babd-76075358d097"
+  },
+  {
+    "shot": "hook_flash",
+    "variant": 2,
+    "seed": 1065866239,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, a mantis shrimp club striking beside a small clam shell on sand, tiny white cavitation flash and microbubble cloud at impact, shock ripple, dramatic high speed moment",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/hook_flash_v2_seed1065866239.png"
+    ],
+    "prompt_id": "2fe12ed3-54fd-4715-acac-8310ad44f489"
+  },
+  {
+    "shot": "club_speed",
+    "variant": 1,
+    "seed": 900694869,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, close macro of a mantis shrimp with raptorial club extended forward toward a shell, motion frozen in water, tiny suspended bubbles, sense of extreme speed without drawn trails",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/club_speed_v1_seed900694869.png"
+    ],
+    "prompt_id": "0dec36d4-ace8-4140-b1a9-bbaf932c1d95"
+  },
+  {
+    "shot": "club_speed",
+    "variant": 2,
+    "seed": 876962430,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, close macro of a mantis shrimp with raptorial club extended forward toward a shell, motion frozen in water, tiny suspended bubbles, sense of extreme speed without drawn trails",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/club_speed_v2_seed876962430.png"
+    ],
+    "prompt_id": "f6b16a39-31e0-4e30-b6ea-98eca89195f1"
+  },
+  {
+    "shot": "cavitation_bubbles",
+    "variant": 1,
+    "seed": 1672343741,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, close view of a mantis shrimp strike zone beside a shell, bright cavitation microbubbles blooming in water, realistic physics, no artificial graphics",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/cavitation_bubbles_v1_seed1672343741.png"
+    ],
+    "prompt_id": "0e3ecfc5-7650-472e-9ac8-6bf242a17302"
+  },
+  {
+    "shot": "cavitation_bubbles",
+    "variant": 2,
+    "seed": 1905643036,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, close view of a mantis shrimp strike zone beside a shell, bright cavitation microbubbles blooming in water, realistic physics, no artificial graphics",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/cavitation_bubbles_v2_seed1905643036.png"
+    ],
+    "prompt_id": "938aabef-9722-4734-8b77-2a2775bb8e4b"
+  },
+  {
+    "shot": "bubble_collapse",
+    "variant": 1,
+    "seed": 615541055,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, macro underwater shot of cavitation bubble cloud collapsing beside a shell after a mantis shrimp strike, subtle shock ripple, realistic bubbles",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/bubble_collapse_v1_seed615541055.png"
+    ],
+    "prompt_id": "03cbae7b-29cc-4151-b049-e993bf2efb37"
+  },
+  {
+    "shot": "bubble_collapse",
+    "variant": 2,
+    "seed": 2751641154,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, macro underwater shot of cavitation bubble cloud collapsing beside a shell after a mantis shrimp strike, subtle shock ripple, realistic bubbles",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/bubble_collapse_v2_seed2751641154.png"
+    ],
+    "prompt_id": "c2226fb4-1472-44ef-a27d-a1041158ef23"
+  },
+  {
+    "shot": "final_water_punch",
+    "variant": 1,
+    "seed": 1244429940,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, wide macro scene with mantis shrimp near shell and expanding shock ripples in water, the water itself looks forceful, realistic documentary photo",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/final_water_punch_v1_seed1244429940.png"
+    ],
+    "prompt_id": "0c0fcc30-ef63-4be0-b19b-5b1adb82cdae"
+  },
+  {
+    "shot": "final_water_punch",
+    "variant": 2,
+    "seed": 3498542764,
+    "prompt": "vertical 9:16 photoreal natural history macro underwater image, realistic peacock mantis shrimp, anatomically accurate stomatopod eyes and raptorial club, blue green seawater, cinematic documentary lighting, premium wildlife photography, sharp subject, clean background, no text, no letters, no numbers, no watermark, no logo, no UI, no labels, no diagram arrows, no caption, no border, wide macro scene with mantis shrimp near shell and expanding shock ripples in water, the water itself looks forceful, realistic documentary photo",
+    "files": [
+      "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/generated_frames_v09/final_water_punch_v2_seed3498542764.png"
+    ],
+    "prompt_id": "ba315680-e659-4b76-8892-726fbf943c2c"
+  }
+]

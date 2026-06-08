@@ -1,0 +1,25 @@
+{
+  "slug": "saturn_hexagon_storm",
+  "gate": "Gate 1 - script/source packet",
+  "status": "prepared_not_approved",
+  "no_credits_spent": true,
+  "rendering_started": false,
+  "source_research_completed": true,
+  "script_draft_completed": true,
+  "beat_sheet_completed": true,
+  "plate_prompt_packet_completed": true,
+  "folder_scaffold_completed": true,
+  "human_review_required_before_gate2": true,
+  "open_review_items": [
+    "Approve factual wording: storm system / hexagon-shaped jet stream / polar vortex.",
+    "Approve or replace final metaphor: planet-sized six-sided storm crown.",
+    "Confirm whether a non-text hexagon outline accent is allowed over NASA source crops."
+  ],
+  "primary_sources": [
+    "NASA/JPL PIA21052 Over Saturn's Turbulent North",
+    "NASA/JPL PIA17122 Stormy North",
+    "NASA/JPL PIA14646 Hexagon and Rings",
+    "NASA/JPL PIA20507 Saturn Watercolor Swirls",
+    "NASA Image and Media Guidelines"
+  ]
+}

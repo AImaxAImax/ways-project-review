@@ -1,0 +1,21 @@
+{
+  "project_dir": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch",
+  "ready_to_publish_requested": false,
+  "ok": false,
+  "problems": [
+    "missing artifact: outputs/clean_master.mp4",
+    "missing artifact: outputs/publish_candidate_captioned.mp4",
+    "missing artifact: outputs/discord_preview_captioned.mp4",
+    "missing artifact: outputs/captions.ass",
+    "missing artifact: outputs/captions.srt",
+    "missing artifact: outputs/contact_sheet.jpg",
+    "missing artifact: outputs/ffprobe_publish.json",
+    "missing artifact: outputs/audio_report.txt",
+    "missing artifact: outputs/vlm_plate_scores.json",
+    "PUBLISH_GATE.md gate result absent: gate_1_script",
+    "PUBLISH_GATE.md gate result absent: gate_2_plate_qc_human",
+    "PUBLISH_GATE.md gate result absent: gate_3_render_qa",
+    "PUBLISH_GATE.md gate result absent: gate_4_assembly_qa",
+    "PUBLISH_GATE.md gate result absent: gate_5_human_final_review"
+  ]
+}

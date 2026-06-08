@@ -1,0 +1,22 @@
+{
+  "shot": "03 \u2014 Before forests. Before apples. Before squirrels had anywhere to hide nuts.",
+  "selected_current_hold": "v12b variant 05",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v12/shot03_apple_squirrel_acorn_v12b_v05_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v05_00001_.png",
+  "contact_sheets": [
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v12_shot03_apple_squirrel_acorn_contact_sheet.jpg",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v12b_shot03_prop_trio_stage_contact_sheet.jpg",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v12c_shot03_simple_trio_contact_sheet.jpg"
+  ],
+  "rationale": [
+    "Much more visually unique than the ocean/barren shark frame: dark tabletop museum-stage gag instead of landscape.",
+    "Contains readable apple, squirrel(s), and acorn/nut forms without generated text.",
+    "Avoids the large tree/forest failure that appeared in the first v12 outdoor pass.",
+    "Holds the say-dog-see-dog idea better than more abstract v12c variants."
+  ],
+  "caveat": "Not final-lock quality: v12b05 has duplicate squirrels and the acorns could be cleaner/larger. If this becomes a hero gag shot, do one more pass or manually composite the three props for perfect readability.",
+  "failed_lessons": [
+    "Outdoor/scenic prompt cues immediately caused forests/branches/leaves even with negative prompts.",
+    "Black-stage prompt prevents scenery drift but the model starts turning the acorn into abstract display objects; guide/control needs to be simpler or composited."
+  ]
+}

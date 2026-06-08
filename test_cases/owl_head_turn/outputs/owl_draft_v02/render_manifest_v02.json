@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-08T15:36:36Z",
+  "sources": {
+    "shot01": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot01_owl_head_turn_wan22_432x768_25f_seed812701.mp4",
+    "shot02": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot02_owl_head_turn_wan22_432x768_25f_seed812702.mp4",
+    "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+    "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3"
+  },
+  "duration": 19.591837,
+  "outputs": {
+    "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/owl_head_turn_clean_sequence_v02.mp4",
+    "captioned": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/owl_head_turn_captioned_draft_v02.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/owl_head_turn_discord_preview_v02.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/contact_sheet_owl_draft_v02.jpg",
+    "captions": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/captions_owl_v02.ass",
+    "qa": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v02/QA_OWL_DRAFT_V02.md"
+  },
+  "ffprobe_captioned": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "2797051"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "161784"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "7244626"
+    }
+  },
+  "ffprobe_preview": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 540,
+        "height": 960,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "465515"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "131431"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "1474869"
+    }
+  },
+  "edit_note": "v02 reduces obvious one-second looping by sequencing both I2V candidates, slow/interpolated motion, a plate hold, and reverse passes."
+}

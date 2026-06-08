@@ -1,0 +1,50 @@
+[
+  {
+    "shot": "01_before_trees",
+    "variant": 1,
+    "seed": 26184001,
+    "strength": 0.18,
+    "cfg": 4.3,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_barren_coast_readable_shark_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature, real cut paper strata, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, ancient lifeless volcanic coast before land vegetation existed, wide empty ochre badlands, basalt cliffs, desert islands and teal prehistoric ocean, no living things on land, one clearly readable calm ancient shark silhouette gliding in the foreground water, shark visible but peaceful, empty barren land remains the main idea, stark primordial world, clean negative space for captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded, many sharks",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11c_shot01_before_trees/v11c_shot01_readable_shark_v01_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 2,
+    "seed": 26184002,
+    "strength": 0.24,
+    "cfg": 4.0,
+    "steps": 20,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_barren_coast_readable_shark_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature, real cut paper strata, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, ancient lifeless volcanic coast before land vegetation existed, wide empty ochre badlands, basalt cliffs, desert islands and teal prehistoric ocean, no living things on land, one clearly readable calm ancient shark silhouette gliding in the foreground water, shark visible but peaceful, empty barren land remains the main idea, stark primordial world, clean negative space for captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded, many sharks",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11c_shot01_before_trees/v11c_shot01_readable_shark_v02_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 3,
+    "seed": 26184003,
+    "strength": 0.3,
+    "cfg": 3.6,
+    "steps": 20,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_barren_coast_readable_shark_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature, real cut paper strata, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, ancient lifeless volcanic coast before land vegetation existed, wide empty ochre badlands, basalt cliffs, desert islands and teal prehistoric ocean, no living things on land, one clearly readable calm ancient shark silhouette gliding in the foreground water, shark visible but peaceful, empty barren land remains the main idea, stark primordial world, clean negative space for captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded, many sharks",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11c_shot01_before_trees/v11c_shot01_readable_shark_v03_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 4,
+    "seed": 26184004,
+    "strength": 0.12,
+    "cfg": 4.8,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_barren_coast_readable_shark_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature, real cut paper strata, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, ancient lifeless volcanic coast before land vegetation existed, wide empty ochre badlands, basalt cliffs, desert islands and teal prehistoric ocean, no living things on land, one clearly readable calm ancient shark silhouette gliding in the foreground water, shark visible but peaceful, empty barren land remains the main idea, stark primordial world, clean negative space for captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, cactus, coral, kelp, jungle, woodland, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded, many sharks",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11c_shot01_before_trees/v11c_shot01_readable_shark_v04_00001_.png"
+  }
+]

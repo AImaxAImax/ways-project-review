@@ -1,0 +1,58 @@
+{
+  "title": "octopus_three_hearts",
+  "created_at": "2026-06-05T22:51:55",
+  "source_clean_master": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_master_1080.mp4",
+  "clean_master_copy": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/clean_master_unmodified.mp4",
+  "manifest": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/manifest.json",
+  "caption_mode": "shot-accurate key-word styled ASS from manifest durations; use CapCut/Whisper word timestamps for true active-word karaoke if required",
+  "audio_polish": "highpass 80 Hz, light compression, loudnorm target I=-15 LRA=7 TP=-1, AAC 48kHz",
+  "outputs": {
+    "publish_candidate": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "discord_preview": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+    "captions_ass": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/captions.ass",
+    "captions_srt": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/captions.srt",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg"
+  },
+  "segments": [
+    {
+      "index": 1,
+      "shot_id": "01",
+      "start": 0.0,
+      "end": 2.762,
+      "caption": "AN OCTOPUS HAS\nTHREE HEARTS",
+      "keyword": "OCTOPUS"
+    },
+    {
+      "index": 2,
+      "shot_id": "02",
+      "start": 2.762,
+      "end": 5.984999999999999,
+      "caption": "TWO PUSH THROUGH\nTHE GILLS",
+      "keyword": "THROUGH"
+    },
+    {
+      "index": 3,
+      "shot_id": "03",
+      "start": 5.984999999999999,
+      "end": 9.514999999999999,
+      "caption": "ONE POWERS\nTHE BODY",
+      "keyword": "POWERS"
+    },
+    {
+      "index": 4,
+      "shot_id": "04",
+      "start": 9.514999999999999,
+      "end": 12.890999999999998,
+      "caption": "SWIMMING SLOWS\nONE DOWN",
+      "keyword": "SWIMMING"
+    },
+    {
+      "index": 5,
+      "shot_id": "05",
+      "start": 12.890999999999998,
+      "end": 15.959999999999997,
+      "caption": "CRAWLING CAN\nBE EASIER",
+      "keyword": "CRAWLING"
+    }
+  ]
+}

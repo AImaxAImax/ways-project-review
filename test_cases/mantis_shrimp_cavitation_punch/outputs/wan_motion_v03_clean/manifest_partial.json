@@ -1,0 +1,184 @@
+{
+  "slug": "mantis_shrimp_cavitation_punch",
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch",
+  "output_dir": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean",
+  "voiceover": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_settings": {
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "fps": 24,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "writable_dirs": [],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/wan_motion_v03_clean_plates/shot01_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "A mantis shrimp punch can make the water flash",
+      "seed": 728201,
+      "prompt": "premium natural-history documentary image-to-video from the exact mantis shrimp still. Create true in-frame motion like a wildlife shot: mantis shrimp body subtly shifts forward, raptorial club snaps toward a shell target in the water, tiny water flash from the strike, sand and particles move naturally. Preserve the mantis anatomy and source photo style. No overlays, no diagrams, no text, no logos, no UI, no graphic rings, no fake labels, no Ken Burns-only pan, no scene cut, no morphing.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot01_wan22_432x768_25f_seed728201.mp4",
+      "prompt_id": "6bd9d78a-355c-4c40-9002-603cffca6c96",
+      "uploaded_image": "shot01_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "01_728201_00002_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "02",
+      "image": "assets/wan_motion_v03_clean_plates/shot02_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the animal is tiny / but its club moves insanely fast",
+      "seed": 728202,
+      "prompt": "underwater wildlife macro image-to-video from exact still. The mantis shrimp makes a quick natural striking motion with its club while its body and antennae move slightly, water particles streak from the motion, camera feels handheld underwater. Preserve realistic anatomy and framing. No added graphics, no text, no logos, no arrows, no rings, no Ken Burns-only pan, no cut.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot02_wan22_432x768_25f_seed728202.mp4",
+      "prompt_id": "bbd52b53-aa4f-4176-a6e2-f29a95792920",
+      "uploaded_image": "shot02_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "02_728202_00002_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "03",
+      "image": "assets/wan_motion_v03_clean_plates/shot03_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "that is cavitation",
+      "seed": 728203,
+      "prompt": "macro underwater natural-history shot from the exact mantis shrimp still. After the strike, a small realistic white cavitation bubble cloud forms in the water near the club and prey area, then begins to dissipate; all motion happens inside the water/subject, not as overlay graphics. Preserve photo realism. No labels, no diagram, no text, no UI, no graphic artifacts, no morphing.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot03_wan22_432x768_25f_seed728203.mp4",
+      "prompt_id": "c9b9fb13-00eb-4af0-9fd5-5488cd6ce7a6",
+      "uploaded_image": "shot03_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "03_728203_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "04",
+      "image": "assets/wan_motion_v03_clean_plates/shot04_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the punch hits first",
+      "seed": 728204,
+      "prompt": "realistic mantis shrimp strike image-to-video from the exact still. The club darts forward and physically contacts a small shell/rock/prey proxy in frame, making a natural water disturbance and tiny debris movement. No graphic overlays, no rings, no labels, no text, no logo, no cartoon effect, no Ken Burns-only motion, no scene cut.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot04_wan22_432x768_25f_seed728204.mp4",
+      "prompt_id": "c77a38e4-5bdb-4061-b676-1ad1aebad724",
+      "uploaded_image": "shot04_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "04_728204_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "05",
+      "image": "assets/wan_motion_v03_clean_plates/shot05_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "then the bubble collapses / and hits again",
+      "seed": 728205,
+      "prompt": "premium underwater macro image-to-video. A small cavitation bubble cloud near the strike collapses inward naturally, sending a subtle second shock ripple through the water and shaking nearby particles/sand. It should feel like real water motion, not a drawn overlay. Preserve mantis anatomy. No text, no symbols, no rings, no UI, no artifacts, no morphing.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot05_wan22_432x768_25f_seed728205.mp4",
+      "prompt_id": "d7e7dc32-68c9-47fd-95bd-0b52f328f861",
+      "uploaded_image": "shot05_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "05_728205_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "06",
+      "image": "assets/wan_motion_v03_clean_plates/shot06_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "scientists filmed it / in high speed",
+      "seed": 728206,
+      "prompt": "high-speed wildlife macro feel from exact mantis still, no actual camera UI. The movement plays like slow-motion footage: club motion blur, suspended particles drifting, water pulse visible near impact, mantis remains anatomically stable. No text, no timecode, no contact sheet frames, no labels, no overlays, no graphic artifacts.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot06_wan22_432x768_25f_seed728206.mp4",
+      "prompt_id": "e1c3c054-17c7-4fd9-933f-b9742786dd91",
+      "uploaded_image": "shot06_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "06_728206_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "07",
+      "image": "assets/wan_motion_v03_clean_plates/shot07_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "it does not just / punch prey",
+      "seed": 728207,
+      "prompt": "documentary underwater macro from exact still. Mantis shrimp recoils naturally after strike, water particles and sand continue moving, prey/shell area shakes gently, shot feels alive and photographic. No graphic overlays, no text, no logos, no unnatural artifacts, no Ken Burns-only pan.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot07_wan22_432x768_25f_seed728207.mp4",
+      "prompt_id": "89bbc20a-b828-4031-b4a5-564ac37bdbed",
+      "uploaded_image": "shot07_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "07_728207_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "08",
+      "image": "assets/wan_motion_v03_clean_plates/shot08_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the water / punches too",
+      "seed": 728208,
+      "prompt": "final premium natural-history replay feeling from exact still. Mantis shrimp holds in frame while the water itself pulses from the strike: realistic bubble collapse, tiny shock disturbance, particles moving outward, subtle body motion. Must be real in-frame water/subject movement, not drawn graphics. No text, no logos, no rings, no overlays, no labels, no morphing, no scene cut.",
+      "clip": "outputs/wan_motion_v03_clean/clips/shot08_wan22_432x768_25f_seed728208.mp4",
+      "prompt_id": "8520387c-69b8-4376-bf60-9fddacc38ebc",
+      "uploaded_image": "shot08_clean_mantis_photo_plate.png",
+      "comfy_output": {
+        "filename": "08_728208_00001_.mp4",
+        "subfolder": "mantis_shrimp_cavitation_punch",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    }
+  ],
+  "created_at": "2026-06-06T10:29:35",
+  "outputs": {
+    "manifest": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/manifest.json",
+    "manifest_partial": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/manifest_partial.json",
+    "silent": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_silent_1080.mp4",
+    "master": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_master_1080.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_preview_720.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/contact_sheet_mantis_shrimp_cavitation_punch.jpg",
+    "ffprobe_master": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/ffprobe_master.json",
+    "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/wan_motion_v03_clean/README_QA_FINAL.md"
+  }
+}

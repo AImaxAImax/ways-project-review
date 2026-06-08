@@ -1,0 +1,23 @@
+{
+  "slug": "mantis_shrimp_cavitation_punch",
+  "gate": "Gate 1 - script/source packet",
+  "status": "prepared_not_approved",
+  "no_credits_spent": true,
+  "rendering_started": false,
+  "source_research_completed": true,
+  "script_draft_completed": true,
+  "beat_sheet_completed": true,
+  "plate_prompt_packet_completed": true,
+  "folder_scaffold_completed": true,
+  "human_review_required_before_gate2": true,
+  "open_review_items": [
+    "Approve plain-language cavitation wording: \"water briefly tears open into bubbles.\"",
+    "Approve final metaphor: \"the water punches too.\"",
+    "Confirm whether the cavitation shot may use a non-text abstract bubble-collapse visual if real source footage is not available."
+  ],
+  "primary_sources": [
+    "Nature DOI 10.1038/428819a Deadly strike mechanism of a mantis shrimp",
+    "JEB DOI 10.1242/jeb.040691 Elastic Energy Powers Mantis Shrimp Punch",
+    "Bioinspiration & Biomimetics DOI 10.1088/1748-3182/9/1/016014 Ninjabot kinematics and cavitation"
+  ]
+}

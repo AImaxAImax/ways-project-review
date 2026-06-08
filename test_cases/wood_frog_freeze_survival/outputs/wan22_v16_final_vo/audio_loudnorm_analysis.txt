@@ -1,0 +1,51 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v16_final_vo/wood_frog_freeze_survival_v16_final_vo_captioned_1080.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:00:20.58, start: 0.000000, bitrate: 6405 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1080x1920, 6282 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 117 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.16.100
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(tv, bt470bg/unknown/unknown, progressive), 1080x1920, q=2-31, 200 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 wrapped_avframe
+  Stream #0:1(und): Audio: pcm_s16le, 192000 Hz, mono, s16, 3072 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x5c2b1d149400] video:232kB audio:7712kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=  494 fps=0.0 q=-0.0 Lsize=N/A time=00:00:20.54 bitrate=N/A speed=44.4x    
+[Parsed_loudnorm_0 @ 0x5c2b1d224bc0] 
+{
+	"input_i" : "-15.05",
+	"input_tp" : "-0.94",
+	"input_lra" : "4.20",
+	"input_thresh" : "-25.62",
+	"output_i" : "-15.00",
+	"output_tp" : "-1.00",
+	"output_lra" : "2.50",
+	"output_thresh" : "-25.38",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.00"
+}

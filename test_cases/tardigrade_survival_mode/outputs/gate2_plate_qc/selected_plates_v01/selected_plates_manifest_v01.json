@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-06-06T21:20:00Z",
+  "slug": "tardigrade_survival_mode",
+  "status": "gate2_selected_plate_candidate_not_render_ready",
+  "render_performed": false,
+  "paid_or_credit_lanes_used": false,
+  "contact_sheet": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_selected_plates_v01_contact_sheet.jpg",
+  "plates": [
+    {
+      "beat_index": 1,
+      "beat": "01_active_baseline",
+      "role": "active recognizable tardigrade hook/hero",
+      "source_id": "C007",
+      "source_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/tardigrade_plate_select_v01/C007_sample_002.jpg",
+      "plate_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_beat_01_01_active_baseline.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "text_logo_ui_observed_in_crop": false,
+      "lane_note": "right-safe public/open source; deterministic crop/blur-background only; no AI generation; no paid credits",
+      "qa_status": "agent_selected_gate2_candidate_needs_harsh_phone_size_review_before_render"
+    },
+    {
+      "beat_index": 2,
+      "beat": "02_desiccation_into_tun",
+      "role": "real source-supported desiccation/tucking/tun transition",
+      "source_id": "C002",
+      "source_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/tardigrade_plate_select_v01/C002_sample_006.jpg",
+      "plate_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_beat_02_02_desiccation_into_tun.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "text_logo_ui_observed_in_crop": false,
+      "lane_note": "right-safe public/open source; deterministic crop/blur-background only; no AI generation; no paid credits",
+      "qa_status": "agent_selected_gate2_candidate_needs_harsh_phone_size_review_before_render"
+    },
+    {
+      "beat_index": 3,
+      "beat": "03_dormant_tun_pause",
+      "role": "tun/dormant pause state; no HUD/text overlay",
+      "source_id": "C004",
+      "source_path": "test_cases/tardigrade_survival_mode/assets/source_rework/C004_SEM_image_of_Milnesium_tardigradum_in_tun_state___journal_po.png",
+      "plate_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_beat_03_03_dormant_tun_pause.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "text_logo_ui_observed_in_crop": false,
+      "lane_note": "right-safe public/open source; deterministic crop/blur-background only; no AI generation; no paid credits",
+      "qa_status": "agent_selected_gate2_candidate_needs_harsh_phone_size_review_before_render"
+    },
+    {
+      "beat_index": 4,
+      "beat": "04_rehydration_reactivation",
+      "role": "C002 stage IV rehydration/reactivation fallback frame; no visible water-flow overclaim",
+      "source_id": "C002",
+      "source_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/tardigrade_plate_select_v01/C002_sample_014.jpg",
+      "plate_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_beat_04_04_rehydration_reactivation.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "text_logo_ui_observed_in_crop": false,
+      "lane_note": "right-safe public/open source; deterministic crop/blur-background only; no AI generation; no paid credits",
+      "qa_status": "agent_selected_gate2_candidate_needs_harsh_phone_size_review_before_render"
+    },
+    {
+      "beat_index": 5,
+      "beat": "05_final_survival_trick",
+      "role": "active/reactivated movement payoff from CC0 vertical microscope video",
+      "source_id": "C007",
+      "source_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/tardigrade_plate_select_v01/C007_sample_006.jpg",
+      "plate_path": "test_cases/tardigrade_survival_mode/outputs/gate2_plate_qc/selected_plates_v01/tardigrade_beat_05_05_final_survival_trick.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "text_logo_ui_observed_in_crop": false,
+      "lane_note": "right-safe public/open source; deterministic crop/blur-background only; no AI generation; no paid credits",
+      "qa_status": "agent_selected_gate2_candidate_needs_harsh_phone_size_review_before_render"
+    }
+  ],
+  "remaining_blockers": [
+    "human/phone-size Gate 2 review of selected microscope/SEM crops",
+    "approved elevenlabs_george VO is still absent; do not render with wrong voice",
+    "Beat 04 uses source-supported rehydration/reactivation fallback, not a visible water droplet/flow shot"
+  ]
+}

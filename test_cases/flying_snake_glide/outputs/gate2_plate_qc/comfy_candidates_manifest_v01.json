@@ -1,0 +1,37 @@
+[
+  {
+    "shot": "01_launch",
+    "variant": 1,
+    "seed": 60741101,
+    "prompt": "vertical 9:16 premium natural history documentary still, realistic flying snake gliding in rainforest canopy, full snake body visible, clear airborne action, educational YouTube Shorts visual, clean open space for editor-added captions, no text in image, no logos, no watermark, sharp cinematic wildlife photography, snake launching from a high tree branch into open air, branch visible on left, sky gap behind snake, instant read that snake is airborne",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/01_launch_v01_00001_.png"
+  },
+  {
+    "shot": "02_no_wings",
+    "variant": 1,
+    "seed": 60741201,
+    "prompt": "vertical 9:16 premium natural history documentary still, realistic flying snake gliding in rainforest canopy, full snake body visible, clear airborne action, educational YouTube Shorts visual, clean open space for editor-added captions, no text in image, no logos, no watermark, sharp cinematic wildlife photography, airborne snake with no wings, full long body in S shape against blue sky and rainforest, no wings, no feathers, obvious real snake gliding",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/02_no_wings_v01_00001_.png"
+  },
+  {
+    "shot": "03_flatten_body",
+    "variant": 1,
+    "seed": 60741301,
+    "prompt": "vertical 9:16 premium natural history documentary still, realistic flying snake gliding in rainforest canopy, full snake body visible, clear airborne action, educational YouTube Shorts visual, clean open space for editor-added captions, no text in image, no logos, no watermark, sharp cinematic wildlife photography, close side view of flying snake gliding, body looks wider and flattened like a ribbon, not a round coil, rainforest canopy below",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/03_flatten_body_v01_00001_.png"
+  },
+  {
+    "shot": "04_side_to_side",
+    "variant": 1,
+    "seed": 60741401,
+    "prompt": "vertical 9:16 premium natural history documentary still, realistic flying snake gliding in rainforest canopy, full snake body visible, clear airborne action, educational YouTube Shorts visual, clean open space for editor-added captions, no text in image, no logos, no watermark, sharp cinematic wildlife photography, flying snake gliding in an S shaped wave through the air between trees, body curves left and right, motion implied, full body visible",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/04_side_to_side_v01_00001_.png"
+  },
+  {
+    "shot": "05_tree_to_tree",
+    "variant": 1,
+    "seed": 60741501,
+    "prompt": "vertical 9:16 premium natural history documentary still, realistic flying snake gliding in rainforest canopy, full snake body visible, clear airborne action, educational YouTube Shorts visual, clean open space for editor-added captions, no text in image, no logos, no watermark, sharp cinematic wildlife photography, flying snake steering toward another tree branch, destination branch visible on right, snake airborne across open gap between trees",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/05_tree_to_tree_v01_00001_.png"
+  }
+]

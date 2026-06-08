@@ -1,0 +1,20 @@
+{
+  "id": "03",
+  "seed": 944103,
+  "width": 432,
+  "height": 768,
+  "length": 49,
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png",
+  "prompt": "premium close natural-history owl I2V from the exact source still. Preserve one owl and realistic anatomy. Make the shot feel alive with subtle eye movement, blink, tiny feather ruffle, breathing chest feathers, slow parallax camera drift, soft background motion. The owl keeps a clean over-shoulder look; do not twist the neck visibly. Feather collar hides the neck. No duplicate face, no stretched neck, no body turn, no text.",
+  "prompt_id": "3785c9c9-1261-4816-a661-d75abe3507ee",
+  "uploaded_image": "nano_clear_270_01.png",
+  "comfy_output": {
+    "filename": "shot03_944103_00001_.mp4",
+    "subfolder": "ways_owl_head_turn_v04_all_moving",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot03_owl_all_moving_wan22_432x768_49f_seed944103.mp4",
+  "bytes": 281759
+}

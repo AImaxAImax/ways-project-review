@@ -1,0 +1,20 @@
+{
+  "slug": "tardigrade_survival_mode",
+  "hook": "Tardigrades can pause their bodies.",
+  "core_fact": "When conditions are extreme, tardigrades can curl into a dry tun state and slow their metabolism dramatically until water returns.",
+  "status_column": "Script Locked",
+  "cohort_tag": "first10_micro_014",
+  "test_variable": "microscope_source_motion_graphic_scale",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane_map": {},
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/tardigrade_survival_mode/",
+  "blocking_gate": null,
+  "created_at": "2026-06-07T07:21:42Z",
+  "automation_policy": "auto_advance_internal_until_5_active_ready; public_publish_requires_explicit_gate6"
+}

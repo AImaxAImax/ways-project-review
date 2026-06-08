@@ -1,0 +1,158 @@
+{
+  "slug": "mantis_shrimp_cavitation_punch",
+  "hunt_timestamp_utc": "2026-06-06T16:27:48Z",
+  "gate": "WAYS Gate 2 source proof",
+  "requirement": "Right-safe real high-speed mantis shrimp strike/cavitation sequence visibly showing strike/contact, cavitation bubble/flash, bubble collapse, and second impact/shock.",
+  "result": "blocked_no_right_safe_real_footage_found",
+  "downloaded_right_safe_media": [],
+  "downloaded_research_audit_files": [
+    {
+      "path": "research_sources/PatekandCaldwell2005JEB.pdf",
+      "sha256": "f329b3dd62824fb2c2f9872674ed20747bcf45ff0c7989658dc1e805f7a1697c",
+      "source_url": "https://ib.berkeley.edu/labs/patek/Publications/PatekandCaldwell2005JEB.pdf",
+      "purpose": "Research/audit only; confirms the target phenomenon and that supplementary videos exist, but does not provide explicit reuse rights for video material."
+    },
+    {
+      "path": "research_sources/PatekandCaldwell2005JEB.txt",
+      "sha256": "2dd07aed29f8021e7b7cc61444a18d8368346dcbc901a4b13ab54ffa8521728b",
+      "source_url": "local text extraction from PatekandCaldwell2005JEB.pdf",
+      "purpose": "Searchable audit notes."
+    },
+    {
+      "path": "research_sources/vimeo_122396213.json",
+      "sha256": "35a7a4f6d05fa831bbc56047a61337ef807f79fa9926b8a3867940bda9274eb3",
+      "source_url": "https://vimeo.com/122396213",
+      "purpose": "Metadata-only check; video was not downloaded because license field is null/no explicit reuse."
+    },
+    {
+      "path": "research_sources/ytsearch_mantis.jsonl",
+      "sha256": "c8d675ff89f9c50893fc8d1ff43b7095e2703e3dba017d93f331c5c73e57e47d",
+      "source_url": "ytsearch20:mantis shrimp cavitation high speed",
+      "purpose": "Metadata-only YouTube search audit; no YouTube video was downloaded because explicit reuse/license was not found."
+    }
+  ],
+  "vetted_candidates": [
+    {
+      "id": "jeb_2005_patek_caldwell_supplementary",
+      "title": "Extreme impact and cavitation forces of a biological hammer: strike forces of the peacock mantis shrimp Odontodactylus scyllarus",
+      "source_type": "scientific article + supplementary videos",
+      "urls": [
+        "https://doi.org/10.1242/jeb.01831",
+        "https://journals.biologists.com/jeb/article/208/19/3655/15838/Extreme-impact-and-cavitation-forces-of-a",
+        "https://ib.berkeley.edu/labs/patek/Publications/PatekandCaldwell2005JEB.pdf",
+        "http://jeb.biologists.org/cgi/content/full/208/19/3655/DC1"
+      ],
+      "visual_fit": "Excellent lead: article states high-speed imaging, first force peak from limb impact, second force peak from cavitation-bubble collapse, and says videos are available online as supplementary material.",
+      "rights_status": "blocked_not_right_safe",
+      "reason_blocked": "Article/PDF is published by The Company of Biologists 2005; no explicit CC/reuse license found for supplementary videos. Current site blocks automated access with 403/Cloudflare, and legacy DC1 URL returned 403. Cannot use/download as right-safe production material without permission or explicit license."
+    },
+    {
+      "id": "vimeo_122396213_biopixel",
+      "title": "Peacock mantis shrimp strike slow motion showing cavitation bubbles filmed at 1500 fps",
+      "source_type": "Vimeo/BioPixel clip",
+      "url": "https://vimeo.com/122396213",
+      "visual_fit": "Strong visual lead for strike/cavitation bubbles; likely directly relevant.",
+      "metadata_checked": {
+        "title": "Peacock mantis shrimp strike slow motion showing cavitation bubbles filmed at 1500 fps",
+        "uploader": "BIOPIXEL",
+        "duration_seconds": 56,
+        "license": null
+      },
+      "rights_status": "blocked_not_right_safe",
+      "reason_blocked": "No explicit license/reuse grant found in Vimeo metadata/page; video not downloaded."
+    },
+    {
+      "id": "youtube_physics_girl_m78_sOEadC8",
+      "title": "Mantis Shrimp Punch at 40,000 fps! - Cavitation Physics",
+      "source_type": "YouTube explainer/high-speed footage",
+      "url": "https://www.youtube.com/watch?v=m78_sOEadC8",
+      "visual_fit": "Likely contains actual high-speed cavitation visuals.",
+      "metadata_checked": {
+        "uploader": "Physics Girl",
+        "license": null
+      },
+      "rights_status": "blocked_not_right_safe",
+      "reason_blocked": "YouTube metadata did not expose an explicit Creative Commons/reuse license; video not downloaded per instruction."
+    },
+    {
+      "id": "youtube_digital_wildlife_jooXjnJcA6g",
+      "title": "Mantis Shrimp Cavitation Strike | Shell Smash",
+      "source_type": "YouTube clip",
+      "url": "https://www.youtube.com/watch?v=jooXjnJcA6g",
+      "visual_fit": "Likely direct mantis strike/cavitation clip.",
+      "metadata_checked": {
+        "uploader": "Digital Wildlife Studio",
+        "license": null
+      },
+      "rights_status": "blocked_not_right_safe",
+      "reason_blocked": "No explicit reuse license in metadata; video not downloaded."
+    },
+    {
+      "id": "youtube_zoolore_uBNBqGJxzA4",
+      "title": "Mantis Shrimp Punches So Fast, Water Cavitates—and Flashes",
+      "source_type": "YouTube clip",
+      "url": "https://www.youtube.com/watch?v=uBNBqGJxzA4",
+      "visual_fit": "Likely direct mantis strike/cavitation clip.",
+      "metadata_checked": {
+        "uploader": "Zoolore",
+        "license": null
+      },
+      "rights_status": "blocked_not_right_safe",
+      "reason_blocked": "No explicit reuse license in metadata; video not downloaded."
+    },
+    {
+      "id": "ted_sheila_patek_2004_archive",
+      "title": "Sheila Patek clocks the fastest animals / The shrimp with a kick",
+      "source_type": "TED/Internet Archive mirror",
+      "urls": [
+        "https://archive.org/details/SheilaPatek_2004",
+        "https://www.ted.com/talks/sheila_patek_the_shrimp_with_a_kick"
+      ],
+      "visual_fit": "Good educational lead and possibly includes high-speed strike footage.",
+      "rights_status": "blocked_not_right_safe_for_WAYS_post",
+      "reason_blocked": "Internet Archive reports CC BY-NC-ND 3.0, which blocks commercial use and derivative/editing; not suitable for WAYS posting."
+    },
+    {
+      "id": "commons_search_20260606",
+      "title": "Wikimedia Commons search for mantis shrimp/stomatopod strike/cavitation",
+      "source_type": "Wikimedia Commons",
+      "queries": [
+        "mantis shrimp cavitation",
+        "mantis shrimp strike",
+        "stomatopod strike",
+        "Odontodactylus scyllarus video"
+      ],
+      "visual_fit": "No real high-speed strike/cavitation/bubble-collapse video found. Commons has usable static mantis photos, a general peacock mantis shrimp webm, and CC BY-SA animated mechanics GIFs, but not actual cavitation/second impact footage.",
+      "rights_status": "no_matching_real_footage_found"
+    },
+    {
+      "id": "internet_archive_search_20260606",
+      "title": "Internet Archive searches for mantis shrimp cavitation/high speed/stomatopod/Patek",
+      "source_type": "Internet Archive",
+      "queries": [
+        "mantis shrimp cavitation",
+        "mantis shrimp high speed",
+        "stomatopod cavitation",
+        "Patek mantis shrimp"
+      ],
+      "visual_fit": "No right-safe real high-speed mantis cavitation source found. Results were TED CC BY-NC-ND, unrelated/TV/all-rights likely material, or archived YouTube without explicit reuse.",
+      "rights_status": "no_matching_right_safe_footage_found"
+    },
+    {
+      "id": "patek_lab_duke_page",
+      "title": "Mechanics of Movement: Mantis Shrimp - Patek Lab",
+      "source_type": "university lab page",
+      "url": "https://pateklab.biology.duke.edu/research/mechanics-of-ultrafast-movement/mechanics-of-movement-mantis-shrimp/",
+      "visual_fit": "Excellent scientific/context source; page text explicitly discusses high-speed imaging and cavitation bubble collapse.",
+      "rights_status": "not_a_right_safe_media_source",
+      "reason_blocked": "No downloadable/embeddable strike video or explicit media reuse license found on page. Best lead for permission request to Patek Lab."
+    }
+  ],
+  "blocker": "No right-safe real high-speed mantis shrimp strike/cavitation/bubble-collapse/second-impact source was found in scientific supplements, university lab pages, Wikimedia Commons, Internet Archive, Vimeo, or YouTube metadata checks. The strongest real footage exists as scientific/publisher supplements or platform clips, but every located real-footage candidate lacks explicit reuse rights or has NC/ND restrictions. Therefore WAYS Gate 2 should remain blocked for real-source footage.",
+  "best_next_leads": [
+    "Request written permission from Sheila Patek/Patek Lab and/or The Company of Biologists for the JEB 2005 supplementary videos for social short reuse; this is the best scientific match for first impact + cavitation collapse/second force peak.",
+    "Request permission/license quote from BIOPIXEL for Vimeo 122396213; visually likely closest accessible clip, but current public page is not reusable.",
+    "If permission is not available, proceed only with the already-approved fallback lane: a clearly labeled deterministic motion-graphic proof sequence showing club impact, bubble formation, bubble collapse, and second shock. Do not present it as real footage.",
+    "Keep Wikimedia Commons CC BY/CC BY-SA mantis stills or mechanics GIFs only as supporting/context visuals; they do not satisfy the cavitation proof by themselves."
+  ]
+}

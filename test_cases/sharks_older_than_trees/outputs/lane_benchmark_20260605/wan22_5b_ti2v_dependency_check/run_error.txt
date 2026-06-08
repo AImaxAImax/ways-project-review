@@ -1,0 +1,1 @@
+5B TI2V run failed validation: UNETLoader node 37 requires wan2.2_ti2v_5B_fp16.safetensors, installed UNET choices only include flux1-schnell-fp8.safetensors.

@@ -1,0 +1,72 @@
+{
+  "project": "owl_head_turn",
+  "goal": "Generate vertical source-frame candidates for a WAYS owl video where one owl clearly reads at phone size and can be animated turning its head almost all the way around.",
+  "script_hook": "Owls can turn their heads almost all the way around. Not 360, about 270 degrees.",
+  "negative_requirements": [
+    "no text",
+    "no logo",
+    "no watermark",
+    "no UI",
+    "no captions",
+    "no labels",
+    "no arrows",
+    "no anatomy cutaway",
+    "no x-ray",
+    "no skeleton",
+    "no extra owls",
+    "no duplicate heads",
+    "no twisted broken neck",
+    "no gore",
+    "no horror"
+  ],
+  "candidates": [
+    {
+      "id": "nano_owl_01_front_hero",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 premium natural-history source plate, one realistic great horned owl perched on a simple mossy branch at dusk, body facing the camera, head turned far over its right shoulder in a believable owl head-turn pose, huge bright eyes still visible, clean silhouette between head and body, dramatic but kid-safe wildlife documentary lighting, shallow forest background with dark green bokeh, clear caption-safe negative space at top and bottom, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no x-ray, no skeleton, no extra owls, no duplicate heads, no broken neck, no horror."
+    },
+    {
+      "id": "nano_owl_02_over_shoulder",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 cinematic wildlife photograph, single barn owl on a dark branch, body pointed forward but head rotated almost all the way around over its left shoulder, face and eyes clearly readable, neck feathers compressed naturally like a real owl, clean uncluttered night woodland background, mobile-readable subject centered, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy diagram, no x-ray, no extra animals, no second head, no distorted body, no gore."
+    },
+    {
+      "id": "nano_owl_03_motion_ready",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 premium educational wildlife still designed for image-to-video animation, one barred owl perched upright, body locked straight toward viewer, head rotated 180 to 270 degrees to look behind itself, owl anatomy realistic and calm, wings folded, talons on branch, simple soft forest background, clear negative space around head for motion, no text, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no extra owls, no duplicate face, no impossible twisted body, no horror."
+    },
+    {
+      "id": "nano_owl_04_loop_hook",
+      "model": "nano_banana_flash",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Vertical 9:16 viral nature short source frame, one owl perched close-up with body facing forward and head dramatically turned backward over its shoulder, expression curious not scary, big eyes and facial disk sharp, natural feathers, simple moonlit forest background, composition leaves clean space for captions, looks like the start of a head-turn loop, no text, no logo, no watermark, no UI, no labels, no diagrams, no x-ray, no second owl, no duplicate head, no mangled neck."
+    },
+    {
+      "id": "seedream_owl_01_front_hero",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 realistic wildlife documentary image of a single great horned owl perched on a branch, body facing camera, head turned far over one shoulder in a natural owl rotation pose, one clear subject only, sharp eyes, clean body/head separation, soft forest background, phone-size clarity, no text, no logo, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no x-ray, no extra owls, no duplicate heads, no broken neck."
+    },
+    {
+      "id": "seedream_owl_02_barn_owl",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 premium nature still, single barn owl with white heart-shaped face, perched upright, body faces forward while head rotates over its shoulder as if looking behind, dramatic impossible-looking but biologically believable owl posture, dark clean background, no diagrams or internal anatomy, no text, no labels, no watermarks, no extra animals, no duplicated face, no horror."
+    },
+    {
+      "id": "seedream_owl_03_body_still",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 educational science source plate, one barred owl perched on a stump, body perfectly still facing forward, head turned nearly backward toward viewer over the shoulder, clear readable eyes, realistic feathers and neck folds, simple blurred forest, caption-safe negative space, no text, no UI, no arrows, no labels, no x-ray, no skeleton, no extra owls, no second head, no gore."
+    },
+    {
+      "id": "seedream_owl_04_clean_closeup",
+      "model": "seedream_v5_lite",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Vertical 9:16 close wildlife portrait of one owl on a branch, body forward, head swiveled far around with eyes looking back toward camera, natural owl anatomy, premium documentary realism, minimal forest background and big clean negative space for captions, no text, no logo, no watermark, no interface, no labels, no arrows, no anatomical cutaway, no extra owls, no duplicated or melted features."
+    }
+  ]
+}

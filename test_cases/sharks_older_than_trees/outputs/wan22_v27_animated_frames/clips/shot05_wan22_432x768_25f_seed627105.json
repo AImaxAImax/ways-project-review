@@ -1,0 +1,19 @@
+{
+  "id": "05",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+  "duration": 3.225,
+  "caption": "THEN FORESTS\nFINALLY ARRIVED",
+  "seed": 627105,
+  "prompt": "premium natural-history image-to-video of first primitive forests near ancient coast. Preserve the exact landscape and composition. Gentle wind movement in primitive plants, soft mist drift, water ripple, slow cinematic camera creep. No modern objects, no text, no logos, no morphing trees into fantasy shapes, no scene cut.",
+  "source_image": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+  "prompt_id": "5a86ea59-f012-4198-99f2-82508b4558e0",
+  "uploaded_image": "shot05_first_trees_coastline_v01.jpeg",
+  "comfy_output": {
+    "filename": "05_627105_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot05_wan22_432x768_25f_seed627105.mp4"
+}

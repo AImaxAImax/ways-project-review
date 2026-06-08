@@ -1,0 +1,17 @@
+{
+  "mode": "hermes_vision_manual_run",
+  "severity": "warn",
+  "text_or_logo_present": false,
+  "visual_artifacts": [
+    "No visible generated text, logos, watermarks, UI, or double captions in the sampled contact sheet.",
+    "Some AI-stylized/painterly texture and softness remain, especially geology/forest/aquarium shots."
+  ],
+  "anatomy_or_morphing_issues": [
+    "Shark silhouettes are broadly coherent in sampled frames; no obvious duplicated fins/limbs or catastrophic melt visible at contact-sheet scale.",
+    "Final shark close-up is cinematic but slightly stylized/soft; full-motion review still required for jaw/fin morphing."
+  ],
+  "caption_readability_issues": [
+    "No captions are present in this base render; caption pass remains downstream before publish."
+  ],
+  "summary": "Contact sheet passes first-pass visual scan for no text/logos/watermarks and no obvious catastrophic animal morphing, but remains a base-render QA rather than a publish gate because captions/full-motion artifact review are still required."
+}

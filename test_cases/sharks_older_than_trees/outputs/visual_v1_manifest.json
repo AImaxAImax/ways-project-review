@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "type": "local_composited_visual_storyboard",
+  "note": "Fallback/prototype visual pass using custom generated illustration layers; not AI model still generation.",
+  "selected_voice": "Roger - Laid-Back, Casual, Resonant",
+  "voice_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/01_warm_older_brother_uncle.mp3",
+  "voice_duration_sec": 23.954,
+  "final": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/sharks_older_than_trees_roger_visual_v1.mp4",
+  "final_duration_sec": 23.916,
+  "silent_video": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/visual_v1_silent.mp4",
+  "stills": [
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/01_shot_01_hook.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/02_shot_02_before_forests.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/03_shot_03_400m.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/04_shot_04_trees_later.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/05_shot_05_not_animal.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/generated_stills_v1/06_shot_06_survivor.png"
+  ],
+  "shot_durations_sec": [
+    3.936,
+    5.571,
+    3.391,
+    4.763,
+    3.348,
+    3.145
+  ],
+  "frames_rendered": 724,
+  "fps": 30,
+  "resolution": "1080x1920"
+}

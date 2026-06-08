@@ -1,0 +1,64 @@
+{
+  "slug": "wood_frog_freeze_survival",
+  "version": "v13_sugar_antifreeze",
+  "motion_policy": "deterministic source-preserving motion plus distinct proof graphics; no AI frog bodies; no paid video credits",
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 2.35,
+      "voiceover": "A frog can freeze solid.",
+      "caption": "A FROG CAN\nFREEZE SOLID",
+      "scene": "frozen_frog_hero",
+      "must_show": "real frog visibly freezing, no generated animal body"
+    },
+    {
+      "start": 2.35,
+      "end": 5.75,
+      "voiceover": "In winter, ice can form through much of its body.",
+      "caption": "ICE FORMS\nTHROUGH ITS BODY",
+      "scene": "body_ice_cutaway",
+      "must_show": "ice/frost spreading through a frog-body silhouette"
+    },
+    {
+      "start": 5.75,
+      "end": 8.85,
+      "voiceover": "Its heart can stop for a while.",
+      "caption": "ITS HEART\nCAN STOP",
+      "scene": "heart_stop_proof",
+      "must_show": "heart/pulse glow fading into stillness, no UI/readout"
+    },
+    {
+      "start": 8.85,
+      "end": 12.45,
+      "voiceover": "Sugar-like fluids help protect the cells.",
+      "caption": "SUGAR HELPS\nPROTECT CELLS",
+      "scene": "cell_protection",
+      "must_show": "cells surrounded by golden protective fluid/droplets"
+    },
+    {
+      "start": 12.45,
+      "end": 16.9,
+      "voiceover": "Then spring warms it up, and the frog starts moving again.",
+      "caption": "SPRING WARMS IT\nBACK TO LIFE",
+      "scene": "spring_thaw_movement",
+      "must_show": "warmth returns and frog/leaf scene shifts from cold to active spring"
+    },
+    {
+      "start": 16.9,
+      "end": 20.6,
+      "voiceover": "It is not magic. It is survival chemistry.",
+      "caption": "NOT MAGIC\nSURVIVAL CHEMISTRY",
+      "scene": "chemistry_hero",
+      "must_show": "real frog hero plus clean chemistry-like protective particles, no labels"
+    }
+  ],
+  "outputs": {
+    "clean_master": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_clean_1080.mp4",
+    "captioned_master": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_1080.mp4",
+    "captioned_preview": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_720.mp4",
+    "contact_sheet": "outputs/motion_v13_sugar_antifreeze/contact_sheet_wood_frog_motion_v13.jpg",
+    "captions_ass": "outputs/motion_v13_sugar_antifreeze/captions.ass",
+    "captions_srt": "outputs/motion_v13_sugar_antifreeze/captions.srt",
+    "ffprobe": "outputs/motion_v13_sugar_antifreeze/ffprobe_captioned_master.json"
+  }
+}

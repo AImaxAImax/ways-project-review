@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-06-07T04:49:05Z",
+  "results": [
+    {
+      "id": "ref_flatten_01",
+      "job_id": "11f6bc59-a2fe-484a-8512-1e04ac9dee8c",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044716_11f6bc59-a2fe-484a-8512-1e04ac9dee8c.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Use the reference as a premium natural-history style guide, but make the biology clearer: a single paradise flying snake gliding high over rainforest, closer to camera, body visibly flattened into a wide ribbon-like airfoil with underside/belly edge visible, S-shaped wave from head to tail, fully airborne with open sky-green negative space around it, no wings, no legs, no branch contact, no extra snakes, no text, no logo, no watermark, no UI.",
+        "medias": [
+          {
+            "data": {
+              "id": "9dc04e76-ac98-4930-9934-d47d5bbd4daa",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/9dc04e76-ac98-4930-9934-d47d5bbd4daa_resize.jpg",
+              "type": "media_input"
+            },
+            "role": "image"
+          }
+        ],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "ref_launch_01",
+      "job_id": "4544dddd-4464-45b5-b210-7b29cdeb4a3a",
+      "model": "nano_banana_flash",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044740_4544dddd-4464-45b5-b210-7b29cdeb4a3a.png",
+      "params": {
+        "width": 768,
+        "height": 1376,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "batch_size": 1,
+        "prompt": "Create a matching cinematic wildlife source plate: one paradise flying snake just after launching from a tall tree branch. The branch is behind on the left edge, but the snake is completely separated from it and already airborne, body flattened wider than normal into a ribbon, S-curve posture, open rainforest air ahead, no wings, no legs, no support, no extra snakes, accurate snake anatomy, no text, no logo, no watermark, no UI.",
+        "medias": [
+          {
+            "data": {
+              "id": "8c45816a-cf25-4592-846b-da3d288ac614",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/8c45816a-cf25-4592-846b-da3d288ac614.png",
+              "type": "media_input"
+            },
+            "role": "image"
+          }
+        ],
+        "reference_elements": []
+      }
+    },
+    {
+      "id": "ref_tree_to_tree_01",
+      "job_id": "2420ba57-edff-4fe1-8f61-bf4331264ca0",
+      "model": "seedream_v5_lite",
+      "status": "completed",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044811_2420ba57-edff-4fe1-8f61-bf4331264ca0.png",
+      "params": {
+        "prompt": "Use the reference style but make a clearer tree-to-tree steering frame: one flying snake gliding through a rainforest gap toward a destination tree branch on the right, snake large enough for phone viewing, fully airborne and not touching anything, flattened ribbon-like body in a clean S wave, tree trunks at edges only, open negative space around snake, realistic natural history photograph, no wings, no legs, no extra snakes, no text, no logo, no watermark, no UI.",
+        "medias": [
+          {
+            "data": {
+              "id": "09791da1-f1d3-40d6-aa77-4a3734f1f507",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/09791da1-f1d3-40d6-aa77-4a3734f1f507_resize.jpg",
+              "type": "media_input"
+            },
+            "role": "image"
+          }
+        ],
+        "batch_size": 1,
+        "aspect_ratio": "9:16",
+        "width": 1600,
+        "height": 2848,
+        "quality": "basic",
+        "seed": 147212,
+        "reference_elements": []
+      }
+    }
+  ]
+}

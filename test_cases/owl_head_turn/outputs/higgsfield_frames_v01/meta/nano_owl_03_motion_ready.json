@@ -1,0 +1,20 @@
+[
+  {
+    "id": "a933398a-b5b4-4e69-b217-d07223f0df7d",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_211745_a933398a-b5b4-4e69-b217-d07223f0df7d.png",
+    "created_at": 1780867065.66186,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 premium educational wildlife still designed for image-to-video animation, one barred owl perched upright, body locked straight toward viewer, head rotated 180 to 270 degrees to look behind itself, owl anatomy realistic and calm, wings folded, talons on branch, simple soft forest background, clear negative space around head for motion, no text, no watermark, no UI, no labels, no arrows, no anatomy cutaway, no extra owls, no duplicate face, no impossible twisted body, no horror.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

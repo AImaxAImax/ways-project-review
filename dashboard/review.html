@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WAYS Human Attention Dashboard</title>
+<style>
+:root { --bg:#07111f; --panel:#0b1726; --panel2:#10243a; --line:#24384e; --text:#edf7ff; --muted:#9db1c5; --cyan:#5ee7ff; --warn:#ffc857; --danger:#ff6b57; --good:#48d597; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif; background:var(--bg); color:var(--text); }
+a { color:var(--cyan); }
+main { max-width:1180px; margin:0 auto; padding:18px; }
+.hero { position:sticky; top:0; z-index:5; background:linear-gradient(180deg,#07111f 85%,rgba(7,17,31,0)); padding:12px 0 20px; }
+h1 { margin:0 0 8px; font-size:clamp(28px,5vw,44px); letter-spacing:-.04em; }
+.sub { color:var(--muted); max-width:850px; line-height:1.45; }
+.toplinks { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.discord-banner { display:grid; grid-template-columns:2fr 1fr 1fr; gap:10px; margin:14px 0; }
+.discord-banner div,.discord-reply { border:1px solid var(--line); background:rgba(94,231,255,.06); border-radius:16px; padding:10px; }
+.discord-banner b,.discord-reply b { display:block; color:var(--cyan); margin-bottom:4px; }
+.discord-banner span { color:#d9ecff; overflow-wrap:anywhere; }
+code { background:#020b14; border:1px solid #1d3148; border-radius:7px; padding:2px 5px; color:#eaf7ff; overflow-wrap:anywhere; }
+.discord-reply { margin-top:14px; }
+.discord-reply p { margin:6px 0 8px; color:var(--muted); }
+.discord-reply code { display:block; margin:6px 0; padding:8px; }
+.toplinks a { border:1px solid var(--line); background:var(--panel2); padding:10px 12px; border-radius:999px; text-decoration:none; }
+.gate { margin:26px 0; }
+.gate-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px; border:1px solid var(--line); border-radius:18px; background:var(--panel2); margin-bottom:12px; }
+.gate-head.needs { border-color:var(--warn); }
+.gate-head.empty { opacity:.75; }
+.eyebrow { color:var(--cyan); text-transform:uppercase; letter-spacing:.12em; font-weight:800; font-size:12px; }
+h2 { margin:3px 0; font-size:24px; }
+.gate-head p { color:var(--muted); margin:0; }
+.count { width:48px; height:48px; border-radius:999px; display:grid; place-items:center; background:var(--bg); border:1px solid var(--line); font-size:24px; font-weight:900; }
+.decision-card,.mini-card,.empty-card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:16px; margin:12px 0; box-shadow:0 14px 35px rgba(0,0,0,.22); }
+.empty-card { color:var(--muted); }
+.badge { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; background:#182943; }
+.badge.danger { color:#ffe5df; background:rgba(255,107,87,.18); border:1px solid rgba(255,107,87,.35); }
+.badge.warn { color:#fff3cf; background:rgba(255,200,87,.16); border:1px solid rgba(255,200,87,.35); }
+.badge.neutral { color:#d8e9ff; background:#18304d; }
+h3 { margin:10px 0 8px; font-size:22px; }
+.why { color:#d7e8f8; line-height:1.45; }
+.review-layout { display:grid; grid-template-columns:minmax(270px,380px) 1fr; gap:18px; align-items:start; }
+.phone-frame { border:1px solid #29425c; border-radius:28px; padding:10px; max-width:390px; background:#02060b; margin:auto; }
+.phone-frame video { width:100%; aspect-ratio:9/16; display:block; border-radius:20px; background:#000; }
+.info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; margin:12px 0; }
+.info-grid div { border:1px solid var(--line); border-radius:14px; padding:10px; background:rgba(255,255,255,.025); }
+.info-grid b { display:block; color:var(--muted); font-size:12px; margin-bottom:4px; }
+.info-grid span { overflow-wrap:anywhere; }
+.checklist { line-height:1.5; padding-left:20px; color:#d9ecff; }
+label { display:block; margin:12px 0; color:#dcecff; font-weight:700; }
+select, textarea { width:100%; margin-top:6px; border-radius:12px; border:1px solid var(--line); background:#06101d; color:var(--text); padding:10px; font:inherit; }
+textarea { min-height:86px; resize:vertical; }
+.actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+button,.primary-link { cursor:pointer; border:0; border-radius:999px; padding:11px 14px; background:var(--good); color:#03140c; font-weight:900; text-decoration:none; display:inline-block; }
+button.reject { background:var(--danger); color:white; }
+button.hold { background:var(--warn); }
+.link-row { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0; }
+.saved { color:var(--good); font-weight:800; }
+pre { white-space:pre-wrap; color:#c8d7e8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
+.mini-card p { color:var(--muted); max-height:5.5em; overflow:hidden; }
+@media (max-width:800px) { .review-layout { grid-template-columns:1fr; } .discord-banner { grid-template-columns:1fr; } .hero { position:relative; } main { padding:12px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>WAYS Human Attention Dashboard</h1>
+    <p class="sub">This page is only for decisions Josh actually needs to make, grouped by gate. Discord is the primary decision surface; this dashboard is the media-heavy companion for watching MP4s, opening contact sheets, and copying exact QA reply commands.</p>
+    <div class="discord-banner">
+      <div><b>Discord-first QA route</b><span>Reply in the WAYS thread with <code>QA &lt;slug&gt; &lt;action&gt; score=... notes="..."</code>. Those replies are treated as source-of-truth decisions and persisted to <code>dashboard/review_decisions.json</code>.</span></div>
+      <div><b>Thread</b><span><code>1512650920373256232</code></span></div>
+      <div><b>QA channel</b><span><code>1512649734769348690</code></span></div>
+    </div>
+    <div class="toplinks">
+      <a href="/dashboard/kanban.html">Raw Kanban</a>
+      <a href="/dashboard/index.html">All media/candidates</a>
+      <a href="/ops/ways-video-lab-discord/WAYS_KANBAN_AND_QC_GATES.md">QC gate spec</a>
+    </div>
+    <p class="sub">Generated 2026-06-05T20:50:51. Decisions typed here save in this browser via localStorage and are for review handoff, not automatic publishing.</p>
+  </section>
+
+  <section class="gate" id="gate2">
+    
+    <header class="gate-head empty">
+      <div>
+        <div class="eyebrow">Gate 2</div>
+        <h2>Plate QC: approve/deny stills + lane</h2>
+        <p>Human approval before render. VLM scores are advisory only.</p>
+      </div>
+      <div class="count">0</div>
+    </header>
+    
+    <div class="empty-card">✅ No plate approval cards are currently queued.</div>
+  </section>
+
+  <section class="gate" id="gate5">
+    
+    <header class="gate-head empty">
+      <div>
+        <div class="eyebrow">Gate 5</div>
+        <h2>Final phone-size video review</h2>
+        <p>Watch the captioned master and decide if it clears the 8-9/10 private draft bar or the 9/10+ public-quality bar.</p>
+      </div>
+      <div class="count">0</div>
+    </header>
+    
+    <div class="empty-card">✅ No final video candidates are waiting for phone-size review.</div>
+  </section>
+
+  <section class="gate" id="gate6">
+    
+    <header class="gate-head empty">
+      <div>
+        <div class="eyebrow">Gate 6</div>
+        <h2>Public publish authorization</h2>
+        <p>Explicit human authorization required. Default state remains private.</p>
+      </div>
+      <div class="count">0</div>
+    </header>
+    
+    <div class="empty-card">✅ No private drafts are currently asking for public publish authorization.</div>
+  </section>
+
+  <section class="gate" id="admin">
+    
+    <header class="gate-head empty">
+      <div>
+        <div class="eyebrow">Admin</div>
+        <h2>Discord / external setup</h2>
+        <p>Things I cannot do through the current tool permissions.</p>
+      </div>
+      <div class="count">0</div>
+    </header>
+    
+    <div class="empty-card">✅ No Discord/admin setup items need you right now.</div>
+  </section>
+
+  <section class="gate" id="agent-running">
+    
+    <header class="gate-head empty">
+      <div>
+        <div class="eyebrow">Agent</div>
+        <h2>Being handled by agent, not you</h2>
+        <p>Visible for context only. These should not require Josh unless they later move to a human gate.</p>
+      </div>
+      <div class="count">0</div>
+    </header>
+    
+    <div class="grid"><div class="empty-card">✅ No agent-running implementation cards right now.</div></div>
+  </section>
+</main>
+<script>
+function restoreInputs() {
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const v = localStorage.getItem('waysReview:' + el.dataset.key);
+    if (v !== null) el.value = v;
+    el.addEventListener('input', () => localStorage.setItem('waysReview:' + el.dataset.key, el.value));
+  });
+}
+async function saveDecision(btn, action) {
+  const card = btn.closest('[data-slug]');
+  const slug = card ? card.dataset.slug : 'unknown';
+  const score = card?.querySelector('.score')?.value || '';
+  const notes = card?.querySelector('textarea')?.value || '';
+  const payload = { slug, action, score, notes, at: new Date().toISOString() };
+  const saved = card.querySelector('.saved');
+  btn.disabled = true;
+  if (saved) saved.textContent = 'Saving to server...';
+  try {
+    const res = await fetch('/api/review-decision', {
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const out = await res.json();
+    if (!res.ok || !out.ok) throw new Error(out.error || 'Save failed');
+    localStorage.setItem('waysReviewDecision:' + slug, JSON.stringify(out.decision));
+    if (saved) saved.textContent = 'Saved to server: ' + action + (score ? ' · ' + score : '') + '. Agent follow-up is now queued.';
+    navigator.clipboard?.writeText(JSON.stringify(out.decision, null, 2)).catch(()=>{});
+  } catch (err) {
+    if (saved) saved.textContent = 'Save failed: ' + err.message + '. Refresh the dashboard and try again.';
+  } finally {
+    btn.disabled = false;
+  }
+}
+async function copyCommand(btn, command) {
+  try {
+    await navigator.clipboard.writeText(command);
+    btn.textContent = 'Copied Discord command';
+  } catch (err) {
+    btn.textContent = 'Copy failed';
+  }
+}
+restoreInputs();
+</script>
+</body>
+</html>

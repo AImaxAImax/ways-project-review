@@ -1,0 +1,122 @@
+[
+  {
+    "shot": "01_before_trees",
+    "variant": 1,
+    "denoise": 0.48,
+    "strength": 0.9,
+    "seed": 26168101,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: empty barren ochre rocky land above teal prehistoric ocean, absolutely no trees, no plants, no leaves, no grass, one small calm ancient shark in the lower water, the empty land is the main subject, awe and scale",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_01_before_trees_v01_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 2,
+    "denoise": 0.58,
+    "strength": 0.85,
+    "seed": 26168102,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: empty barren ochre rocky land above teal prehistoric ocean, absolutely no trees, no plants, no leaves, no grass, one small calm ancient shark in the lower water, the empty land is the main subject, awe and scale",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_01_before_trees_v02_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 3,
+    "denoise": 0.68,
+    "strength": 0.72,
+    "seed": 26168103,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: empty barren ochre rocky land above teal prehistoric ocean, absolutely no trees, no plants, no leaves, no grass, one small calm ancient shark in the lower water, the empty land is the main subject, awe and scale",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_01_before_trees_v03_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 4,
+    "denoise": 0.76,
+    "strength": 0.62,
+    "seed": 26168104,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: empty barren ochre rocky land above teal prehistoric ocean, absolutely no trees, no plants, no leaves, no grass, one small calm ancient shark in the lower water, the empty land is the main subject, awe and scale",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_01_before_trees_v04_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 1,
+    "denoise": 0.48,
+    "strength": 0.9,
+    "seed": 26168201,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, charming prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, playful not-yet-existing idea, no forest, no dense plants, charming character design",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_03_apple_squirrel_acorn_v01_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 2,
+    "denoise": 0.58,
+    "strength": 0.85,
+    "seed": 26168202,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, charming prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, playful not-yet-existing idea, no forest, no dense plants, charming character design",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_03_apple_squirrel_acorn_v02_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 3,
+    "denoise": 0.68,
+    "strength": 0.72,
+    "seed": 26168203,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, charming prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, playful not-yet-existing idea, no forest, no dense plants, charming character design",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_03_apple_squirrel_acorn_v03_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 4,
+    "denoise": 0.76,
+    "strength": 0.62,
+    "seed": 26168204,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, charming prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, playful not-yet-existing idea, no forest, no dense plants, charming character design",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_03_apple_squirrel_acorn_v04_00001_.png"
+  },
+  {
+    "shot": "04_deep_time_timeline",
+    "variant": 1,
+    "denoise": 0.48,
+    "strength": 0.9,
+    "seed": 26168301,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic deep-time timeline museum diorama, stacked rock strata shelves, small shark fossil in lowest ancient ocean layer, circular fossil clock forms, primitive plant layer much higher up, reads as timeline before captions, no text",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_04_deep_time_timeline_v01_00001_.png"
+  },
+  {
+    "shot": "04_deep_time_timeline",
+    "variant": 2,
+    "denoise": 0.58,
+    "strength": 0.85,
+    "seed": 26168302,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic deep-time timeline museum diorama, stacked rock strata shelves, small shark fossil in lowest ancient ocean layer, circular fossil clock forms, primitive plant layer much higher up, reads as timeline before captions, no text",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_04_deep_time_timeline_v02_00001_.png"
+  },
+  {
+    "shot": "04_deep_time_timeline",
+    "variant": 3,
+    "denoise": 0.68,
+    "strength": 0.72,
+    "seed": 26168303,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic deep-time timeline museum diorama, stacked rock strata shelves, small shark fossil in lowest ancient ocean layer, circular fossil clock forms, primitive plant layer much higher up, reads as timeline before captions, no text",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_04_deep_time_timeline_v03_00001_.png"
+  },
+  {
+    "shot": "04_deep_time_timeline",
+    "variant": 4,
+    "denoise": 0.76,
+    "strength": 0.62,
+    "seed": 26168304,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "masterpiece premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, boutique museum miniature photographed with macro lens, real paper fibers and precise cut edges, rich material texture, layered cast shadows, warm natural-history exhibit spotlighting, cinematic depth of field, polished editorial family science short, National Geographic Kids meets Aardman title sequence, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic deep-time timeline museum diorama, stacked rock strata shelves, small shark fossil in lowest ancient ocean layer, circular fossil clock forms, primitive plant layer much higher up, reads as timeline before captions, no text",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v10_controlnet_hero_frames/v10_control_hero_04_deep_time_timeline_v04_00001_.png"
+  }
+]

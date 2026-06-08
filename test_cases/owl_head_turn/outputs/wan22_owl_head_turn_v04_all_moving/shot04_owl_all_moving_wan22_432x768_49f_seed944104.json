@@ -1,0 +1,20 @@
+{
+  "id": "04",
+  "seed": 944104,
+  "width": 432,
+  "height": 768,
+  "length": 49,
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+  "prompt": "premium cinematic wildlife documentary image-to-video from the exact owl still. Preserve the single owl, branch, dusk forest background, feather details, eyes and beak. The owl holds the over-shoulder pose with only lifelike movement: blink, tiny feather breathing, small eye intensity shift, very slow camera push and drifting forest particles. Neck is not exposed; no twisting, no stretching, no morphing, no duplicate head, no body rotation, no text.",
+  "prompt_id": "f7fefc5b-a3bc-4cf1-b5b3-0e7309105ea5",
+  "uploaded_image": "02_ref_seedream01_turn_01.png",
+  "comfy_output": {
+    "filename": "shot04_944104_00001_.mp4",
+    "subfolder": "ways_owl_head_turn_v04_all_moving",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot04_owl_all_moving_wan22_432x768_49f_seed944104.mp4",
+  "bytes": 295956
+}

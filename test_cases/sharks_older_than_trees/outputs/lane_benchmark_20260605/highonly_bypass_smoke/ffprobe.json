@@ -1,0 +1,83 @@
+{
+    "streams": [
+        {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 432,
+            "height": 768,
+            "coded_width": 432,
+            "coded_height": 768,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 30,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 12800,
+            "duration": "1.041667",
+            "bit_rate": "5759562",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "25",
+            "extradata_size": 45,
+            "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0
+            },
+            "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "vendor_id": "[0][0][0][0]"
+            }
+        }
+    ],
+    "format": {
+        "filename": "outputs/wan22_v27_animated_frames/highonly_smoke/shot01_highonly_25f.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "1.041667",
+        "size": "754858",
+        "bit_rate": "5797307",
+        "probe_score": 100,
+        "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "prompt": "{\"39\": {\"class_type\": \"VAELoader\", \"_meta\": {\"title\": \"Wan2.1 VAE from QuantStack A14B repo\"}, \"inputs\": {\"vae_name\": \"wan_2.1_vae.safetensors\"}}, \"90\": {\"class_type\": \"UnetLoaderGGUF\", \"_meta\": {\"title\": \"Wan2.2 A14B HighNoise GGUF\"}, \"inputs\": {\"unet_name\": \"HighNoise\\\\Wan2.2-I2V-A14B-HighNoise-Q5_K_M.gguf\"}}, \"91\": {\"class_type\": \"UnetLoaderGGUF\", \"_meta\": {\"title\": \"Wan2.2 A14B LowNoise GGUF\"}, \"inputs\": {\"unet_name\": \"LowNoise\\\\Wan2.2-I2V-A14B-LowNoise-Q5_K_M.gguf\"}}, \"80\": {\"class_type\": \"LoraLoaderModelOnly\", \"_meta\": {\"title\": \"HighNoise 4-step Lightning LoRA\"}, \"inputs\": {\"model\": [\"90\", 0], \"lora_name\": \"Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors\", \"strength_model\": 1.0}}, \"82\": {\"class_type\": \"LoraLoaderModelOnly\", \"_meta\": {\"title\": \"LowNoise 4-step Lightning LoRA\"}, \"inputs\": {\"model\": [\"91\", 0], \"lora_name\": \"Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors\", \"strength_model\": 1.0}}, \"54\": {\"class_type\": \"ModelSamplingSD3\", \"_meta\": {\"title\": \"HighNoise Wan shift\"}, \"inputs\": {\"model\": [\"80\", 0], \"shift\": 8.0}}, \"55\": {\"class_type\": \"ModelSamplingSD3\", \"_meta\": {\"title\": \"LowNoise Wan shift\"}, \"inputs\": {\"model\": [\"82\", 0], \"shift\": 8.0}}, \"38\": {\"class_type\": \"CLIPLoader\", \"_meta\": {\"title\": \"Wan text encoder\"}, \"inputs\": {\"clip_name\": \"umt5_xxl_fp8_e4m3fn_scaled.safetensors\", \"type\": \"wan\", \"device\": \"default\"}}, \"62\": {\"class_type\": \"LoadImage\", \"_meta\": {\"title\": \"hero_plate\"}, \"inputs\": {\"image\": \"shot01_gpt_image2_hook_before_trees_v01.jpeg\"}, \"is_changed\": [\"ba498d9008e14116215aac4b2a4faaf98192ee27ebf7f0c9257ce0b4b3f8deac\"]}, \"6\": {\"class_type\": \"CLIPTextEncode\", \"_meta\": {\"title\": \"positive_prompt\"}, \"inputs\": {\"text\": \"premium natural-history documentary image-to-video. Ancient shark glides calmly through blue-green prehistoric ocean, subtle tail swish and fin motion, drifting particles, slow parallax water shimmer. Preserve exact shark anatomy, framing, colors, realistic style. No attack, no blood, no text, no logos, no scene cut, no morphing.\", \"clip\": [\"38\", 0]}}, \"7\": {\"class_type\": \"CLIPTextEncode\", \"_meta\": {\"title\": \"negative_prompt\"}, \"inputs\": {\"text\": \"text, logos, UI, morphing, distorted anatomy, duplicated fins, jitter, flicker, low quality\", \"clip\": [\"38\", 0]}}, \"63\": {\"class_type\": \"WanImageToVideo\", \"_meta\": {\"title\": \"Wan A14B I2V latent\"}, \"inputs\": {\"positive\": [\"6\", 0], \"negative\": [\"7\", 0], \"vae\": [\"39\", 0], \"width\": 432, \"height\": 768, \"length\": 25, \"batch_size\": 1, \"start_image\": [\"62\", 0]}}, \"57\": {\"class_type\": \"KSamplerAdvanced\", \"_meta\": {\"title\": \"seed_node\"}, \"inputs\": {\"model\": [\"54\", 0], \"add_noise\": \"enable\", \"noise_seed\": 777101, \"steps\": 4, \"cfg\": 1.0, \"sampler_name\": \"euler\", \"scheduler\": \"simple\", \"positive\": [\"63\", 0], \"negative\": [\"63\", 1], \"latent_image\": [\"63\", 2], \"start_at_step\": 0, \"end_at_step\": 2, \"return_with_leftover_noise\": \"enable\"}}, \"58\": {\"class_type\": \"KSamplerAdvanced\", \"_meta\": {\"title\": \"LowNoise refine\"}, \"inputs\": {\"model\": [\"55\", 0], \"add_noise\": \"disable\", \"noise_seed\": 0, \"steps\": 4, \"cfg\": 1.0, \"sampler_name\": \"euler\", \"scheduler\": \"simple\", \"positive\": [\"63\", 0], \"negative\": [\"63\", 1], \"latent_image\": [\"57\", 0], \"start_at_step\": 2, \"end_at_step\": 10000, \"return_with_leftover_noise\": \"disable\"}}, \"8\": {\"class_type\": \"VAEDecode\", \"_meta\": {\"title\": \"decode\"}, \"inputs\": {\"samples\": [\"57\", 0], \"vae\": [\"39\", 0]}}, \"60\": {\"class_type\": \"CreateVideo\", \"_meta\": {\"title\": \"create_video\"}, \"inputs\": {\"images\": [\"8\", 0], \"fps\": 24.0}}, \"61\": {\"class_type\": \"SaveVideo\", \"_meta\": {\"title\": \"save_video\"}, \"inputs\": {\"video\": [\"60\", 0], \"filename_prefix\": \"ways_shark_v27_wan22_highonly_smoke/shot01_777101\", \"format\": \"mp4\", \"codec\": \"h264\"}}}",
+            "encoder": "Lavf62.3.100"
+        }
+    }
+}

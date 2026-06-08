@@ -1,0 +1,20 @@
+[
+  {
+    "id": "21cb74cd-9fc9-490b-9722-3999c7d2ae1d",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044136_21cb74cd-9fc9-490b-9722-3999c7d2ae1d.png",
+    "created_at": 1780807296.554568,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 premium natural history photograph, single paradise flying snake gliding through open rainforest air, entire animal visible from head to tail, body flattened into a wide ribbon-like S curve like a living airfoil, head angled forward, tail trailing, no wings, no legs, not touching branches, two distant tree trunks framing the sides, big clear negative space around the snake, blurred emerald canopy far below, sharp realistic anatomy, documentary wildlife lighting, no text, no logo, no watermark, no UI, no extra snakes.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

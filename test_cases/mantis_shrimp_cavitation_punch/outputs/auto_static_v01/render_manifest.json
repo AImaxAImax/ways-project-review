@@ -1,0 +1,15 @@
+{
+  "mode": "static_source_internal_candidate",
+  "duration": 31.32,
+  "beats": 8,
+  "sources_manifest": "test_cases/mantis_shrimp_cavitation_punch/assets/source_stills/source_manifest.json",
+  "outputs": {
+    "clean_master": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/clean_master.mp4",
+    "publish_candidate_captioned": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/publish_candidate_captioned.mp4",
+    "discord_preview_captioned": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/discord_preview_captioned.mp4",
+    "contact_sheet": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/contact_sheet.jpg",
+    "ffprobe_publish": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/ffprobe_publish.json",
+    "captions_ass": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/captions.ass",
+    "captions_srt": "test_cases/mantis_shrimp_cavitation_punch/outputs/auto_static_v01/captions.srt"
+  }
+}

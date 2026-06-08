@@ -1,0 +1,39 @@
+{
+  "slug": "seahorse_dad",
+  "hook": "In seahorses, the dad gets pregnant.",
+  "core_fact": "Male seahorses carry the eggs in a brood pouch and give birth to the young.",
+  "status_column": "Script Locked - Batch2 screened; needs source citation lock",
+  "cohort_tag": "wan-strong-prior",
+  "test_variable": "wan_strong_prior_topic_only",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane": "WAN",
+  "lane_map": {},
+  "visual": "Seahorse with full pouch, then releasing tiny young. Kid-friendly wonder.",
+  "risk": "Low. Birth-release beat is showable without anatomy cutaway.",
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/seahorse_dad/",
+  "blocking_gate": "Gate 1 - source citation lock",
+  "created_at": "2026-06-07T20:19:09Z",
+  "source_policy": "Use Higgsfield free/Ultra models for source frames; generate multiple candidates; no metered paid video without explicit approval.",
+  "gate_1_feedback_source": "WAYS_TOPIC_QUEUE_BATCH2.md screened against live analytics 2026-06-07",
+  "source_quality_requirements": {
+    "must": [
+      "one counterintuitive recognizable subject/fact",
+      "cold-open claim in first 2 seconds",
+      "literal say-dog-see-dog visual",
+      "no internal-anatomy/process beat as core visual"
+    ],
+    "avoid": [
+      "wombat failure mode",
+      "diagram-first explanation",
+      "weak source plates",
+      "text/logos/watermarks"
+    ]
+  },
+  "batch2_priority_rank": 8
+}

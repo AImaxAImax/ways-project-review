@@ -1,0 +1,13 @@
+{
+  "lane": "real_mantis_source_photo_plus_deterministic_cavitation_motion_graphic",
+  "right_safe_photo_sources": "Wikimedia CC BY-SA Diego Delso source stills; proof overlay project-owned deterministic graphics",
+  "not_claimed_real_high_speed_footage": true,
+  "no_paid_or_credit_tools": true,
+  "outputs": {
+    "clean_master": "outputs/motion_graphic_rework_v02/clean_master.mp4",
+    "publish_candidate_captioned": "outputs/motion_graphic_rework_v02/publish_candidate_captioned.mp4",
+    "discord_preview_captioned": "outputs/motion_graphic_rework_v02/discord_preview_captioned.mp4",
+    "contact_sheet": "outputs/motion_graphic_rework_v02/contact_sheet.jpg",
+    "ffprobe": "outputs/motion_graphic_rework_v02/ffprobe_publish.json"
+  }
+}

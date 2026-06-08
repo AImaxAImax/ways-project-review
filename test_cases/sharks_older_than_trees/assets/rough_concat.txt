@@ -1,0 +1,15 @@
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_01.png'
+duration 3.738
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_02.png'
+duration 2.802
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_03.png'
+duration 9.258
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_04.png'
+duration 5.634
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_05.png'
+duration 7.914
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_06.png'
+duration 5.562
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_07.png'
+duration 5.226
+file '/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_07.png'

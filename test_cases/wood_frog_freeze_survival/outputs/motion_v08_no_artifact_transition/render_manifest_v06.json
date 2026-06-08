@@ -1,0 +1,60 @@
+{
+  "slug": "wood_frog_freeze_survival",
+  "version": "v08_no_artifact_transition_static_motion",
+  "motion_policy": "deterministic source-preserving motion: zoom/pan, clean frost/thaw overlays, cell motion graphics; no AI-generated frog bodies; no paid video credits",
+  "voiceover": "outputs/motion_v08_no_artifact_transition/voiceover.mp3",
+  "voice_note": "Temporary/internal TTS if provider is not approved elevenlabs_george; do not publish without approved voice.",
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 2.4,
+      "voiceover": "A frog can freeze solid.",
+      "caption": "A FROG CAN\nFREEZE SOLID",
+      "scene": "hook"
+    },
+    {
+      "start": 2.4,
+      "end": 5.65,
+      "voiceover": "In winter, ice can form through much of its body.",
+      "caption": "ICE FORMS\nTHROUGH ITS BODY",
+      "scene": "freeze_body"
+    },
+    {
+      "start": 5.65,
+      "end": 8.85,
+      "voiceover": "Its heart can stop for a while.",
+      "caption": "ITS HEART\nCAN STOP",
+      "scene": "heart_stop"
+    },
+    {
+      "start": 8.85,
+      "end": 12.4,
+      "voiceover": "Sugar-like fluids help protect the cells.",
+      "caption": "SUGAR HELPS\nPROTECT CELLS",
+      "scene": "cells"
+    },
+    {
+      "start": 12.4,
+      "end": 17.2,
+      "voiceover": "Then spring warms it up, and the frog starts moving again.",
+      "caption": "SPRING WARMS IT\nBACK TO LIFE",
+      "scene": "thaw"
+    },
+    {
+      "start": 17.2,
+      "end": 20.6,
+      "voiceover": "It is not magic. It is survival chemistry.",
+      "caption": "NOT MAGIC\nSURVIVAL CHEMISTRY",
+      "scene": "final"
+    }
+  ],
+  "outputs": {
+    "clean_master": "outputs/motion_v08_no_artifact_transition/wood_frog_motion_v08_clean_1080.mp4",
+    "captioned_master": "outputs/motion_v08_no_artifact_transition/wood_frog_motion_v08_captioned_1080.mp4",
+    "captioned_preview": "outputs/motion_v08_no_artifact_transition/wood_frog_motion_v08_captioned_720.mp4",
+    "captions_ass": "outputs/motion_v08_no_artifact_transition/captions.ass",
+    "captions_srt": "outputs/motion_v08_no_artifact_transition/captions.srt",
+    "contact_sheet": "outputs/motion_v08_no_artifact_transition/contact_sheet_wood_frog_motion_v08.jpg",
+    "ffprobe": "outputs/motion_v08_no_artifact_transition/ffprobe_captioned_master.json"
+  }
+}

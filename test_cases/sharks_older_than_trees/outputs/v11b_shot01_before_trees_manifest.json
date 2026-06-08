@@ -1,0 +1,74 @@
+[
+  {
+    "shot": "01_before_trees",
+    "variant": 1,
+    "seed": 26182001,
+    "strength": 0.12,
+    "cfg": 4.5,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v01_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 2,
+    "seed": 26182002,
+    "strength": 0.18,
+    "cfg": 4.2,
+    "steps": 20,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v02_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 3,
+    "seed": 26182003,
+    "strength": 0.24,
+    "cfg": 3.8,
+    "steps": 18,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v03_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 4,
+    "seed": 26182004,
+    "strength": 0.3,
+    "cfg": 3.4,
+    "steps": 18,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v04_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 5,
+    "seed": 26182005,
+    "strength": 0.08,
+    "cfg": 5.0,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v05_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 6,
+    "seed": 26182006,
+    "strength": 0.16,
+    "cfg": 3.6,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_lifeless_volcanic_sparse_guide.png",
+    "prompt": "premium tactile stop-motion paper geology diorama, handcrafted layered paper and clay miniature photographed with macro lens, warm museum spotlight, rich material texture, precise cut paper edges, cinematic depth of field, polished boutique educational short frame, ancient lifeless volcanic coastline before land vegetation existed, barren ochre basalt rocks and empty desert islands under teal sky, lower third glowing teal prehistoric ocean containing one small calm ancient shark silhouette, upper two thirds empty rocky land and sky, primordial lifeless geology is the main subject, stark empty land, no living things on land, clean negative space, mobile-readable, awe, premium editorial finish",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, bushes, branches, branch, flowers, moss, cactus, coral, kelp, jungle, woodland, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, blurry, low quality, malformed shark, crowded",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11b_shot01_before_trees/v11b_shot01_lifeless_volcanic_v06_00001_.png"
+  }
+]

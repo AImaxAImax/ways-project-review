@@ -1,0 +1,29 @@
+[
+  {
+    "id": "4544dddd-4464-45b5-b210-7b29cdeb4a3a",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044740_4544dddd-4464-45b5-b210-7b29cdeb4a3a.png",
+    "created_at": 1780807660.161423,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Create a matching cinematic wildlife source plate: one paradise flying snake just after launching from a tall tree branch. The branch is behind on the left edge, but the snake is completely separated from it and already airborne, body flattened wider than normal into a ribbon, S-curve posture, open rainforest air ahead, no wings, no legs, no support, no extra snakes, accurate snake anatomy, no text, no logo, no watermark, no UI.",
+      "medias": [
+        {
+          "data": {
+            "id": "8c45816a-cf25-4592-846b-da3d288ac614",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/8c45816a-cf25-4592-846b-da3d288ac614.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "reference_elements": []
+    }
+  }
+]

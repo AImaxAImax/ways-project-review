@@ -1,0 +1,25 @@
+{
+  "shot": "01 \u2014 Sharks were here before trees.",
+  "user_correction": "Focus back on first frame only; shark should be in water, not just sitting on top of water.",
+  "selected_current_hold": "v12 variant 01",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v12/shot01_before_trees_submerged_shark_v12_v01_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot01_submerged_shark/v12_shot01_submerged_shark_v01_00001_.png",
+  "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v12_shot01_submerged_shark_contact_sheet.jpg",
+  "rationale": [
+    "Best solves the shark-water issue: the shark reads beneath/inside the water column with the water surface/waterline above it.",
+    "One calm shark; no attack pose and no extra sharks.",
+    "Barren coastline/empty land remains visible, so it still says world before trees.",
+    "No obvious vegetation, trees, grass, or plants.",
+    "Premium underwater/miniature look, more dimensional than the prior v11 selected frame."
+  ],
+  "runner_up": "v12 variant 06 \u2014 also reads underwater and calm, but land context is less clear and the shark is smaller.",
+  "reject_notes": {
+    "v12_02": "clear barren coastline but shark appears low/near floor and less hero/readable",
+    "v12_03": "multiple sharks, violates one calm shark",
+    "v12_04": "partially submerged but less clear barren land and extra malformed fish/shark forms",
+    "v12_05": "nice barren setting but shark reads too much like sitting on seafloor",
+    "v12_07": "strong detail but multiple sharks and too crowded",
+    "v12_08": "multiple sharks and less barren land context"
+  },
+  "next_if_refining": "Try one micro-pass based on v12_01: slightly smaller shark, more shallow-surface ripples around dorsal fin, keep one shark and barren coast."
+}

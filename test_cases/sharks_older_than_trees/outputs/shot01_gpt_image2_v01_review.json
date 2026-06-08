@@ -1,0 +1,24 @@
+{
+  "shot": "shot_01_hook_before_trees",
+  "source": "manual ChatGPT / GPT Image 2 upload from user",
+  "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+  "dimensions": {
+    "width": 941,
+    "height": 1672
+  },
+  "reviewed_at": "2026-05-26T08:13:16",
+  "decision": "STRONG HOLD / replaces local v15 as the new Shot 1 visual ceiling unless user wants a less toothy variant",
+  "passes": [
+    "Vertical mobile composition",
+    "Premium finish is significantly stronger than local ComfyUI v15",
+    "Shark is clearly submerged in water with convincing waterline/refraction",
+    "Barren volcanic shoreline is visible and reads as pre-forest land",
+    "No obvious trees, grass, leaves, forest, kelp, or coral",
+    "Not a museum-room shot; validates the external GPT Image 2 lane"
+  ],
+  "caveats": [
+    "Shark is large/intense and teeth are somewhat visible; still not gore/attack, but for younger family tone a closed-mouth/calmer variant could be tested",
+    "Top sky/land area has good caption room; avoid covering shark face with captions"
+  ],
+  "next_step": "Use this as the new Shot 1 hold and continue manual GPT Image 2 tests for Shot 3 and Shot 4."
+}

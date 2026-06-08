@@ -1,0 +1,3 @@
+/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/ancient_ocean_wide_00001_.png
+/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/hero_shark_calm_00001_.png
+/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/comfy_sdxl_turbo_v1/before_forests_awe_00001_.png

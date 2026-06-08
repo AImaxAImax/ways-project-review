@@ -1,0 +1,32 @@
+{
+  "project": "flying_snake_glide",
+  "source_refs": [
+    "outputs/higgsfield_frames_v01/raw/seedream_03.png",
+    "outputs/higgsfield_frames_v01/raw/seedream_02.png",
+    "outputs/higgsfield_frames_v01/raw/nano_03.png"
+  ],
+  "goal": "Second Higgsfield sweep using best v01 frames as visual references. Improve flattened-body clarity and launch/tree-to-tree beats.",
+  "candidates": [
+    {
+      "id": "ref_flatten_01",
+      "model": "nano_banana_flash",
+      "ref": "outputs/higgsfield_frames_v01/raw/seedream_03.png",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Use the reference as a premium natural-history style guide, but make the biology clearer: a single paradise flying snake gliding high over rainforest, closer to camera, body visibly flattened into a wide ribbon-like airfoil with underside/belly edge visible, S-shaped wave from head to tail, fully airborne with open sky-green negative space around it, no wings, no legs, no branch contact, no extra snakes, no text, no logo, no watermark, no UI."
+    },
+    {
+      "id": "ref_launch_01",
+      "model": "nano_banana_flash",
+      "ref": "outputs/higgsfield_frames_v01/raw/nano_03.png",
+      "params": {"aspect_ratio": "9:16", "resolution": "1k"},
+      "prompt": "Create a matching cinematic wildlife source plate: one paradise flying snake just after launching from a tall tree branch. The branch is behind on the left edge, but the snake is completely separated from it and already airborne, body flattened wider than normal into a ribbon, S-curve posture, open rainforest air ahead, no wings, no legs, no support, no extra snakes, accurate snake anatomy, no text, no logo, no watermark, no UI."
+    },
+    {
+      "id": "ref_tree_to_tree_01",
+      "model": "seedream_v5_lite",
+      "ref": "outputs/higgsfield_frames_v01/raw/seedream_02.png",
+      "params": {"aspect_ratio": "9:16", "quality": "basic"},
+      "prompt": "Use the reference style but make a clearer tree-to-tree steering frame: one flying snake gliding through a rainforest gap toward a destination tree branch on the right, snake large enough for phone viewing, fully airborne and not touching anything, flattened ribbon-like body in a clean S wave, tree trunks at edges only, open negative space around snake, realistic natural history photograph, no wings, no legs, no extra snakes, no text, no logo, no watermark, no UI."
+    }
+  ]
+}

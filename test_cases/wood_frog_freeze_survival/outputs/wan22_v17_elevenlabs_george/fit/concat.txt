@@ -1,0 +1,6 @@
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat01.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat02.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat03.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat04.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat05.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/wan22_v17_elevenlabs_george/fit/beat06.wav'

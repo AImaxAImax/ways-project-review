@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-08T15:42:22Z",
+  "results": [
+    {
+      "id": "01",
+      "seed": 913301,
+      "width": 432,
+      "height": 768,
+      "length": 25,
+      "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+      "prompt": "premium natural-history documentary image-to-video from the exact owl source still. Preserve the single owl, stump, feathers, eyes, facial disk, body, and realistic anatomy exactly. The owl is already showing the head-rotation fact: chest/body facing away while face looks back toward camera. Do not twist or stretch the neck. Keep the neck hidden inside thick feathers. Only tiny lifelike motion: subtle blink, micro feather breathing, very slow camera creep, soft background movement. No head morph, no body turn, no duplicate head, no text, no watermark.",
+      "prompt_id": "86c033e2-5371-4688-9e21-fbe8b29d9e1f",
+      "uploaded_image": "03_seedream_body_front_face_back_01.png",
+      "comfy_output": {
+        "filename": "shot01_913301_00001_.mp4",
+        "subfolder": "ways_owl_head_turn_v03_neck_safe",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v03_neck_safe/shot01_owl_neck_safe_wan22_432x768_25f_seed913301.mp4",
+      "bytes": 359890
+    },
+    {
+      "id": "02",
+      "seed": 913302,
+      "width": 432,
+      "height": 768,
+      "length": 25,
+      "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+      "prompt": "premium natural-history documentary image-to-video from the exact owl source still. Preserve the single owl, branch, forest background, feathers, eyes, facial disk, and realistic anatomy exactly. Body stays locked and perched, head is already turned over the shoulder. Avoid any visible neck twisting: no stretched neck, no rubber neck, no melting collar feathers. Only tiny lifelike motion: blink, slight eye intensity change, subtle feather breathing, slow camera creep, soft forest particles. No second owl, no duplicate head, no body turn, no text, no watermark.",
+      "prompt_id": "ef5ed22f-82c0-4dd7-9d5a-1a67cafbc5ef",
+      "uploaded_image": "02_ref_seedream01_turn_01.png",
+      "comfy_output": {
+        "filename": "shot02_913302_00001_.mp4",
+        "subfolder": "ways_owl_head_turn_v03_neck_safe",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v03_neck_safe/shot02_owl_neck_safe_wan22_432x768_25f_seed913302.mp4",
+      "bytes": 159179
+    }
+  ],
+  "outputs": {
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v03_neck_safe/contact_sheet_owl_i2v_v03_neck_safe.jpg"
+  }
+}

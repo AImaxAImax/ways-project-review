@@ -1,0 +1,20 @@
+[
+  {
+    "id": "171ccecc-42a0-4c05-8799-df06150d2688",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044219_171ccecc-42a0-4c05-8799-df06150d2688.png",
+    "created_at": 1780807339.521384,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 premium macro-to-wide nature frame, a single flying snake launch moment after leaving a high tree branch, branch behind it on the left but the snake fully airborne and separated from the branch, body flattened into a ribbon and beginning an S-shaped glide, open blue-green rainforest air in front of it, no wings, no legs, no extra snakes, accurate snake head and tail, photoreal natural history documentary style, no text, no logo, no watermark, no UI.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

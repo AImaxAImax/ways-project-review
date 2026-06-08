@@ -1,0 +1,16 @@
+{
+  "id": "07",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+  "seed": 627401,
+  "prompt": "premium natural-history documentary image-to-video from the exact still. The realistic shark slowly glides toward camera with subtle tail and fin motion, deep ocean particles drift, shafts of light shimmer, distant volcanic glow barely moves. Preserve exact anatomy and calm confident tone. No lunge, no open bloody mouth, no monster look, no text, no logos, no morphing, no scene cut.",
+  "prompt_id": "b46f2b9e-806e-41b3-922d-c11b007b035c",
+  "uploaded_image": "04_final_predator_got_here_first.png",
+  "comfy_output": {
+    "filename": "shot07_627401_00002_.mp4",
+    "subfolder": "ways_shark_v27_wan22_a14b_original_vae21",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/pilot_a14b_original_vae21/shot07_wan22_a14b_original_vae21_432x768_25f_seed627401.mp4"
+}

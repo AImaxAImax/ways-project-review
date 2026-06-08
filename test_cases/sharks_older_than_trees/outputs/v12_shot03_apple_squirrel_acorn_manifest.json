@@ -1,0 +1,74 @@
+[
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 1,
+    "seed": 31270001,
+    "strength": 0.22,
+    "cfg": 4.7,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v01_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 2,
+    "seed": 31270002,
+    "strength": 0.3,
+    "cfg": 4.2,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v02_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 3,
+    "seed": 31270003,
+    "strength": 0.38,
+    "cfg": 3.8,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v03_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 4,
+    "seed": 31270004,
+    "strength": 0.16,
+    "cfg": 5.0,
+    "steps": 26,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v04_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 5,
+    "seed": 31270005,
+    "strength": 0.28,
+    "cfg": 4.8,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v05_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn",
+    "variant": 6,
+    "seed": 31270006,
+    "strength": 0.34,
+    "cfg": 4.5,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_apple_squirrel_acorn_clear_props_guide.png",
+    "prompt": "premium tactile stop-motion paper diorama, handcrafted layered cut paper and soft clay miniature, macro studio photography, warm museum spotlight, cinematic depth of field, polished editorial family science frame, whimsical dry humor, visually different from ocean scenes: a clean tabletop natural history exhibit on barren prehistoric rock, dark warm background, three unmistakable separate prop characters in spotlights: left a bright red apple, center a cute gray squirrel standing upright with big fluffy tail, right a large brown acorn nut, all three separated with clear silhouettes, charming comedy beat, no trees anywhere, no forest, no leaves, empty ancient barren ground behind them to imply these things did not exist yet, premium stop motion, clean negative space for editor captions, high production value, no picture frame border",
+    "negative": "tree, trees, forest, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, woodland, orchard, fruit tree, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_shot03_apple_squirrel_acorn/v12_shot03_apple_squirrel_acorn_v06_00001_.png"
+  }
+]

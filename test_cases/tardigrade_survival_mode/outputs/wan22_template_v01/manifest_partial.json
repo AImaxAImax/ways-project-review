@@ -1,0 +1,130 @@
+{
+  "slug": "tardigrade_survival_mode",
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode",
+  "output_dir": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01",
+  "voiceover": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "writable_dirs": [],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/sdxl_wan_template_v01_plates/shot01_tardigrade_survival_mode_sdxl_plate.png",
+      "duration": 3.29,
+      "caption": "TARDIGRADES CAN\nPAUSE THEIR BODIES",
+      "seed": 960301,
+      "prompt": "premium microscope science documentary image-to-video from the exact tardigrade still. Preserve water bear body shape and microscope texture. Add subtle true motion: microscope focus breathing, tiny particles, water shimmer, slow parallax. No text, no labels, no logos, no morphing, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot01_wan22_432x768_25f_seed960301.mp4",
+      "prompt_id": "f2e2241f-beb1-4377-89b9-14a8a948e060",
+      "uploaded_image": "shot01_tardigrade_survival_mode_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "01_960301_00001_.mp4",
+        "subfolder": "tardigrade_survival_mode",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "02",
+      "image": "assets/sdxl_wan_template_v01_plates/shot02_tardigrade_survival_mode_sdxl_plate.png",
+      "duration": 3.838,
+      "caption": "TOO DRY?\nTINY TUN",
+      "seed": 960302,
+      "prompt": "premium microscope science documentary image-to-video from the exact tardigrade still. Preserve water bear body shape and microscope texture. Add subtle true motion: microscope focus breathing, tiny particles, water shimmer, slow parallax. No text, no labels, no logos, no morphing, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot02_wan22_432x768_25f_seed960302.mp4",
+      "prompt_id": "524787c8-3417-4a7f-ae34-a4089a7d6053",
+      "uploaded_image": "shot02_tardigrade_survival_mode_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "02_960302_00001_.mp4",
+        "subfolder": "tardigrade_survival_mode",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "03",
+      "image": "assets/sdxl_wan_template_v01_plates/shot03_tardigrade_survival_mode_sdxl_plate.png",
+      "duration": 4.204,
+      "caption": "METABOLISM DROPS\nLIKE PAUSE",
+      "seed": 960303,
+      "prompt": "premium microscope science documentary image-to-video from the exact tardigrade still. Preserve water bear body shape and microscope texture. Add subtle true motion: microscope focus breathing, tiny particles, water shimmer, slow parallax. No text, no labels, no logos, no morphing, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot03_wan22_432x768_25f_seed960303.mp4",
+      "prompt_id": "c01b5aba-1595-49b4-a874-6c05c70e8aa8",
+      "uploaded_image": "shot03_tardigrade_survival_mode_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "03_960303_00001_.mp4",
+        "subfolder": "tardigrade_survival_mode",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "04",
+      "image": "assets/sdxl_wan_template_v01_plates/shot04_tardigrade_survival_mode_sdxl_plate.png",
+      "duration": 4.021,
+      "caption": "WATER RETURNS\nTHEY WAKE UP",
+      "seed": 960304,
+      "prompt": "premium microscope science documentary image-to-video from the exact tardigrade still. Preserve water bear body shape and microscope texture. Add subtle true motion: microscope focus breathing, tiny particles, water shimmer, slow parallax. No text, no labels, no logos, no morphing, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot04_wan22_432x768_25f_seed960304.mp4",
+      "prompt_id": "84d1149a-68b2-4bfb-82ff-d7a577ff113b",
+      "uploaded_image": "shot04_tardigrade_survival_mode_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "04_960304_00001_.mp4",
+        "subfolder": "tardigrade_survival_mode",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "05",
+      "image": "assets/sdxl_wan_template_v01_plates/shot05_tardigrade_survival_mode_sdxl_plate.png",
+      "duration": 3.655,
+      "caption": "NATURE\u2019S STRANGEST\nSURVIVAL TRICK",
+      "seed": 960305,
+      "prompt": "premium microscope science documentary image-to-video from the exact tardigrade still. Preserve water bear body shape and microscope texture. Add subtle true motion: microscope focus breathing, tiny particles, water shimmer, slow parallax. No text, no labels, no logos, no morphing, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot05_wan22_432x768_25f_seed960305.mp4",
+      "prompt_id": "0fe8ca19-1bd1-4506-ab12-bbf6f5cfd27a",
+      "uploaded_image": "shot05_tardigrade_survival_mode_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "05_960305_00001_.mp4",
+        "subfolder": "tardigrade_survival_mode",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    }
+  ],
+  "created_at": "2026-06-05T22:53:40",
+  "outputs": {
+    "manifest": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/manifest.json",
+    "manifest_partial": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/manifest_partial.json",
+    "silent": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_silent_1080.mp4",
+    "master": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_master_1080.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/tardigrade_survival_mode_wan22_preview_720.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/contact_sheet_tardigrade_survival_mode.jpg",
+    "ffprobe_master": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/ffprobe_master.json",
+    "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/wan22_template_v01/README_QA_FINAL.md"
+  }
+}

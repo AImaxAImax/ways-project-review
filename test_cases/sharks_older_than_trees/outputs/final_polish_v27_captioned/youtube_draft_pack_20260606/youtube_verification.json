@@ -1,0 +1,78 @@
+{
+  "before": {
+    "video_id": "KLwp-KbIr9I",
+    "found": true,
+    "title": "Sharks Are Older Than Trees #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": null,
+    "privacyStatus": "private",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT25S",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": false,
+    "url": "https://youtu.be/KLwp-KbIr9I",
+    "studio_url": "https://studio.youtube.com/video/KLwp-KbIr9I/edit"
+  },
+  "captions_attach": {
+    "caption_inserted": true,
+    "response": {
+      "kind": "youtube#caption",
+      "etag": "U8-JI7HQ6H7KaB3WW8zKEn-nPY4",
+      "id": "AUieDabFIst3qIFwkBYh6cVA9_sLiZVlaXP8mlV07RjdLLT3hu5VaHFc",
+      "snippet": {
+        "videoId": "KLwp-KbIr9I",
+        "lastUpdated": "2026-06-06T01:55:47.944726Z",
+        "trackKind": "standard",
+        "language": "en",
+        "name": "English",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  },
+  "after": {
+    "video_id": "KLwp-KbIr9I",
+    "title": "Sharks Are Older Than Trees #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "privacyStatus": "public",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "definition": "hd",
+    "duration": "PT25S",
+    "caption": "true",
+    "url": "https://youtu.be/KLwp-KbIr9I",
+    "studio_url": "https://studio.youtube.com/video/KLwp-KbIr9I/edit"
+  },
+  "before_public_publish": {
+    "video_id": "KLwp-KbIr9I",
+    "title": "Sharks Are Older Than Trees #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "privacyStatus": "private",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "definition": "hd",
+    "duration": "PT25S",
+    "caption": "true",
+    "url": "https://youtu.be/KLwp-KbIr9I",
+    "studio_url": "https://studio.youtube.com/video/KLwp-KbIr9I/edit"
+  },
+  "public_publish_event_recorded": true,
+  "public_publish_verified_at": "2026-06-06T03:38:14Z"
+}

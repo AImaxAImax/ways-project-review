@@ -1,0 +1,23 @@
+{
+  "shot": "02 \u2014 Seriously.",
+  "selected_current_hold": "v16 variant 03",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v16/shot02_seriously_v16_v03_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v16_shot02_seriously_evidence/v16_shot02_seriously_evidence_v03_00001_.png",
+  "contact_sheets": [
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v16_shot02_seriously_evidence_contact_sheet.jpg",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v17_shot02_fossil_proof_contact_sheet.jpg"
+  ],
+  "rationale": [
+    "Best continuation of the v15 style: teal museum/natural-history lighting, premium macro look, calm shark subject.",
+    "Visually distinct enough from Shot 1: reads like a museum/specimen proof beat rather than open ancient ocean.",
+    "Clean mobile-readable composition with one main shark and a stone/slab base.",
+    "No generated text, no obvious trees/plants/grass, and fewer distracting prop artifacts than v17."
+  ],
+  "caveat": "It is more of a museum/specimen evidence beat than a clear fossil proof. v17 tried fossil/tooth proof but drifted into aquarium/display-case clutter and coral/plant-like shapes.",
+  "runner_up": "v16 variant 05 \u2014 very clean museum case and matches style, but shark is smaller and less immediate.",
+  "rejected_lessons": [
+    "Prompting fossil/tooth too hard caused display case/terrarium compositions and coral-like props.",
+    "For this short, Shot 2 can function as the dry \u201cSeriously\u201d pause if it feels premium and calm; save literal dates/proof for timeline shot."
+  ],
+  "next_if_refining": "One micro-pass could combine v16_03 cleanliness with a single subtle fossil slab texture, but avoid words that trigger aquarium, coral, glass box, or display case."
+}

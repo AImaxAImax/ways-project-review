@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-07T21:36:31Z",
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+  "results": [
+    {
+      "id": "01",
+      "seed": 812701,
+      "width": 432,
+      "height": 768,
+      "length": 25,
+      "prompt": "premium natural-history documentary image-to-video from the exact owl source still. Preserve the single owl, branch, forest background, feathers, eyes, and realistic anatomy. The owl body stays locked and perched while only the head makes a slow believable owl swivel: head turns from looking over its shoulder slightly back toward camera, then pauses with intense eye contact. Very subtle camera creep, tiny feather movement, soft forest particles, cinematic dusk light. No scene cut, no second owl, no duplicate head, no stretched neck, no horror, no gore, no text, no labels, no watermark, no logo.",
+      "prompt_id": "785752e1-a23b-41f4-84fd-b7c06855129c",
+      "uploaded_image": "01_ref_nano04_turn_01.png",
+      "comfy_output": {
+        "filename": "shot01_812701_00001_.mp4",
+        "subfolder": "ways_owl_head_turn_v01",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot01_owl_head_turn_wan22_432x768_25f_seed812701.mp4",
+      "bytes": 170412
+    },
+    {
+      "id": "02",
+      "seed": 812702,
+      "width": 432,
+      "height": 768,
+      "length": 25,
+      "prompt": "premium natural-history documentary image-to-video from the exact owl source still. Preserve the single owl, branch, forest background, feathers, eyes, and realistic anatomy. The owl body stays locked and perched while only the head makes a slow believable owl swivel: head turns from looking over its shoulder a tiny amount farther over the shoulder, then subtly back toward camera, then pauses with intense eye contact. Very subtle camera creep, tiny feather movement, soft forest particles, cinematic dusk light. No scene cut, no second owl, no duplicate head, no stretched neck, no horror, no gore, no text, no labels, no watermark, no logo.",
+      "prompt_id": "7b7f8046-ef73-40cb-9dbc-133a15436a63",
+      "uploaded_image": "01_ref_nano04_turn_01.png",
+      "comfy_output": {
+        "filename": "shot02_812702_00001_.mp4",
+        "subfolder": "ways_owl_head_turn_v01",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/shot02_owl_head_turn_wan22_432x768_25f_seed812702.mp4",
+      "bytes": 163072
+    }
+  ],
+  "outputs": {
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v01/contact_sheet_owl_i2v_v01.jpg"
+  }
+}

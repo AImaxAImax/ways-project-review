@@ -1,0 +1,44 @@
+[
+  {
+    "stage": "cavitation",
+    "variant": 0,
+    "seed": 1001000,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_cavitation_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, a smooth bronze-orange rounded impact baton entering from lower left, large translucent white-blue vapor bubble forming at the baton tip beside a shell target, natural water droplets and soft bloom"
+  },
+  {
+    "stage": "cavitation",
+    "variant": 1,
+    "seed": 1001019,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_cavitation_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, a smooth bronze-orange rounded impact baton entering from lower left, large translucent white-blue vapor bubble forming at the baton tip beside a shell target, natural water droplets and soft bloom"
+  },
+  {
+    "stage": "first_hit",
+    "variant": 0,
+    "seed": 1001311,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_first_hit_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, a smooth bronze-orange rounded impact baton hitting a shell target, soft white-blue pressure bloom and water distortion, no rings, no arrows, premium VFX"
+  },
+  {
+    "stage": "first_hit",
+    "variant": 1,
+    "seed": 1001330,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_first_hit_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, a smooth bronze-orange rounded impact baton hitting a shell target, soft white-blue pressure bloom and water distortion, no rings, no arrows, premium VFX"
+  },
+  {
+    "stage": "collapse",
+    "variant": 0,
+    "seed": 1001622,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_collapse_0_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, translucent vapor bubble imploding beside a shell target, second soft shock burst of light in water, bronze-orange impact baton edge barely visible, no rings, no arrows, premium VFX"
+  },
+  {
+    "stage": "collapse",
+    "variant": 1,
+    "seed": 1001641,
+    "local_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/assets/premium_mechanism_v17c_abstract/WAYS_mantis_v17c_collapse_1_00001_.png",
+    "prompt": "vertical 9:16 premium cinematic 3D scientific visualization, absolutely no text, no labels, no watermark, no animal, no creature, no shrimp. underwater macro physics scene, dark teal water, volumetric light, photorealistic shell target, polished documentary VFX, caption-safe center, translucent vapor bubble imploding beside a shell target, second soft shock burst of light in water, bronze-orange impact baton edge barely visible, no rings, no arrows, premium VFX"
+  }
+]

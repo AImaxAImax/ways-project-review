@@ -1,0 +1,66 @@
+{
+  "provider": "elevenlabs",
+  "voice": "elevenlabs_george",
+  "voice_name": "George - Warm, Captivating Storyteller",
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "model_id": "eleven_multilingual_v2",
+  "beats": [
+    {
+      "file": "beat01.mp3",
+      "text": "A frog can freeze solid.",
+      "raw_s": 1.567,
+      "target_s": 2.35,
+      "fit_s": 2.35,
+      "tempo_ratio": 0.667
+    },
+    {
+      "file": "beat02.mp3",
+      "text": "In winter, ice can form through much of its body.",
+      "raw_s": 3.004,
+      "target_s": 3.4,
+      "fit_s": 3.4,
+      "tempo_ratio": 0.884
+    },
+    {
+      "file": "beat03.mp3",
+      "text": "Its heart can stop for a while.",
+      "raw_s": 1.985,
+      "target_s": 3.1,
+      "fit_s": 3.1,
+      "tempo_ratio": 0.64
+    },
+    {
+      "file": "beat04.mp3",
+      "text": "Sugar-like fluids help protect the cells.",
+      "raw_s": 2.508,
+      "target_s": 3.6,
+      "fit_s": 3.6,
+      "tempo_ratio": 0.697
+    },
+    {
+      "file": "beat05.mp3",
+      "text": "Then spring warms it up, and the frog starts moving again.",
+      "raw_s": 3.239,
+      "target_s": 4.45,
+      "fit_s": 4.45,
+      "tempo_ratio": 0.728
+    },
+    {
+      "file": "beat06.mp3",
+      "text": "It is not magic. It is survival chemistry.",
+      "raw_s": 2.821,
+      "target_s": 3.7,
+      "fit_s": 3.7,
+      "tempo_ratio": 0.762
+    }
+  ],
+  "captioned_master": "outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_captioned_1080.mp4",
+  "captioned_master_duration_s": 20.583,
+  "captioned_preview": "outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_captioned_720.mp4",
+  "captioned_preview_duration_s": 20.583,
+  "clean_master": "outputs/wan22_v17_elevenlabs_george/wood_frog_freeze_survival_v17_elevenlabs_george_clean_1080.mp4",
+  "clean_master_duration_s": 20.583,
+  "final_audio": "outputs/wan22_v17_elevenlabs_george/final_voiceover_george_boosted.m4a",
+  "final_audio_duration_s": 20.6,
+  "audio_postprocess": "+3.0dB final gain after ElevenLabs generation; verified max_volume -1.3 dB, mean_volume -16.7 dB via ffmpeg volumedetect"
+}

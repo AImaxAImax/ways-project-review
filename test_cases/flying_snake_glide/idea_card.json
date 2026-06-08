@@ -1,0 +1,108 @@
+{
+  "slug": "flying_snake_glide",
+  "hook": "Some snakes can glide through the air.",
+  "core_fact": "Flying snakes flatten their bodies and undulate in the air, creating lift and control as they glide from trees.",
+  "cohort_tag": "first10_animal_new_clear_001",
+  "test_variable": "obvious_say_dog_see_dog_gliding_animal",
+  "artifact_folder": "test_cases/flying_snake_glide/",
+  "source_policy": "Default WAYS frame lane: use Higgsfield free/unlimited models; generate multiple candidates; no metered/paid credits without explicit approval.",
+  "sources": [
+    "Nature Physics: Undulation enables gliding in flying snakes, https://www.nature.com/articles/s41567-020-0935-4"
+  ],
+  "beats": [
+    {
+      "voiceover": "Some snakes can glide through the air.",
+      "caption": "Some snakes can glide through the air",
+      "visual": "snake launching from tree branch into open air, instantly readable"
+    },
+    {
+      "voiceover": "They do not have wings.",
+      "caption": "no wings",
+      "visual": "clear side view of snake body in air, no wings, tree background"
+    },
+    {
+      "voiceover": "They flatten their body like a long moving airfoil.",
+      "caption": "they flatten their body",
+      "visual": "body visibly wider/flatter, simple profile transformation with no labels"
+    },
+    {
+      "voiceover": "Then they wave side to side while falling forward.",
+      "caption": "they wave side to side",
+      "visual": "S-shaped snake gliding path through air"
+    },
+    {
+      "voiceover": "That motion helps them steer from one tree to another.",
+      "caption": "steering tree to tree",
+      "visual": "snake gliding toward another branch, clear destination"
+    }
+  ],
+  "status_column": "Gate 2 Plate QC - Higgsfield v02 source candidates ready for human review",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "draft_score": 7.9,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "blocking_gate": "Gate 2 - Human approve/deny Higgsfield v02 plates",
+  "created_at": "2026-06-07T04:21:13Z",
+  "script": {
+    "beats": [
+      {
+        "voiceover": "Some snakes can glide through the air.",
+        "caption": "Some snakes can glide through the air",
+        "visual": "snake launching from tree branch into open air, instantly readable"
+      },
+      {
+        "voiceover": "They do not have wings.",
+        "caption": "no wings",
+        "visual": "clear side view of snake body in air, no wings, tree background"
+      },
+      {
+        "voiceover": "They flatten their body like a long moving airfoil.",
+        "caption": "they flatten their body",
+        "visual": "body visibly wider/flatter, simple profile transformation with no labels"
+      },
+      {
+        "voiceover": "Then they wave side to side while falling forward.",
+        "caption": "they wave side to side",
+        "visual": "S-shaped snake gliding path through air"
+      },
+      {
+        "voiceover": "That motion helps them steer from one tree to another.",
+        "caption": "steering tree to tree",
+        "visual": "snake gliding toward another branch, clear destination"
+      }
+    ],
+    "sources": [
+      "Nature Physics: Undulation enables gliding in flying snakes, https://www.nature.com/articles/s41567-020-0935-4"
+    ]
+  },
+  "gate_1_status": "auto_approved_internal",
+  "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+  "rework_reason": "Concept/procedural plates are clear, but local Comfy candidates are not final source-pass: action still reads too much like snakes in branches, not guaranteed gliding.",
+  "source_quality_requirements": {
+    "must_fix": [
+      "premium source plates must clearly show airborne gliding snake, not branch camouflage",
+      "avoid multiple snakes or ambiguous vines",
+      "first frame must read instantly as snake leaving a tree branch",
+      "every beat must be understandable without captions",
+      "no render until premium source contact sheet passes phone-size review"
+    ]
+  },
+  "outputs": {
+    "concept_contact_sheet": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_proof_plates_v01_contact_sheet.jpg",
+    "comfy_candidates_v02": "outputs/gate2_plate_qc/comfy_candidates_contact_sheet_v02.jpg",
+    "gate2_status": "outputs/gate2_plate_qc/FLYING_SNAKE_GATE2_STATUS_v01.md",
+    "higgsfield_candidates_v01": "outputs/higgsfield_frames_v01/higgsfield_snake_candidates_contact_sheet_v01.jpg",
+    "higgsfield_generation_manifest_v01": "outputs/higgsfield_frames_v01/higgsfield_generation_manifest_v01.json",
+    "higgsfield_qa_v01": "outputs/higgsfield_frames_v01/QA_HIGGSFIELD_FRAMES_V01.md",
+    "higgsfield_candidates_v02": "outputs/higgsfield_frames_v02/higgsfield_snake_candidates_contact_sheet_v02_refs.jpg",
+    "higgsfield_qa_v02": "outputs/higgsfield_frames_v02/QA_HIGGSFIELD_FRAMES_V02_REFS.md",
+    "pending_human_plate_review": "assets/pending_human_plate_review/higgsfield_v02/"
+  },
+  "rework_artifacts": {
+    "last_agent_update": "2026-06-07T04:49:44Z",
+    "agent_note": "Generated Higgsfield v02 reference-guided sweep. Best source-plate candidates: ref_tree_to_tree_01 for flattened/ribbon body; ref_flatten_01 for open-air hero. Ready for Josh Gate 2 approve/deny."
+  }
+}

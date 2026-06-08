@@ -1,0 +1,26 @@
+{
+  "final": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/sharks_older_than_trees_rough_cut.mp4",
+  "final_duration_sec": 36.984,
+  "voice": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_voice_edge_tts_timed.mp3",
+  "voice_duration_sec": 37.032,
+  "slides": [
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_01.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_02.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_03.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_04.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_05.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_06.png",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/rough_frames/slide_07.png"
+  ],
+  "slide_durations_sec": [
+    3.738,
+    2.802,
+    9.258,
+    5.634,
+    7.914000000000001,
+    5.562,
+    5.226
+  ],
+  "voice_proxy": "en-US-GuyNeural",
+  "note": "Rough local timing prototype only; replace art and voice for final benchmark."
+}

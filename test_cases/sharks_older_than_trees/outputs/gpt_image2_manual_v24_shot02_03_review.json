@@ -1,0 +1,37 @@
+{
+  "reviewed_at": "2026-05-26T08:31:29",
+  "source": "manual ChatGPT / GPT Image 2 uploads from user",
+  "items": {
+    "shot_02": {
+      "file": "assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+      "decision": "STRONG HOLD",
+      "passes": [
+        "premium macro finish",
+        "clear shark tooth/fossil proof beat",
+        "simple composition, not a museum hallway",
+        "no fake/readable text",
+        "family-safe",
+        "excellent caption room in dark upper area"
+      ],
+      "caveats": [
+        "very close crop, but this works for the short pause/evidence beat"
+      ]
+    },
+    "shot_03": {
+      "file": "assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+      "decision": "HOLD / likely usable, with caveat",
+      "passes": [
+        "premium finish",
+        "exactly one red apple, one squirrel, one walnut/nut",
+        "barren volcanic/no-forest environment",
+        "teal water and warm light match style",
+        "very readable on phone"
+      ],
+      "caveats": [
+        "the squirrel/apple/nut are rendered as real present objects rather than ghosted/not-yet props, so captions/motion should sell the \u201cbefore\u201d joke",
+        "background is brighter and more scenic than Shot 2; acceptable because we wanted non-museum variety"
+      ]
+    }
+  },
+  "next_step": "Continue GPT Image 2 manual generation for shots 4-7; Shot 4 timeline is the next hardest control test."
+}

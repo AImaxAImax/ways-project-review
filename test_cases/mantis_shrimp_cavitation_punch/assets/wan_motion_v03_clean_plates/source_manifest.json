@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01",
+    "source": "assets/source_stills/source_04.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot01_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "02",
+    "source": "assets/source_stills/source_05.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot02_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "03",
+    "source": "assets/source_stills/source_02.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot03_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "04",
+    "source": "assets/source_stills/source_03.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot04_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "05",
+    "source": "assets/source_stills/source_01.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot05_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "06",
+    "source": "assets/source_stills/source_05.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot06_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "07",
+    "source": "assets/source_stills/source_04.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot07_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  },
+  {
+    "id": "08",
+    "source": "assets/source_stills/source_02.jpg",
+    "path": "assets/wan_motion_v03_clean_plates/shot08_clean_mantis_photo_plate.png",
+    "note": "real Wikimedia CC BY-SA mantis shrimp photo crop/grade only; no overlays/text"
+  }
+]

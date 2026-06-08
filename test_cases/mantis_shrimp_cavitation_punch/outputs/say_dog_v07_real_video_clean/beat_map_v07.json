@@ -1,0 +1,74 @@
+[
+  {
+    "beat": 1,
+    "id": "01_hook_flash",
+    "caption": "THIS SHRIMP PUNCH / MAKES WATER FLASH",
+    "source_video": "peacock",
+    "visual_kind": "flash",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 2,
+    "id": "02_club_speed",
+    "caption": "ITS CLUB MOVES / INSANELY FAST",
+    "source_video": "peacock",
+    "visual_kind": "speed",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 3,
+    "id": "03_cavitation",
+    "caption": "THAT FLASH / IS CAVITATION",
+    "source_video": "peacock",
+    "visual_kind": "cavitation",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 4,
+    "id": "04_first_hit",
+    "caption": "THE PUNCH / HITS FIRST",
+    "source_video": "peacock",
+    "visual_kind": "impact",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 5,
+    "id": "05_second_hit",
+    "caption": "THEN THE BUBBLE / COLLAPSES",
+    "source_video": "peacock",
+    "visual_kind": "collapse",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 6,
+    "id": "06_high_speed",
+    "caption": "SCIENTISTS FILMED IT / IN HIGH SPEED",
+    "source_video": "peacock",
+    "visual_kind": "replay",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 7,
+    "id": "07_not_just_prey",
+    "caption": "IT DOES NOT JUST / PUNCH PREY",
+    "source_video": "wide",
+    "visual_kind": "wide",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  },
+  {
+    "beat": 8,
+    "id": "08_water_punches",
+    "caption": "THE WATER / PUNCHES TOO",
+    "source_video": "peacock",
+    "visual_kind": "water",
+    "frames": 94,
+    "strategy": "real Commons video base, no generated animal frames, subtle no-text effects only"
+  }
+]

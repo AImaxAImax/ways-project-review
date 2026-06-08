@@ -1,0 +1,20 @@
+{
+  "slug": "wood_frog_freeze_survival",
+  "hook": "A frog can freeze solid.",
+  "core_fact": "Wood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect cells until thawing.",
+  "status_column": "Script Locked",
+  "cohort_tag": "first10_animal_021",
+  "test_variable": "real_source_photo_plus_freeze_thaw_motion",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane_map": {},
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/wood_frog_freeze_survival/",
+  "blocking_gate": null,
+  "created_at": "2026-06-07T07:21:42Z",
+  "automation_policy": "auto_advance_internal_until_5_active_ready; public_publish_requires_explicit_gate6"
+}

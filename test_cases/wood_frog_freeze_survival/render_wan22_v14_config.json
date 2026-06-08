@@ -1,0 +1,86 @@
+{
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival",
+  "slug": "wood_frog_freeze_survival_v14",
+  "output_dir": "outputs/wan22_v14_actual_i2v",
+  "voiceover": "outputs/motion_v13_sugar_antifreeze/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "negative_prompt": "text, subtitles, readable letters, words, numbers, watermark, logo, UI, diagram label, arrows, pause symbol, medical monitor, fake chart, melted frog, extra limbs, deformed animal, scene transition, hard cut, jitter, flicker, low quality, blurry, compression artifacts, scratchy overlay, frame border",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 49,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "required_vae": "wan_2.1_vae.safetensors",
+  "qa_gate": [
+    "actual Wan2.2 I2V motion, not Ken Burns",
+    "source subject remains coherent",
+    "no generated text/logos/UI/artifact overlays",
+    "motion visible inside frame, not just camera pan",
+    "captioned final polish generated",
+    "audio stream present"
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/source_stills/source_02.jpg",
+      "duration": 2.35,
+      "caption": "A FROG CAN FREEZE SOLID",
+      "seed": 981401,
+      "prompt": "premium natural history documentary image-to-video from the exact wood frog source photo. Preserve the real wood frog anatomy, leaf litter, wet skin texture, and camera framing. Add true subtle in-frame motion: cold air shimmer, tiny frost sparkle forming along leaves and frog edges, barely perceptible breathing fading toward frozen stillness. No text, no labels, no arrows, no UI, no scene cut, no morphing, no melting, no new animal."
+    },
+    {
+      "id": "02",
+      "image": "assets/source_stills/source_06_freeze_through_body_graphic.jpg",
+      "duration": 3.4,
+      "caption": "ICE FORMS THROUGH ITS BODY",
+      "seed": 981402,
+      "prompt": "premium science documentary image-to-video from the exact frozen wood frog proof plate. Preserve frog silhouette and icy leaf litter. Add true motion only: translucent ice crystals slowly creeping through the body area, frost particles drifting, cold shimmer. Keep it organic and natural, not a UI. No text, no labels, no arrows, no numbers, no scene cut, no morphing, no melted frog."
+    },
+    {
+      "id": "03",
+      "image": "assets/source_stills/source_08_clean_heart_stop_no_ui.jpg",
+      "duration": 3.1,
+      "caption": "ITS HEART CAN STOP",
+      "seed": 981403,
+      "prompt": "premium natural history science image-to-video from the exact frozen frog chest-glow plate. Preserve the real frog body, cold leaf litter, and soft organic chest glow. Add true subtle motion: the warm chest glow slowly dims and becomes still, tiny frost specks drift, cold air shimmer. No text, no pause marks, no UI rings, no medical monitor, no labels, no arrows, no scene cut, no morphing."
+    },
+    {
+      "id": "04",
+      "image": "assets/source_stills/source_09_clean_cell_protection_no_arrows.jpg",
+      "duration": 3.6,
+      "caption": "SUGAR HELPS PROTECT CELLS",
+      "seed": 981404,
+      "prompt": "premium microscopic science image-to-video from the exact no-text cell protection source plate. Preserve teal cells, dark cold fluid, and gold glucose-like protective halos. Add true gentle motion: gold protective fluid slowly pulses around the cells, tiny glucose beads drift, cold particles move outward, ice pressure stays near edges. No text, no labels, no arrows, no UI, no new symbols, no hard cut, no morphing."
+    },
+    {
+      "id": "05",
+      "image": "assets/source_stills/source_04.jpg",
+      "duration": 4.45,
+      "caption": "SPRING WARMS IT BACK TO LIFE",
+      "seed": 981405,
+      "prompt": "premium spring natural history image-to-video from the exact wood frog source photo. Preserve real frog anatomy and wet leaves. Add true in-frame motion: gentle warming light, droplets glinting, leaf moisture shimmer, the frog making the tiniest believable return-to-life twitch. No text, no labels, no logo, no scene cut, no extra limbs, no deformed frog, no morphing."
+    },
+    {
+      "id": "06",
+      "image": "assets/source_stills/source_01.jpg",
+      "duration": 3.7,
+      "caption": "NOT MAGIC SURVIVAL CHEMISTRY",
+      "seed": 981406,
+      "prompt": "premium natural history documentary image-to-video from the exact wood frog source photo. Preserve real frog anatomy and macro leaf-litter environment. Add true subtle motion: tiny gold protective particles and cold-to-warm shimmer around the frog, delicate frost sparkle fading, slight camera-held natural movement. No text, no labels, no arrows, no UI, no logos, no scene cut, no morphing, no melted frog."
+    }
+  ]
+}

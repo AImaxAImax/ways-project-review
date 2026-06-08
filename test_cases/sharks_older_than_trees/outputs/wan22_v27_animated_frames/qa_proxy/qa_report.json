@@ -1,0 +1,55 @@
+{
+  "score": 95,
+  "blockers": [],
+  "warnings": [
+    "visual scan warning: base render still needs caption/full-motion review before publish"
+  ],
+  "checks": {
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": 24.0,
+      "duration": 23.916,
+      "pix_fmt": "yuv420p"
+    },
+    "duration": {
+      "actual": 23.916,
+      "expected": 23.916,
+      "tolerance": 0.5,
+      "delta": 0.0
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 1
+    },
+    "contact_sheet": {
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/qa_proxy/contact_sheet.jpg",
+      "generated": true
+    },
+    "vlm_scan": {
+      "mode": "hermes_vision_manual_run",
+      "severity": "warn",
+      "text_or_logo_present": false,
+      "visual_artifacts": [
+        "No visible generated text, logos, watermarks, UI, or double captions in the sampled contact sheet.",
+        "Some AI-stylized/painterly texture and softness remain, especially geology/forest/aquarium shots."
+      ],
+      "anatomy_or_morphing_issues": [
+        "Shark silhouettes are broadly coherent in sampled frames; no obvious duplicated fins/limbs or catastrophic melt visible at contact-sheet scale.",
+        "Final shark close-up is cinematic but slightly stylized/soft; full-motion review still required for jaw/fin morphing."
+      ],
+      "caption_readability_issues": [
+        "No captions are present in this base render; caption pass remains downstream before publish."
+      ],
+      "summary": "Contact sheet passes first-pass visual scan for no text/logos/watermarks and no obvious catastrophic animal morphing, but remains a base-render QA rather than a publish gate because captions/full-motion artifact review are still required."
+    }
+  },
+  "input": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/sharks_older_than_trees_v27_wan22_animated_audio.mp4",
+  "generated_at": "2026-06-05T18:53:19",
+  "json_report": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/qa_proxy/qa_report.json",
+  "ffprobe_json": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/qa_proxy/ffprobe.json",
+  "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/wan22_v27_animated_frames/qa_proxy/README_QA.md",
+  "publish_action": "none"
+}

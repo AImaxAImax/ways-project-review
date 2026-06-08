@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-06-05T16:28:45",
+  "fps": 24,
+  "width": 1080,
+  "height": 1920,
+  "shots": [
+    {
+      "id": "01",
+      "path": "assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "duration": 3.57,
+      "caption": "SHARKS WERE HERE\nBEFORE TREES",
+      "move": "slow_push_low",
+      "note": "ancient ocean hook",
+      "frames": 86,
+      "start_frame": 0,
+      "end_frame": 85
+    },
+    {
+      "id": "02",
+      "path": "assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+      "duration": 2.303,
+      "caption": "SERIOUSLY.",
+      "move": "macro_push",
+      "note": "fossil proof close-up",
+      "frames": 55,
+      "start_frame": 86,
+      "end_frame": 140
+    },
+    {
+      "id": "03",
+      "path": "assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+      "duration": 3.685,
+      "caption": "BEFORE APPLES.\nBEFORE SQUIRRELS.",
+      "move": "tiny_pan_right",
+      "note": "literal gag objects",
+      "frames": 88,
+      "start_frame": 141,
+      "end_frame": 228
+    },
+    {
+      "id": "04",
+      "path": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "duration": 3.57,
+      "caption": "OVER 400 MILLION\nYEARS AGO",
+      "move": "vertical_reveal",
+      "note": "deep-time geology timeline",
+      "frames": 86,
+      "start_frame": 229,
+      "end_frame": 314
+    },
+    {
+      "id": "05",
+      "path": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "duration": 3.225,
+      "caption": "THEN FORESTS\nFINALLY ARRIVED",
+      "move": "slow_push_high",
+      "note": "first forest/land change",
+      "frames": 77,
+      "start_frame": 315,
+      "end_frame": 391
+    },
+    {
+      "id": "06",
+      "path": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "duration": 3.685,
+      "caption": "AND TODAY...\nTHEY ARE STILL HERE",
+      "move": "aquarium_push",
+      "note": "modern viewer/aquarium wonder",
+      "frames": 88,
+      "start_frame": 392,
+      "end_frame": 479
+    },
+    {
+      "id": "07",
+      "path": "assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+      "duration": 3.916,
+      "caption": "SURVIVOR\nFROM A WORLD\nBEFORE FORESTS",
+      "move": "final_hold",
+      "note": "final predator got here first image, matched to survivor caption",
+      "frames": 94,
+      "start_frame": 480,
+      "end_frame": 573
+    }
+  ]
+}

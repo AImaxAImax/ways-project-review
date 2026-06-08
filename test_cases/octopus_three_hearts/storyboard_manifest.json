@@ -1,0 +1,48 @@
+{
+  "slug": "octopus_three_hearts",
+  "version": 1,
+  "target_format": "1080x1920 vertical Short",
+  "caption_style": "WAYS creator captions; zero non-caption text",
+  "shots": [
+    {
+      "id": "shot01",
+      "voiceover": "An octopus has three hearts.",
+      "caption": "An octopus has three hearts",
+      "visual": "beautiful real octopus, calm full-body read",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot02",
+      "voiceover": "Two hearts push blood through the gills.",
+      "caption": "two hearts / push through the gills",
+      "visual": "two subtle pulse points near gill area, no labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot03",
+      "voiceover": "The third sends blood to the rest of the body.",
+      "caption": "the third / powers the body",
+      "visual": "single subtle body pulse, no diagram text",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot04",
+      "voiceover": "And when it swims, that body heart can slow down.",
+      "caption": "when it swims / one heart slows",
+      "visual": "octopus swimming motion, avoid detached tentacles",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot05",
+      "voiceover": "That is why crawling can be easier than swimming.",
+      "caption": "crawling can be easier",
+      "visual": "octopus moving along seafloor, anatomy-safe",
+      "duration_seconds": null,
+      "gate_notes": []
+    }
+  ]
+}

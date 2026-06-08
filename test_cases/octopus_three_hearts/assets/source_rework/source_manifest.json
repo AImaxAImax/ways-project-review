@@ -1,0 +1,284 @@
+{
+  "slug": "octopus_three_hearts",
+  "created_utc": "2026-06-06",
+  "lane": "source_acquisition_only_no_render_no_paid_credits",
+  "policy": {
+    "allowed_licenses": [
+      "Public domain",
+      "CC0",
+      "CC BY"
+    ],
+    "excluded": [
+      "all-rights-reserved",
+      "unclear-license",
+      "CC BY-NC/NC-only",
+      "paid-stock/previews",
+      "AI-generated anatomy",
+      "text/watermark/logo sources"
+    ],
+    "notes": "CC BY-SA and NC sources intentionally avoided in this acquisition pass."
+  },
+  "required_beats": [
+    "beat_1_three_hearts_external_baseline",
+    "beat_2_two_gill_hearts_overlay",
+    "beat_3_one_systemic_heart_overlay",
+    "beat_4_swimming_systemic_slowdown",
+    "beat_5_crawling_easier_contrast"
+  ],
+  "candidates": [
+    {
+      "id": "octo_baseline_inat_cc0",
+      "beat_support": [
+        "beat_1_three_hearts_external_baseline",
+        "beat_2_two_gill_hearts_overlay",
+        "beat_3_one_systemic_heart_overlay"
+      ],
+      "title": "Octopus vulgaris observation 333569055",
+      "source": "iNaturalist Open Data",
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/605634628/original.jpg",
+      "landing_url": "https://www.inaturalist.org/observations/333569055",
+      "license": "CC0",
+      "attribution": "No rights reserved (iNaturalist photo 605634628)",
+      "filename": "octo_baseline_inat_cc0.jpg",
+      "notes": "Rights-clean CC0 fallback external octopus plate; real octopus candidate for clean pulse overlays.",
+      "local_path": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/assets/source_rework/octo_baseline_inat_cc0.jpg",
+      "download_status": "downloaded",
+      "file_size_bytes": 1292539,
+      "width": 2048,
+      "height": 1365,
+      "format": "JPEG",
+      "rights_status": "candidate_rights_safe_free_lane",
+      "source_type": "real_underwater_octopus_still",
+      "accepted_for_render": false,
+      "qc_status": "candidate_acquired_needs_visual_contact_sheet_and_human_gate"
+    },
+    {
+      "id": "octo_baseline_inat_cc0_2",
+      "beat_support": [
+        "beat_1_three_hearts_external_baseline",
+        "beat_2_two_gill_hearts_overlay",
+        "beat_3_one_systemic_heart_overlay"
+      ],
+      "title": "Octopus vulgaris observation 328490655",
+      "source": "iNaturalist Open Data",
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/595259495/original.jpg",
+      "landing_url": "https://www.inaturalist.org/observations/328490655",
+      "license": "CC0",
+      "attribution": "No rights reserved (iNaturalist photo 595259495)",
+      "filename": "octo_baseline_inat_cc0_2.jpg",
+      "notes": "Second CC0 real octopus still; candidate if first fails crop/QC.",
+      "local_path": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/assets/source_rework/octo_baseline_inat_cc0_2.jpg",
+      "download_status": "downloaded",
+      "file_size_bytes": 2016517,
+      "width": 2048,
+      "height": 1536,
+      "format": "JPEG",
+      "rights_status": "candidate_rights_safe_free_lane",
+      "source_type": "real_underwater_octopus_still",
+      "accepted_for_render": false,
+      "qc_status": "candidate_acquired_needs_visual_contact_sheet_and_human_gate"
+    },
+    {
+      "id": "octo_vulgaris_dimsis_ccby",
+      "beat_support": [
+        "beat_1_three_hearts_external_baseline",
+        "beat_2_two_gill_hearts_overlay"
+      ],
+      "title": "Octopus, Octopus vulgaris underwater closeup",
+      "source": "Flickr via Openverse",
+      "url": "https://live.staticflickr.com/3889/14697356300_1c0e4ea76b_b.jpg",
+      "landing_url": "https://www.flickr.com/photos/62001345@N00/14697356300",
+      "license": "CC BY (Openverse-reported)",
+      "attribution": "dimsis / Flickr, CC BY",
+      "filename": "octo_vulgaris_dimsis_ccby.jpg",
+      "notes": "Documentary underwater closeup; candidate if CC0 plate fails crop.",
+      "local_path": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/assets/source_rework/octo_vulgaris_dimsis_ccby.jpg",
+      "download_status": "downloaded",
+      "file_size_bytes": 155935,
+      "width": 1024,
+      "height": 768,
+      "format": "JPEG",
+      "rights_status": "candidate_rights_safe_free_lane",
+      "source_type": "real_underwater_octopus_still",
+      "accepted_for_render": false,
+      "qc_status": "candidate_acquired_needs_visual_contact_sheet_and_human_gate"
+    },
+    {
+      "id": "octo_swim_jurvetson_ccby",
+      "beat_support": [
+        "beat_4_swimming_systemic_slowdown"
+      ],
+      "title": "Blowing Me Off",
+      "source": "Flickr via Openverse",
+      "url": "https://live.staticflickr.com/8335/8359598823_48400bd65d_b.jpg",
+      "landing_url": "https://www.flickr.com/photos/44124348109@N01/8359598823",
+      "license": "CC BY (Openverse-reported)",
+      "attribution": "Steve Jurvetson / Flickr, CC BY",
+      "filename": "octo_swim_jurvetson_ccby.jpg",
+      "notes": "Openverse result for octopus swimming/reef; candidate for swim/jetting contrast, must be visually confirmed before render.",
+      "local_path": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/assets/source_rework/octo_swim_jurvetson_ccby.jpg",
+      "download_status": "downloaded",
+      "file_size_bytes": 272110,
+      "width": 1024,
+      "height": 846,
+      "format": "JPEG",
+      "rights_status": "candidate_rights_safe_free_lane",
+      "source_type": "real_underwater_octopus_still",
+      "accepted_for_render": false,
+      "qc_status": "candidate_acquired_needs_visual_contact_sheet_and_human_gate"
+    },
+    {
+      "id": "octo_crawl_montereydiver_ccby",
+      "beat_support": [
+        "beat_5_crawling_easier_contrast"
+      ],
+      "title": "DSC_1638 - walking octopus 2",
+      "source": "Flickr via Openverse",
+      "url": "https://live.staticflickr.com/579/32050993134_9d9804e776_b.jpg",
+      "landing_url": "https://www.flickr.com/photos/114942831@N02/32050993134",
+      "license": "CC BY (Openverse-reported)",
+      "attribution": "montereydiver / Flickr, CC BY",
+      "filename": "octo_crawl_montereydiver_ccby.jpg",
+      "notes": "Explicit walking/crawling octopus search result; candidate for beat 5 crawl contrast.",
+      "local_path": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/assets/source_rework/octo_crawl_montereydiver_ccby.jpg",
+      "download_status": "downloaded",
+      "file_size_bytes": 272671,
+      "width": 1023,
+      "height": 682,
+      "format": "JPEG",
+      "rights_status": "candidate_rights_safe_free_lane",
+      "source_type": "real_underwater_octopus_still",
+      "accepted_for_render": false,
+      "qc_status": "candidate_acquired_needs_visual_contact_sheet_and_human_gate"
+    },
+    {
+      "id": "octo_baseline_ifremer_ccby_url_only",
+      "beat_support": [
+        "beat_1_three_hearts_external_baseline",
+        "beat_2_two_gill_hearts_overlay",
+        "beat_3_one_systemic_heart_overlay"
+      ],
+      "title": "Poulpe de r\u00e9cif (Octopus cyanea) (Ifremer 00764-87587)",
+      "source": "Wikimedia Commons / Ifremer",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Poulpe_de_r%C3%A9cif_%28Octopus_cyanea%29_%28Ifremer_00764-87587%29.jpg",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Poulpe_de_r%C3%A9cif_(Octopus_cyanea)_(Ifremer_00764-87587).jpg",
+      "license": "CC BY 4.0",
+      "attribution": "Ifremer / Wikimedia Commons, CC BY 4.0",
+      "filename": null,
+      "notes": "Premium Commons/Ifremer URL-only candidate; direct download hit Wikimedia 429 during this pass.",
+      "local_path": null,
+      "download_status": "url_only_not_downloaded_429"
+    }
+  ],
+  "beat_coverage": {
+    "beat_1_three_hearts_external_baseline": [
+      "octo_baseline_inat_cc0",
+      "octo_baseline_inat_cc0_2",
+      "octo_vulgaris_dimsis_ccby",
+      "octo_baseline_ifremer_ccby_url_only"
+    ],
+    "beat_2_two_gill_hearts_overlay": [
+      "octo_baseline_inat_cc0",
+      "octo_baseline_inat_cc0_2",
+      "octo_vulgaris_dimsis_ccby",
+      "octo_baseline_ifremer_ccby_url_only"
+    ],
+    "beat_3_one_systemic_heart_overlay": [
+      "octo_baseline_inat_cc0",
+      "octo_baseline_inat_cc0_2",
+      "octo_baseline_ifremer_ccby_url_only"
+    ],
+    "beat_4_swimming_systemic_slowdown": [
+      "octo_swim_jurvetson_ccby"
+    ],
+    "beat_5_crawling_easier_contrast": [
+      "octo_crawl_montereydiver_ccby"
+    ]
+  },
+  "anatomy_reference_status": {
+    "accepted": false,
+    "decision_utc": "2026-06-06T10:06:01Z",
+    "reason": "No text-free, rights-safe octopus anatomy/circulatory proof image was found that satisfies the gate. Search results were either labeled/text-heavy diagrams, non-preferred share-alike/noncommercial/unclear lanes, generic external octopus photos, or not octopus-heart anatomy. Rebuild should use real octopus plates with agent-created abstract pulse overlays only, not a cutaway/diagram.",
+    "hard_reject_rules_applied": [
+      "visible labels/text/watermarks/logos",
+      "noncommercial or unclear license",
+      "AI/generated anatomy",
+      "fake anatomical cutaway or organ placement presented as literal anatomy",
+      "CC BY-SA avoided for this conservative free-lane pass"
+    ],
+    "searches_performed": [
+      {
+        "source": "Wikimedia Commons API",
+        "queries": [
+          "octopus anatomy heart diagram",
+          "octopus circulatory system",
+          "octopus hearts diagram",
+          "cephalopod circulatory system octopus",
+          "octopus dissected heart",
+          "octopus anatomy",
+          "octopus internal anatomy",
+          "Octopus vulgaris anatomy",
+          "octopus diagram"
+        ],
+        "outcome": "No acceptable text-free octopus heart/circulatory anatomy image found."
+      },
+      {
+        "source": "Openverse API",
+        "queries": [
+          "octopus anatomy heart",
+          "octopus circulatory system",
+          "octopus three hearts",
+          "octopus heart anatomy",
+          "cephalopod anatomy heart"
+        ],
+        "outcome": "No acceptable anatomy/proof image found; results were empty, generic octopus photos, or unrelated/unsuitable images."
+      }
+    ],
+    "notable_rejected_examples": [
+      {
+        "title": "Main features of the anatomy of Octopus vulgaris in relation to the pallial nerve",
+        "source": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Main_features_of_the_anatomy_of_Octopus_vulgaris_in_relation_to_the_pallial_nerve.webp",
+        "rejection_reason": "Anatomy figure/diagram with visible labels/text and not a clean three-heart proof plate."
+      },
+      {
+        "title": "Ornate octopus anatomy vintage poster",
+        "source": "Wikimedia Commons / Rawpixel",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Ornate_octopus_anatomy_vintage_poster.jpg",
+        "rejection_reason": "Vintage poster/anatomy-art lane with visible typography/labels; not text-free documentary proof."
+      },
+      {
+        "title": "Sea octopus anatomy vintage poster",
+        "source": "Wikimedia Commons / Rawpixel",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sea_octopus_anatomy_vintage_poster.jpg",
+        "rejection_reason": "Visible typography/labels and poster styling; not acceptable source imagery for WAYS plate."
+      },
+      {
+        "title": "Octopus sucker operation EN.svg",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Octopus_sucker_operation_EN.svg",
+        "rejection_reason": "Labeled/text diagram; also share-alike lane avoided in this pass and not heart anatomy."
+      },
+      {
+        "title": "circulatory system: dissections aortic arch",
+        "source": "Openverse / Rawpixel",
+        "license": "CC0",
+        "url": "https://www.rawpixel.com/image/13962692/image-cartoon-art-animal",
+        "rejection_reason": "Not octopus anatomy/proof for the three-heart claim; unrelated/generic circulatory result."
+      }
+    ],
+    "safe_overlay_alternative": {
+      "use_source_type": "rights-safe real octopus still already in source_rework candidates, pending plate QC",
+      "overlay_type": "agent-created simple abstract pulse-dot/ring overlay only; no labels, no text, no cutaway, no fake organs",
+      "beat_1_three_hearts": "Place exactly three small soft pulse dots/rings on the visible mantle/body area as abstract claim markers, not anatomical organ locations.",
+      "beat_2_two_gill_hearts": "Show exactly two synchronized side/gill-area pulse dots/rings with subtle short flow glows toward the gill region; remove any third marker for this beat.",
+      "beat_3_one_systemic_heart": "Show exactly one central/body pulse dot/ring, followed by a subtle body-wide glow/flow through mantle and arms; do not label it.",
+      "gate_requirement": "Only apply overlays after the real octopus plate passes contact-sheet QC for no source text/watermark/logos, intact anatomy, crop safety, and license/attribution."
+    }
+  },
+  "next_gate": "Build/review contact sheet and verify no watermarks/text/artifacts before any WAYS render."
+}

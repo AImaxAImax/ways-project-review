@@ -1,0 +1,62 @@
+{
+  "reviewed_at": "2026-05-26T08:46:54",
+  "source": "manual ChatGPT / GPT Image 2 uploads from user",
+  "contact_sheet": "outputs/gpt_image2_manual_v24_rest_contact_sheet.jpg",
+  "saved": [
+    {
+      "label": "shot_04_deep_time_timeline",
+      "file": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "source": "/home/joshn/.hermes/image_cache/img_f190ed664aa0.jpeg",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "label": "shot_05_first_trees_after_sharks",
+      "file": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "source": "/home/joshn/.hermes/image_cache/img_795c8d04e17a.jpeg",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "label": "shot_06_present_day_wonder",
+      "file": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "source": "/home/joshn/.hermes/image_cache/img_2063bce412e3.jpeg",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "label": "shot_07_final_survivor",
+      "file": "assets/gpt_image_2_manual_v24/shot07_shark_survivor_split_world_v01.jpeg",
+      "source": "/home/joshn/.hermes/image_cache/img_bd3be59b1e95.jpeg",
+      "width": 941,
+      "height": 1672
+    }
+  ],
+  "provisional_review": {
+    "shot_04_deep_time_timeline": {
+      "file": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "decision": "STRONG HOLD",
+      "reason": "Most literal deep-time frame: vertical rock layers, fossils, ancient sea, sharks below, early land life above. Very distinct from the other shots.",
+      "use_for": "400 million years / deep time / before trees timeline beat"
+    },
+    "shot_05_first_trees_after_sharks": {
+      "file": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "decision": "HOLD, but not for before-forests",
+      "reason": "Beautiful coastal early-forest/proto-tree world. It should be used only when the narration says trees/plants finally arrive, not for no-forest beats.",
+      "use_for": "first forests appear after sharks / world changes beat"
+    },
+    "shot_06_present_day_wonder": {
+      "file": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "decision": "STRONG HOLD",
+      "reason": "Unique modern POV with child silhouette, aquarium glass, shark and fossil wall. Great emotional human-scale reset.",
+      "use_for": "present-day viewer / this is still with us / aquarium wonder beat"
+    },
+    "shot_07_final_survivor": {
+      "file": "assets/gpt_image_2_manual_v24/shot07_shark_survivor_split_world_v01.jpeg",
+      "decision": "STRONG HOLD",
+      "reason": "Clean final survivor image: lonely shark under ancient shore, huge negative space for closing line/caption.",
+      "use_for": "final line: a survivor from a world before forests"
+    }
+  },
+  "important_note": "The set now has strong visual variety: proof macro, object gag, geology timeline, first-forest coastline, aquarium viewer, final split-water survivor."
+}

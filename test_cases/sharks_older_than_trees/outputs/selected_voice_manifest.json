@@ -1,0 +1,18 @@
+{
+  "selected_voice": "Roger - Laid-Back, Casual, Resonant",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+  "voice_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/01_warm_older_brother_uncle.mp3",
+  "voice_duration_sec": 23.954,
+  "rough_cut_with_selected_voice": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/sharks_older_than_trees_roger_voice_rough_cut.mp4",
+  "final_duration_sec": 23.916,
+  "slide_durations_sec": [
+    2.245,
+    1.683,
+    5.56,
+    3.384,
+    4.753,
+    3.341,
+    3.139
+  ],
+  "note": "Roger selected by user as good fit for now. This rough cut retimes placeholder slides to the ElevenLabs Roger narration."
+}

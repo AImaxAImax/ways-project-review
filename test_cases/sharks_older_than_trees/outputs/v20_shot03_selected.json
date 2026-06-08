@@ -1,0 +1,24 @@
+{
+  "shot": "03 \u2014 Before forests. Before apples. Before squirrels had anywhere to hide nuts.",
+  "selected_current_hold": "v20 variant 05",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v20/shot03_before_forests_apples_squirrels_v20_v05_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v20_shot03_prop_trio_no_leaves/v20_shot03_prop_trio_no_leaves_v05_00001_.png",
+  "contact_sheets": [
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v18_shot03_absence_gag_contact_sheet.jpg",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v19_shot03_no_nature_stage_contact_sheet.jpg",
+    "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v20_shot03_prop_trio_no_leaves_contact_sheet.jpg"
+  ],
+  "rationale": [
+    "Best current continuation of the v15/v16 premium teal museum-stage style.",
+    "Avoids the big v18/v19 failure: no real forest backdrop, no obvious trees/plants/grass/leaves.",
+    "Apple/red fruit is clear and mobile-readable; squirrel read is clear; stage-camera motion would work well.",
+    "Distinct from Shots 1 and 2 while preserving lighting/material language."
+  ],
+  "caveat": "Still not a final lock: nut/acorn is not clear enough and there are multiple squirrel-like figures. If we refine, use v20_05 as style/composition target but force one squirrel and a larger separate brown nut/acorn.",
+  "rejected_lessons": [
+    "Using tree/forest/branch/leaf words in the positive prompt instantly generated real forest scenes, even when the intent was ghost/absence icons.",
+    "Replacing apple with \u201cred round fruit\u201d reduced leaves but the model still over-indexed on squirrel characters.",
+    "For this line, a premium stage/proof gag is better than any outdoor prompt."
+  ],
+  "motion_note": "Use a subtle stage-camera slide/push, dust motes, and spotlight drift; do not I2V-animate the squirrel unless it stays pristine."
+}

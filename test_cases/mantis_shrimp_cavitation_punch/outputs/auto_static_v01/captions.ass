@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Caption,DejaVu Sans,92,&H00FFFFFF,&H0000D7FF,&H00000000,&H99000000,-1,0,0,0,100,100,0,0,1,8,3,5,90,90,120,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 6,0:00:00.00,0:00:03.92,Caption,,0,0,0,,{\c&H0000D7FF&}A mantis{\c&H00FFFFFF&} shrimp punch can make the water flash
+Dialogue: 6,0:00:03.92,0:00:07.83,Caption,,0,0,0,,{\c&H0000D7FF&}the animal{\c&H00FFFFFF&} is tiny\Nbut its club moves insanely fast
+Dialogue: 6,0:00:07.83,0:00:11.75,Caption,,0,0,0,,{\c&H0000D7FF&}that is{\c&H00FFFFFF&} cavitation
+Dialogue: 6,0:00:11.75,0:00:15.66,Caption,,0,0,0,,{\c&H0000D7FF&}the punch{\c&H00FFFFFF&} hits first
+Dialogue: 6,0:00:15.66,0:00:19.57,Caption,,0,0,0,,{\c&H0000D7FF&}then the{\c&H00FFFFFF&} bubble collapses\Nand hits again
+Dialogue: 6,0:00:19.57,0:00:23.49,Caption,,0,0,0,,{\c&H0000D7FF&}scientists filmed{\c&H00FFFFFF&} it\Nin high speed
+Dialogue: 6,0:00:23.49,0:00:27.41,Caption,,0,0,0,,{\c&H0000D7FF&}it does{\c&H00FFFFFF&} not just\Npunch prey
+Dialogue: 6,0:00:27.41,0:00:31.32,Caption,,0,0,0,,{\c&H0000D7FF&}the water\Npunches{\c&H00FFFFFF&} too

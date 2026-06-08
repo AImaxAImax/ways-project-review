@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "decisions": {
+    "sharks_older_than_trees:approve-public-quality": {
+      "schema_version": 1,
+      "decision_id": "sharks_older_than_trees:approve-public-quality",
+      "slug": "sharks_older_than_trees",
+      "gate": "Gate 5 final video review",
+      "action": "approve-public-quality",
+      "score": "8 private-draft OK",
+      "notes": "",
+      "reviewer": "Josh",
+      "reviewed_at": "2026-06-06T02:46:27Z",
+      "explicit_public_publish_authorization": null,
+      "requires_agent_followup": true
+    },
+    "sharks_older_than_trees:publish:authorize-public-publish": {
+      "schema_version": 1,
+      "decision_id": "sharks_older_than_trees:publish:authorize-public-publish",
+      "slug": "sharks_older_than_trees:publish",
+      "gate": "Gate 6 public publish authorization",
+      "action": "authorize-public-publish",
+      "score": "",
+      "notes": "",
+      "reviewer": "Josh",
+      "reviewed_at": "2026-06-06T02:46:33Z",
+      "explicit_public_publish_authorization": "Josh authorizes public publish for sharks_older_than_trees:publish via WAYS Human Attention Dashboard at 2026-06-06T02:46:33Z",
+      "requires_agent_followup": true
+    },
+    "sharks_older_than_trees:authorize-public-publish": {
+      "schema_version": 2,
+      "decision_id": "sharks_older_than_trees:authorize-public-publish",
+      "slug": "sharks_older_than_trees",
+      "gate": "Gate 6 public publish authorization",
+      "action": "authorize-public-publish",
+      "score": "",
+      "notes": "Josh approved via Discord button test flow; publish KLwp-KbIr9I",
+      "reviewer": "Josh",
+      "reviewed_at": "2026-06-06T03:38:14Z",
+      "source": "discord",
+      "discord_thread_id": "1512650920373256232",
+      "explicit_public_publish_authorization": "Josh authorizes public publish for sharks_older_than_trees via Discord WAYS QA at 2026-06-06T03:38:14Z",
+      "requires_agent_followup": true
+    },
+    "mantis_shrimp_cavitation_punch:reject-rework": {
+      "schema_version": 2,
+      "decision_id": "mantis_shrimp_cavitation_punch:reject-rework",
+      "slug": "mantis_shrimp_cavitation_punch",
+      "gate": "Gate 5 final video review",
+      "action": "reject-rework",
+      "score": "",
+      "notes": "Josh: not say-dog-see-dog; it is just pictures. Hold candidate internal and rebuild only with literal matching visual proof/motion for cavitation flash, bubble collapse, and second impact.",
+      "reviewer": "Josh",
+      "reviewed_at": "2026-06-06T04:54:43Z",
+      "source": "discord",
+      "discord_thread_id": "1512650920373256232",
+      "explicit_public_publish_authorization": null,
+      "requires_agent_followup": true
+    }
+  },
+  "updated_at": "2026-06-06T04:54:43Z"
+}

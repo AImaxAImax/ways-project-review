@@ -1,0 +1,74 @@
+[
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 1,
+    "seed": 41271001,
+    "strength": 0.42,
+    "cfg": 4.3,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v01_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 2,
+    "seed": 41271002,
+    "strength": 0.5,
+    "cfg": 3.8,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v02_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 3,
+    "seed": 41271003,
+    "strength": 0.34,
+    "cfg": 4.8,
+    "steps": 26,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v03_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 4,
+    "seed": 41271004,
+    "strength": 0.58,
+    "cfg": 3.4,
+    "steps": 22,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v04_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 5,
+    "seed": 41271005,
+    "strength": 0.45,
+    "cfg": 5.0,
+    "steps": 26,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v05_00001_.png"
+  },
+  {
+    "shot": "03_apple_squirrel_acorn_stage",
+    "variant": 6,
+    "seed": 41271006,
+    "strength": 0.62,
+    "cfg": 3.2,
+    "steps": 24,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12_guides/shot03_prop_trio_black_stage_guide.png",
+    "prompt": "premium tactile stop-motion paper and clay diorama, handcrafted miniature, macro studio photography, warm museum spotlights, polished family science editorial frame, whimsical dry comedy, single black cyclorama studio stage, bare slate floor, three unmistakable separate prop characters displayed like evidence: left bright red apple, center cute gray squirrel standing upright with fluffy tail, right large brown acorn, clear silhouettes, separated spacing, dramatic object shadows, high production value, clean negative space for editor captions, visually unique tabletop gag frame, no picture frame border",
+    "negative": "tree, trees, forest, woods, woodland, plant, plants, vegetation, leaves, leaf, grass, fern, palm, bush, branches, flowers, moss, jungle, orchard, mountains, outdoor landscape, sky, horizon, snow, many apples, many squirrels, many nuts, ocean, underwater, shark, fish, coral, kelp, beach, picture frame, wooden frame, poster border, readable text, letters, numbers, logo, watermark, caption, sign, label, scary, blood, gore, horror, blurry, low quality, malformed squirrel, extra limbs, crowded, duplicate characters, hidden apple, hidden acorn",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v12b_shot03_prop_trio_stage/v12b_shot03_prop_trio_stage_v06_00001_.png"
+  }
+]

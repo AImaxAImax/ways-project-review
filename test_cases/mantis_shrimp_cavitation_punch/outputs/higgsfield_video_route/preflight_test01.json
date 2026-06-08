@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-06-06T23:11:13.432150Z",
+  "route": "Higgsfield browser UI via CDP",
+  "page": "https://higgsfield.ai/ai/video",
+  "model": "Seedance 2.0 GENERAL",
+  "duration": "8s",
+  "ratio": "9:16",
+  "resolution": "480p",
+  "generate_button_text": "Generate 48 24",
+  "discounted_credit_cost_observed": "24",
+  "full_cost_observed": "48",
+  "safety_decision": "Proceed with exactly one minimum-resolution paid test because user approved paid route if verified; cost reduced from 72 at 1080p to 24 at 480p, 9:16 set explicitly.",
+  "prompt_path": "/mnt/c/dev/curious-shorts/test_cases/mantis_shrimp_cavitation_punch/outputs/higgsfield_video_route/higgsfield_mantis_mechanism_test01_prompt.txt"
+}

@@ -1,0 +1,6 @@
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat01.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat02.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat03.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat04.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat05.wav'
+file '/mnt/c/dev/curious-shorts/test_cases/wood_frog_freeze_survival/outputs/final_vo_v16/fit/beat06.wav'

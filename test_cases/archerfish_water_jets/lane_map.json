@@ -1,0 +1,27 @@
+{
+  "slug": "archerfish_water_jets",
+  "version": 1,
+  "confirmed_by_human_gate_2": false,
+  "lanes": {
+    "shot01": {
+      "lane": "public_source_or_clean_generated_proof_plate",
+      "reason": "Gate 2 must prove water jet/action clearly before render."
+    },
+    "shot02": {
+      "lane": "public_source_or_clean_generated_proof_plate",
+      "reason": "Gate 2 must prove water jet/action clearly before render."
+    },
+    "shot03": {
+      "lane": "public_source_or_clean_generated_proof_plate",
+      "reason": "Gate 2 must prove water jet/action clearly before render."
+    },
+    "shot04": {
+      "lane": "public_source_or_clean_generated_proof_plate",
+      "reason": "Gate 2 must prove water jet/action clearly before render."
+    },
+    "shot05": {
+      "lane": "public_source_or_clean_generated_proof_plate",
+      "reason": "Gate 2 must prove water jet/action clearly before render."
+    }
+  }
+}

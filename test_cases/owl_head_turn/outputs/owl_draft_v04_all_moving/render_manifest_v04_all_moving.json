@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-08T16:03:21Z",
+  "strategy": "all segments I2V moving, 49-frame clips slowed to VO",
+  "clips": [
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot01_owl_all_moving_wan22_432x768_49f_seed944101.mp4",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot02_owl_all_moving_wan22_432x768_49f_seed944102.mp4",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot03_owl_all_moving_wan22_432x768_49f_seed944103.mp4",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot04_owl_all_moving_wan22_432x768_49f_seed944104.mp4"
+  ],
+  "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3",
+  "outputs": {
+    "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_all_moving_clean_v04.mp4",
+    "captioned": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_captioned_draft_v04_all_moving.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/owl_head_turn_discord_preview_v04_all_moving.mp4",
+    "sheet": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/contact_sheet_owl_draft_v04_all_moving.jpg",
+    "qa": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v04_all_moving/QA_OWL_DRAFT_V04_ALL_MOVING.md"
+  },
+  "ffprobe_captioned": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "3825662"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "161784"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "9757026"
+    }
+  },
+  "ffprobe_preview": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 540,
+        "height": 960,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "791512"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "131431"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "2271204"
+    }
+  }
+}

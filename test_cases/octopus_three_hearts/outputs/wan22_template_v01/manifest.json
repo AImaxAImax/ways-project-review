@@ -1,0 +1,130 @@
+{
+  "slug": "octopus_three_hearts",
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts",
+  "output_dir": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01",
+  "voiceover": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "writable_dirs": [],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/sdxl_wan_template_v01_plates/shot01_octopus_three_hearts_sdxl_plate.png",
+      "duration": 2.762,
+      "caption": "AN OCTOPUS HAS\nTHREE HEARTS",
+      "seed": 960201,
+      "prompt": "premium underwater documentary image-to-video from the exact octopus still. Preserve octopus anatomy, all arms connected to body, realistic underwater style. Add subtle true motion: water particles, gentle arm sway, slow camera creep, soft light shimmer. No detached tentacles, no text, no logos, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot01_wan22_432x768_25f_seed960201.mp4",
+      "prompt_id": "f12cdd19-d656-48c6-bf61-61f91237da67",
+      "uploaded_image": "shot01_octopus_three_hearts_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "01_960201_00001_.mp4",
+        "subfolder": "octopus_three_hearts",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "02",
+      "image": "assets/sdxl_wan_template_v01_plates/shot02_octopus_three_hearts_sdxl_plate.png",
+      "duration": 3.223,
+      "caption": "TWO PUSH THROUGH\nTHE GILLS",
+      "seed": 960202,
+      "prompt": "premium underwater documentary image-to-video from the exact octopus still. Preserve octopus anatomy, all arms connected to body, realistic underwater style. Add subtle true motion: water particles, gentle arm sway, slow camera creep, soft light shimmer. No detached tentacles, no text, no logos, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot02_wan22_432x768_25f_seed960202.mp4",
+      "prompt_id": "ea529cf6-b557-491d-a924-f40867751779",
+      "uploaded_image": "shot02_octopus_three_hearts_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "02_960202_00001_.mp4",
+        "subfolder": "octopus_three_hearts",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "03",
+      "image": "assets/sdxl_wan_template_v01_plates/shot03_octopus_three_hearts_sdxl_plate.png",
+      "duration": 3.53,
+      "caption": "ONE POWERS\nTHE BODY",
+      "seed": 960203,
+      "prompt": "premium underwater documentary image-to-video from the exact octopus still. Preserve octopus anatomy, all arms connected to body, realistic underwater style. Add subtle true motion: water particles, gentle arm sway, slow camera creep, soft light shimmer. No detached tentacles, no text, no logos, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot03_wan22_432x768_25f_seed960203.mp4",
+      "prompt_id": "1d74c059-d5e4-41c1-8ae2-4f8e00fcff4e",
+      "uploaded_image": "shot03_octopus_three_hearts_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "03_960203_00001_.mp4",
+        "subfolder": "octopus_three_hearts",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "04",
+      "image": "assets/sdxl_wan_template_v01_plates/shot04_octopus_three_hearts_sdxl_plate.png",
+      "duration": 3.376,
+      "caption": "SWIMMING SLOWS\nONE DOWN",
+      "seed": 960204,
+      "prompt": "premium underwater documentary image-to-video from the exact octopus still. Preserve octopus anatomy, all arms connected to body, realistic underwater style. Add subtle true motion: water particles, gentle arm sway, slow camera creep, soft light shimmer. No detached tentacles, no text, no logos, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot04_wan22_432x768_25f_seed960204.mp4",
+      "prompt_id": "eaeaf961-9f29-475e-8a4d-a5dd7df620d7",
+      "uploaded_image": "shot04_octopus_three_hearts_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "04_960204_00001_.mp4",
+        "subfolder": "octopus_three_hearts",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "05",
+      "image": "assets/sdxl_wan_template_v01_plates/shot05_octopus_three_hearts_sdxl_plate.png",
+      "duration": 3.069,
+      "caption": "CRAWLING CAN\nBE EASIER",
+      "seed": 960205,
+      "prompt": "premium underwater documentary image-to-video from the exact octopus still. Preserve octopus anatomy, all arms connected to body, realistic underwater style. Add subtle true motion: water particles, gentle arm sway, slow camera creep, soft light shimmer. No detached tentacles, no text, no logos, no scene cut.",
+      "clip": "outputs/wan22_template_v01/clips/shot05_wan22_432x768_25f_seed960205.mp4",
+      "prompt_id": "c0120cbf-b1f3-4895-8272-1b8f8c5e7452",
+      "uploaded_image": "shot05_octopus_three_hearts_sdxl_plate.png",
+      "comfy_output": {
+        "filename": "05_960205_00001_.mp4",
+        "subfolder": "octopus_three_hearts",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    }
+  ],
+  "created_at": "2026-06-05T22:51:49",
+  "outputs": {
+    "manifest": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/manifest.json",
+    "manifest_partial": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/manifest_partial.json",
+    "silent": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_silent_1080.mp4",
+    "master": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_master_1080.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/octopus_three_hearts_wan22_preview_720.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/contact_sheet_octopus_three_hearts.jpg",
+    "ffprobe_master": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/ffprobe_master.json",
+    "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/wan22_template_v01/README_QA_FINAL.md"
+  }
+}

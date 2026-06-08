@@ -1,0 +1,32 @@
+[
+  {
+    "path": "outputs/gate2_plate_qc/feed_hook_variants_v05/wood_frog_hook_direct_fact_freeze_solid.jpg",
+    "role": "direct_fact_freeze_solid",
+    "qa_note": "Direct fact: frozen-looking real frog with internal ice overlay. Best for caption A FROG CAN FREEZE SOLID.",
+    "source_basis": [
+      "source_01.jpg",
+      "source_02.jpg",
+      "source_04.jpg"
+    ]
+  },
+  {
+    "path": "outputs/gate2_plate_qc/feed_hook_variants_v05/wood_frog_hook_contradiction_freeze_then_thaw_split.jpg",
+    "role": "contradiction_freeze_then_thaw_split",
+    "qa_note": "Contradiction/comparison: cold/frozen frog vs thaw/spring frog. Strong sound-off arc, but split-screen may feel less cinematic.",
+    "source_basis": [
+      "source_01.jpg",
+      "source_02.jpg",
+      "source_04.jpg"
+    ]
+  },
+  {
+    "path": "outputs/gate2_plate_qc/feed_hook_variants_v05/wood_frog_hook_visual_proof_heart_pause.jpg",
+    "role": "visual_proof_heart_pause",
+    "qa_note": "Visual proof: frozen body with pulse-stop motif, avoids heart icon/UI text but should stay as later beat, not opener.",
+    "source_basis": [
+      "source_01.jpg",
+      "source_02.jpg",
+      "source_04.jpg"
+    ]
+  }
+]

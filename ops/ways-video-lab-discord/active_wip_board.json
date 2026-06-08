@@ -1,0 +1,1246 @@
+{
+  "generated_at": "2026-06-08T16:04:54Z",
+  "cards": [
+    {
+      "slug": "mantis_shrimp_cavitation_punch",
+      "hook": "A mantis shrimp punch can make the water flash.",
+      "core_fact": "Smasher mantis shrimp strikes can create cavitation bubbles; collapse of those bubbles adds a second impact.",
+      "status_column": "Monitor Only",
+      "cohort_tag": "first10_item_002",
+      "test_variable": "public_domain_source_photo_static_to_wan22_upgrade",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "lane_map": {},
+      "draft_score": 8.0,
+      "publish_score": null,
+      "youtube_video_id": "4lnxNc3nKz4",
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "artifact_folder": "test_cases/mantis_shrimp_cavitation_punch/",
+      "blocking_gate": null,
+      "created_at": "2026-06-06T03:46:14Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "A mantis shrimp punch can make the water flash.",
+            "caption": "A mantis shrimp punch can make the water flash",
+            "visual": "photoreal macro shrimp impact with cavitation bubbles and shock ripple"
+          },
+          {
+            "voiceover": "The animal is tiny, but its club moves so fast that the water briefly tears open into bubbles.",
+            "caption": "the animal is tiny / but its club moves insanely fast",
+            "visual": "tiny mantis shrimp portrait followed by club/impact macro"
+          },
+          {
+            "voiceover": "That is called cavitation.",
+            "caption": "that is cavitation",
+            "visual": "bubble cloud forming beside impact, no diagram labels"
+          },
+          {
+            "voiceover": "The punch hits first.",
+            "caption": "the punch hits first",
+            "visual": "club reaching shell/prey proxy, clear first impact"
+          },
+          {
+            "voiceover": "Then the bubble collapses and hits again.",
+            "caption": "then the bubble collapses / and hits again",
+            "visual": "collapsing bubble cloud/shock ripple near target"
+          },
+          {
+            "voiceover": "Scientists filmed this shock in high speed, because the second hit happens too fast for our eyes.",
+            "caption": "scientists filmed it / in high speed",
+            "visual": "high-speed macro sequence/contact-sheet-like visual without UI/readouts"
+          },
+          {
+            "voiceover": "So the mantis shrimp does not just punch prey.",
+            "caption": "it does not just / punch prey",
+            "visual": "shrimp poised after strike, educational wonder not scary"
+          },
+          {
+            "voiceover": "It punches the water so hard the water punches too.",
+            "caption": "the water / punches too",
+            "visual": "final bubble-collapse ripple around shrimp/impact"
+          }
+        ],
+        "sources": [
+          "Nature: Deadly strike mechanism of a mantis shrimp, DOI 10.1038/428819a, https://www.nature.com/articles/428819a",
+          "Journal of Experimental Biology: Elastic Energy Powers Mantis Shrimp Punch, DOI 10.1242/jeb.040691, https://doi.org/10.1242/jeb.040691",
+          "Bioinspiration & Biomimetics: A physical model of the extreme mantis shrimp strike, DOI 10.1088/1748-3182/9/1/016014"
+        ]
+      },
+      "sources": [
+        "Nature: Deadly strike mechanism of a mantis shrimp, DOI 10.1038/428819a, https://www.nature.com/articles/428819a",
+        "Journal of Experimental Biology: Elastic Energy Powers Mantis Shrimp Punch, DOI 10.1242/jeb.040691, https://doi.org/10.1242/jeb.040691",
+        "Bioinspiration & Biomimetics: A physical model of the extreme mantis shrimp strike, DOI 10.1088/1748-3182/9/1/016014"
+      ],
+      "beats": [
+        {
+          "voiceover": "A mantis shrimp punch can make the water flash.",
+          "caption": "A mantis shrimp punch can make the water flash",
+          "visual": "photoreal macro shrimp impact with cavitation bubbles and shock ripple"
+        },
+        {
+          "voiceover": "The animal is tiny, but its club moves so fast that the water briefly tears open into bubbles.",
+          "caption": "the animal is tiny / but its club moves insanely fast",
+          "visual": "tiny mantis shrimp portrait followed by club/impact macro"
+        },
+        {
+          "voiceover": "That is called cavitation.",
+          "caption": "that is cavitation",
+          "visual": "bubble cloud forming beside impact, no diagram labels"
+        },
+        {
+          "voiceover": "The punch hits first.",
+          "caption": "the punch hits first",
+          "visual": "club reaching shell/prey proxy, clear first impact"
+        },
+        {
+          "voiceover": "Then the bubble collapses and hits again.",
+          "caption": "then the bubble collapses / and hits again",
+          "visual": "collapsing bubble cloud/shock ripple near target"
+        },
+        {
+          "voiceover": "Scientists filmed this shock in high speed, because the second hit happens too fast for our eyes.",
+          "caption": "scientists filmed it / in high speed",
+          "visual": "high-speed macro sequence/contact-sheet-like visual without UI/readouts"
+        },
+        {
+          "voiceover": "So the mantis shrimp does not just punch prey.",
+          "caption": "it does not just / punch prey",
+          "visual": "shrimp poised after strike, educational wonder not scary"
+        },
+        {
+          "voiceover": "It punches the water so hard the water punches too.",
+          "caption": "the water / punches too",
+          "visual": "final bubble-collapse ripple around shrimp/impact"
+        }
+      ],
+      "gate_1_status": "auto_approved_internal",
+      "rework_reason": "Already made/public-posted per Josh; monitor only unless Josh reopens.",
+      "source_policy": "Wikimedia/public-source photos first; local Wan2.2 upgrade when available; no paid credits without explicit approval.",
+      "automation_policy": "do_not_rebuild_unless_user_reopens",
+      "outputs": {
+        "ffprobe_publish": "outputs/wan_motion_v03_clean/ffprobe_captioned_master.json",
+        "contact_sheet": "outputs/wan_motion_v03_clean/contact_sheet_captioned_hook_v03.jpg",
+        "publish_candidate_captioned": "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_1080.mp4",
+        "discord_preview_captioned": "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_720.mp4",
+        "captions_ass": "outputs/wan_motion_v03_clean/captions_hook_v03.ass",
+        "captions_srt": "outputs/wan_motion_v03_clean/captions_hook_v03.srt",
+        "clean_master_no_captions": "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_master_1080.mp4",
+        "clean_preview_no_captions": "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_preview_720.mp4",
+        "qa_readme": "outputs/wan_motion_v03_clean/README_QA_FINAL.md"
+      },
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "Clean Wan/no-overlay v03 candidate-review package exists; not public upload final until Josh phone-size Gate 5 review and explicit Gate 6 authorization."
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_1080.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "wan_motion_v03_clean",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "Candidate-review pass from README_QA_FINAL; remaining risks are full-speed phone review, softness in some beats, and final voice/caption approval."
+          }
+        ]
+      },
+      "latest_internal_candidate": "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_1080.mp4",
+      "human_feedback": [
+        {
+          "at": "2026-06-06T04:54:43Z",
+          "reviewer": "Josh",
+          "feedback": "This is not say dog see dog it’s just pictures",
+          "action": "reject-rework"
+        },
+        {
+          "at": "2026-06-06T08:49:59Z",
+          "reviewer": "Josh",
+          "feedback": "Option 1",
+          "decision": "keep_blocked_continue_source_proof",
+          "action": "source_acquisition_rework"
+        }
+      ],
+      "source_proof_requirements": {
+        "must_show": [
+          "cavitation flash",
+          "bubble collapse",
+          "second impact"
+        ],
+        "hard_fail": "topic-adjacent still/photo montage without literal action/proof",
+        "next_lane": "source acquisition or verified generation lane, then rebuild Gate 3 candidate"
+      },
+      "latest_candidate": "test_cases/mantis_shrimp_cavitation_punch/outputs/motion_graphic_rework_v02/publish_candidate_captioned.mp4",
+      "latest_preview": "test_cases/mantis_shrimp_cavitation_punch/outputs/motion_graphic_rework_v02/discord_preview_captioned.mp4",
+      "latest_qa": "test_cases/mantis_shrimp_cavitation_punch/outputs/motion_graphic_rework_v02/QA_REVIEW.md",
+      "notes": "v02 rejected for overlay artifacts/Ken Burns feel. Proxy also rejected due pixel/mesh artifacts. Correct lane is clean source plates + Wan I2V like shark template; first Wan clip completed clean but full video still rendering/QA needed.",
+      "latest_rejection": "test_cases/mantis_shrimp_cavitation_punch/outputs/motion_graphic_rework_v02/JOSH_REJECTION_OVERLAY_ARTIFACTS_KEN_BURNS.md",
+      "latest_status": "test_cases/mantis_shrimp_cavitation_punch/outputs/MANTIS_V03_CORRECTION_STATUS.md",
+      "scrap_reason": "Already made per Josh in Discord thread; do not continue this active candidate.",
+      "scrapped_at": "2026-06-07T04:11:07Z",
+      "monitor_notes": [
+        {
+          "at": "2026-06-07T04:11:07Z",
+          "note": "Josh said this video is already made; moved to monitor-only and next active candidate should be selected."
+        },
+        {
+          "at": "2026-06-07T07:22:00Z",
+          "note": "Cron fixed stale board state: mantis was re-promoted from old local artifacts; returned to monitor-only/do-not-rebuild."
+        }
+      ],
+      "youtube_url": "https://youtu.be/4lnxNc3nKz4",
+      "youtube_shorts_url": "https://youtube.com/shorts/4lnxNc3nKz4"
+    },
+    {
+      "slug": "saturn_hexagon_storm",
+      "hook": "Saturn has a hexagon storm.",
+      "core_fact": "A giant hexagon-shaped jet stream wraps around Saturn's north pole, with storms and a polar vortex inside.",
+      "status_column": "Plate QC Failed - Saturn Proof Plates v01",
+      "cohort_tag": "first10_space_080",
+      "test_variable": "nasa_source_cinematic_static_motion",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "lane_map": {},
+      "draft_score": 5.0,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "artifact_folder": "test_cases/saturn_hexagon_storm/",
+      "blocking_gate": "Gate 2 - Plate QC",
+      "created_at": "2026-06-06T03:34:43Z",
+      "source_policy": "NASA/public-domain first; no paid credits.",
+      "gate_1_status": "auto_approved_internal",
+      "sources": [
+        "NASA/JPL PIA21052 Over Saturns Turbulent North",
+        "NASA/JPL PIA17122 Stormy North",
+        "NASA Image and Media Guidelines"
+      ],
+      "beats": [
+        {
+          "voiceover": "Saturn has a hexagon storm.",
+          "caption": "Saturn has a hexagon storm",
+          "visual": "Cassini-style north pole view where the hexagon reads instantly"
+        },
+        {
+          "voiceover": "It is not a drawing. It is a real jet stream around the planet's north pole.",
+          "caption": "not a drawing / a real jet stream",
+          "visual": "NASA north polar image, no extra labels"
+        },
+        {
+          "voiceover": "Each side is wider than Earth.",
+          "caption": "each side is wider than Earth",
+          "visual": "scale comparison implied by Saturn limb and tiny Earth proxy only if no text"
+        },
+        {
+          "voiceover": "And inside it, storms keep spinning.",
+          "caption": "storms keep spinning inside",
+          "visual": "polar vortex / cloud bands rotating feel"
+        },
+        {
+          "voiceover": "So one of the strangest shapes in space is weather.",
+          "caption": "a strange shape / made of weather",
+          "visual": "final cinematic Saturn pole pullback"
+        }
+      ],
+      "script": {
+        "beats": [
+          {
+            "voiceover": "Saturn has a hexagon storm.",
+            "caption": "Saturn has a hexagon storm",
+            "visual": "Cassini-style north pole view where the hexagon reads instantly"
+          },
+          {
+            "voiceover": "It is not a drawing. It is a real jet stream around the planet's north pole.",
+            "caption": "not a drawing / a real jet stream",
+            "visual": "NASA north polar image, no extra labels"
+          },
+          {
+            "voiceover": "Each side is wider than Earth.",
+            "caption": "each side is wider than Earth",
+            "visual": "scale comparison implied by Saturn limb and tiny Earth proxy only if no text"
+          },
+          {
+            "voiceover": "And inside it, storms keep spinning.",
+            "caption": "storms keep spinning inside",
+            "visual": "polar vortex / cloud bands rotating feel"
+          },
+          {
+            "voiceover": "So one of the strangest shapes in space is weather.",
+            "caption": "a strange shape / made of weather",
+            "visual": "final cinematic Saturn pole pullback"
+          }
+        ],
+        "sources": [
+          "NASA/JPL PIA21052 Over Saturns Turbulent North",
+          "NASA/JPL PIA17122 Stormy North",
+          "NASA Image and Media Guidelines"
+        ]
+      },
+      "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+      "latest_internal_candidate": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+      "outputs": {
+        "ffprobe_publish": "outputs/final_polish_wan22_template_v01/ffprobe_publish_candidate.json",
+        "contact_sheet": "outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+        "publish_candidate_captioned": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+        "discord_preview_captioned": "outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+        "captions_ass": "outputs/final_polish_wan22_template_v01/captions.ass",
+        "captions_srt": "outputs/final_polish_wan22_template_v01/captions.srt",
+        "audio_report": {
+          "mean_lufs": -15.0,
+          "true_peak_db": -1.0
+        }
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "wan22_final_polish",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "Wan2.2 template final-polish candidate; still requires phone-size Gate 5 human publish review."
+          },
+          {
+            "shot_id": "josh_final_review_20260606T085615Z",
+            "severity": "fail",
+            "note": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good; Saturn especially has text artifacts."
+          }
+        ]
+      },
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "Spec pass; Wan2.2 final-polish internal candidate present. Public publish still requires Gate 5/6 review."
+      },
+      "rework_reason": "Josh rejection: 5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good; Saturn especially has text artifacts. Josh rejection update: also did not follow the approved WAYS template; voice was wrong.",
+      "human_feedback": [
+        {
+          "at": "2026-06-06T08:56:15Z",
+          "reviewer": "Josh",
+          "feedback": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good; Saturn especially has text artifacts.",
+          "action": "reject_rework_source_quality_and_say_dog_see_dog",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:02:45Z",
+          "reviewer": "Josh",
+          "feedback": "It clearly did not follow our template; voice was not even right.",
+          "action": "reject_template_voice_source_render",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:13:07Z",
+          "reviewer": "Hermes agents",
+          "feedback": "Parallel source-acquisition/rework lanes started after Josh rejection. No render/publish.",
+          "action": "source_acquisition_started"
+        }
+      ],
+      "source_quality_requirements": {
+        "must_fix": [
+          "source plates must be premium before render",
+          "unique say-dog-see-dog visual for every claim",
+          "no AI artifacts",
+          "zero non-caption text or text-like artifacts"
+        ],
+        "old_artifacts_status": "audit_only_not_ready_for_review"
+      },
+      "template_requirements": {
+        "approved_voice": "elevenlabs_george",
+        "must_match": "approved WAYS shark/Wan template including voice/caption/style/timing standards",
+        "hard_fail": "wrong voice or template drift even if export specs pass",
+        "old_artifacts_status": "audit_only_not_ready_for_review"
+      },
+      "rework_artifacts": {
+        "strict_rework_packet": "SATURN_HEXAGON_STORM_STRICT_WAYS_REWORK_PACKET.md",
+        "source_manifest": "assets/source_nasa/source_manifest.json",
+        "source_acquisition_status": "outputs/gate2_plate_qc/SOURCE_ACQUISITION_STATUS.md",
+        "last_agent_update": "2026-06-06T10:09:11Z",
+        "agent_note": "Saturn source acquisition is useful, but proof plates v01 are only 6-7/10 and blocked before render.",
+        "gate2_checkin": "ops/ways-video-lab-discord/SOURCE_GATE2_CHECKIN_20260606.md",
+        "saturn_proof_plates_v01": "test_cases/saturn_hexagon_storm/outputs/gate2_plate_qc/proof_plates_v01/",
+        "saturn_plate_qc": "test_cases/saturn_hexagon_storm/outputs/gate2_plate_qc/PLATE_QC.md"
+      }
+    },
+    {
+      "slug": "wombat_cube_poop",
+      "hook": "Wombats poop cubes.",
+      "core_fact": "Wombats are the only known animals that produce cube-shaped scat; researchers link the shape to how the intestine stretches and moves.",
+      "cohort_tag": "first10_item_005",
+      "test_variable": "real_animal_source_plus_object_overlay_semantics",
+      "artifact_folder": "test_cases/wombat_cube_poop/",
+      "source_policy": "Wikimedia/public-source wombat photos plus tiny local object overlay; no paid credits.",
+      "sources": [
+        "Soft Matter: Intestines of non-uniform stiffness mold the corners of wombat feces, DOI 10.1039/D0SM01230K",
+        "BBC/Nature coverage of wombat cube feces research, source for public explanation only"
+      ],
+      "beats": [
+        {
+          "voiceover": "Wombats poop cubes.",
+          "caption": "Wombats poop cubes",
+          "visual": "real wombat in grass, cute not childish, instant hook"
+        },
+        {
+          "voiceover": "Not perfect toy blocks, but little cube-shaped pellets.",
+          "caption": "little cube shaped pellets",
+          "visual": "macro-safe tiny cube scat proxy beside natural ground"
+        },
+        {
+          "voiceover": "Scientists think the shape comes from uneven stretching inside the intestine.",
+          "caption": "uneven stretching / inside the intestine",
+          "visual": "non-text anatomical motion proxy, no diagram labels"
+        },
+        {
+          "voiceover": "The corners form before the poop ever lands.",
+          "caption": "the corners form first",
+          "visual": "process visual, avoid fake labels"
+        },
+        {
+          "voiceover": "So the weirdest bathroom fact in nature is also physics.",
+          "caption": "bathroom fact / plus physics",
+          "visual": "wombat walking away, family-friendly final beat"
+        }
+      ],
+      "status_column": "Monitor Only",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "draft_score": 6.2,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "blocking_gate": null,
+      "created_at": "2026-06-06T04:38:17Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "Wombats poop cubes.",
+            "caption": "Wombats poop cubes",
+            "visual": "real wombat in grass, cute not childish, instant hook"
+          },
+          {
+            "voiceover": "Not perfect toy blocks, but little cube-shaped pellets.",
+            "caption": "little cube shaped pellets",
+            "visual": "macro-safe tiny cube scat proxy beside natural ground"
+          },
+          {
+            "voiceover": "Scientists think the shape comes from uneven stretching inside the intestine.",
+            "caption": "uneven stretching / inside the intestine",
+            "visual": "non-text anatomical motion proxy, no diagram labels"
+          },
+          {
+            "voiceover": "The corners form before the poop ever lands.",
+            "caption": "the corners form first",
+            "visual": "process visual, avoid fake labels"
+          },
+          {
+            "voiceover": "So the weirdest bathroom fact in nature is also physics.",
+            "caption": "bathroom fact / plus physics",
+            "visual": "wombat walking away, family-friendly final beat"
+          }
+        ],
+        "sources": [
+          "Soft Matter: Intestines of non-uniform stiffness mold the corners of wombat feces, DOI 10.1039/D0SM01230K",
+          "BBC/Nature coverage of wombat cube feces research, source for public explanation only"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "do_not_rebuild_unless_user_reopens",
+      "outputs": {
+        "ffprobe_publish": "outputs/final_polish_wan22_template_v01/ffprobe_publish_candidate.json",
+        "contact_sheet": "outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+        "publish_candidate_captioned": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+        "discord_preview_captioned": "outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+        "captions_ass": "outputs/final_polish_wan22_template_v01/captions.ass",
+        "captions_srt": "outputs/final_polish_wan22_template_v01/captions.srt",
+        "audio_report": {
+          "mean_lufs": -15.0,
+          "true_peak_db": -1.0
+        }
+      },
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "Spec pass; Wan2.2 final-polish internal candidate present. Public publish still requires Gate 5/6 review."
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "wan22_final_polish",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "Wan2.2 template final-polish candidate; still requires phone-size Gate 5 human publish review."
+          }
+        ]
+      },
+      "latest_internal_candidate": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+      "rework_reason": null,
+      "scrap_reason": "User said wombat video has already been posted; scrap this internal rebuild from active WIP.",
+      "scrapped_at": "2026-06-06T08:44:59Z"
+    },
+    {
+      "slug": "octopus_three_hearts",
+      "hook": "An octopus has three hearts.",
+      "core_fact": "Two octopus hearts pump blood through the gills, while a third pumps blood to the rest of the body.",
+      "cohort_tag": "first10_ocean_011",
+      "test_variable": "public_aquarium_source_photo_plus_motion_graphic_overlay",
+      "artifact_folder": "test_cases/octopus_three_hearts/",
+      "source_policy": "Public-source/octopus reference photos; no paid credits; avoid fake anatomy in video lane.",
+      "sources": [
+        "Smithsonian Ocean: Octopus facts and biology overview",
+        "Encyclopaedia Britannica: cephalopod circulatory system overview"
+      ],
+      "beats": [
+        {
+          "voiceover": "An octopus has three hearts.",
+          "caption": "An octopus has three hearts",
+          "visual": "beautiful real octopus, calm full-body read"
+        },
+        {
+          "voiceover": "Two hearts push blood through the gills.",
+          "caption": "two hearts / push through the gills",
+          "visual": "two subtle pulse points near gill area, no labels"
+        },
+        {
+          "voiceover": "The third sends blood to the rest of the body.",
+          "caption": "the third / powers the body",
+          "visual": "single subtle body pulse, no diagram text"
+        },
+        {
+          "voiceover": "And when it swims, that body heart can slow down.",
+          "caption": "when it swims / one heart slows",
+          "visual": "octopus swimming motion, avoid detached tentacles"
+        },
+        {
+          "voiceover": "That is why crawling can be easier than swimming.",
+          "caption": "crawling can be easier",
+          "visual": "octopus moving along seafloor, anatomy-safe"
+        }
+      ],
+      "status_column": "Source Acquisition Blocked - Anatomy Proof Gap",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "draft_score": 5.0,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "blocking_gate": "Gate 2 - Source/Plate QC",
+      "created_at": "2026-06-06T04:38:17Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "An octopus has three hearts.",
+            "caption": "An octopus has three hearts",
+            "visual": "beautiful real octopus, calm full-body read"
+          },
+          {
+            "voiceover": "Two hearts push blood through the gills.",
+            "caption": "two hearts / push through the gills",
+            "visual": "two subtle pulse points near gill area, no labels"
+          },
+          {
+            "voiceover": "The third sends blood to the rest of the body.",
+            "caption": "the third / powers the body",
+            "visual": "single subtle body pulse, no diagram text"
+          },
+          {
+            "voiceover": "And when it swims, that body heart can slow down.",
+            "caption": "when it swims / one heart slows",
+            "visual": "octopus swimming motion, avoid detached tentacles"
+          },
+          {
+            "voiceover": "That is why crawling can be easier than swimming.",
+            "caption": "crawling can be easier",
+            "visual": "octopus moving along seafloor, anatomy-safe"
+          }
+        ],
+        "sources": [
+          "Smithsonian Ocean: Octopus facts and biology overview",
+          "Encyclopaedia Britannica: cephalopod circulatory system overview"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+      "outputs": {
+        "ffprobe_publish": "outputs/final_polish_wan22_template_v01/ffprobe_publish_candidate.json",
+        "contact_sheet": "outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+        "publish_candidate_captioned": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+        "discord_preview_captioned": "outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+        "captions_ass": "outputs/final_polish_wan22_template_v01/captions.ass",
+        "captions_srt": "outputs/final_polish_wan22_template_v01/captions.srt",
+        "audio_report": {
+          "mean_lufs": -15.0,
+          "true_peak_db": -1.0
+        }
+      },
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "Spec pass; Wan2.2 final-polish internal candidate present. Public publish still requires Gate 5/6 review."
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "wan22_final_polish",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "Wan2.2 template final-polish candidate; still requires phone-size Gate 5 human publish review."
+          },
+          {
+            "shot_id": "josh_final_review_20260606T085615Z",
+            "severity": "fail",
+            "note": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good."
+          }
+        ]
+      },
+      "latest_internal_candidate": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+      "rework_reason": "Josh rejection: 5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good. Josh rejection update: also did not follow the approved WAYS template; voice was wrong.",
+      "human_feedback": [
+        {
+          "at": "2026-06-06T08:56:15Z",
+          "reviewer": "Josh",
+          "feedback": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good.",
+          "action": "reject_rework_source_quality_and_say_dog_see_dog",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:02:45Z",
+          "reviewer": "Josh",
+          "feedback": "It clearly did not follow our template; voice was not even right.",
+          "action": "reject_template_voice_source_render",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:13:07Z",
+          "reviewer": "Hermes agents",
+          "feedback": "Parallel source-acquisition/rework lanes started after Josh rejection. No render/publish.",
+          "action": "source_acquisition_started"
+        }
+      ],
+      "source_quality_requirements": {
+        "must_fix": [
+          "source plates must be premium before render",
+          "unique say-dog-see-dog visual for every claim",
+          "no AI artifacts",
+          "zero non-caption text or text-like artifacts"
+        ],
+        "old_artifacts_status": "audit_only_not_ready_for_review"
+      },
+      "template_requirements": {
+        "approved_voice": "elevenlabs_george",
+        "must_match": "approved WAYS shark/Wan template including voice/caption/style/timing standards",
+        "hard_fail": "wrong voice or template drift even if export specs pass",
+        "old_artifacts_status": "audit_only_not_ready_for_review"
+      },
+      "rework_artifacts": {
+        "strict_rework_packet": "OCTOPUS_THREE_HEARTS_WAYS_REWORK_PACKET.md",
+        "source_manifest": "assets/source_rework/source_manifest.json",
+        "source_acquisition_status": "outputs/gate2_plate_qc/SOURCE_ACQUISITION_STATUS.md",
+        "last_agent_update": "2026-06-06T10:09:11Z",
+        "agent_note": "Real octopus candidates found, but no text-free right-safe anatomy source; next is rights recheck + simple pulse overlay plan only after plate QC.",
+        "gate2_checkin": "ops/ways-video-lab-discord/SOURCE_GATE2_CHECKIN_20260606.md"
+      }
+    },
+    {
+      "slug": "tardigrade_survival_mode",
+      "hook": "Tardigrades can pause their bodies.",
+      "core_fact": "When conditions are extreme, tardigrades can curl into a dry tun state and slow their metabolism dramatically until water returns.",
+      "cohort_tag": "first10_micro_014",
+      "test_variable": "microscope_source_motion_graphic_scale",
+      "artifact_folder": "test_cases/tardigrade_survival_mode/",
+      "source_policy": "Public microscope imagery plus motion graphics; no paid credits.",
+      "sources": [
+        "NASA: Tardigrades and space survival research overview",
+        "Current Biology / peer-reviewed tardigrade cryptobiosis literature for fact wording"
+      ],
+      "beats": [
+        {
+          "voiceover": "Tardigrades can pause their bodies.",
+          "caption": "Tardigrades can pause their bodies",
+          "visual": "microscope tardigrade close-up, cute but real"
+        },
+        {
+          "voiceover": "When things get too dry, they curl into a tiny tun.",
+          "caption": "too dry / tiny tun",
+          "visual": "curling body shape or before-after microscope proxy"
+        },
+        {
+          "voiceover": "Their metabolism drops so low it is almost like waiting on pause.",
+          "caption": "metabolism drops / like pause",
+          "visual": "stillness with subtle heartbeat/motion graphic, no text"
+        },
+        {
+          "voiceover": "Then when water comes back, some can wake up again.",
+          "caption": "water returns / they wake up",
+          "visual": "rehydration motion proxy, microscope look"
+        },
+        {
+          "voiceover": "It is one of nature's strangest survival tricks.",
+          "caption": "nature's strangest / survival trick",
+          "visual": "final tardigrade hero macro/microscope look"
+        }
+      ],
+      "status_column": "Plate QC Failed - unclear visual concept",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "draft_score": 5.0,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "blocking_gate": "Gate 2 - Plate QC",
+      "created_at": "2026-06-06T04:38:17Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "Tardigrades can pause their bodies.",
+            "caption": "Tardigrades can pause their bodies",
+            "visual": "microscope tardigrade close-up, cute but real"
+          },
+          {
+            "voiceover": "When things get too dry, they curl into a tiny tun.",
+            "caption": "too dry / tiny tun",
+            "visual": "curling body shape or before-after microscope proxy"
+          },
+          {
+            "voiceover": "Their metabolism drops so low it is almost like waiting on pause.",
+            "caption": "metabolism drops / like pause",
+            "visual": "stillness with subtle heartbeat/motion graphic, no text"
+          },
+          {
+            "voiceover": "Then when water comes back, some can wake up again.",
+            "caption": "water returns / they wake up",
+            "visual": "rehydration motion proxy, microscope look"
+          },
+          {
+            "voiceover": "It is one of nature's strangest survival tricks.",
+            "caption": "nature's strangest / survival trick",
+            "visual": "final tardigrade hero macro/microscope look"
+          }
+        ],
+        "sources": [
+          "NASA: Tardigrades and space survival research overview",
+          "Current Biology / peer-reviewed tardigrade cryptobiosis literature for fact wording"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+      "outputs": {
+        "ffprobe_publish": "outputs/final_polish_wan22_template_v01/ffprobe_publish_candidate.json",
+        "contact_sheet": "outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+        "publish_candidate_captioned": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+        "discord_preview_captioned": "outputs/final_polish_wan22_template_v01/discord_preview_captioned.mp4",
+        "captions_ass": "outputs/final_polish_wan22_template_v01/captions.ass",
+        "captions_srt": "outputs/final_polish_wan22_template_v01/captions.srt",
+        "audio_report": {
+          "mean_lufs": -15.0,
+          "true_peak_db": -1.0
+        }
+      },
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "Spec pass; Wan2.2 final-polish internal candidate present. Public publish still requires Gate 5/6 review."
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "wan22_final_polish",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "Wan2.2 template final-polish candidate; still requires phone-size Gate 5 human publish review."
+          },
+          {
+            "shot_id": "josh_final_review_20260606T085615Z",
+            "severity": "fail",
+            "note": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good."
+          }
+        ]
+      },
+      "latest_internal_candidate": "outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+      "rework_reason": "Josh could not tell what the video is about from selected plates; fail say-dog-see-dog visual clarity. Do not render selected_plates_v01.",
+      "human_feedback": [
+        {
+          "at": "2026-06-06T08:56:15Z",
+          "reviewer": "Josh",
+          "feedback": "5/10 at best; not say-dog-see-dog; bad AI artifacts; source images not good.",
+          "action": "reject_rework_source_quality_and_say_dog_see_dog",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:02:45Z",
+          "reviewer": "Josh",
+          "feedback": "It clearly did not follow our template; voice was not even right.",
+          "action": "reject_template_voice_source_render",
+          "score": "<=5/10"
+        },
+        {
+          "at": "2026-06-06T09:13:07Z",
+          "reviewer": "Hermes agents",
+          "feedback": "Parallel source-acquisition/rework lanes started after Josh rejection. No render/publish.",
+          "action": "source_acquisition_started"
+        },
+        {
+          "at": "2026-06-07T04:20:26Z",
+          "reviewer": "Josh",
+          "feedback": "I have no idea what this video is about at all based on these pictures",
+          "action": "reject_plate_qc_visual_clarity"
+        }
+      ],
+      "source_quality_requirements": {
+        "must_fix": [
+          "replace ambiguous microscope crops with instantly readable visual sequence",
+          "first frame must clearly show tardigrade/water bear or use a more obvious topic",
+          "each beat must be say-dog-see-dog: normal tardigrade, dry tun, paused/still body, water returns/wakes",
+          "no render until new contact sheet is understandable without explanation"
+        ],
+        "old_artifacts_status": "old final_polish artifacts remain audit-only; selected_plates_v01 is not render-ready"
+      },
+      "template_requirements": {
+        "approved_voice": "elevenlabs_george",
+        "must_match": "approved WAYS shark/Wan template including voice/caption/style/timing standards",
+        "hard_fail": "wrong voice or template drift even if export specs pass",
+        "old_artifacts_status": "audit_only_not_ready_for_review"
+      },
+      "rework_artifacts": {
+        "strict_rework_packet": "STRICT_WAYS_REWORK_PACKET.md",
+        "source_manifest": "assets/source_rework/source_manifest.json",
+        "source_acquisition_status": "outputs/gate2_plate_qc/SOURCE_ACQUISITION_STATUS.md",
+        "last_agent_update": "2026-06-06T21:20:00Z",
+        "agent_note": "Created 5 right-safe selected Gate 2 candidate plates from C002/C004/C007. No render: needs phone-size plate review and approved elevenlabs_george VO; Beat 04 is rehydration/reactivation fallback, not visible water-flow proof.",
+        "gate2_checkin": "ops/ways-video-lab-discord/SOURCE_GATE2_CHECKIN_20260606.md",
+        "selected_plate_manifest": "outputs/gate2_plate_qc/selected_plates_v01/selected_plates_manifest_v01.json",
+        "selected_plate_contact_sheet": "outputs/gate2_plate_qc/selected_plates_v01/tardigrade_selected_plates_v01_contact_sheet.jpg",
+        "selected_plate_qa": "outputs/gate2_plate_qc/selected_plates_v01/TARDIGRADE_SELECTED_PLATES_QA_v01.md",
+        "selected_plate_repro_script": "outputs/gate2_plate_qc/build_tardigrade_selected_plates_v01.py",
+        "selected_plates_v01_status": "rejected_by_josh_unclear_20260607"
+      }
+    },
+    {
+      "slug": "wood_frog_freeze_survival",
+      "hook": "A frog can freeze solid.",
+      "core_fact": "Wood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect cells until thawing.",
+      "cohort_tag": "first10_animal_021",
+      "test_variable": "real_source_photo_plus_freeze_thaw_motion",
+      "artifact_folder": "test_cases/wood_frog_freeze_survival/",
+      "source_policy": "Public-source real wood frog imagery and simple freeze/thaw motion graphics; no paid credits.",
+      "sources": [
+        "National Park Service wood frog freeze tolerance overview",
+        "Peer-reviewed wood frog freeze tolerance literature for fact wording"
+      ],
+      "beats": [
+        {
+          "voiceover": "A frog can freeze solid.",
+          "caption": "A frog can freeze solid",
+          "visual": "real wood frog on leaf litter with icy edge, instant animal read"
+        },
+        {
+          "voiceover": "In winter, ice can form through much of its body.",
+          "caption": "ice forms through its body",
+          "visual": "macro frost creeping around frog body, no horror, no labels"
+        },
+        {
+          "voiceover": "Its heart can stop beating for a while.",
+          "caption": "its heart can stop",
+          "visual": "calm freeze-state close-up with subtle pulse fading, no medical UI"
+        },
+        {
+          "voiceover": "Sugar-like antifreeze helps protect the cells.",
+          "caption": "sugar helps protect cells",
+          "visual": "simple cellular protection visual without text or diagram labels"
+        },
+        {
+          "voiceover": "Then spring warms it up, and the frog starts moving again.",
+          "caption": "spring warms it / back to life",
+          "visual": "thawing frog on wet leaves, tiny visible movement"
+        }
+      ],
+      "status_column": "Monitor Only",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "draft_score": 8.0,
+      "publish_score": null,
+      "youtube_video_id": "GiEF7Tf7Bn8",
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "blocking_gate": null,
+      "created_at": "2026-06-06T08:46:47Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "A frog can freeze solid.",
+            "caption": "A frog can freeze solid",
+            "visual": "real wood frog on leaf litter with icy edge, instant animal read"
+          },
+          {
+            "voiceover": "In winter, ice can form through much of its body.",
+            "caption": "ice forms through its body",
+            "visual": "macro frost creeping around frog body, no horror, no labels"
+          },
+          {
+            "voiceover": "Its heart can stop beating for a while.",
+            "caption": "its heart can stop",
+            "visual": "calm freeze-state close-up with subtle pulse fading, no medical UI"
+          },
+          {
+            "voiceover": "Sugar-like antifreeze helps protect the cells.",
+            "caption": "sugar helps protect cells",
+            "visual": "simple cellular protection visual without text or diagram labels"
+          },
+          {
+            "voiceover": "Then spring warms it up, and the frog starts moving again.",
+            "caption": "spring warms it / back to life",
+            "visual": "thawing frog on wet leaves, tiny visible movement"
+          }
+        ],
+        "sources": [
+          "National Park Service wood frog freeze tolerance overview",
+          "Peer-reviewed wood frog freeze tolerance literature for fact wording"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "do_not_rebuild_unless_user_reopens",
+      "rework_artifacts": {
+        "source_manifest": "assets/source_stills/source_manifest.json",
+        "source_contact_sheet": "outputs/gate2_plate_qc/wood_frog_source_contact_sheet_v04.jpg",
+        "source_qa": "outputs/gate2_plate_qc/WOOD_FROG_SOURCE_QA_v04.md",
+        "last_agent_update": "2026-06-07T03:16:24Z",
+        "agent_note": "Public-source acquisition has 9 stills. Hold render until 5 beat-mapped proof plates and approved elevenlabs_george VO exist.",
+        "feed_hook_contact_sheet": "outputs/gate2_plate_qc/feed_hook_variants_v05/wood_frog_feed_hook_variants_v05_contact_sheet.jpg",
+        "feed_hook_qa": "outputs/gate2_plate_qc/feed_hook_variants_v05/WOOD_FROG_FEED_HOOK_QA_v05.md",
+        "feed_hook_manifest": "outputs/gate2_plate_qc/feed_hook_variants_v05/feed_hook_variants_manifest_v05.json"
+      },
+      "source_quality_requirements": {
+        "must_fix": [
+          "approved elevenlabs_george VO",
+          "Josh phone-size Gate 5 review",
+          "consider premium documentary/3D upgrade for the stylized sugar/cell-protection beat before any 9/10 publish claim"
+        ],
+        "old_artifacts_status": "v13 is current internal candidate; earlier v06-v12 remain superseded/audit-only"
+      },
+      "outputs": {
+        "ffprobe_publish": "outputs/motion_v13_sugar_antifreeze/ffprobe_captioned_master.json",
+        "contact_sheet": "outputs/motion_v13_sugar_antifreeze/contact_sheet_wood_frog_motion_v13.jpg",
+        "publish_candidate_captioned": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_1080.mp4",
+        "discord_preview_captioned": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_720.mp4",
+        "clean_master_no_captions": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_clean_1080.mp4",
+        "captions_ass": "outputs/motion_v13_sugar_antifreeze/captions.ass",
+        "captions_srt": "outputs/motion_v13_sugar_antifreeze/captions.srt",
+        "audio_report": "outputs/motion_v13_sugar_antifreeze/motion_delta_report_v13.json",
+        "qa_readme": "outputs/motion_v13_sugar_antifreeze/QA_V13_SUGAR_SECTION.md"
+      },
+      "latest_internal_candidate": "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_1080.mp4",
+      "assembly_qa": {
+        "caption_readability": "pass",
+        "double_captions": false,
+        "non_caption_text": false,
+        "visual_reset_seconds_max": 3.0,
+        "note": "v13 fixes the sugar/cell-protection beat and verifies specs, but remains internal because the VO is temporary/unverified and the biology section is stylized proof graphic rather than premium documentary/3D footage."
+      },
+      "render": {
+        "expected_clips": [
+          "outputs/motion_v13_sugar_antifreeze/wood_frog_motion_v13_captioned_1080.mp4"
+        ],
+        "shot_reports": [
+          {
+            "shot_id": "motion_v13_sugar_antifreeze",
+            "text_or_logo_present": false,
+            "morphing_or_anatomy_issue": false,
+            "severity": "warn",
+            "note": "8.0/10 internal candidate; not public-ready until approved elevenlabs_george VO and Josh Gate 5 review."
+          }
+        ]
+      },
+      "rework_reason": "Published public on YouTube; monitor only unless Josh reopens.",
+      "youtube_url": "https://youtu.be/GiEF7Tf7Bn8",
+      "youtube_shorts_url": "https://youtube.com/shorts/GiEF7Tf7Bn8",
+      "published_at": "2026-06-07T04:06:34Z",
+      "monitor_notes": [
+        {
+          "at": "2026-06-07T04:09:43Z",
+          "note": "Moved to monitor-only after public publish and Josh said to move on."
+        }
+      ]
+    },
+    {
+      "slug": "flying_snake_glide",
+      "hook": "Some snakes can glide through the air.",
+      "core_fact": "Flying snakes flatten their bodies and undulate in the air, creating lift and control as they glide from trees.",
+      "cohort_tag": "first10_animal_new_clear_001",
+      "test_variable": "obvious_say_dog_see_dog_gliding_animal",
+      "artifact_folder": "test_cases/flying_snake_glide/",
+      "source_policy": "Use clear real/source visuals or clean generated proof plates; no paid credits without approval.",
+      "sources": [
+        "Nature Physics: Undulation enables gliding in flying snakes, https://www.nature.com/articles/s41567-020-0935-4"
+      ],
+      "beats": [
+        {
+          "voiceover": "Some snakes can glide through the air.",
+          "caption": "Some snakes can glide through the air",
+          "visual": "snake launching from tree branch into open air, instantly readable"
+        },
+        {
+          "voiceover": "They do not have wings.",
+          "caption": "no wings",
+          "visual": "clear side view of snake body in air, no wings, tree background"
+        },
+        {
+          "voiceover": "They flatten their body like a long moving airfoil.",
+          "caption": "they flatten their body",
+          "visual": "body visibly wider/flatter, simple profile transformation with no labels"
+        },
+        {
+          "voiceover": "Then they wave side to side while falling forward.",
+          "caption": "they wave side to side",
+          "visual": "S-shaped snake gliding path through air"
+        },
+        {
+          "voiceover": "That motion helps them steer from one tree to another.",
+          "caption": "steering tree to tree",
+          "visual": "snake gliding toward another branch, clear destination"
+        }
+      ],
+      "status_column": "Gate 2 Plate Candidates Ready - Needs Human Plate/Voice Approval",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "draft_score": 6.8,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "blocking_gate": "Gate 2 - Human Plate QC / Approved Voice",
+      "created_at": "2026-06-07T04:21:13Z",
+      "script": {
+        "beats": [
+          {
+            "voiceover": "Some snakes can glide through the air.",
+            "caption": "Some snakes can glide through the air",
+            "visual": "snake launching from tree branch into open air, instantly readable"
+          },
+          {
+            "voiceover": "They do not have wings.",
+            "caption": "no wings",
+            "visual": "clear side view of snake body in air, no wings, tree background"
+          },
+          {
+            "voiceover": "They flatten their body like a long moving airfoil.",
+            "caption": "they flatten their body",
+            "visual": "body visibly wider/flatter, simple profile transformation with no labels"
+          },
+          {
+            "voiceover": "Then they wave side to side while falling forward.",
+            "caption": "they wave side to side",
+            "visual": "S-shaped snake gliding path through air"
+          },
+          {
+            "voiceover": "That motion helps them steer from one tree to another.",
+            "caption": "steering tree to tree",
+            "visual": "snake gliding toward another branch, clear destination"
+          }
+        ],
+        "sources": [
+          "Nature Physics: Undulation enables gliding in flying snakes, https://www.nature.com/articles/s41567-020-0935-4"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+      "rework_reason": "Gate 2 Higgsfield plate candidates exist, but render is held for human plate approval and approved elevenlabs_george VO.",
+      "source_quality_requirements": {
+        "must_fix": [
+          "Josh phone-size Gate 2 approval of selected plates",
+          "approved elevenlabs_george VO",
+          "no render until selected plates are accepted"
+        ],
+        "old_artifacts_status": "Higgsfield image candidates only; no render yet"
+      },
+      "outputs": {
+        "concept_contact_sheet": "outputs/gate2_plate_qc/proof_plates_v01/flying_snake_proof_plates_v01_contact_sheet.jpg",
+        "comfy_candidates_v02": "outputs/gate2_plate_qc/comfy_candidates_contact_sheet_v02.jpg",
+        "gate2_status": "outputs/gate2_plate_qc/FLYING_SNAKE_GATE2_STATUS_v01.md"
+      },
+      "rework_artifacts": {
+        "higgsfield_plate_dir": "outputs/higgsfield_frames_v02",
+        "higgsfield_contact_sheet": "outputs/higgsfield_frames_v02/higgsfield_snake_candidates_contact_sheet_v02_refs.jpg",
+        "higgsfield_qa": "outputs/higgsfield_frames_v02/QA_HIGGSFIELD_FRAMES_V02_REFS.md",
+        "higgsfield_manifest": "outputs/higgsfield_frames_v02/higgsfield_generation_manifest_v02.json",
+        "pending_human_plate_review_dir": "assets/pending_human_plate_review/higgsfield_v02",
+        "last_agent_update": "2026-06-08T16:04:54Z",
+        "agent_note": "Higgsfield source-plate candidates are surfaced for Gate 2 human plate review. Hold render until plates pass Josh phone-size review and approved elevenlabs_george VO is available."
+      }
+    },
+    {
+      "slug": "archerfish_water_jets",
+      "hook": "An archerfish can shoot insects out of the air.",
+      "core_fact": "Archerfish hunt by firing precise jets of water at insects above the surface; jet dynamics and aim help knock prey down.",
+      "status_column": "Source Acquisition Partial Pass - Missing Voice/Proof Gate",
+      "cohort_tag": "first10_animal_new_clear_002",
+      "test_variable": "obvious_say_dog_see_dog_public_source_water_jet",
+      "category_id": 28,
+      "voice": "elevenlabs_george",
+      "lane_map": {},
+      "draft_score": null,
+      "publish_score": null,
+      "youtube_video_id": null,
+      "privacy": "private",
+      "retention_pct_viewed": null,
+      "artifact_folder": "test_cases/archerfish_water_jets/",
+      "blocking_gate": "Gate 2 - Plate QC",
+      "created_at": "2026-06-07T07:25:04Z",
+      "source_policy": "Use right-safe/public-source archerfish imagery or clean generated proof plates; no paid credits without approval.",
+      "sources": [
+        "Proceedings of the Royal Society B / archerfish water-jet dynamics research overview",
+        "Current Biology / archerfish predictive shooting and hunting behavior research overview",
+        "Encyclopaedia Britannica / archerfish natural history overview"
+      ],
+      "beats": [
+        {
+          "voiceover": "An archerfish can shoot insects out of the air.",
+          "caption": "An archerfish can shoot insects out of the air",
+          "visual": "clear fish at water surface aiming at insect above, instant water-jet hook"
+        },
+        {
+          "voiceover": "It makes a tiny water cannon with its mouth.",
+          "caption": "a tiny water cannon",
+          "visual": "close fish mouth at surface forming a narrow upward water jet"
+        },
+        {
+          "voiceover": "The jet gets stronger as the front catches up with the back.",
+          "caption": "the jet gets stronger",
+          "visual": "simple no-text slow-motion water stream thickening toward the target"
+        },
+        {
+          "voiceover": "Then the insect falls, and the fish grabs it.",
+          "caption": "the insect falls",
+          "visual": "insect knocked from leaf/branch toward water with fish below"
+        },
+        {
+          "voiceover": "So this little fish hunts by doing physics.",
+          "caption": "it hunts with physics",
+          "visual": "final full-frame fish surfacing with splash/ripples, family-friendly wonder"
+        }
+      ],
+      "script": {
+        "beats": [
+          {
+            "voiceover": "An archerfish can shoot insects out of the air.",
+            "caption": "An archerfish can shoot insects out of the air",
+            "visual": "clear fish at water surface aiming at insect above, instant water-jet hook"
+          },
+          {
+            "voiceover": "It makes a tiny water cannon with its mouth.",
+            "caption": "a tiny water cannon",
+            "visual": "close fish mouth at surface forming a narrow upward water jet"
+          },
+          {
+            "voiceover": "The jet gets stronger as the front catches up with the back.",
+            "caption": "the jet gets stronger",
+            "visual": "simple no-text slow-motion water stream thickening toward the target"
+          },
+          {
+            "voiceover": "Then the insect falls, and the fish grabs it.",
+            "caption": "the insect falls",
+            "visual": "insect knocked from leaf/branch toward water with fish below"
+          },
+          {
+            "voiceover": "So this little fish hunts by doing physics.",
+            "caption": "it hunts with physics",
+            "visual": "final full-frame fish surfacing with splash/ripples, family-friendly wonder"
+          }
+        ],
+        "sources": [
+          "Proceedings of the Royal Society B / archerfish water-jet dynamics research overview",
+          "Current Biology / archerfish predictive shooting and hunting behavior research overview",
+          "Encyclopaedia Britannica / archerfish natural history overview"
+        ]
+      },
+      "gate_1_status": "auto_approved_internal",
+      "automation_policy": "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
+      "rework_reason": "Gate 2 source acquisition partial pass exists, but render is held for proof review and approved elevenlabs_george VO.",
+      "source_quality_requirements": {
+        "must_fix": [
+          "Gate 2 phone-size proof/source review",
+          "approved elevenlabs_george VO",
+          "no render until beat-mapped source plates pass"
+        ],
+        "old_artifacts_status": "source acquisition artifacts only; no render yet"
+      },
+      "rework_artifacts": {
+        "source_manifest": "assets/source_public_v01/source_manifest.json",
+        "selected_source_manifest": "outputs/gate2_source_public_v01/selected_beat_assets_manifest.json",
+        "source_contact_sheet": "outputs/gate2_source_public_v01/archerfish_public_source_gate2_contact_sheet_v01.jpg",
+        "source_qa": "outputs/gate2_source_public_v01/ARCHERFISH_GATE2_SOURCE_QA_v01.md",
+        "frame_review_contact_sheet": "outputs/gate2_source_public_v02/archerfish_ogv_frame_review_sheet_v02.jpg",
+        "selected_assets_dir": "outputs/gate2_source_public_v01/selected_beat_assets",
+        "last_agent_update": "2026-06-08T16:04:54Z",
+        "agent_note": "Public-source acquisition has 5 beat-mapped selected assets. Hold render until Gate 2 phone-size proof review and approved elevenlabs_george VO."
+      }
+    }
+  ],
+  "monitor_only": [
+    {
+      "slug": "sharks_older_than_trees/final_polish_v27_captioned",
+      "youtube_video_id": "KLwp-KbIr9I",
+      "status_column": "Published / Scheduled",
+      "next_action": "60-hour performance check only"
+    }
+  ],
+  "automation_policy": {
+    "target_active_ready_minimum": 5,
+    "auto_advance_internal": true,
+    "public_publish_requires_explicit_gate6": true,
+    "paid_credit_spend_requires_approval": true
+  },
+  "human_review_notes": [
+    {
+      "at": "2026-06-06T08:56:15Z",
+      "reviewer": "Josh",
+      "scope": [
+        "saturn_hexagon_storm",
+        "octopus_three_hearts",
+        "tardigrade_survival_mode"
+      ],
+      "feedback": "All shown ready candidates are 5/10 at best, not say-dog-see-dog, bad AI artifacts, source images not good; Saturn especially has text artifacts.",
+      "action": "demote_and_rework_sources"
+    },
+    {
+      "at": "2026-06-06T09:02:45Z",
+      "reviewer": "Josh",
+      "scope": [
+        "saturn_hexagon_storm",
+        "octopus_three_hearts",
+        "tardigrade_survival_mode"
+      ],
+      "feedback": "Also failed WAYS template: voice was not right.",
+      "action": "demote_to_template_voice_source_rework"
+    }
+  ]
+}

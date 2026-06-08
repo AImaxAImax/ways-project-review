@@ -1,0 +1,74 @@
+[
+  {
+    "shot": "01_before_trees",
+    "variant": 1,
+    "seed": 26180001,
+    "strength": 0.28,
+    "cfg": 3.2,
+    "steps": 16,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v01_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 2,
+    "seed": 26180002,
+    "strength": 0.34,
+    "cfg": 3.0,
+    "steps": 16,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v02_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 3,
+    "seed": 26180003,
+    "strength": 0.22,
+    "cfg": 3.6,
+    "steps": 18,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v03_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 4,
+    "seed": 26180004,
+    "strength": 0.4,
+    "cfg": 2.8,
+    "steps": 16,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v04_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 5,
+    "seed": 26180005,
+    "strength": 0.18,
+    "cfg": 4.0,
+    "steps": 20,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v05_00001_.png"
+  },
+  {
+    "shot": "01_before_trees",
+    "variant": 6,
+    "seed": 26180006,
+    "strength": 0.3,
+    "cfg": 3.4,
+    "steps": 18,
+    "guide": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_guides/shot01_before_trees_sparse_guide.png",
+    "prompt": "award-winning premium tactile paper diorama style frame for a family science YouTube Short, high-end handcrafted layered paper sculpture photographed in a miniature studio, real paper fibers, precise cut edges, boutique stop-motion title sequence quality, macro lens, warm natural-history museum spotlighting, cinematic depth of field, rich teal ocean and ochre amber barren land palette, subject: sharks existed before trees, ancient world before land plants, lower third glowing teal prehistoric ocean with one small calm ancient shark silhouette, upper two thirds empty barren ochre rocky land and sky, absolutely no trees, no plants, no leaves, no grass, no forest, no coral forest, the empty treeless land is the hero, clean negative space for captions, mobile-readable dramatic composition, kid-safe awe, premium editorial finish",
+    "negative": "trees, tree, forest, plants, plant, leaves, leaf, grass, fern, palm, jungle, bushes, branches, flowers, green vegetation, coral forest, kelp forest, readable text, letters, numbers, logo, watermark, caption, UI, sign, label, scary teeth, shark attack, blood, gore, horror, low quality, blurry, malformed shark, extra fins, crowded composition",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v11_shot01_before_trees/v11_shot01_before_trees_v06_00001_.png"
+  }
+]

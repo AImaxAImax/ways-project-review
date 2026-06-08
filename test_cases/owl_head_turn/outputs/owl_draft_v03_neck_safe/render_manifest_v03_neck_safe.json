@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-08T15:44:16Z",
+  "strategy": "neck-safe still-plate edit, no generated neck rotation",
+  "plates": [
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/01_ref_nano04_turn_01.png",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/nano_clear_270_01.png",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+    "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02/seedream_clear_270_01.png"
+  ],
+  "audio": "/home/joshn/.hermes/audio_cache/tts_20260608_083428.mp3",
+  "outputs": {
+    "clean": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_neck_safe_clean_v03.mp4",
+    "captioned": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_captioned_draft_v03_neck_safe.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/owl_head_turn_discord_preview_v03_neck_safe.mp4",
+    "sheet": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/contact_sheet_owl_draft_v03_neck_safe.jpg",
+    "qa": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/owl_draft_v03_neck_safe/QA_OWL_DRAFT_V03_NECK_SAFE.md"
+  },
+  "ffprobe_captioned": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "2553988"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "161784"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "6650948"
+    }
+  },
+  "ffprobe_preview": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 540,
+        "height": 960,
+        "avg_frame_rate": "24/1",
+        "bit_rate": "439259"
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "bit_rate": "131431"
+      }
+    ],
+    "format": {
+      "duration": "19.550998",
+      "size": "1411004"
+    }
+  }
+}

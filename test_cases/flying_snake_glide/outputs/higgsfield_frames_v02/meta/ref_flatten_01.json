@@ -1,0 +1,29 @@
+[
+  {
+    "id": "11f6bc59-a2fe-484a-8512-1e04ac9dee8c",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044716_11f6bc59-a2fe-484a-8512-1e04ac9dee8c.png",
+    "created_at": 1780807636.011365,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Use the reference as a premium natural-history style guide, but make the biology clearer: a single paradise flying snake gliding high over rainforest, closer to camera, body visibly flattened into a wide ribbon-like airfoil with underside/belly edge visible, S-shaped wave from head to tail, fully airborne with open sky-green negative space around it, no wings, no legs, no branch contact, no extra snakes, no text, no logo, no watermark, no UI.",
+      "medias": [
+        {
+          "data": {
+            "id": "9dc04e76-ac98-4930-9934-d47d5bbd4daa",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/9dc04e76-ac98-4930-9934-d47d5bbd4daa_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "reference_elements": []
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "slot": "01_warm_older_brother_uncle",
+    "voice": "Roger - Laid-Back, Casual, Resonant",
+    "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+    "direction": "Warm older brother/uncle: natural male, medium pitch, calm, intimate, lightly amused.",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/01_warm_older_brother_uncle.mp3",
+    "bytes": 383730,
+    "status": "ok",
+    "duration_sec": 23.95
+  },
+  {
+    "slot": "02_warm_older_sister_aunt",
+    "voice": "Sarah - Mature, Reassuring, Confident",
+    "voice_id": "EXAVITQu4vr4xnSDxMaL",
+    "direction": "Warm older sister/aunt: natural female, gentle, curious, not teacher-ish.",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/02_warm_older_sister_aunt.mp3",
+    "bytes": 380804,
+    "status": "ok",
+    "duration_sec": 23.77
+  },
+  {
+    "slot": "03_soft_science_storyteller",
+    "voice": "George - Warm, Captivating Storyteller",
+    "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+    "direction": "Soft science storyteller: premium documentary/podcast, casual, slow enough to feel trustworthy.",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/03_soft_science_storyteller.mp3",
+    "bytes": 377879,
+    "status": "ok",
+    "duration_sec": 23.59
+  },
+  {
+    "slot": "04_younger_curious_narrator",
+    "voice": "Jessica - Playful, Bright, Warm",
+    "voice_id": "cgSgspJ2msm6clMCkdW9",
+    "direction": "Younger curious narrator: a bit more energy, still not TikTok or kids-show.",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/voice_auditions/04_younger_curious_narrator.mp3",
+    "bytes": 414241,
+    "status": "ok",
+    "duration_sec": 25.86
+  }
+]

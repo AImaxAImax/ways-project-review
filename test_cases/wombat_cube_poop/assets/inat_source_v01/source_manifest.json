@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12943661/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) Simon Grove, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/9501216"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250512444/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) ellaenvirosci, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/145797345"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250512429/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) ellaenvirosci, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/145797345"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250512460/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) ellaenvirosci, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/145797345"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250512466/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) ellaenvirosci, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/145797345"
+  }
+]

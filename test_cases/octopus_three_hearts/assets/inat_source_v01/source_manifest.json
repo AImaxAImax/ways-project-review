@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://static.inaturalist.org/photos/2964094/original.JPG",
+    "license": null,
+    "attribution": "(c) Alessandra Boccabianca, all rights reserved",
+    "obs_uri": "http://www.inaturalist.org/observations/2641856"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/120486969/original.jpeg",
+    "license": "cc-by-nc",
+    "attribution": "(c) Athina Papadopoulou, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/73772285"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/215505229/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) jjulio2000, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/126973646"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/38929462/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) Callum Evans, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/25150034"
+  },
+  {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/38929470/original.jpg",
+    "license": "cc-by-nc",
+    "attribution": "(c) Callum Evans, some rights reserved (CC BY-NC)",
+    "obs_uri": "https://www.inaturalist.org/observations/25150034"
+  }
+]

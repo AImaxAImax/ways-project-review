@@ -1,0 +1,72 @@
+[
+  {
+    "shot": "01_launch",
+    "variant": 1,
+    "seed": 60752101,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake launching off a single tree branch on the left into empty air, head forward, tail leaving branch, obvious jump from tree",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_01_launch_v01_00001_.png"
+  },
+  {
+    "shot": "01_launch",
+    "variant": 2,
+    "seed": 60752102,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake launching off a single tree branch on the left into empty air, head forward, tail leaving branch, obvious jump from tree",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_01_launch_v02_00001_.png"
+  },
+  {
+    "shot": "02_no_wings",
+    "variant": 1,
+    "seed": 60752201,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake floating through open air with empty sky behind it, no branches touching body, no wings, full S-shaped snake visible",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_02_no_wings_v01_00001_.png"
+  },
+  {
+    "shot": "02_no_wings",
+    "variant": 2,
+    "seed": 60752202,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake floating through open air with empty sky behind it, no branches touching body, no wings, full S-shaped snake visible",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_02_no_wings_v02_00001_.png"
+  },
+  {
+    "shot": "03_flatten_body",
+    "variant": 1,
+    "seed": 60752301,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, close side view of flying snake, body visibly wide and flat like a long ribbon airfoil, open sky behind, no branches touching body",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_03_flatten_body_v01_00001_.png"
+  },
+  {
+    "shot": "03_flatten_body",
+    "variant": 2,
+    "seed": 60752302,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, close side view of flying snake, body visibly wide and flat like a long ribbon airfoil, open sky behind, no branches touching body",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_03_flatten_body_v02_00001_.png"
+  },
+  {
+    "shot": "04_side_to_side",
+    "variant": 1,
+    "seed": 60752401,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake gliding diagonally downward in a big S wave, open sky background, subtle motion trail made of light blur only, no arrows",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_04_side_to_side_v01_00001_.png"
+  },
+  {
+    "shot": "04_side_to_side",
+    "variant": 2,
+    "seed": 60752402,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake gliding diagonally downward in a big S wave, open sky background, subtle motion trail made of light blur only, no arrows",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_04_side_to_side_v02_00001_.png"
+  },
+  {
+    "shot": "05_tree_to_tree",
+    "variant": 1,
+    "seed": 60752501,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake gliding across a clear empty gap from a branch on the left toward a branch on the right, full body visible in midair",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_05_tree_to_tree_v01_00001_.png"
+  },
+  {
+    "shot": "05_tree_to_tree",
+    "variant": 2,
+    "seed": 60752502,
+    "prompt": "vertical 9:16 clean premium 3D educational natural history still, one green flying snake only, full body visible, airborne in open blue sky gap between rainforest trees, clear silhouette, family science YouTube Shorts, no text, no labels, no logos, no watermark, no extra snakes, no wings, no feathers, snake gliding across a clear empty gap from a branch on the left toward a branch on the right, full body visible in midair",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/flying_snake_glide/assets/comfy_sdxl_turbo_candidates_v01/v02_05_tree_to_tree_v02_00001_.png"
+  }
+]

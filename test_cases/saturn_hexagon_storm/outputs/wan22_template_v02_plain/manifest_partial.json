@@ -1,0 +1,130 @@
+{
+  "slug": "saturn_hexagon_storm",
+  "project_root": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm",
+  "output_dir": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain",
+  "voiceover": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v01/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "render_settings": {
+    "fps": 24,
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "writable_dirs": [],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/wan_template_plain_v02_plates/shot01_saturn_hexagon_storm_plain_plate.jpg",
+      "duration": 3.082,
+      "caption": "SATURN HAS A\nHEXAGON STORM",
+      "seed": 970001,
+      "prompt": "premium NASA Cassini science documentary image-to-video from the exact Saturn still. Preserve the exact monochrome spacecraft imagery, cloud bands, polar vortex and planetary framing. Add only subtle true motion: slow orbital camera creep, gentle cloud drift, atmospheric shimmer. Absolutely no text, no symbols, no logos, no diagrams, no labels, no geometric overlays, no scene cut.",
+      "clip": "outputs/wan22_template_v02_plain/clips/shot01_wan22_432x768_25f_seed970001.mp4",
+      "prompt_id": "bdfe3043-0335-4dcd-a05b-6818c5e7d7e3",
+      "uploaded_image": "shot01_saturn_hexagon_storm_plain_plate.jpg",
+      "comfy_output": {
+        "filename": "01_970001_00001_.mp4",
+        "subfolder": "saturn_hexagon_storm",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "02",
+      "image": "assets/wan_template_plain_v02_plates/shot02_saturn_hexagon_storm_plain_plate.jpg",
+      "duration": 3.596,
+      "caption": "IT IS A REAL\nJET STREAM",
+      "seed": 970002,
+      "prompt": "premium NASA Cassini science documentary image-to-video from the exact Saturn still. Preserve the exact monochrome spacecraft imagery, cloud bands, polar vortex and planetary framing. Add only subtle true motion: slow orbital camera creep, gentle cloud drift, atmospheric shimmer. Absolutely no text, no symbols, no logos, no diagrams, no labels, no geometric overlays, no scene cut.",
+      "clip": "outputs/wan22_template_v02_plain/clips/shot02_wan22_432x768_25f_seed970002.mp4",
+      "prompt_id": "c6738bc0-d9a6-4a21-95cb-69c86d953c3a",
+      "uploaded_image": "shot02_saturn_hexagon_storm_plain_plate.jpg",
+      "comfy_output": {
+        "filename": "02_970002_00001_.mp4",
+        "subfolder": "saturn_hexagon_storm",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "03",
+      "image": "assets/wan_template_plain_v02_plates/shot03_saturn_hexagon_storm_plain_plate.jpg",
+      "duration": 3.938,
+      "caption": "EACH SIDE IS WIDER\nTHAN EARTH",
+      "seed": 970003,
+      "prompt": "premium NASA Cassini science documentary image-to-video from the exact Saturn still. Preserve the exact monochrome spacecraft imagery, cloud bands, polar vortex and planetary framing. Add only subtle true motion: slow orbital camera creep, gentle cloud drift, atmospheric shimmer. Absolutely no text, no symbols, no logos, no diagrams, no labels, no geometric overlays, no scene cut.",
+      "clip": "outputs/wan22_template_v02_plain/clips/shot03_wan22_432x768_25f_seed970003.mp4",
+      "prompt_id": "1b65c5e3-f665-46b5-ba75-4033f837f3ec",
+      "uploaded_image": "shot03_saturn_hexagon_storm_plain_plate.jpg",
+      "comfy_output": {
+        "filename": "03_970003_00001_.mp4",
+        "subfolder": "saturn_hexagon_storm",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "04",
+      "image": "assets/wan_template_plain_v02_plates/shot04_saturn_hexagon_storm_plain_plate.jpg",
+      "duration": 3.767,
+      "caption": "STORMS KEEP\nSPINNING INSIDE",
+      "seed": 970004,
+      "prompt": "premium NASA Cassini science documentary image-to-video from the exact Saturn still. Preserve the exact monochrome spacecraft imagery, cloud bands, polar vortex and planetary framing. Add only subtle true motion: slow orbital camera creep, gentle cloud drift, atmospheric shimmer. Absolutely no text, no symbols, no logos, no diagrams, no labels, no geometric overlays, no scene cut.",
+      "clip": "outputs/wan22_template_v02_plain/clips/shot04_wan22_432x768_25f_seed970004.mp4",
+      "prompt_id": "ba441350-b0dd-47d0-b602-368b9018e11a",
+      "uploaded_image": "shot04_saturn_hexagon_storm_plain_plate.jpg",
+      "comfy_output": {
+        "filename": "04_970004_00001_.mp4",
+        "subfolder": "saturn_hexagon_storm",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    },
+    {
+      "id": "05",
+      "image": "assets/wan_template_plain_v02_plates/shot05_saturn_hexagon_storm_plain_plate.jpg",
+      "duration": 3.425,
+      "caption": "A STRANGE SHAPE\nMADE OF WEATHER",
+      "seed": 970005,
+      "prompt": "premium NASA Cassini science documentary image-to-video from the exact Saturn still. Preserve the exact monochrome spacecraft imagery, cloud bands, polar vortex and planetary framing. Add only subtle true motion: slow orbital camera creep, gentle cloud drift, atmospheric shimmer. Absolutely no text, no symbols, no logos, no diagrams, no labels, no geometric overlays, no scene cut.",
+      "clip": "outputs/wan22_template_v02_plain/clips/shot05_wan22_432x768_25f_seed970005.mp4",
+      "prompt_id": "c1206468-2f5f-4f86-8fec-080cb9c40e2e",
+      "uploaded_image": "shot05_saturn_hexagon_storm_plain_plate.jpg",
+      "comfy_output": {
+        "filename": "05_970005_00001_.mp4",
+        "subfolder": "saturn_hexagon_storm",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      }
+    }
+  ],
+  "created_at": "2026-06-05T22:56:31",
+  "outputs": {
+    "manifest": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/manifest.json",
+    "manifest_partial": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/manifest_partial.json",
+    "silent": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_silent_1080.mp4",
+    "master": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_master_1080.mp4",
+    "preview": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/saturn_hexagon_storm_wan22_preview_720.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/contact_sheet_saturn_hexagon_storm.jpg",
+    "ffprobe_master": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/ffprobe_master.json",
+    "readme_qa": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/wan22_template_v02_plain/README_QA_FINAL.md"
+  }
+}

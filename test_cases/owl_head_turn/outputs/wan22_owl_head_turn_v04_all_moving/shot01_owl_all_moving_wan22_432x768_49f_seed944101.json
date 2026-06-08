@@ -1,0 +1,20 @@
+{
+  "id": "01",
+  "seed": 944101,
+  "width": 432,
+  "height": 768,
+  "length": 49,
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/03_seedream_body_front_face_back_01.png",
+  "prompt": "premium BBC natural-history documentary image-to-video from the exact owl source still. Preserve one owl exactly, body and chest orientation locked, realistic feather collar, realistic face and eyes. The owl is already demonstrating the head rotation pose: body faces away while face looks back. Make a slow impressive living shot: tiny blink, eyes sharpen, subtle feather breathing, very slow cinematic push-in, background air movement. Do NOT rotate or stretch the neck; keep the neck hidden in thick feathers. No duplicate head, no body turn, no text.",
+  "prompt_id": "531dc7c2-9d86-47c9-92e5-874b4583a03c",
+  "uploaded_image": "03_seedream_body_front_face_back_01.png",
+  "comfy_output": {
+    "filename": "shot01_944101_00001_.mp4",
+    "subfolder": "ways_owl_head_turn_v04_all_moving",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v04_all_moving/shot01_owl_all_moving_wan22_432x768_49f_seed944101.mp4",
+  "bytes": 621051
+}

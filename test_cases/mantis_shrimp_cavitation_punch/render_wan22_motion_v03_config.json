@@ -1,0 +1,101 @@
+{
+  "project_root": ".",
+  "slug": "mantis_shrimp_cavitation_punch",
+  "output_dir": "outputs/wan_motion_v03_clean",
+  "voiceover": "outputs/auto_static_v01/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "negative_prompt": "text, subtitles, readable letters, watermark, logo, UI, frame border, arrows, labels, diagram, graphic overlay, circular rings, glowing drawn lines, fake HUD, scene transition, hard cut, Ken Burns-only pan, static slideshow, morphing animal anatomy, duplicated limbs, distorted eyes, melted geometry, jitter, flicker, low quality, blurry, compression artifacts, cartoon, illustration",
+  "render_settings": {
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "fps": 24,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "qa_gate": [
+    "real in-frame subject/water motion like shark template",
+    "no overlay/proof artifacts",
+    "not just Ken Burns over stills",
+    "no generated non-caption text/logos",
+    "mantis anatomy stable",
+    "ffprobe confirms audio"
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/wan_motion_v03_clean_plates/shot01_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "A mantis shrimp punch can make the water flash",
+      "seed": 728201,
+      "prompt": "premium natural-history documentary image-to-video from the exact mantis shrimp still. Create true in-frame motion like a wildlife shot: mantis shrimp body subtly shifts forward, raptorial club snaps toward a shell target in the water, tiny water flash from the strike, sand and particles move naturally. Preserve the mantis anatomy and source photo style. No overlays, no diagrams, no text, no logos, no UI, no graphic rings, no fake labels, no Ken Burns-only pan, no scene cut, no morphing."
+    },
+    {
+      "id": "02",
+      "image": "assets/wan_motion_v03_clean_plates/shot02_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the animal is tiny / but its club moves insanely fast",
+      "seed": 728202,
+      "prompt": "underwater wildlife macro image-to-video from exact still. The mantis shrimp makes a quick natural striking motion with its club while its body and antennae move slightly, water particles streak from the motion, camera feels handheld underwater. Preserve realistic anatomy and framing. No added graphics, no text, no logos, no arrows, no rings, no Ken Burns-only pan, no cut."
+    },
+    {
+      "id": "03",
+      "image": "assets/wan_motion_v03_clean_plates/shot03_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "that is cavitation",
+      "seed": 728203,
+      "prompt": "macro underwater natural-history shot from the exact mantis shrimp still. After the strike, a small realistic white cavitation bubble cloud forms in the water near the club and prey area, then begins to dissipate; all motion happens inside the water/subject, not as overlay graphics. Preserve photo realism. No labels, no diagram, no text, no UI, no graphic artifacts, no morphing."
+    },
+    {
+      "id": "04",
+      "image": "assets/wan_motion_v03_clean_plates/shot04_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the punch hits first",
+      "seed": 728204,
+      "prompt": "realistic mantis shrimp strike image-to-video from the exact still. The club darts forward and physically contacts a small shell/rock/prey proxy in frame, making a natural water disturbance and tiny debris movement. No graphic overlays, no rings, no labels, no text, no logo, no cartoon effect, no Ken Burns-only motion, no scene cut."
+    },
+    {
+      "id": "05",
+      "image": "assets/wan_motion_v03_clean_plates/shot05_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "then the bubble collapses / and hits again",
+      "seed": 728205,
+      "prompt": "premium underwater macro image-to-video. A small cavitation bubble cloud near the strike collapses inward naturally, sending a subtle second shock ripple through the water and shaking nearby particles/sand. It should feel like real water motion, not a drawn overlay. Preserve mantis anatomy. No text, no symbols, no rings, no UI, no artifacts, no morphing."
+    },
+    {
+      "id": "06",
+      "image": "assets/wan_motion_v03_clean_plates/shot06_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "scientists filmed it / in high speed",
+      "seed": 728206,
+      "prompt": "high-speed wildlife macro feel from exact mantis still, no actual camera UI. The movement plays like slow-motion footage: club motion blur, suspended particles drifting, water pulse visible near impact, mantis remains anatomically stable. No text, no timecode, no contact sheet frames, no labels, no overlays, no graphic artifacts."
+    },
+    {
+      "id": "07",
+      "image": "assets/wan_motion_v03_clean_plates/shot07_clean_mantis_photo_plate.png",
+      "duration": 3.92,
+      "caption": "it does not just / punch prey",
+      "seed": 728207,
+      "prompt": "documentary underwater macro from exact still. Mantis shrimp recoils naturally after strike, water particles and sand continue moving, prey/shell area shakes gently, shot feels alive and photographic. No graphic overlays, no text, no logos, no unnatural artifacts, no Ken Burns-only pan."
+    },
+    {
+      "id": "08",
+      "image": "assets/wan_motion_v03_clean_plates/shot08_clean_mantis_photo_plate.png",
+      "duration": 3.91,
+      "caption": "the water / punches too",
+      "seed": 728208,
+      "prompt": "final premium natural-history replay feeling from exact still. Mantis shrimp holds in frame while the water itself pulses from the strike: realistic bubble collapse, tiny shock disturbance, particles moving outward, subtle body motion. Must be real in-frame water/subject movement, not drawn graphics. No text, no logos, no rings, no overlays, no labels, no morphing, no scene cut."
+    }
+  ]
+}

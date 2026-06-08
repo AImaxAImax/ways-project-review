@@ -1,0 +1,20 @@
+{
+  "id": "02",
+  "seed": 913302,
+  "width": 432,
+  "height": 768,
+  "length": 25,
+  "plate": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/assets/pending_human_plate_review/higgsfield_v02_top_picks/02_ref_seedream01_turn_01.png",
+  "prompt": "premium natural-history documentary image-to-video from the exact owl source still. Preserve the single owl, branch, forest background, feathers, eyes, facial disk, and realistic anatomy exactly. Body stays locked and perched, head is already turned over the shoulder. Avoid any visible neck twisting: no stretched neck, no rubber neck, no melting collar feathers. Only tiny lifelike motion: blink, slight eye intensity change, subtle feather breathing, slow camera creep, soft forest particles. No second owl, no duplicate head, no body turn, no text, no watermark.",
+  "prompt_id": "ef5ed22f-82c0-4dd7-9d5a-1a67cafbc5ef",
+  "uploaded_image": "02_ref_seedream01_turn_01.png",
+  "comfy_output": {
+    "filename": "shot02_913302_00001_.mp4",
+    "subfolder": "ways_owl_head_turn_v03_neck_safe",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "/mnt/c/dev/curious-shorts/test_cases/owl_head_turn/outputs/wan22_owl_head_turn_v03_neck_safe/shot02_owl_neck_safe_wan22_432x768_25f_seed913302.mp4",
+  "bytes": 159179
+}

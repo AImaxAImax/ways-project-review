@@ -1,0 +1,30 @@
+[
+  {
+    "query": "mantis shrimp cavitation",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "query": "mantis shrimp high speed punch",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "query": "Odontodactylus scyllarus cavitation",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "query": "mantis shrimp strike video",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "query": "stomatopod cavitation video",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+    "source": "archive.org",
+    "query": "\"mantis shrimp\" cavitation"
+  },
+  {
+    "source": "archive.org",
+    "query": "\"mantis shrimp\" \"high speed\""
+  }
+]

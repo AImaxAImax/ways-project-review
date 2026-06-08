@@ -1,0 +1,103 @@
+{
+  "37": {
+    "class_type": "UNETLoader",
+    "_meta": {"title": "Wan2.2 diffusion model"},
+    "inputs": {
+      "unet_name": "wan2.2_ti2v_5B_fp16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "38": {
+    "class_type": "CLIPLoader",
+    "_meta": {"title": "Wan2.2 text encoder"},
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    }
+  },
+  "39": {
+    "class_type": "VAELoader",
+    "_meta": {"title": "Wan2.2 VAE"},
+    "inputs": {
+      "vae_name": "wan2.2_vae.safetensors"
+    }
+  },
+  "48": {
+    "class_type": "ModelSamplingSD3",
+    "_meta": {"title": "Wan shift"},
+    "inputs": {
+      "model": ["37", 0],
+      "shift": 8
+    }
+  },
+  "55": {
+    "class_type": "Wan22ImageToVideoLatent",
+    "_meta": {"title": "Wan video latent 1024x576x121"},
+    "inputs": {
+      "vae": ["39", 0],
+      "width": 1024,
+      "height": 576,
+      "length": 121,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {"title": "positive_prompt"},
+    "inputs": {
+      "text": "__VJ_PROMPT__",
+      "clip": ["38", 0]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {"title": "negative_prompt"},
+    "inputs": {
+      "text": "oversaturated neon mush, random bedroom, blank wall, generic still life, multi-shot montage, hard cut, scene transition, fade to black, jump cut, low quality, worst quality, blurry, jpeg artifacts, broken anatomy, extra limbs, distorted faces, text, subtitles, watermark, logo, static image with no motion",
+      "clip": ["38", 0]
+    }
+  },
+  "3": {
+    "class_type": "KSampler",
+    "_meta": {"title": "seed_node"},
+    "inputs": {
+      "model": ["48", 0],
+      "seed": "__VJ_SEED__",
+      "steps": 20,
+      "cfg": 5,
+      "sampler_name": "uni_pc",
+      "scheduler": "simple",
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["55", 0],
+      "denoise": 1
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": {"title": "decode"},
+    "inputs": {
+      "samples": ["3", 0],
+      "vae": ["39", 0]
+    }
+  },
+  "57": {
+    "class_type": "CreateVideo",
+    "_meta": {"title": "create_video"},
+    "inputs": {
+      "images": ["8", 0],
+      "fps": 24
+    }
+  },
+  "58": {
+    "class_type": "SaveVideo",
+    "_meta": {"title": "save_video"},
+    "inputs": {
+      "video": ["57", 0],
+      "filename_prefix": "vj_wan22/clip",
+      "format": "mp4",
+      "codec": "h264"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "hummingbird_heart",
+  "hook": "A hummingbird\u2019s heart beats over 1,200 times a minute.",
+  "core_fact": "In flight, some hummingbirds\u2019 hearts beat more than 1,200 times per minute.",
+  "status_column": "Idea Pool - Batch2 screened; hold for MG-lane test",
+  "cohort_tag": "mg-lane-test",
+  "test_variable": "mg_lane_validation",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane": "MIXED",
+  "lane_map": {},
+  "visual": "Hummingbird hover/feed (WAN), plus optional subtle pulsing-rhythm overlay or audio heartbeat to sell the number.",
+  "risk": "Low-medium. The number needs a felt beat; use audio/rhythm, not an anatomy cutaway.",
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/hummingbird_heart/",
+  "blocking_gate": "Cohort scheduling - MG lane test",
+  "created_at": "2026-06-07T20:19:09Z",
+  "source_policy": "Use Higgsfield free/Ultra models for source frames; generate multiple candidates; no metered paid video without explicit approval.",
+  "gate_1_feedback_source": "WAYS_TOPIC_QUEUE_BATCH2.md screened against live analytics 2026-06-07",
+  "source_quality_requirements": {
+    "must": [
+      "one counterintuitive recognizable subject/fact",
+      "cold-open claim in first 2 seconds",
+      "literal say-dog-see-dog visual",
+      "no internal-anatomy/process beat as core visual"
+    ],
+    "avoid": [
+      "wombat failure mode",
+      "diagram-first explanation",
+      "weak source plates",
+      "text/logos/watermarks"
+    ]
+  },
+  "batch2_priority_rank": 17
+}

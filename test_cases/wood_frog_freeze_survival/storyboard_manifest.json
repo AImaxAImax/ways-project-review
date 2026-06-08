@@ -1,0 +1,48 @@
+{
+  "slug": "wood_frog_freeze_survival",
+  "version": 1,
+  "target_format": "1080x1920 vertical Short",
+  "caption_style": "WAYS creator captions; zero non-caption text",
+  "shots": [
+    {
+      "id": "shot01",
+      "voiceover": "A frog can freeze solid.",
+      "caption": "A frog can freeze solid",
+      "visual": "real wood frog on leaf litter with icy edge, instant animal read",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot02",
+      "voiceover": "In winter, ice can form through much of its body.",
+      "caption": "ice forms through its body",
+      "visual": "macro frost creeping around frog body, no horror, no labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot03",
+      "voiceover": "Its heart can stop beating for a while.",
+      "caption": "its heart can stop",
+      "visual": "calm freeze-state close-up with subtle pulse fading, no medical UI",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot04",
+      "voiceover": "Sugar-like antifreeze helps protect the cells.",
+      "caption": "sugar helps protect cells",
+      "visual": "simple cellular protection visual without text or diagram labels",
+      "duration_seconds": null,
+      "gate_notes": []
+    },
+    {
+      "id": "shot05",
+      "voiceover": "Then spring warms it up, and the frog starts moving again.",
+      "caption": "spring warms it / back to life",
+      "visual": "thawing frog on wet leaves, tiny visible movement",
+      "duration_seconds": null,
+      "gate_notes": []
+    }
+  ]
+}

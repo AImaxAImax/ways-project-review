@@ -1,0 +1,25 @@
+{
+  "shot": "01 \u2014 Sharks were here before trees.",
+  "user_feedback": "Liked v12 submerged shark direction, but background felt weird.",
+  "selected_current_hold": "v15 variant 03",
+  "selected_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v15/shot01_before_trees_clean_bg_submerged_shark_v15_v03_selected.png",
+  "source_file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v15_shot01_no_weird_floor/v15_shot01_no_weird_floor_v03_00001_.png",
+  "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/outputs/v15_shot01_no_weird_floor_contact_sheet.jpg",
+  "previous_reference": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/selected_frames_v12/shot01_before_trees_submerged_shark_v12_v01_selected.png",
+  "rationale": [
+    "Cleaner background than v12: removes the odd cracked foreground/tile pattern and stacked aquarium-shelf feeling.",
+    "Shark reads as in the water/underwater, not sitting on top.",
+    "Barren coast/rocky lifeless land remains visible enough to support the before-trees idea.",
+    "No obvious trees, plants, grass, or forest elements.",
+    "Single calm shark and premium natural-history frame quality."
+  ],
+  "runner_ups": {
+    "v15_05": "cleanest simple underwater look with one shark, but less clear as coastline/before-trees setting",
+    "v15_02": "premium and clean, but canyon walls dominate and ancient-coast idea is less obvious"
+  },
+  "rejected_attempts": {
+    "v13": "simplified guide caused aquarium/display-box compositions, extra sharks, or plant-like/coral forms",
+    "v14": "img2img preserved v12 shark but also preserved the weird cracked foreground/background issue"
+  },
+  "next_if_refining": "Use v15_03 as target; try to make the shark slightly larger and keep exactly one shark, while preserving the clean distant barren coastline."
+}

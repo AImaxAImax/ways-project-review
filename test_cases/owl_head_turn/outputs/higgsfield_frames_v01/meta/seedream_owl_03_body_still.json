@@ -1,0 +1,21 @@
+[
+  {
+    "id": "5ce1e4e9-0b58-4cac-940f-e5104837ff9c",
+    "status": "completed",
+    "display_name": "Seedream V5 Lite",
+    "job_set_type": "seedream_v5_lite",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_211952_5ce1e4e9-0b58-4cac-940f-e5104837ff9c.png",
+    "created_at": 1780867192.380109,
+    "params": {
+      "prompt": "Vertical 9:16 educational science source plate, one barred owl perched on a stump, body perfectly still facing forward, head turned nearly backward toward viewer over the shoulder, clear readable eyes, realistic feathers and neck folds, simple blurred forest, caption-safe negative space, no text, no UI, no arrows, no labels, no x-ray, no skeleton, no extra owls, no second head, no gore.",
+      "medias": [],
+      "batch_size": 1,
+      "aspect_ratio": "9:16",
+      "width": 1600,
+      "height": 2848,
+      "quality": "basic",
+      "seed": 354980,
+      "reference_elements": []
+    }
+  }
+]

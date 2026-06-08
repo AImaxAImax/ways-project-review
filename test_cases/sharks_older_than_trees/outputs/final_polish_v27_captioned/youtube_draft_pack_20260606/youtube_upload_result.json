@@ -1,0 +1,72 @@
+{
+  "status": "uploaded_private_draft",
+  "channel": {
+    "channel_id": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channel_title": "Wait Are You Serious?"
+  },
+  "video_id": "KLwp-KbIr9I",
+  "url": "https://youtu.be/KLwp-KbIr9I",
+  "studio_url": "https://studio.youtube.com/video/KLwp-KbIr9I/edit",
+  "title": "Sharks Are Older Than Trees #Shorts",
+  "thumbnail_set": false,
+  "thumbnail_error": "<HttpError 403 when requesting https://youtube.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=KLwp-KbIr9I&alt=json&uploadType=media returned \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\". Details: \"[{'message': \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\", 'domain': 'youtube.thumbnail', 'reason': 'forbidden', 'location': 'Authorization', 'locationType': 'header'}]\">",
+  "api_response": {
+    "kind": "youtube#video",
+    "etag": "DPEuZWmmrnCAJDbf0w762jB2vZY",
+    "id": "KLwp-KbIr9I",
+    "snippet": {
+      "publishedAt": "2026-06-06T01:55:16Z",
+      "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+      "title": "Sharks Are Older Than Trees #Shorts",
+      "description": "Sharks were swimming through ancient oceans before forests existed.\n\nSharks appeared over 400 million years ago. The first true trees came later, around 385 million years ago. That means sharks were already part of Earth's oceans before apples, squirrels, or forests were here.\n\nWait, are you serious? Yes. Sharks got here first.\n\nThis short is made for a general audience: kid-friendly, science-forward, and not made specifically for children.\n\n#Shorts #Sharks #ScienceFacts #NatureFacts #Evolution #PrehistoricLife #WeirdFacts #WaitAreYouSerious",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/KLwp-KbIr9I/default.jpg?sqp=CPT7jdEG&rs=AOn4CLD58572uN_tZbPL6rIviv4nQBKK9Q",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/KLwp-KbIr9I/mqdefault.jpg?sqp=CPT7jdEG&rs=AOn4CLALq1EM7iXDzolfpDBGMapK6pEQtA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/KLwp-KbIr9I/hqdefault.jpg?sqp=CPT7jdEG&rs=AOn4CLALOwQwXnBNRoR-2dcheLbQHybZ7A",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Wait Are You Serious?",
+      "tags": [
+        "Wait Are You Serious",
+        "education",
+        "evolution",
+        "nature facts",
+        "prehistoric",
+        "prehistoric life",
+        "science facts",
+        "shark facts",
+        "sharks",
+        "shorts",
+        "weird facts"
+      ],
+      "categoryId": "28",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en",
+      "localized": {
+        "title": "Sharks Are Older Than Trees #Shorts",
+        "description": "Sharks were swimming through ancient oceans before forests existed.\n\nSharks appeared over 400 million years ago. The first true trees came later, around 385 million years ago. That means sharks were already part of Earth's oceans before apples, squirrels, or forests were here.\n\nWait, are you serious? Yes. Sharks got here first.\n\nThis short is made for a general audience: kid-friendly, science-forward, and not made specifically for children.\n\n#Shorts #Sharks #ScienceFacts #NatureFacts #Evolution #PrehistoricLife #WeirdFacts #WaitAreYouSerious"
+      },
+      "defaultAudioLanguage": "en"
+    },
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "recordingDetails": {}
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "test_cases/saturn_hexagon_storm/assets/source_stills/PIA21052_orig.jpg",
+    "source_url": "https://images-assets.nasa.gov/image/PIA21052/PIA21052~orig.jpg",
+    "credit": "NASA/JPL-Caltech/SSI",
+    "title": "PIA21052"
+  },
+  {
+    "path": "test_cases/saturn_hexagon_storm/assets/source_stills/PIA17122_orig.jpg",
+    "source_url": "https://images-assets.nasa.gov/image/PIA17122/PIA17122~orig.jpg",
+    "credit": "NASA/JPL-Caltech/SSI",
+    "title": "PIA17122"
+  },
+  {
+    "path": "test_cases/saturn_hexagon_storm/assets/source_stills/PIA14646_orig.jpg",
+    "source_url": "https://images-assets.nasa.gov/image/PIA14646/PIA14646~orig.jpg",
+    "credit": "NASA/JPL-Caltech/SSI",
+    "title": "PIA14646"
+  },
+  {
+    "path": "test_cases/saturn_hexagon_storm/assets/source_stills/PIA20507_orig.jpg",
+    "source_url": "https://images-assets.nasa.gov/image/PIA20507/PIA20507~orig.jpg",
+    "credit": "NASA/JPL-Caltech/SSI",
+    "title": "PIA20507"
+  }
+]

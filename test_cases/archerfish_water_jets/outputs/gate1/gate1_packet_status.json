@@ -1,0 +1,7 @@
+{
+  "slug": "archerfish_water_jets",
+  "status": "script_locked_internal",
+  "created_at": "2026-06-07T07:25:04Z",
+  "next_gate": "Gate 2 source acquisition/contact sheet",
+  "public_publish_requires_gate6": true
+}

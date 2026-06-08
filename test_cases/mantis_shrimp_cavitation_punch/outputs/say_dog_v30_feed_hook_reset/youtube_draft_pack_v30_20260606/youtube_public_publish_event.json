@@ -1,0 +1,53 @@
+{
+  "executed_at": "2026-06-07T00:26:42Z",
+  "authorization_text": "Josh said in Discord thread: Let\u2019s post it on YT!",
+  "before": {
+    "video_id": "4lnxNc3nKz4",
+    "found": true,
+    "title": "This Shrimp Punch Makes Water Flash #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": null,
+    "privacyStatus": "private",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT32S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/4lnxNc3nKz4",
+    "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+  },
+  "after": {
+    "video_id": "4lnxNc3nKz4",
+    "found": true,
+    "title": "This Shrimp Punch Makes Water Flash #Shorts",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "channelTitle": "Wait Are You Serious?",
+    "categoryId": "28",
+    "tags": [
+      "Shorts",
+      "WAYS",
+      "Wait Are You Serious",
+      "animal facts",
+      "cavitation",
+      "facts",
+      "mantis shrimp",
+      "marine biology",
+      "science",
+      "weird facts"
+    ],
+    "privacyStatus": "public",
+    "uploadStatus": "processed",
+    "selfDeclaredMadeForKids": false,
+    "processingStatus": "succeeded",
+    "processingFailureReason": null,
+    "duration": "PT32S",
+    "definition": "hd",
+    "caption": "true",
+    "url": "https://youtu.be/4lnxNc3nKz4",
+    "studio_url": "https://studio.youtube.com/video/4lnxNc3nKz4/edit"
+  }
+}

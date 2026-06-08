@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-06-05T17:25:48",
+  "comfy_url": "http://127.0.0.1:8188",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "wan": {
+    "width": 432,
+    "height": 768,
+    "length": 25,
+    "fps": 24
+  },
+  "shots": [
+    {
+      "id": "01",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "duration": 3.57,
+      "caption": "SHARKS WERE HERE\nBEFORE TREES",
+      "seed": 627101,
+      "prompt": "premium natural-history documentary image-to-video. Ancient shark glides calmly through blue-green prehistoric ocean, subtle tail swish and fin motion, drifting particles, slow parallax water shimmer, sunlight rays move gently. Preserve exact shark anatomy, framing, colors, and realistic documentary style. No attack, no blood, no text, no logos, no scene cut, no morphing.",
+      "source_image": "assets/gpt_image_2_manual_v23/shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "prompt_id": "86f7483a-0a3e-4687-8c34-8a2bbb763b3c",
+      "uploaded_image": "shot01_gpt_image2_hook_before_trees_v01.jpeg",
+      "comfy_output": {
+        "filename": "01_627101_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot01_wan22_432x768_25f_seed627101.mp4"
+    },
+    {
+      "id": "02",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+      "duration": 2.303,
+      "caption": "SERIOUSLY.",
+      "seed": 627102,
+      "prompt": "documentary macro image-to-video of fossil shark tooth proof. Keep the original fossil and stone slab exactly intact while camera makes a tiny macro push, dust motes drift, shallow depth of field breathes subtly, museum-light shimmer. No new text, no labels, no hands, no morphing, no cracks changing, no scene cut.",
+      "source_image": "assets/gpt_image_2_manual_v24/shot02_seriously_fossil_proof_v01.jpeg",
+      "prompt_id": "edcbe9aa-64a2-402d-a07f-6e9bee9d2606",
+      "uploaded_image": "shot02_seriously_fossil_proof_v01.jpeg",
+      "comfy_output": {
+        "filename": "02_627102_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot02_wan22_432x768_25f_seed627102.mp4"
+    },
+    {
+      "id": "03",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+      "duration": 3.685,
+      "caption": "BEFORE APPLES.\nBEFORE SQUIRRELS.",
+      "seed": 627103,
+      "prompt": "premium surreal documentary image-to-video from the exact still. Preserve the apple, squirrel, and nut/seed objects clearly. Add only subtle camera drift, gentle foreground/background parallax, small dust particles and soft light movement. Objects remain anatomically/physically stable. No extra animals, no text, no logos, no object morphing, no scene cut.",
+      "source_image": "assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+      "prompt_id": "3c898e49-6f4c-4434-b2f7-b739e875a868",
+      "uploaded_image": "shot03_apple_squirrel_nut_v01.jpeg",
+      "comfy_output": {
+        "filename": "03_627103_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot03_wan22_432x768_25f_seed627103.mp4"
+    },
+    {
+      "id": "04",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "duration": 3.57,
+      "caption": "OVER 400 MILLION\nYEARS AGO",
+      "seed": 627104,
+      "prompt": "cinematic deep-time geology image-to-video. Preserve the exact layered rock/ocean composition. Slow vertical reveal feel, atmospheric haze, tiny suspended particles, water shimmer, distant volcanic glow pulses subtly. No readable text, no numbers, no labels, no extra symbols, no scene cut, no warping strata.",
+      "source_image": "assets/gpt_image_2_manual_v24/shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "prompt_id": "26ad2fb9-7521-48c3-83d2-c721046ae581",
+      "uploaded_image": "shot04_deep_time_rock_layers_sharks_v01.jpeg",
+      "comfy_output": {
+        "filename": "04_627104_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot04_wan22_432x768_25f_seed627104.mp4"
+    },
+    {
+      "id": "05",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "duration": 3.225,
+      "caption": "THEN FORESTS\nFINALLY ARRIVED",
+      "seed": 627105,
+      "prompt": "premium natural-history image-to-video of first primitive forests near ancient coast. Preserve the exact landscape and composition. Gentle wind movement in primitive plants, soft mist drift, water ripple, slow cinematic camera creep. No modern objects, no text, no logos, no morphing trees into fantasy shapes, no scene cut.",
+      "source_image": "assets/gpt_image_2_manual_v24/shot05_first_trees_coastline_v01.jpeg",
+      "prompt_id": "5a86ea59-f012-4198-99f2-82508b4558e0",
+      "uploaded_image": "shot05_first_trees_coastline_v01.jpeg",
+      "comfy_output": {
+        "filename": "05_627105_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot05_wan22_432x768_25f_seed627105.mp4"
+    },
+    {
+      "id": "06",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "duration": 3.685,
+      "caption": "AND TODAY...\nTHEY ARE STILL HERE",
+      "seed": 627106,
+      "prompt": "realistic aquarium documentary image-to-video. Preserve the child, glass plane, shark, and framing. Shark moves subtly behind the glass only, water particles drift, reflections shimmer, child remains stable and believable, tiny camera creep. Do not let shark cross the glass, no horror, no text, no logos, no face morphing, no scene cut.",
+      "source_image": "assets/gpt_image_2_manual_v24/shot06_kid_aquarium_deep_time_v01.jpeg",
+      "prompt_id": "2958eaa4-904c-4efa-be6b-a9654cf9819f",
+      "uploaded_image": "shot06_kid_aquarium_deep_time_v01.jpeg",
+      "comfy_output": {
+        "filename": "06_627106_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot06_wan22_432x768_25f_seed627106.mp4"
+    },
+    {
+      "id": "07",
+      "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+      "duration": 3.916,
+      "caption": "SURVIVOR\nFROM A WORLD\nBEFORE FORESTS",
+      "seed": 627107,
+      "prompt": "premium natural-history documentary image-to-video from the exact still. The realistic shark slowly glides toward camera with subtle tail and fin motion, deep ocean particles drift, shafts of light shimmer, distant volcanic glow barely moves. Preserve exact anatomy and calm confident tone. No lunge, no open bloody mouth, no monster look, no text, no logos, no morphing, no scene cut.",
+      "source_image": "assets/gpt_image_2_manual_v23/04_final_predator_got_here_first.png",
+      "prompt_id": "9c3c6834-3a54-4234-8da5-3c822466a22a",
+      "uploaded_image": "04_final_predator_got_here_first.png",
+      "comfy_output": {
+        "filename": "07_627107_00001_.mp4",
+        "subfolder": "ways_shark_v27_wan22",
+        "type": "output",
+        "_node_id": "61",
+        "_kind": "images"
+      },
+      "clip": "outputs/wan22_v27_animated_frames/clips/shot07_wan22_432x768_25f_seed627107.mp4"
+    }
+  ]
+}

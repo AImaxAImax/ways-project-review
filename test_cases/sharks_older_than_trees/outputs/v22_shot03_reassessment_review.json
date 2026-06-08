@@ -1,0 +1,21 @@
+{
+  "decision": "Reassessment implemented: museum is limited to proof beats; Shot 3 is being reworked away from same-room museum staging.",
+  "generated_after_reassessment": [
+    {
+      "version": "v21_shot03_literal_comparison",
+      "contact_sheet": "outputs/v21_shot03_literal_comparison_contact_sheet.jpg",
+      "result": "Did not pass. It became more visually distinct, but drifted into outdoor forest/leaf backgrounds in several variants and failed exact one apple/one squirrel/one nut clarity. v01 had cleaner no-forest look but missed clear nut and had two squirrels. v03/v06 had better object separation but extra/incorrect objects."
+    },
+    {
+      "version": "v22_shot03_icon_trio_no_forest",
+      "contact_sheet": "outputs/v22_shot03_icon_trio_no_forest_contact_sheet.jpg",
+      "result": "Better control: no forest/grass and not an outdoor museum scene. Still not final: model keeps replacing the red apple or walnut with pumpkins/blue objects/leaves/extra props. v06 is the closest direction because it has a red apple and one squirrel, but the nut is not unmistakable enough and there are extra disk props."
+    }
+  ],
+  "current_hold_status": {
+    "shot_01": "Keep v15 as immersive style/quality hold.",
+    "shot_02": "Keep v16/v17 as valid fossil proof/museum beat.",
+    "shot_03": "No final hold yet. v20 is fallback/reference only; v22 is better direction/control reference only."
+  },
+  "next_step": "For Shot 3, stop asking one text-to-image prompt to solve all objects. Build a more controlled plate or generate/compose the apple, squirrel, and walnut as separate elements, then polish as one image with img2img/control."
+}

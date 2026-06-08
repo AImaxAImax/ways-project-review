@@ -1,0 +1,19 @@
+{
+  "id": "03",
+  "path": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+  "duration": 3.685,
+  "caption": "BEFORE APPLES.\nBEFORE SQUIRRELS.",
+  "seed": 627103,
+  "prompt": "premium surreal documentary image-to-video from the exact still. Preserve the apple, squirrel, and nut/seed objects clearly. Add only subtle camera drift, gentle foreground/background parallax, small dust particles and soft light movement. Objects remain anatomically/physically stable. No extra animals, no text, no logos, no object morphing, no scene cut.",
+  "source_image": "assets/gpt_image_2_manual_v24/shot03_apple_squirrel_nut_v01.jpeg",
+  "prompt_id": "3c898e49-6f4c-4434-b2f7-b739e875a868",
+  "uploaded_image": "shot03_apple_squirrel_nut_v01.jpeg",
+  "comfy_output": {
+    "filename": "03_627103_00001_.mp4",
+    "subfolder": "ways_shark_v27_wan22",
+    "type": "output",
+    "_node_id": "61",
+    "_kind": "images"
+  },
+  "clip": "outputs/wan22_v27_animated_frames/clips/shot03_wan22_432x768_25f_seed627103.mp4"
+}

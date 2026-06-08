@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#video",
+  "etag": "D0CKwkBkgJGFNhaFiWUUhdkXkN8",
+  "id": "GiEF7Tf7Bn8",
+  "snippet": {
+    "publishedAt": "2026-06-07T04:06:07Z",
+    "channelId": "UCUgLdX0znSpNrG2rher1Fwg",
+    "title": "This Frog Can Freeze Solid #Shorts",
+    "description": "This frog can freeze solid and wake back up.\n\nWood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect their cells until spring thaw.\n\n#Shorts #science #facts #animals\n\nSources:\n- Costanzo et al., Freeze tolerance in the wood frog, Journal of Experimental Biology.\n- Storey & Storey, Freeze tolerance and glucose cryoprotection in amphibians.",
+    "thumbnails": {
+      "default": {
+        "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/default.jpg?sqp=COzbk9EG&rs=AOn4CLCsZuw2Yer7vt6JUTuRHCwHYioYnw",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/mqdefault.jpg?sqp=COzbk9EG&rs=AOn4CLA5LfqrrQ2iQ2xJiZqKA6zzppE2SQ",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i9.ytimg.com/vi/GiEF7Tf7Bn8/hqdefault.jpg?sqp=COzbk9EG&rs=AOn4CLA2VaKoKyp7fOKxyZgpQaOerNj9zw",
+        "width": 480,
+        "height": 360
+      }
+    },
+    "channelTitle": "Wait Are You Serious?",
+    "tags": [
+      "Shorts",
+      "WAYS",
+      "Wait Are You Serious",
+      "animal facts",
+      "biology",
+      "facts",
+      "frog facts",
+      "science",
+      "survival chemistry",
+      "wood frog"
+    ],
+    "categoryId": "28",
+    "liveBroadcastContent": "none",
+    "localized": {
+      "title": "This Frog Can Freeze Solid #Shorts",
+      "description": "This frog can freeze solid and wake back up.\n\nWood frogs survive winter by letting much of their body freeze while glucose-rich fluids help protect their cells until spring thaw.\n\n#Shorts #science #facts #animals\n\nSources:\n- Costanzo et al., Freeze tolerance in the wood frog, Journal of Experimental Biology.\n- Storey & Storey, Freeze tolerance and glucose cryoprotection in amphibians."
+    }
+  },
+  "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false
+  }
+}

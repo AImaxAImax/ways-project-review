@@ -1,0 +1,128 @@
+[
+  {
+    "shot": 1,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152101,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: barren rocky ochre land with absolutely no trees or plants above a teal prehistoric ocean with one small calm shark, emptiness of land is the hero",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_01_v1_00001_.png"
+  },
+  {
+    "shot": 1,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152102,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/01_before_trees_barren_land_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, ancient world before trees existed: barren rocky ochre land with absolutely no trees or plants above a teal prehistoric ocean with one small calm shark, emptiness of land is the hero",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_01_v2_00001_.png"
+  },
+  {
+    "shot": 2,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152201,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/02_seriously_fossil_museum_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, museum fossil proof shot: tactile stone slab and shark fossil skeleton exhibit under warm display lighting, no living aquarium scene",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_02_v1_00001_.png"
+  },
+  {
+    "shot": 2,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152202,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/02_seriously_fossil_museum_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, museum fossil proof shot: tactile stone slab and shark fossil skeleton exhibit under warm display lighting, no living aquarium scene",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_02_v2_00001_.png"
+  },
+  {
+    "shot": 3,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152301,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, comedic prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, no dense forest",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_03_v1_00001_.png"
+  },
+  {
+    "shot": 3,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152302,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/03_apples_squirrel_nuts_gag_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, comedic prehistoric gag: one red apple, one cute squirrel, one acorn nut as clear oversized hero props on empty rocky ground, no dense forest",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_03_v2_00001_.png"
+  },
+  {
+    "shot": 4,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152401,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic timeline diorama: stacked rock strata shelves, shark fossil in lowest layer, fossil clock shapes, primitive plants much higher up",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_04_v1_00001_.png"
+  },
+  {
+    "shot": 4,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152402,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/04_geologic_deep_time_timeline_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, vertical geologic timeline diorama: stacked rock strata shelves, shark fossil in lowest layer, fossil clock shapes, primitive plants much higher up",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_04_v2_00001_.png"
+  },
+  {
+    "shot": 5,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152501,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/05_primitive_forest_arrives_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, primitive early forest arrives later: strange first tree-like plants and ferns rising on shoreline, shark small in water",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_05_v1_00001_.png"
+  },
+  {
+    "shot": 5,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152502,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/05_primitive_forest_arrives_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, primitive early forest arrives later: strange first tree-like plants and ferns rising on shoreline, shark small in water",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_05_v2_00001_.png"
+  },
+  {
+    "shot": 6,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152601,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/06_modern_viewer_aquarium_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, modern museum aquarium viewer POV: child and adult silhouettes looking through glass at calm shark, warm wonder",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_06_v1_00001_.png"
+  },
+  {
+    "shot": 6,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152602,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/06_modern_viewer_aquarium_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, modern museum aquarium viewer POV: child and adult silhouettes looking through glass at calm shark, warm wonder",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_06_v2_00001_.png"
+  },
+  {
+    "shot": 7,
+    "variant": 1,
+    "denoise": 0.38,
+    "seed": 26152701,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/07_survivor_world_before_forests_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, final quiet awe: calm ancient shark in vast teal prehistoric ocean, distant barren treeless shoreline, peaceful survivor",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_07_v1_00001_.png"
+  },
+  {
+    "shot": 7,
+    "variant": 2,
+    "denoise": 0.5,
+    "seed": 26152702,
+    "ref": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v7_premium_papercut/07_survivor_world_before_forests_premium.png",
+    "prompt": "premium tactile stop-motion paper diorama, high-end handcrafted layered paper sculpture and clay miniature, real paper fibers, precise cut edges, cast shadows, macro lens, warm natural-history museum lighting, cinematic depth of field, polished boutique educational short, teal ocean and ochre amber palette, mobile-readable silhouettes, clean negative space for captions, final quiet awe: calm ancient shark in vast teal prehistoric ocean, distant barren treeless shoreline, peaceful survivor",
+    "file": "/mnt/c/dev/curious-shorts/test_cases/sharks_older_than_trees/assets/v9_img2img_dreamshaper/v9_img2img_07_v2_00001_.png"
+  }
+]

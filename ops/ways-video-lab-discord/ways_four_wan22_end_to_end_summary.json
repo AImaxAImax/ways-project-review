@@ -1,0 +1,106 @@
+{
+  "saturn_hexagon_storm": {
+    "mp4": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/saturn_hexagon_storm/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000"
+        }
+      ],
+      "format": {
+        "duration": "17.800000",
+        "size": "4198753"
+      }
+    }
+  },
+  "wombat_cube_poop": {
+    "mp4": "/mnt/c/dev/curious-shorts/test_cases/wombat_cube_poop/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/wombat_cube_poop/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000"
+        }
+      ],
+      "format": {
+        "duration": "18.900000",
+        "size": "12236321"
+      }
+    }
+  },
+  "octopus_three_hearts": {
+    "mp4": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/octopus_three_hearts/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000"
+        }
+      ],
+      "format": {
+        "duration": "16.000000",
+        "size": "11301568"
+      }
+    }
+  },
+  "tardigrade_survival_mode": {
+    "mp4": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/publish_candidate_captioned.mp4",
+    "contact_sheet": "/mnt/c/dev/curious-shorts/test_cases/tardigrade_survival_mode/outputs/final_polish_wan22_template_v01/contact_sheet_final_polish.jpg",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000"
+        }
+      ],
+      "format": {
+        "duration": "19.100000",
+        "size": "7436997"
+      }
+    }
+  }
+}

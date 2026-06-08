@@ -1,0 +1,44 @@
+{
+  "project_root": ".",
+  "slug": "replace_with_topic_slug",
+  "output_dir": "outputs/wan22_render",
+  "voiceover": "outputs/voiceover.mp3",
+  "workflow": "/mnt/c/dev/vj-engine/comfyui/workflows/wan2_2_a14b_gguf_lightning_i2v_smoke.json",
+  "comfy_url": "http://127.0.0.1:8188",
+  "negative_prompt": "text, subtitles, readable letters, watermark, logo, UI, hard cut, scene transition, horror, blood, attack, morphing animal anatomy, duplicated fins, distorted face, melted geometry, jitter, flicker, low quality, blurry, compression artifacts",
+  "render_settings": {
+    "wan_width": 432,
+    "wan_height": 768,
+    "wan_length_frames": 25,
+    "fps": 24,
+    "master_width": 1080,
+    "master_height": 1920,
+    "master_crf": 18,
+    "audio_bitrate": "160k",
+    "audio_sample_rate": 48000,
+    "preview_width": 720,
+    "preview_height": 1280,
+    "preview_crf": 24,
+    "preview_audio_bitrate": "96k"
+  },
+  "workflow_overrides": {
+    "39.inputs.vae_name": "wan_2.1_vae.safetensors"
+  },
+  "qa_gate": [
+    "actual image-to-video motion, not still zoom",
+    "no gross morphing or anatomy melt",
+    "no generated captions/text/logos inside source clips",
+    "ffprobe confirms audio on final master/preview",
+    "caption pass still required before publish-ready gate"
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "image": "assets/shot01.png",
+      "duration": 3.0,
+      "caption": "CAPTION TEXT",
+      "seed": 100001,
+      "prompt": "premium realistic image-to-video from the exact still. Preserve the exact subject, composition, colors, and style. Add subtle true motion: camera creep, gentle parallax, particles/light movement where appropriate. No text, no logos, no scene cut."
+    }
+  ]
+}

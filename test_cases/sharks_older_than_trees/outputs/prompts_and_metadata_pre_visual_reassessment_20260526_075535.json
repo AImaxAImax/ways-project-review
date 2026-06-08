@@ -1,0 +1,71 @@
+{
+  "project": "curious-shorts",
+  "test_case": "001_sharks_older_than_trees",
+  "format": {
+    "platform": "YouTube Shorts",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "target_duration_sec": 40
+  },
+  "script": [
+    "Sharks were here before trees.",
+    "Seriously.",
+    "Before forests. Before apples. Before squirrels had anywhere to hide nuts.",
+    "The first sharks showed up more than four hundred million years ago.",
+    "Trees took their time. They didn\u2019t really arrive until tens of millions of years later.",
+    "So when you look at a shark, you\u2019re not just looking at an animal.",
+    "You\u2019re looking at a survivor from a world before forests."
+  ],
+  "image_prompts": [
+    {
+      "id": "shot_01_hook",
+      "prompt": "Vertical 9:16 soft cinematic 3D educational animation poster, peaceful ancient shark silhouette on one side and tall forest silhouette on the other, magical museum exhibit lighting, teal and warm green palette, parent-approved science channel look, clean negative space for large caption text, no gore, no scary teeth, no readable text in image"
+    },
+    {
+      "id": "shot_02_ancient_ocean_dive",
+      "prompt": "Vertical 9:16 camera diving into a prehistoric ocean, sun rays through blue-green water, floating particles, distant gentle shark silhouette, soft 3D educational animation, cinematic but kid friendly, awe and curiosity, no text"
+    },
+    {
+      "id": "shot_03_first_sharks",
+      "prompt": "Vertical 9:16 ancient prehistoric shark gliding calmly through a Paleozoic ocean, simple clear silhouette, beautiful underwater lighting, natural history museum animation style, premium educational content for curious families, no gore, no attack pose, no text"
+    },
+    {
+      "id": "shot_04_timeline",
+      "prompt": "Vertical 9:16 clean illustrated science timeline scene, ancient ocean icon appears before early forest icon, soft 3D infographic style, clear empty space for editor-added labels, friendly museum exhibit design, teal blue to forest green gradient, no generated readable text"
+    },
+    {
+      "id": "shot_05_before_forests",
+      "prompt": "Vertical 9:16 split transformation scene: ancient ocean with peaceful shark below, empty rocky land above with tiny early plants just beginning, cinematic educational illustration, warm sunlight, clear composition, parent-trusted science channel, no text"
+    },
+    {
+      "id": "shot_06_memory_line",
+      "prompt": "Vertical 9:16 awe-inspiring peaceful shark swimming through a prehistoric ocean, faint dreamlike suggestion of a future forest above the waterline, warm museum-grade educational animation, survivor from a world before forests, calm wonder, no scary teeth, no gore, no text"
+    }
+  ],
+  "motion_prompts": [
+    {
+      "id": "shot_02_motion",
+      "prompt": "Slow smooth forward camera dive into ancient underwater world, particles drifting, distant shark glides left to right, calm educational tone."
+    },
+    {
+      "id": "shot_03_motion",
+      "prompt": "Ancient shark glides calmly across frame, gentle tail movement, sunlight beams ripple, slow camera push."
+    },
+    {
+      "id": "shot_05_motion",
+      "prompt": "Soft cinematic transition from prehistoric ocean to barren rocky land before forests, tiny early plants emerging, slow magical reveal."
+    },
+    {
+      "id": "shot_06_motion",
+      "prompt": "Peaceful shark swims past camera in slow motion, soft parallax, faint future forest silhouette appears like a memory, quiet awe ending."
+    }
+  ],
+  "sfx": [
+    "soft underwater ambience",
+    "subtle whoosh on timeline reveal",
+    "gentle magical chime on 'older than trees' hook",
+    "low warm impact on final memory line"
+  ],
+  "music_direction": "Low-volume curious marimba/celeste/pad bed, 80-95 BPM, magical science museum feel, never competing with narration.",
+  "status": "script_v2_survivor_line_ready_for_visual_generation"
+}

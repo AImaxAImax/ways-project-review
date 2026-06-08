@@ -1,0 +1,20 @@
+[
+  {
+    "id": "13747cf2-3361-432b-9422-44abff162f47",
+    "status": "completed",
+    "display_name": "Nano Banana 2",
+    "job_set_type": "nano_banana_flash",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EGhCopFgbNtE019D8WArn1wnIW/hf_20260607_044152_13747cf2-3361-432b-9422-44abff162f47.png",
+    "created_at": 1780807312.953502,
+    "params": {
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "resolution": "1k",
+      "batch_size": 1,
+      "prompt": "Vertical 9:16 cinematic educational wildlife still, one Chrysopelea flying snake caught mid-glide across an open jungle gap, snake is suspended in midair with no support, body visibly flattened wider than normal and forming a clean side-to-side wave, belly edge catching sunlight, rainforest background soft and distant, clear open air all around the snake, realistic scales and proportions, no wings, no legs, no branch contact, no extra animals, no text, no logos, no watermark, no UI.",
+      "medias": [],
+      "reference_elements": []
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Caption,DejaVu Sans,92,&H00FFFFFF,&H0000D7FF,&H00000000,&H99000000,-1,0,0,0,100,100,0,0,1,8,3,5,90,90,120,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 6,0:00:00.00,0:00:03.77,Caption,,0,0,0,,{\c&H0000D7FF&}Wombats poop{\c&H00FFFFFF&} cubes
+Dialogue: 6,0:00:03.77,0:00:07.54,Caption,,0,0,0,,{\c&H0000D7FF&}little cube{\c&H00FFFFFF&} shaped pellets
+Dialogue: 6,0:00:07.54,0:00:11.30,Caption,,0,0,0,,{\c&H0000D7FF&}uneven stretching\Ninside{\c&H00FFFFFF&} the intestine
+Dialogue: 6,0:00:11.30,0:00:15.07,Caption,,0,0,0,,{\c&H0000D7FF&}the corners{\c&H00FFFFFF&} form first
+Dialogue: 6,0:00:15.07,0:00:18.84,Caption,,0,0,0,,{\c&H0000D7FF&}bathroom fact\Nplus{\c&H00FFFFFF&} physics

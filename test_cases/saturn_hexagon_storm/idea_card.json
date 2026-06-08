@@ -1,0 +1,20 @@
+{
+  "slug": "saturn_hexagon_storm",
+  "hook": "Saturn has a hexagon storm.",
+  "core_fact": "A giant hexagon-shaped jet stream wraps around Saturn's north pole, with storms and a polar vortex inside.",
+  "status_column": "Script Locked",
+  "cohort_tag": "first10_space_080",
+  "test_variable": "nasa_source_cinematic_static_motion",
+  "category_id": 28,
+  "voice": "elevenlabs_george",
+  "lane_map": {},
+  "draft_score": null,
+  "publish_score": null,
+  "youtube_video_id": null,
+  "privacy": "private",
+  "retention_pct_viewed": null,
+  "artifact_folder": "test_cases/saturn_hexagon_storm/",
+  "blocking_gate": null,
+  "created_at": "2026-06-07T07:21:42Z",
+  "automation_policy": "auto_advance_internal_until_5_active_ready; public_publish_requires_explicit_gate6"
+}
