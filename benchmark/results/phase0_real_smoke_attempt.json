@@ -1,0 +1,8 @@
+{
+  "result": "success_after_comfy_restart",
+  "restart": "Stopped Windows ComfyUI python PID 74008; started PID 82844 from C:\\dev\\ComfyUI using env_uma python.",
+  "cell": "cat1_shark_a / wan22_i2v / seed_627101",
+  "render_seconds": 679.878,
+  "video": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/clips/shot01_wan22_432x768_25f_seed627101.mp4",
+  "qa_report": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/qa/qa_report.json"
+}

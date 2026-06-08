@@ -1,0 +1,117 @@
+{
+  "result_count": 7,
+  "results": [
+    {
+      "plate": "cat1_octopus_b",
+      "seed": 627101,
+      "render_seconds": 335.605,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.930923,
+      "dino_min": 0.948676,
+      "lpips": 0.106059,
+      "motion": 2.910626,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627101/clips/shot01_wan22_432x768_25f_seed627101.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627101/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_octopus_b",
+      "seed": 627102,
+      "render_seconds": 561.584,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.932542,
+      "dino_min": 0.953524,
+      "lpips": 0.12859,
+      "motion": 3.77381,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627102/clips/shot01_wan22_432x768_25f_seed627102.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_octopus_b/wan22_i2v/seed_627102/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_shark_a",
+      "seed": 627101,
+      "render_seconds": 679.878,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.832683,
+      "dino_min": 0.898563,
+      "lpips": 0.09063,
+      "motion": 1.798529,
+      "video_local_path": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/clips/shot01_wan22_432x768_25f_seed627101.mp4",
+      "qa_report_local_path": "benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627101/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_shark_a",
+      "seed": 627102,
+      "render_seconds": 590.645,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.815033,
+      "dino_min": 0.896326,
+      "lpips": 0.114434,
+      "motion": 2.450412,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627102/clips/shot01_wan22_432x768_25f_seed627102.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627102/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_shark_a",
+      "seed": 627103,
+      "render_seconds": 640.68,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.804657,
+      "dino_min": 0.909578,
+      "lpips": 0.1031,
+      "motion": 2.183384,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627103/clips/shot01_wan22_432x768_25f_seed627103.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627103/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_shark_a",
+      "seed": 627104,
+      "render_seconds": 609.792,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.829647,
+      "dino_min": 0.917083,
+      "lpips": 0.099484,
+      "motion": 2.152907,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627104/clips/shot01_wan22_432x768_25f_seed627104.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627104/qa/qa_report.json"
+    },
+    {
+      "plate": "cat1_shark_a",
+      "seed": 627105,
+      "render_seconds": 537.092,
+      "score": 92,
+      "blockers": [],
+      "warnings": [
+        "low resolution for Shorts: 432x768; preferred >= 720x1280"
+      ],
+      "clip_min": 0.828912,
+      "dino_min": 0.901302,
+      "lpips": 0.121237,
+      "motion": 2.641627,
+      "video_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627105/clips/shot01_wan22_432x768_25f_seed627105.mp4",
+      "qa_report_local_path": "/mnt/c/dev/curious-shorts/benchmark/runs/cat1/cat1_shark_a/wan22_i2v/seed_627105/qa/qa_report.json"
+    }
+  ]
+}

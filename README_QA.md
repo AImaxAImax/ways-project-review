@@ -11,7 +11,7 @@ First-pass QA for local Shorts/Reels/TikTok candidates. It creates review artifa
 - Optional text/logo/artifact/anatomy scan through either:
   - `--vlm-command 'your_scanner --image {image}'`, where stdout is JSON, or
   - `--openai-vlm-url http://host:8000/v1 --vlm-model <model>` for an OpenAI-compatible vision server.
-- Optional source-preservation proxy for animal/source shots with `--source-image`; this is a lightweight RGB similarity check and should be replaced by CLIP/DINO/VLM review when available.
+- Optional metric harness for animal/source shots with `--source-image`: CLIP image-embedding preservation, DINOv2 structure preservation, temporal consistency, optical-flow motion magnitude, and VLM-derived artifact flags. These metrics are advisory/report-only until a calibrated `--thresholds config/qa_thresholds.json` exists; without thresholds, the tool computes `qa_report.json` + `metrics_debug.json` but does not create metric blockers.
 
 ## Basic use
 

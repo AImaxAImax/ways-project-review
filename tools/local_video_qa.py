@@ -22,7 +22,6 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-
 DEFAULT_REVIEW_PROMPT = (
     "Review this contact sheet for a vertical short-form video. Return JSON with "
     "keys: text_or_logo_present (bool), visual_artifacts (array), anatomy_or_morphing_issues "
@@ -30,6 +29,14 @@ DEFAULT_REVIEW_PROMPT = (
     "Be harsh: generated text, logos, watermarks, malformed animals, duplicated limbs/fins, "
     "jitter/melting, double captions, or clutter are blockers."
 )
+
+THRESHOLD_KEYS = {
+    "clip_preservation_min",
+    "dino_structure_min",
+    "temporal_consistency_max",
+    "motion_magnitude_low",
+    "motion_magnitude_high",
+}
 
 
 class QAError(RuntimeError):
@@ -111,6 +118,7 @@ def extract_rgb(path: Path, *, seconds: float | None = None, size: int = 64) -> 
 
 
 def rgb_similarity(a: bytes, b: bytes) -> dict[str, float]:
+    """Legacy helper kept for compatibility tests and emergency debugging only."""
     n = min(len(a), len(b))
     if n == 0:
         return {"rmse": 1.0, "cosine": 0.0, "score": 0.0}
@@ -126,21 +134,305 @@ def rgb_similarity(a: bytes, b: bytes) -> dict[str, float]:
     return {"rmse": round(rmse, 4), "cosine": round(cosine, 4), "score": round(score, 4)}
 
 
-def source_preservation_proxy(source_image: Path, video: Path, duration: float) -> dict[str, Any]:
-    source_rgb = extract_rgb(source_image)
-    sample_times = sorted(set([0.1, max(0.1, duration / 2), max(0.1, duration - 0.25)]))
-    samples = []
-    for t in sample_times:
-        frame_rgb = extract_rgb(video, seconds=t)
-        samples.append({"time": round(t, 3), **rgb_similarity(source_rgb, frame_rgb)})
-    avg = sum(s["score"] for s in samples) / len(samples)
-    return {
-        "method": "64x64 RGB cosine/RMSE proxy; use CLIP/DINO when available for semantic preservation",
-        "source_image": str(source_image),
-        "samples": samples,
-        "average_score": round(avg, 4),
-        "severity": "warn" if avg < 0.55 else "pass",
+def load_thresholds(path: Path | None) -> tuple[dict[str, Any] | None, dict[str, Any], bool]:
+    """Return (thresholds, thresholds_used_echo, metric_report_only)."""
+    if not path:
+        return None, {"mode": "report_only", "path": None, "loaded": False, "reason": "no thresholds file supplied"}, True
+    path = path.resolve()
+    if not path.exists():
+        return None, {"mode": "report_only", "path": str(path), "loaded": False, "reason": "thresholds file missing"}, True
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise QAError(f"malformed thresholds file: {path}: {exc}") from exc
+    if not isinstance(data, dict):
+        raise QAError(f"malformed thresholds file: {path}: expected JSON object")
+    for key in THRESHOLD_KEYS:
+        if key in data:
+            try:
+                float(data[key])
+            except Exception as exc:
+                raise QAError(f"malformed thresholds file: {path}: {key} must be numeric") from exc
+    return data, {"mode": "blocking", "path": str(path), "loaded": True, **data}, False
+
+
+def extract_sample_frames(video: Path, outdir: Path, sample_fps: float) -> list[Path]:
+    outdir.mkdir(parents=True, exist_ok=True)
+    fps = max(0.1, float(sample_fps))
+    pattern = outdir / "frame_%05d.jpg"
+    run(["ffmpeg", "-y", "-v", "error", "-i", str(video), "-vf", f"fps={fps}", "-q:v", "2", str(pattern)])
+    return sorted(outdir.glob("frame_*.jpg"))
+
+
+def _round_or_none(value: float | None, ndigits: int = 6) -> float | None:
+    if value is None:
+        return None
+    if isinstance(value, float) and (math.isnan(value) or math.isinf(value)):
+        return None
+    return round(float(value), ndigits)
+
+
+def _cosine(a: Any, b: Any) -> float:
+    import torch
+    return float(torch.nn.functional.cosine_similarity(a, b, dim=-1).detach().cpu().item())
+
+
+def compute_clip_preservation(source_image: Path, frames: list[Path]) -> tuple[dict[str, Any], dict[str, Any]]:
+    try:
+        import torch
+        import open_clip
+        from PIL import Image
+    except Exception as exc:
+        return {"available": False, "error": f"open_clip_torch/PIL unavailable: {exc}"}, {"per_frame": []}
+    if not frames:
+        return {"available": False, "error": "no sampled frames"}, {"per_frame": []}
+    try:
+        model, _, preprocess = open_clip.create_model_and_transforms("ViT-B-32", pretrained="laion2b_s34b_b79k")
+        model.eval()
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        model.to(device)
+        with torch.no_grad():
+            src = preprocess(Image.open(source_image).convert("RGB")).unsqueeze(0).to(device)
+            src_emb = model.encode_image(src)
+            src_emb = src_emb / src_emb.norm(dim=-1, keepdim=True)
+            values = []
+            per_frame = []
+            for frame in frames:
+                img = preprocess(Image.open(frame).convert("RGB")).unsqueeze(0).to(device)
+                emb = model.encode_image(img)
+                emb = emb / emb.norm(dim=-1, keepdim=True)
+                val = _cosine(src_emb, emb)
+                values.append(val)
+                per_frame.append({"frame": frame.name, "cosine": round(val, 6)})
+        return {"available": True, "method": "open_clip ViT-B-32/laion2b_s34b_b79k", "min": round(min(values), 6), "mean": round(sum(values) / len(values), 6)}, {"per_frame": per_frame}
+    except Exception as exc:
+        return {"available": False, "error": str(exc)}, {"per_frame": []}
+
+
+def compute_dino_structure(source_image: Path, frames: list[Path]) -> tuple[dict[str, Any], dict[str, Any]]:
+    try:
+        import torch
+        from PIL import Image
+        from torchvision import transforms
+    except Exception as exc:
+        return {"available": False, "error": f"torch/torchvision/PIL unavailable: {exc}"}, {"per_frame": []}
+    if not frames:
+        return {"available": False, "error": "no sampled frames"}, {"per_frame": []}
+    try:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        model = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14", pretrained=True)
+        model.eval().to(device)
+        preprocess = transforms.Compose([
+            transforms.Resize(256, interpolation=transforms.InterpolationMode.BICUBIC),
+            transforms.CenterCrop(224),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+        ])
+        with torch.no_grad():
+            src = preprocess(Image.open(source_image).convert("RGB")).unsqueeze(0).to(device)
+            src_emb = model(src)
+            src_emb = src_emb / src_emb.norm(dim=-1, keepdim=True)
+            values = []
+            per_frame = []
+            for frame in frames:
+                img = preprocess(Image.open(frame).convert("RGB")).unsqueeze(0).to(device)
+                emb = model(img)
+                emb = emb / emb.norm(dim=-1, keepdim=True)
+                val = _cosine(src_emb, emb)
+                values.append(val)
+                per_frame.append({"frame": frame.name, "cosine": round(val, 6)})
+        return {"available": True, "method": "DINOv2 vits14 via torch.hub", "min": round(min(values), 6), "mean": round(sum(values) / len(values), 6)}, {"per_frame": per_frame}
+    except Exception as exc:
+        return {"available": False, "error": str(exc)}, {"per_frame": []}
+
+
+def compute_motion_and_temporal(frames: list[Path]) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    if len(frames) < 2:
+        unavailable = {"available": False, "error": "need at least two sampled frames"}
+        return unavailable, unavailable, {"per_pair": []}
+    try:
+        import cv2
+        import numpy as np
+    except Exception as exc:
+        unavailable = {"available": False, "error": f"opencv/numpy unavailable: {exc}"}
+        return unavailable, unavailable, {"per_pair": []}
+
+    lpips_model = None
+    lpips_error = None
+    try:
+        import lpips
+        import torch
+        lpips_model = lpips.LPIPS(net="alex")
+        lpips_model.eval()
+        if torch.cuda.is_available():
+            lpips_model = lpips_model.cuda()
+    except Exception as exc:  # LPIPS is optional; Farneback still gives motion and absdiff fallback.
+        lpips_error = str(exc)
+
+    def lpips_tensor(rgb: Any) -> Any:
+        import torch
+        tensor = torch.from_numpy(rgb).permute(2, 0, 1).unsqueeze(0).float()
+        tensor = (tensor * 2.0) - 1.0
+        if lpips_model is not None and next(lpips_model.parameters()).is_cuda:
+            tensor = tensor.cuda()
+        return tensor
+
+    pair_debug: list[dict[str, Any]] = []
+    flow_values: list[float] = []
+    diff_values: list[float] = []
+    lpips_values: list[float] = []
+    prev_gray = None
+    prev_rgb = None
+    for frame in frames:
+        bgr = cv2.imread(str(frame))
+        if bgr is None:
+            continue
+        gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+        rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB).astype("float32") / 255.0
+        if prev_gray is not None and prev_rgb is not None:
+            flow = cv2.calcOpticalFlowFarneback(prev_gray, gray, None, 0.5, 3, 15, 3, 5, 1.2, 0)
+            mag, _ = cv2.cartToPolar(flow[..., 0], flow[..., 1])
+            flow_mean = float(np.mean(mag))
+            diff_mean = float(np.mean(np.abs(rgb - prev_rgb)))
+            flow_values.append(flow_mean)
+            diff_values.append(diff_mean)
+            item = {"to_frame": frame.name, "flow_mean": round(flow_mean, 6), "frame_absdiff_mean": round(diff_mean, 6)}
+            if lpips_model is not None:
+                try:
+                    with __import__("torch").no_grad():
+                        lpips_val = float(lpips_model(lpips_tensor(prev_rgb), lpips_tensor(rgb)).detach().cpu().item())
+                    lpips_values.append(lpips_val)
+                    item["lpips"] = round(lpips_val, 6)
+                except Exception as exc:
+                    lpips_error = str(exc)
+            pair_debug.append(item)
+        prev_gray = gray
+        prev_rgb = rgb
+
+    if not flow_values:
+        unavailable = {"available": False, "error": "could not compute frame pairs"}
+        return unavailable, unavailable, {"per_pair": pair_debug}
+    motion = {"available": True, "method": "opencv Farneback optical flow", "mean": round(sum(flow_values) / len(flow_values), 6)}
+    if lpips_values:
+        temporal = {"available": True, "method": "LPIPS alex frame-to-frame mean", "mean": round(sum(lpips_values) / len(lpips_values), 6)}
+    else:
+        temporal = {
+            "available": True,
+            "method": "mean frame-to-frame absolute difference proxy; install lpips for neural LPIPS scoring",
+            "mean": round(sum(diff_values) / len(diff_values), 6),
+        }
+        if lpips_error:
+            temporal["lpips_unavailable"] = lpips_error
+    return temporal, motion, {"per_pair": pair_debug}
+
+
+def compute_metric_bundle(video: Path, source_image: Path | None, frame_sample_fps: float) -> tuple[dict[str, Any], dict[str, Any], list[str]]:
+    warnings: list[str] = []
+    metrics: dict[str, Any] = {
+        "clip_preservation": {"available": False, "skipped": True, "reason": "no source image provided"},
+        "dino_structure": {"available": False, "skipped": True, "reason": "no source image provided"},
+        "temporal_consistency": {"available": False, "error": "not computed"},
+        "motion_magnitude": {"available": False, "error": "not computed"},
+        "artifact_flags": [],
     }
+    debug: dict[str, Any] = {"frame_sample_fps": frame_sample_fps, "frames": [], "clip_preservation": {}, "dino_structure": {}, "motion_temporal": {}}
+    with tempfile.TemporaryDirectory(prefix="ways_qa_frames_") as td:
+        frames = extract_sample_frames(video, Path(td), frame_sample_fps)
+        debug["frames"] = [f.name for f in frames]
+        temporal, motion, mt_debug = compute_motion_and_temporal(frames)
+        metrics["temporal_consistency"] = temporal
+        metrics["motion_magnitude"] = motion
+        debug["motion_temporal"] = mt_debug
+        if source_image:
+            if not source_image.exists():
+                warnings.append(f"source image missing; preservation metrics skipped: {source_image}")
+                metrics["clip_preservation"] = {"available": False, "skipped": True, "reason": f"source image missing: {source_image}"}
+                metrics["dino_structure"] = {"available": False, "skipped": True, "reason": f"source image missing: {source_image}"}
+            else:
+                clip, clip_debug = compute_clip_preservation(source_image, frames)
+                dino, dino_debug = compute_dino_structure(source_image, frames)
+                metrics["clip_preservation"] = clip
+                metrics["dino_structure"] = dino
+                debug["clip_preservation"] = clip_debug
+                debug["dino_structure"] = dino_debug
+                if not clip.get("available"):
+                    warnings.append(f"CLIP preservation unavailable: {clip.get('error', clip.get('reason', 'unknown'))}")
+                if not dino.get("available"):
+                    warnings.append(f"DINO structure unavailable: {dino.get('error', dino.get('reason', 'unknown'))}")
+        if not temporal.get("available"):
+            warnings.append(f"temporal consistency unavailable: {temporal.get('error', 'unknown')}")
+        if not motion.get("available"):
+            warnings.append(f"motion magnitude unavailable: {motion.get('error', 'unknown')}")
+    return metrics, debug, warnings
+
+
+def threshold_value(thresholds: dict[str, Any] | None, key: str) -> float | None:
+    if not thresholds or key not in thresholds:
+        return None
+    return float(thresholds[key])
+
+
+def metric_number(metric: dict[str, Any], field: str = "mean") -> float | None:
+    if not isinstance(metric, dict) or not metric.get("available"):
+        return None
+    value = metric.get(field)
+    return float(value) if value is not None else None
+
+
+def apply_metric_thresholds(metrics: dict[str, Any], thresholds: dict[str, Any] | None, *, report_only: bool) -> list[str]:
+    if report_only or not thresholds:
+        return []
+    blockers: list[str] = []
+    clip_min = threshold_value(thresholds, "clip_preservation_min")
+    if clip_min is not None:
+        val = metric_number(metrics.get("clip_preservation", {}), "min")
+        if val is not None and val < clip_min:
+            blockers.append(f"clip_preservation min {val:.4f} below threshold {clip_min:.4f}")
+    dino_min = threshold_value(thresholds, "dino_structure_min")
+    if dino_min is not None:
+        val = metric_number(metrics.get("dino_structure", {}), "min")
+        if val is not None and val < dino_min:
+            blockers.append(f"dino_structure min {val:.4f} below threshold {dino_min:.4f}")
+    temporal_max = threshold_value(thresholds, "temporal_consistency_max")
+    if temporal_max is not None:
+        val = metric_number(metrics.get("temporal_consistency", {}), "mean")
+        if val is not None and val > temporal_max:
+            blockers.append(f"temporal_consistency mean {val:.4f} above threshold {temporal_max:.4f}")
+    motion_low = threshold_value(thresholds, "motion_magnitude_low")
+    if motion_low is not None:
+        val = metric_number(metrics.get("motion_magnitude", {}), "mean")
+        if val is not None and val < motion_low:
+            blockers.append(f"motion_magnitude mean {val:.4f} below threshold {motion_low:.4f}")
+    motion_high = threshold_value(thresholds, "motion_magnitude_high")
+    if motion_high is not None:
+        val = metric_number(metrics.get("motion_magnitude", {}), "mean")
+        if val is not None and val > motion_high:
+            blockers.append(f"motion_magnitude mean {val:.4f} above threshold {motion_high:.4f}")
+    return blockers
+
+
+def metric_warnings(metrics: dict[str, Any], thresholds: dict[str, Any] | None) -> list[str]:
+    warnings: list[str] = []
+    motion_low = threshold_value(thresholds, "motion_magnitude_low")
+    motion = metric_number(metrics.get("motion_magnitude", {}), "mean")
+    if motion_low is not None and motion is not None and motion < motion_low:
+        warnings.append(f"dead-render warning: motion_magnitude mean {motion:.4f} below low band {motion_low:.4f}")
+    return warnings
+
+
+def artifact_flags_from_vlm(vlm_scan: dict[str, Any]) -> list[str]:
+    flags: list[str] = []
+    if not isinstance(vlm_scan, dict):
+        return flags
+    for key in ("visual_artifacts", "anatomy_or_morphing_issues", "caption_readability_issues"):
+        value = vlm_scan.get(key)
+        if isinstance(value, list):
+            flags.extend(str(v) for v in value if str(v).strip())
+    if vlm_scan.get("text_or_logo_present") is True:
+        flags.append("text_or_logo_present")
+    if str(vlm_scan.get("severity", "")).lower() == "block":
+        flags.append("vlm_severity_block")
+    return flags
 
 
 def run_vlm_command(command_template: str, contact_sheet: Path) -> dict[str, Any]:
@@ -277,17 +569,29 @@ def write_readme(path: Path, report: dict[str, Any]) -> None:
     lines += [f"- {b}" for b in report["blockers"]] or ["- none"]
     lines += ["", "## Warnings"]
     lines += [f"- {w}" for w in report["warnings"]] or ["- none"]
+    lines += ["", "## Metrics"]
+    metrics = report.get("metrics") or {}
+    if metrics:
+        for key in ("clip_preservation", "dino_structure", "temporal_consistency", "motion_magnitude"):
+            metric = metrics.get(key, {})
+            lines.append(f"- `{key}`: `{json.dumps(metric, sort_keys=True)}`")
+        lines.append(f"- `artifact_flags`: `{json.dumps(metrics.get('artifact_flags', []))}`")
+        lines.append(f"- Thresholds: `{json.dumps(report.get('thresholds_used', {}), sort_keys=True)}`")
+    else:
+        lines.append("- none")
     lines += ["", "## Artifacts", f"- JSON report: `{Path(report['json_report']).name}`", f"- ffprobe: `{Path(report['ffprobe_json']).name}`"]
     sheet = report.get("checks", {}).get("contact_sheet", {}).get("path")
     if sheet:
         lines.append(f"- Contact sheet: `{Path(sheet).name}`")
+    if report.get("metrics_debug_json"):
+        lines.append(f"- Metrics debug: `{Path(report['metrics_debug_json']).name}`")
     lines += [
         "",
         "## Required manual/human review before publish",
         "- Play the full candidate at phone size; first 2 seconds must read instantly.",
         "- Inspect contact sheet for generated text, logos, watermarks, UI, double captions, malformed animals, duplicated fins/limbs, melting, shimmer, or jitter.",
         "- Verify captions are intentional, readable, and not colliding with platform UI.",
-        "- For animal/source-preservation shots, prefer CLIP/DINO or full-frame VLM review if this proxy only ran RGB similarity.",
+        "- Treat CLIP/DINO/temporal/motion metrics as advisory unless thresholds show calibration agreement with human labels.",
         "",
         "This QA proxy does not auto-publish.",
     ]
@@ -307,7 +611,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--require-audio", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--contact-every", type=float, default=1.0, help="Seconds between contact-sheet samples")
     parser.add_argument("--tile", default="6x4", help="Contact sheet tile, e.g. 6x4")
-    parser.add_argument("--source-image", type=Path, help="Optional source still for RGB preservation proxy")
+    parser.add_argument("--source-image", type=Path, help="Optional approved source still for CLIP/DINO preservation metrics")
+    parser.add_argument("--thresholds", type=Path, help="Calibrated QA thresholds JSON. Missing/omitted file leaves new metrics report-only.")
+    parser.add_argument("--report-only", action="store_true", help="Compute metrics and warnings but do not add metric blockers.")
+    parser.add_argument("--frame-sample-fps", type=float, default=4.0, help="FPS used to sample frames for metric computation")
     parser.add_argument("--vlm-command", help="Optional shell command for contact-sheet scan; use {image} placeholder; stdout should be JSON")
     parser.add_argument("--openai-vlm-url", help="Optional OpenAI-compatible base URL, e.g. http://host:8000/v1")
     parser.add_argument("--vlm-model", default=os.environ.get("QA_VLM_MODEL", "qwen2.5-vl"))
@@ -323,9 +630,15 @@ def main(argv: list[str] | None = None) -> int:
     ffprobe_path = outdir / "ffprobe.json"
     contact_sheet = outdir / "contact_sheet.jpg"
     json_report = outdir / "qa_report.json"
+    metrics_debug_json = outdir / "metrics_debug.json"
     readme = outdir / "README_QA.md"
 
     try:
+        thresholds, thresholds_used, metric_report_only = load_thresholds(args.thresholds)
+        metric_report_only = bool(metric_report_only or args.report_only)
+        if args.report_only:
+            thresholds_used = {**thresholds_used, "mode": "report_only", "forced_by_flag": True}
+
         probe = ffprobe(video)
         ffprobe_path.write_text(json.dumps(probe, indent=2), encoding="utf-8")
         cols, rows = (int(x) for x in args.tile.lower().split("x", 1))
@@ -336,20 +649,19 @@ def main(argv: list[str] | None = None) -> int:
             "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
             "json_report": str(json_report),
             "ffprobe_json": str(ffprobe_path),
+            "metrics_debug_json": str(metrics_debug_json),
             "readme_qa": str(readme),
             "publish_action": "none",
+            "thresholds_used": thresholds_used,
         })
 
-        duration = report["checks"].get("duration", {}).get("actual") or 0.0
-        if args.source_image:
-            try:
-                preservation = source_preservation_proxy(args.source_image.resolve(), video, duration)
-                report["checks"]["source_preservation_proxy"] = preservation
-                if preservation["severity"] == "warn":
-                    report["warnings"].append("source preservation proxy is weak; run CLIP/DINO/VLM review for animal anatomy/source fidelity")
-                    report["score"] = max(0, report["score"] - 5)
-            except Exception as exc:
-                report["warnings"].append(f"source preservation proxy failed: {exc}")
+        metrics, metrics_debug, metric_compute_warnings = compute_metric_bundle(
+            video,
+            args.source_image.resolve() if args.source_image else None,
+            args.frame_sample_fps,
+        )
+        report["metrics"] = metrics
+        report["warnings"].extend(metric_compute_warnings)
 
         if args.vlm_command:
             vlm = run_vlm_command(args.vlm_command, contact_sheet)
@@ -365,6 +677,7 @@ def main(argv: list[str] | None = None) -> int:
             }
 
         vlm_scan = report["checks"].get("vlm_scan") or {}
+        report["metrics"]["artifact_flags"] = artifact_flags_from_vlm(vlm_scan)
         if str(vlm_scan.get("severity", "")).lower() == "block":
             report["blockers"].append("VLM scan reported blocking visual issues")
             report["score"] = max(0, report["score"] - 20)
@@ -373,9 +686,24 @@ def main(argv: list[str] | None = None) -> int:
                 report["warnings"].append("VLM scan reported warnings; inspect contact sheet")
                 report["score"] = max(0, report["score"] - 5)
 
+        report["warnings"].extend(metric_warnings(report["metrics"], thresholds))
+        metric_blockers = apply_metric_thresholds(report["metrics"], thresholds, report_only=metric_report_only)
+        if metric_blockers:
+            report["blockers"].extend(metric_blockers)
+            report["score"] = max(0, report["score"] - (10 * len(metric_blockers)))
+
+        metrics_debug_json.write_text(json.dumps(metrics_debug, indent=2), encoding="utf-8")
         json_report.write_text(json.dumps(report, indent=2), encoding="utf-8")
         write_readme(readme, report)
-        print(json.dumps({"score": report["score"], "blockers": report["blockers"], "warnings": report["warnings"], "report": str(json_report), "readme_qa": str(readme)}, indent=2))
+        print(json.dumps({
+            "score": report["score"],
+            "blockers": report["blockers"],
+            "warnings": report["warnings"],
+            "metrics": report["metrics"],
+            "thresholds_used": report["thresholds_used"],
+            "report": str(json_report),
+            "readme_qa": str(readme),
+        }, indent=2))
         return 1 if report["blockers"] else 0
     except QAError as exc:
         error_report = {
@@ -385,8 +713,11 @@ def main(argv: list[str] | None = None) -> int:
             "blockers": [str(exc)],
             "warnings": [],
             "checks": {},
+            "metrics": {},
+            "thresholds_used": {},
             "json_report": str(json_report),
             "ffprobe_json": str(ffprobe_path),
+            "metrics_debug_json": str(metrics_debug_json),
             "readme_qa": str(readme),
             "publish_action": "none",
         }
