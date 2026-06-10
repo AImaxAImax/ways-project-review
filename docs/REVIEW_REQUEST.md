@@ -52,6 +52,12 @@ Heavy generated assets, model weights, OAuth tokens, local secrets, and private 
 6. `docs/SCAN_REPORT.md`, `docs/SECRET_SCAN_REPORT.md`, and `docs/SECRET_SCAN_HITS.json`
    Sanitization and safety context for the review bundle.
 
+7. `ops/ways-video-lab-discord/WAYS_YOUTUBE_DATA_NOW_20260610.md`
+   Latest performance feedback loop: public YouTube Data API stats plus Analytics API rows through 2026-06-09.
+
+8. `ops/ways-video-lab-discord/topic_queue_batch2/WAYS_TOPIC_QUEUE_BATCH2.md`
+   Batch 2 topic queue derived from the first Shorts performance signals.
+
 ## What we should review
 
 ### 1. Overall strategy and product direction

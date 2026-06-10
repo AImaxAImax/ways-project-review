@@ -17,6 +17,8 @@ Canonical source on conflict: `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md`.
 | Latest calibration run notes | `docs/WAYS_CALIBRATION_RUN_20260608.md` | Documents first-frame, explicit-source, and per-shot candidate runs copied from the live artifact tree. |
 | Benchmark results | `benchmark/results/` | Pre-calibration cells are provisional until `config/qa_thresholds.json` records human-label agreement. |
 | Human artifact review | `docs/WAYS_ARTIFACT_REVIEW_LOG.md` | Human review overrides proxy metrics. |
+| Latest YouTube performance data | `ops/ways-video-lab-discord/WAYS_YOUTUBE_DATA_NOW_20260610.md` and `.raw.json` | Current public stats plus Analytics API rows through 2026-06-09; use to tune next videos. |
+| Batch 2 topic queue | `ops/ways-video-lab-discord/topic_queue_batch2/WAYS_TOPIC_QUEUE_BATCH2.md` and `BATCH2_COHORT_PLAN.md` | Next topic cohort derived from shark/frog/shrimp/crow signals. |
 
 ## Benchmark status
 
