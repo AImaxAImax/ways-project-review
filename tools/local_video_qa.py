@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import base64
 import datetime as dt
+import hashlib
 import json
 import math
 import os
@@ -155,9 +156,12 @@ def load_thresholds(path: Path | None) -> tuple[dict[str, Any] | None, dict[str,
                 raise QAError(f"malformed thresholds file: {path}: {key} must be numeric") from exc
     if "fail_closed" in data and not isinstance(data["fail_closed"], bool):
         raise QAError(f"malformed thresholds file: {path}: fail_closed must be boolean")
+    if "fail_closed_when_blocking" in data and not isinstance(data["fail_closed_when_blocking"], bool):
+        raise QAError(f"malformed thresholds file: {path}: fail_closed_when_blocking must be boolean")
     if "blocking_enabled" in data and not isinstance(data["blocking_enabled"], bool):
         raise QAError(f"malformed thresholds file: {path}: blocking_enabled must be boolean")
-    data.setdefault("fail_closed", True)
+    data.setdefault("fail_closed_when_blocking", data.pop("fail_closed", True))
+    data["fail_closed"] = data["fail_closed_when_blocking"]
     data.setdefault("blocking_enabled", True)
     metric_report_only = not bool(data["blocking_enabled"])
     mode = "blocking" if not metric_report_only else "advisory"
@@ -187,6 +191,14 @@ def _round_or_none(value: float | None, ndigits: int = 6) -> float | None:
 def _cosine(a: Any, b: Any) -> float:
     import torch
     return float(torch.nn.functional.cosine_similarity(a, b, dim=-1).detach().cpu().item())
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def compute_clip_preservation(source_image: Path, frames: list[Path]) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -464,8 +476,11 @@ def artifact_flags_from_vlm(vlm_scan: dict[str, Any]) -> list[str]:
             flags.extend(str(v) for v in value if str(v).strip())
     if vlm_scan.get("text_or_logo_present") is True:
         flags.append("text_or_logo_present")
-    if str(vlm_scan.get("severity", "")).lower() == "block":
-        flags.append("vlm_severity_block")
+    severity = str(vlm_scan.get("severity", "")).lower()
+    if severity in {"block", "fail", "error"}:
+        flags.append(f"vlm_severity_{severity}")
+    if vlm_scan.get("reason") == "vlm_unavailable_or_invalid_output":
+        flags.append("vlm_unavailable_or_invalid_output")
     return flags
 
 
@@ -473,12 +488,22 @@ def run_vlm_command(command_template: str, contact_sheet: Path) -> dict[str, Any
     command = command_template.format(image=shlex.quote(str(contact_sheet)), contact_sheet=shlex.quote(str(contact_sheet)))
     proc = subprocess.run(command, shell=True, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if proc.returncode != 0:
-        return {"mode": "command", "severity": "warn", "error": proc.stderr.strip() or proc.stdout.strip()}
+        return {
+            "mode": "command",
+            "severity": "block",
+            "reason": "vlm_unavailable_or_invalid_output",
+            "error": proc.stderr.strip() or proc.stdout.strip(),
+        }
     text = proc.stdout.strip()
     try:
         payload = json.loads(text)
     except json.JSONDecodeError:
-        payload = {"raw_output": text}
+        return {
+            "mode": "command",
+            "severity": "block",
+            "reason": "vlm_unavailable_or_invalid_output",
+            "raw_output": text,
+        }
     payload.setdefault("mode", "command")
     payload.setdefault("severity", "warn")
     return payload
@@ -506,13 +531,23 @@ def run_openai_vlm(base_url: str, model: str, api_key: str, contact_sheet: Path,
     try:
         with urllib.request.urlopen(req, timeout=90) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-    except (urllib.error.URLError, TimeoutError) as exc:
-        return {"mode": "openai-compatible", "severity": "warn", "error": str(exc)}
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        return {
+            "mode": "openai-compatible",
+            "severity": "block",
+            "reason": "vlm_unavailable_or_invalid_output",
+            "error": str(exc),
+        }
     content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
     try:
         parsed = json.loads(content)
     except json.JSONDecodeError:
-        parsed = {"raw_output": content}
+        return {
+            "mode": "openai-compatible",
+            "severity": "block",
+            "reason": "vlm_unavailable_or_invalid_output",
+            "raw_output": content,
+        }
     parsed.setdefault("mode", "openai-compatible")
     parsed.setdefault("severity", "warn")
     return parsed
@@ -680,6 +715,7 @@ def main(argv: list[str] | None = None) -> int:
         report = evaluate(args, probe, contact_sheet)
         report.update({
             "input": str(video),
+            "input_sha256": sha256_file(video),
             "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
             "json_report": str(json_report),
             "ffprobe_json": str(ffprobe_path),

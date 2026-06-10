@@ -12,9 +12,11 @@ from __future__ import annotations
 import argparse
 import copy
 import datetime as dt
+import hashlib
 import json
 import math
 import re
+import subprocess
 from pathlib import Path
 from typing import Any
 
@@ -36,6 +38,30 @@ WIP_LIMITS = {
 }
 READY_BUFFER_TARGET = 10
 READY_BUFFER_WARN_BELOW = 5
+KNOWN_COLUMNS = {
+    "Idea Pool",
+    "Script Locked",
+    "Plate Generation",
+    "Plate QC",
+    "Render",
+    "Assembly & Caption",
+    "Auto-QA",
+    "Human Final Review",
+    "Ready to Publish",
+    "Published / Scheduled",
+    "Parked / Rework",
+    "Killed",
+    "Monitor Only",
+    "Unknown",
+}
+COLUMN_STATUS_ALIASES = {
+    "publish-gated": "Human Final Review",
+    "promoted": "Ready to Publish",
+    "ready": "Ready to Publish",
+    "blocked": "Parked / Rework",
+    "internal": "Render",
+}
+GATE4_COLUMNS = {"Assembly & Caption", "Auto-QA", "Human Final Review", "Ready to Publish", "Published / Scheduled"}
 
 
 def as_float(value: Any, default: float = 0.0) -> float:
@@ -52,16 +78,25 @@ def as_float(value: Any, default: float = 0.0) -> float:
 def normalize_column(card: dict[str, Any]) -> str:
     column = card.get("status_column") or card.get("column") or card.get("kanban_column")
     if column:
-        return str(column)
+        value = str(column).strip()
+        return value if value in KNOWN_COLUMNS else "Unknown"
     status = str(card.get("status", "")).strip().lower()
-    # Compatibility with the lightweight dashboard builder's status vocabulary.
-    return {
-        "publish-gated": "Human Final Review",
-        "promoted": "Ready to Publish",
-        "ready": "Ready to Publish",
-        "blocked": "Parked / Rework",
-        "internal": "Render",
-    }.get(status, status.title() if status else "Unknown")
+    return COLUMN_STATUS_ALIASES.get(status, "Unknown" if status else "Unknown")
+
+
+def raw_column(card: dict[str, Any]) -> str:
+    column = card.get("status_column") or card.get("column") or card.get("kanban_column")
+    if column:
+        return str(column).strip()
+    status = str(card.get("status", "")).strip().lower()
+    return COLUMN_STATUS_ALIASES.get(status, status.title() if status else "Unknown")
+
+
+def evaluate_column(card: dict[str, Any], column: str) -> dict[str, Any]:
+    original = raw_column(card)
+    if column == "Unknown" or original not in KNOWN_COLUMNS:
+        return result("block", [f"unknown status_column: {original}"], {"raw_column": original})
+    return result("pass", [], {"raw_column": original})
 
 
 def cards_from_board(board: dict[str, Any]) -> list[dict[str, Any]]:
@@ -148,6 +183,14 @@ def resolve_path(root: Path, artifact_folder: Path | None, value: Any) -> Path |
     return base / path
 
 
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def evaluate_gate3(card: dict[str, Any], root: Path) -> dict[str, Any]:
     reasons: list[str] = []
     render = card.get("render") or card.get("render_qa") or {}
@@ -180,10 +223,32 @@ def evaluate_gate3(card: dict[str, Any], root: Path) -> dict[str, Any]:
     return result("block" if reasons else "pass", reasons, {"expected_clips": len(expected_clips), "shot_reports": len(shot_reports)})
 
 
-def load_ffprobe(path: Path | None) -> dict[str, Any] | None:
-    if not path or not path.exists():
-        return None
-    return json.loads(path.read_text(encoding="utf-8"))
+def run_ffprobe(path: Path | None) -> tuple[dict[str, Any] | None, str | None]:
+    if not path:
+        return None, "missing publish candidate path"
+    if not path.exists():
+        return None, f"missing publish candidate: {path}"
+    proc = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-show_streams",
+            "-show_format",
+            "-print_format",
+            "json",
+            str(path),
+        ],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    if proc.returncode != 0:
+        return None, f"ffprobe failed for publish candidate: {proc.stderr.strip() or proc.stdout.strip()}"
+    try:
+        return json.loads(proc.stdout), None
+    except json.JSONDecodeError as exc:
+        return None, f"ffprobe returned invalid JSON: {exc}"
 
 
 def stream(probe: dict[str, Any], kind: str) -> dict[str, Any] | None:
@@ -196,11 +261,12 @@ def evaluate_gate4(card: dict[str, Any], root: Path) -> dict[str, Any]:
     assembly = card.get("assembly_qa") or card.get("spec_qa") or {}
     artifact_folder = resolve_path(root, None, card.get("artifact_folder")) if card.get("artifact_folder") else root
 
-    ffprobe_path = resolve_path(root, artifact_folder, outputs.get("ffprobe_publish") or outputs.get("ffprobe_publish_json") or outputs.get("ffprobe"))
-    probe = load_ffprobe(ffprobe_path)
-    if not probe:
-        reasons.append("missing ffprobe JSON")
-    else:
+    publish_candidate_value = outputs.get("publish_candidate_captioned") or outputs.get("publish_candidate")
+    publish_candidate_path = resolve_path(root, artifact_folder, publish_candidate_value)
+    probe, probe_error = run_ffprobe(publish_candidate_path)
+    if probe_error:
+        reasons.append(probe_error)
+    if probe:
         video = stream(probe, "video")
         audio = stream(probe, "audio")
         if not video:
@@ -231,7 +297,9 @@ def evaluate_gate4(card: dict[str, Any], root: Path) -> dict[str, Any]:
         "publish_candidate_captioned": outputs.get("publish_candidate_captioned") or outputs.get("publish_candidate"),
         "captions_ass": outputs.get("captions_ass") or outputs.get("ass"),
         "captions_srt": outputs.get("captions_srt") or outputs.get("srt"),
+        "qa_report": outputs.get("qa_report") or outputs.get("qa_report_json"),
     }
+    resolved_outputs: dict[str, Path] = {}
     for label, value in required_outputs.items():
         if not value:
             reasons.append(f"missing artifact field: {label}")
@@ -239,6 +307,23 @@ def evaluate_gate4(card: dict[str, Any], root: Path) -> dict[str, Any]:
         path = resolve_path(root, artifact_folder, value)
         if path and not path.exists():
             reasons.append(f"missing artifact: {value}")
+        elif path:
+            resolved_outputs[label] = path
+
+    qa_report_path = resolved_outputs.get("qa_report")
+    if qa_report_path and publish_candidate_path and publish_candidate_path.exists():
+        try:
+            qa_report = json.loads(qa_report_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            reasons.append(f"qa_report invalid JSON: {exc}")
+        else:
+            expected_hash = qa_report.get("input_sha256") or qa_report.get("source_sha256") or qa_report.get("video_sha256")
+            if not expected_hash:
+                reasons.append("qa_report missing input_sha256/source_sha256/video_sha256")
+            else:
+                actual_hash = sha256_file(publish_candidate_path)
+                if str(expected_hash).lower() != actual_hash.lower():
+                    reasons.append("qa_report hash does not match publish candidate")
 
     audio_report = outputs.get("audio_report") or assembly.get("audio_report") or {}
     if isinstance(audio_report, dict):
@@ -259,26 +344,18 @@ def evaluate_gate4(card: dict[str, Any], root: Path) -> dict[str, Any]:
     if reset_max is not None and as_float(reset_max) > 3.0:
         reasons.append(f"visual reset gap {reset_max}s exceeds 2-3 seconds")
 
-    return result("block" if reasons else "pass", reasons, {"ffprobe": str(ffprobe_path) if ffprobe_path else None})
+    return result("block" if reasons else "pass", reasons, {"publish_candidate": str(publish_candidate_path) if publish_candidate_path else None})
 
 
 def evaluate_human_gate(card: dict[str, Any], column: str) -> dict[str, Any] | None:
     if column == "Plate QC":
-        if card.get("automation_policy") == "auto_advance_internal_until_5_active_ready" and (
-            card.get("lane_assigned") or card.get("gate_1_status") == "auto_approved_internal"
-        ):
-            return {"gate": GATE2, "status": "auto_internal", "reason": "internal automation advance recorded; public publish remains gated"}
         if card.get("human_approved") is True and card.get("lane_assigned"):
             return {"gate": GATE2, "status": "human_approved", "reason": "human plate approval and lane assignment recorded"}
-        return {"gate": GATE2, "status": "blocked_advisory", "reason": "requires Josh human plate approve/deny plus lane confirmation; not auto-approved"}
+        return {"gate": GATE2, "status": "blocked_advisory", "reason": "requires Josh human plate approve/deny plus lane confirmation; automation_policy cannot self-approve"}
     if column == "Human Final Review":
-        if card.get("automation_policy") == "auto_advance_internal_until_5_active_ready" and (
-            card.get("draft_score") or card.get("publish_score")
-        ):
-            return {"gate": GATE5, "status": "auto_internal", "reason": "internal automation final-review evidence recorded; public publish remains gated"}
         if card.get("human_approved") is True and (card.get("draft_score") or card.get("publish_score")):
             return {"gate": GATE5, "status": "human_approved", "reason": "human phone-size review score recorded"}
-        return {"gate": GATE5, "status": "blocked_advisory", "reason": "requires Josh phone-size final review; not auto-approved"}
+        return {"gate": GATE5, "status": "blocked_advisory", "reason": "requires Josh phone-size final review; automation_policy cannot self-approve"}
     if column in {"Ready to Publish", "Published / Scheduled"} and card.get("publish_authorized") is not True:
         return {"gate": GATE6, "status": "blocked_advisory", "reason": "public publish requires explicit human authorization; default remains private"}
     return None
@@ -293,7 +370,7 @@ def should_run_gate3(card: dict[str, Any], column: str) -> bool:
 
 
 def should_run_gate4(card: dict[str, Any], column: str) -> bool:
-    return column in {"Assembly & Caption", "Auto-QA"} or bool(card.get("assembly_qa") or card.get("spec_qa"))
+    return column in GATE4_COLUMNS or bool(card.get("assembly_qa") or card.get("spec_qa"))
 
 
 def evaluate_card(card: dict[str, Any], root: Path, index: int) -> dict[str, Any]:
@@ -305,6 +382,7 @@ def evaluate_card(card: dict[str, Any], root: Path, index: int) -> dict[str, Any
     out["blocking_gate"] = None
     out["rework_reason"] = None
 
+    out["gate_results"]["column_validation"] = evaluate_column(card, column)
     if should_run_gate1(card, column):
         out["gate_results"]["gate1_script"] = evaluate_gate1(card)
     if should_run_gate3(card, column):
@@ -317,6 +395,7 @@ def evaluate_card(card: dict[str, Any], root: Path, index: int) -> dict[str, Any
         out["human_gate"] = human_gate
 
     ordered = [
+        ("column_validation", "Board column validation"),
         ("gate1_script", GATE1),
         ("gate3_render_qa", GATE3),
         ("gate4_spec_assembly_qa", GATE4),
@@ -381,6 +460,19 @@ def evaluate_wip_limits(cards: list[dict[str, Any]]) -> dict[str, Any]:
     return limits
 
 
+def metric_gate_effective_mode(root: Path) -> str:
+    thresholds_path = root / "config" / "qa_thresholds.json"
+    if not thresholds_path.exists():
+        return "unknown_no_threshold_config"
+    try:
+        thresholds = json.loads(thresholds_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return "error_malformed_threshold_config"
+    if thresholds.get("gate_mode") == "advisory" or thresholds.get("blocking_enabled") is False:
+        return "advisory"
+    return "blocking" if thresholds.get("blocking_enabled") is True else "unknown"
+
+
 def evaluate_board(board: dict[str, Any], root: str | Path = ".") -> dict[str, Any]:
     root_path = Path(root).resolve()
     source_cards = cards_from_board(board)
@@ -392,6 +484,7 @@ def evaluate_board(board: dict[str, Any], root: str | Path = ".") -> dict[str, A
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "root": str(root_path),
+        "metric_gate_effective_mode": metric_gate_effective_mode(root_path),
         "summary": {
             "cards_evaluated": len(evaluated_cards),
             "blocked_cards": blocked_cards,

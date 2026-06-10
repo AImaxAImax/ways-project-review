@@ -180,7 +180,6 @@ def ensure_project(root: Path, card: dict[str, Any]) -> None:
         "artifact_folder": card["artifact_folder"],
         "blocking_gate": None,
         "created_at": card.get("created_at") or utc_now(),
-        "automation_policy": "auto_advance_internal_until_5_active_ready; public_publish_requires_explicit_gate6",
     }
     # Existing project packets often contain human decisions, monitor-only
     # guards, upload IDs, and richer hand-authored manifests. Queue maintenance
@@ -219,7 +218,6 @@ def card_with_defaults(card: dict[str, Any]) -> dict[str, Any]:
     out.setdefault("created_at", utc_now())
     out["script"] = {"beats": out["beats"], "sources": out["sources"]}
     out["gate_1_status"] = "auto_approved_internal"
-    out["automation_policy"] = "auto_advance_internal_until_5_active_ready"
     return out
 
 
@@ -247,15 +245,6 @@ def main() -> int:
         if seed["slug"] in by_slug:
             existing = by_slug[seed["slug"]]
             update_fields = {k: card_with_defaults(seed)[k] for k in ["hook", "core_fact", "cohort_tag", "test_variable", "category_id", "voice", "privacy", "artifact_folder", "source_policy", "sources", "beats", "script", "gate_1_status"]}
-            preserve_policy = {
-                "do_not_rebuild_unless_user_reopens",
-                "source_proof_rework_only_no_publish_no_auto_promote_until_new_proof_passes",
-                "source_quality_rework_only_no_auto_promote_old_artifacts",
-                "full_template_rework_only_no_auto_promote_old_artifacts",
-                "source_acquisition_then_plate_qc_no_render_until_gate2_pass",
-            }
-            if existing.get("automation_policy") not in preserve_policy:
-                update_fields["automation_policy"] = card_with_defaults(seed)["automation_policy"]
             existing.update(update_fields)
             if existing.get("status_column") in {None, "Idea Pool", "gate_1_packet_prepared"}:
                 existing["status_column"] = "Script Locked"
@@ -284,23 +273,15 @@ def main() -> int:
                 "captions_srt": "captions_hook_v03.srt",
             }
             if all((mantis_v03_dir / name).exists() for name in mantis_v03_required.values()):
-                c["status_column"] = "Human Final Review - Mantis Wan v03 Candidate"
-                c["draft_score"] = c.get("draft_score") or 8.0
+                c["status_column"] = "Human Final Review"
+                c["status_note"] = "Mantis Wan v03 Candidate"
                 c["outputs"] = {key: f"outputs/wan_motion_v03_clean/{name}" for key, name in mantis_v03_required.items()}
                 c["outputs"]["clean_master_no_captions"] = "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_master_1080.mp4"
                 c["outputs"]["clean_preview_no_captions"] = "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_preview_720.mp4"
                 c["outputs"]["qa_readme"] = "outputs/wan_motion_v03_clean/README_QA_FINAL.md"
-                c["assembly_qa"] = {
-                    "caption_readability": "pass",
-                    "double_captions": False,
-                    "non_caption_text": False,
-                    "visual_reset_seconds_max": 3.0,
-                    "note": "Clean Wan/no-overlay v03 candidate-review package exists; not public upload final until Josh phone-size Gate 5 review and explicit Gate 6 authorization.",
-                }
-                c["render"] = {"expected_clips": ["outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_1080.mp4"], "shot_reports": [{"shot_id": "wan_motion_v03_clean", "text_or_logo_present": False, "morphing_or_anatomy_issue": False, "severity": "warn", "note": "Candidate-review pass from README_QA_FINAL; remaining risks are full-speed phone review, softness in some beats, and final voice/caption approval."}]}
                 c["latest_internal_candidate"] = "outputs/wan_motion_v03_clean/mantis_shrimp_cavitation_punch_wan22_captioned_hook_v03_1080.mp4"
                 c["blocking_gate"] = "Gate 5 - Josh phone-size final review"
-                c["rework_reason"] = "Clean Wan v03 candidate-review package is ready for Josh phone-size review; do not publish without Gate 6."
+                c["rework_reason"] = "Clean Wan v03 candidate package exists; gate runner must verify computed evidence and Josh must complete phone-size review before publish."
                 continue
         # Surface source-acquisition artifacts even for cards whose automation
         # policy explicitly forbids rendering/promotion before Gate 2. This lets

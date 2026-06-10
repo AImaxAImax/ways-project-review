@@ -19,6 +19,7 @@ Canonical source on conflict: `docs/WAYS_MASTER_REVIEW_AND_OPERATING_SPEC.md`.
 | Human artifact review | `docs/WAYS_ARTIFACT_REVIEW_LOG.md` | Human review overrides proxy metrics. |
 | Latest YouTube performance data | `ops/ways-video-lab-discord/WAYS_YOUTUBE_DATA_NOW_20260610.md` and `.raw.json` | Current public stats plus Analytics API rows through 2026-06-09; use to tune next videos. |
 | Batch 2 topic queue | `ops/ways-video-lab-discord/topic_queue_batch2/WAYS_TOPIC_QUEUE_BATCH2.md` and `BATCH2_COHORT_PLAN.md` | Next topic cohort derived from shark/frog/shrimp/crow signals. |
+| Code review issues and fix plan | `docs/WAYS_CODE_REVIEW_ISSUES_AND_FIXES_20260610.md` | External review feedback; P0 partial fixes landed in `tools/ways_qc_gate_runner.py`, `tools/ways_auto_queue.py`, and `tools/local_video_qa.py`. |
 
 ## Benchmark status
 

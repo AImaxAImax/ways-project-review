@@ -99,9 +99,34 @@ def test_gate4_blocks_bad_specs_and_missing_artifacts(tmp_path):
     card = report["cards"][0]
     assert card["gate_results"]["gate4_spec_assembly_qa"]["status"] == "block"
     assert card["blocking_gate"] == "Gate 4 - Spec / Assembly QA"
-    assert "not 1080x1920" in card["rework_reason"]
-    assert "audio sample rate is 44100 Hz" in card["rework_reason"]
+    assert "missing publish candidate" in card["rework_reason"]
     assert "missing artifact: contact_sheet.jpg" in card["rework_reason"]
+
+
+def test_gate4_blocks_mismatched_qa_report_hash(tmp_path):
+    publish = tmp_path / "publish.mp4"
+    publish.write_bytes(b"candidate bytes")
+    for name in ["contact_sheet.jpg", "captions.ass", "captions.srt"]:
+        (tmp_path / name).write_text("placeholder", encoding="utf-8")
+    (tmp_path / "qa_report.json").write_text(json.dumps({"input_sha256": "0" * 64}), encoding="utf-8")
+    board = {
+        "cards": [{
+            "slug": "hash_mismatch",
+            "status_column": "Assembly & Caption",
+            "outputs": {
+                "publish_candidate_captioned": "publish.mp4",
+                "contact_sheet": "contact_sheet.jpg",
+                "captions_ass": "captions.ass",
+                "captions_srt": "captions.srt",
+                "qa_report": "qa_report.json",
+            },
+        }]
+    }
+
+    report = ways_qc_gate_runner.evaluate_board(board, root=tmp_path)
+
+    reason = report["cards"][0]["rework_reason"]
+    assert "qa_report hash does not match publish candidate" in reason
 
 
 def test_wip_limits_flag_overages_and_low_publish_buffer(tmp_path):
@@ -139,10 +164,10 @@ def test_human_gates_are_advisory_not_auto_approved(tmp_path):
     assert by_slug["plate_waiting"]["human_gate"]["status"] == "blocked_advisory"
     assert by_slug["plate_waiting"]["blocking_gate"] == "Gate 2 - Human Plate QC"
     assert by_slug["final_waiting"]["human_gate"]["status"] == "blocked_advisory"
-    assert by_slug["final_waiting"]["blocking_gate"] == "Gate 5 - Human Final Review"
+    assert by_slug["final_waiting"]["blocking_gate"] == "Gate 4 - Spec / Assembly QA"
 
 
-def test_internal_automation_policy_can_advance_gate2_and_gate5_without_public_publish(tmp_path):
+def test_internal_automation_policy_cannot_self_approve_human_gates(tmp_path):
     board = {
         "cards": [
             {
@@ -168,9 +193,31 @@ def test_internal_automation_policy_can_advance_gate2_and_gate5_without_public_p
     report = ways_qc_gate_runner.evaluate_board(board, root=tmp_path)
 
     by_slug = {card["slug"]: card for card in report["cards"]}
-    assert by_slug["plate_auto"]["human_gate"]["status"] == "auto_internal"
-    assert by_slug["plate_auto"]["blocking_gate"] is None
-    assert by_slug["final_auto"]["human_gate"]["status"] == "auto_internal"
-    assert by_slug["final_auto"]["blocking_gate"] is None
+    assert by_slug["plate_auto"]["human_gate"]["status"] == "blocked_advisory"
+    assert by_slug["plate_auto"]["blocking_gate"] == "Gate 2 - Human Plate QC"
+    assert by_slug["final_auto"]["human_gate"]["status"] == "blocked_advisory"
+    assert by_slug["final_auto"]["blocking_gate"] == "Gate 4 - Spec / Assembly QA"
     assert by_slug["publish_still_blocked"]["human_gate"]["status"] == "blocked_advisory"
-    assert by_slug["publish_still_blocked"]["blocking_gate"] == "Gate 6 - Publish Authorization"
+    assert by_slug["publish_still_blocked"]["blocking_gate"] == "Gate 4 - Spec / Assembly QA"
+
+
+def test_decorated_column_is_unknown_and_blocking(tmp_path):
+    board = {"cards": [{"slug": "column_escape", "status_column": "Human Final Review - anything"}]}
+
+    report = ways_qc_gate_runner.evaluate_board(board, root=tmp_path)
+
+    card = report["cards"][0]
+    assert card["status_column"] == "Unknown"
+    assert card["gate_results"]["column_validation"]["status"] == "block"
+    assert card["blocking_gate"] == "Board column validation"
+    assert "unknown status_column" in card["rework_reason"]
+
+
+def test_metric_gate_effective_mode_echoes_advisory(tmp_path):
+    config = tmp_path / "config"
+    config.mkdir()
+    (config / "qa_thresholds.json").write_text(json.dumps({"blocking_enabled": False, "gate_mode": "advisory"}), encoding="utf-8")
+
+    report = ways_qc_gate_runner.evaluate_board({"cards": []}, root=tmp_path)
+
+    assert report["metric_gate_effective_mode"] == "advisory"

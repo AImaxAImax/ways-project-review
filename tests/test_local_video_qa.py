@@ -46,6 +46,7 @@ def test_local_video_qa_writes_json_readme_and_contact_sheet(tmp_path):
     assert report["score"] >= 80
     assert report["blockers"] == []
     assert report["publish_action"] == "none"
+    assert len(report["input_sha256"]) == 64
     assert report["checks"]["audio"]["sample_rate"] == 48000
     assert "metrics" in report
     assert report["thresholds_used"]["mode"] == "report_only"
@@ -297,6 +298,27 @@ def test_malformed_thresholds_returns_tooling_error(tmp_path):
     assert rc == 2
     report = json.loads((outdir / "qa_report.json").read_text(encoding="utf-8"))
     assert any("malformed thresholds file" in b for b in report["blockers"])
+
+
+def test_vlm_command_failures_are_blocking(tmp_path):
+    contact_sheet = tmp_path / "contact.jpg"
+    contact_sheet.write_bytes(b"not a real jpg but path exists")
+
+    payload = local_video_qa.run_vlm_command("python3 -c 'import sys; sys.exit(1)'", contact_sheet)
+
+    assert payload["severity"] == "block"
+    assert payload["reason"] == "vlm_unavailable_or_invalid_output"
+    assert "vlm_unavailable_or_invalid_output" in local_video_qa.artifact_flags_from_vlm(payload)
+
+
+def test_vlm_unparseable_output_is_blocking(tmp_path):
+    contact_sheet = tmp_path / "contact.jpg"
+    contact_sheet.write_bytes(b"not a real jpg but path exists")
+
+    payload = local_video_qa.run_vlm_command("python3 -c 'print(\"not-json\")'", contact_sheet)
+
+    assert payload["severity"] == "block"
+    assert payload["reason"] == "vlm_unavailable_or_invalid_output"
 
 
 @pytest.mark.slow

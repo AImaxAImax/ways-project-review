@@ -4,7 +4,7 @@
   "temporal_consistency_max": 0.582238,
   "motion_magnitude_low": 1.775843,
   "motion_magnitude_high": 9.600125,
-  "fail_closed": true,
+  "fail_closed_when_blocking": true,
   "blocking_enabled": false,
   "gate_mode": "advisory",
   "calibrated_against": "16 labeled clips, 8 pass / 8 fail; calibration_dir=/mnt/c/dev/curious-shorts/calib/ways_scoring_harness_20260608",
